@@ -35,7 +35,7 @@
                         <!-- block scroll -->
                         <div id="blockScroll" class="block-scroll">
                             <!-- logged -->
-                            <div class="dropdown logged-notifications">
+                            <div class="dropdown logged-notifications d-none">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="icon-icon_notification_sau_dang_nhap logged-notifications__icon"><span class="logged-notifications__total">12</span></i>
                                     </button>
@@ -125,7 +125,7 @@
                                     <div class="logged-notifications__viewmore"><a href="#">Xêm thêm</a></div>
                                 </div>
                             </div>
-                            <div class="dropdown logged-user">
+                            <div class="dropdown logged-user d-none">
                                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img class="logged-user__avata" src="assets/images/dcb.png" alt="">
                                         <span class="logged-user__name">Doãn Chí Bình</span>
@@ -140,8 +140,8 @@
                             </div>
                             <!-- end logged -->
                             <!-- not logged -->
-                            <a class="register large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
-                            <a class="login large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
+                            <a class="register large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
+                            <a class="login large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
                             <!-- end not logged -->
                             <div class="ui selection dropdown">
                                 <input type="hidden" name="language" value="0">
@@ -571,7 +571,7 @@
         <div class="small-header-bar__logo"><img src="assets/images/logo-small.png" alt=""></div>
         <div class="small-header-bar__action">
             <!-- logged -->
-            <div class="dropdown logged-noti-small">
+            <div class="dropdown logged-noti-small d-none">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="icon-icon_notification_sau_dang_nhap logged-noti-small__icon"><span class="logged-noti-small__total">12</span></i>
                                 </button>
@@ -661,7 +661,7 @@
                     <div class="logged-noti-small__viewmore"><a href="#">Xêm thêm</a></div>
                 </div>
             </div>
-            <div class="dropdown logged-user-small">
+            <div class="dropdown logged-user-small d-none">
                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logged-user-small__avata" src="assets/images/dcb.png" alt=""></button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Trang cá nhân</a>
@@ -673,8 +673,8 @@
             </div>
             <!-- end logged -->
             <!-- not logged -->
-            <button class="register small-header-bar__btn d-none"><i class="icon-icon_dang_ky_top"></i></button>
-            <button class="login small-header-bar__btn d-none"><i class="icon-icon_dang_nhap_top"></i></button>
+            <button class="register small-header-bar__btn"><i class="icon-icon_dang_ky_top"></i></button>
+            <button class="login small-header-bar__btn"><i class="icon-icon_dang_nhap_top"></i></button>
             <!-- end not logged -->
             <div class="ui selection dropdown">
                 <input type="hidden" name="language" value="0">
@@ -899,67 +899,501 @@
     </div>
 </aside>
 <!-- END MODAL FORGOT PASSWORD -->
-        <main class="body-content-wrap">
+        <main>
+            <!-- BLOG DETAIL BANNER -->
+<div class="blog-detai-banner" style="background:url(assets/images/b2.png) center center; background-attachment:fixed; background-size: cover;"></div>
+<!-- END BLOG DETAIL BANNER -->
+            <!-- // -->
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <!-- PROFILE BAR -->
-<div class="profile-bar">
-    <div class="profile-bar__avata">
-        <img class="profile-bar__avata-img" src="assets/images/b4.png" alt="">
-        <span class="profile-bar__avata-name">Doãn Chí Bình</span>
+                <!-- BLOG DETAI CONTENT -->
+<section class="blog-detail-content">
+    <div class="blog-detail-content__wrap">
+        <h2 class="blog-detail-content__title">Vivamus ullamcorper elit massa, a sodales purus tincidunt dosit quisque dolor ex</h2>
+        <div class="blog-detail-content__date">Đăng ngày 12/09/2017</div>
+        <!-- // -->
+        <!-- USER SOCIAL -->
+<div class="user-social">
+    <div class="user-social__info">
+        <a href="#" class="user-social__avata">
+            <img src="assets/images/dcb.png" alt="">
+        </a>
+        <div class="user-social__content">
+            <div class="user-social__text1">Bình Đại Ca</div>
+            <div class="user-social__text2"><span>132</span> bài viết — 2145 người theo dõi |</div>
+            <a href="#" class="user-social__text3">Theo dõi ngay</a>
+        </div>
     </div>
-    <a class="profile-bar__link " href="#"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
-    <a class="profile-bar__link " href="#"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
-    <a class="profile-bar__link " href="#"><i class="icon-icon_ket_qua_bai_thi"></i>Kết quả bài thi</a>
-    <a class="profile-bar__link " href="#"><i class="icon-icon_danh_sach_blog"></i>Danh sách blog</a>
-    <a class="profile-bar__link active" href="#"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
-    <div class="profile-bar__social">
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_rss_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--rss'>Lấy RSS của <span>Doãn Chí Bình</span></div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_facebook_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--fb'>Theo dõi <span>Doãn Chí Bình</span> trên facebook</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_youtube_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--yt'>Theo dõi <span>Doãn Chí Bình</span> trên youtube</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_linkedin_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--in'>Theo dõi <span>Doãn Chí Bình</span> trên linkedin</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_github_trang_ca_nhan"></i>
-            <div class='profile-bar__popup profile-bar__popup--gh'>Theo dõi <span>Doãn Chí Bình</span> trên github</div>
-        </a>
+    <div class="user-social__interactive">
+        <a href="#" class="user-social__text4"><i class="icon-icon_thich"></i> 2</a>
+        <a href="#" class="user-social__text4"><i class="icon-icon_khong_thich"></i> 0</a>
+        <a href="#" class="user-social__text4"><i class="icon-icon_binh_luan"></i> 2</a>
+        <a href="#" class="user-social__text4"><i class="icon-icon_share"></i></a>
     </div>
 </div>
-<!-- END PROFILE BAR -->
+<!-- END USER SOCIAL -->
+        <!-- // -->
+        <div class="blog-detail-content__body">
+            <div class="blog-detail-content__text">Aliquam diam nisi, finibus eu urna ac, ornare sagittis sapien. Duis luctus sapien vel metus euismod varius. Donec tristique est eget att sapien ultricies porta. Aenean id felis nec quam commodo dositmet elementum. Nullam feugiat venenatis
+                orci ac tempor. Aliquam lorem pretium eleifend dolor feugiat eleifend.</div>
+            <img src="assets/images/b5.png" alt="">
+            <div class="blog-detail-content__text">Aliquam diam nisi, finibus eu urna ac, ornare sagittis sapien. Duis luctus sapien vel metus euismod varius. Donec tristique est eget att sapien ultricies porta. Aenean id felis nec quam commodo dositmet elementum. Nullam feugiat venenatis
+                orci ac tempor. Aliquam lorem pretium eleifend dolor feugiat eleifend.</div>
+            <div class="blog-detail-content__text">Aliquam diam nisi, finibus eu urna ac, ornare sagittis sapien. Duis luctus sapien vel metus euismod varius. Donec tristique est eget att sapien ultricies porta. Aenean id felis nec quam commodo dositmet elementum. Nullam feugiat venenatis
+                orci ac tempor. Aliquam lorem pretium eleifend dolor feugiat eleifend.</div>
+            <img src="assets/images/b1.png" alt="">
+            <div class="blog-detail-content__text">Aliquam diam nisi, finibus eu urna ac, ornare sagittis sapien. Duis luctus sapien vel metus euismod varius. Donec tristique est eget att sapien ultricies porta. Aenean id felis nec quam commodo dositmet elementum. Nullam feugiat venenatis
+                orci ac tempor. Aliquam lorem pretium eleifend dolor feugiat eleifend.</div>
+        </div>
+        <!-- // -->
+        <div class="blog-detail-content__tags">
+            <a class="blog-detail-content__tag" href="#"><i class="icon-icon_tag"></i>Shell</a>
+            <a class="blog-detail-content__tag" href="#"><i class="icon-icon_tag"></i>Go</a>
+            <a class="blog-detail-content__tag" href="#"><i class="icon-icon_tag"></i>Css</a>
+        </div>
+        <!-- // -->
+        <!-- USER SOCIAL -->
+<div class="user-social">
+    <div class="user-social__info">
+        <a href="#" class="user-social__avata">
+            <img src="assets/images/dcb.png" alt="">
+        </a>
+        <div class="user-social__content">
+            <div class="user-social__text1">Bình Đại Ca</div>
+            <div class="user-social__text2"><span>132</span> bài viết — 2145 người theo dõi |</div>
+            <a href="#" class="user-social__text3">Theo dõi ngay</a>
+        </div>
+    </div>
+    <div class="user-social__interactive">
+        <a href="#" class="user-social__text4"><i class="icon-icon_thich"></i> 2</a>
+        <a href="#" class="user-social__text4"><i class="icon-icon_khong_thich"></i> 0</a>
+        <a href="#" class="user-social__text4"><i class="icon-icon_binh_luan"></i> 2</a>
+        <a href="#" class="user-social__text4"><i class="icon-icon_share"></i></a>
+    </div>
+</div>
+<!-- END USER SOCIAL -->
+        <!-- // -->
+        <!-- COMMENT -->
+<div class="comment">
+    <div class="comment__input commentInputMain">
+        <textarea class='comment__area commentInputMainArea' rows='1' placeholder='Viết bình luận...'></textarea>
+        <div class="comment__btn commentInputMainBtn">
+            <button class="comment__cancel commentInputMainBtnCancel">Hủy</button>
+            <button class="comment__ok">Nhận xét</button>
+        </div>
+    </div>
+    <!-- end input main -->
+
+    <div class="comment__box commentBox">
+        <div class="comment__item commentItem">
+            <a href="#" class="comment__avata">
+                <img src="assets/images/dcb.png" alt="">
+            </a>
+            <div class="comment__content">
+                <div class="commentContentCurrent active">
+                    <div class="comment__text1 comment__my">Doãn Huynh</div>
+                    <div class="comment__text2">Cách đây 15 phút</div>
+                    <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.</div>
+                    <a class="comment__text5" href="#">Đọc thêm</a>
+                    <div class="comment__group1">
+                        <a href="#" class="comment__text4"><i class="icon-icon_thich"></i> 2</a>
+                        <a href="#" class="comment__text4"><i class="icon-icon_khong_thich"></i> 0</a>
+                        <a href="javascript:void(0)" class="comment__text4 commentActionWrite"><i class="icon-icon_binh_luan"></i> 2</a>
                     </div>
-                    <div class="col-lg-9">
-                        <!-- CHANGE PASSWORD -->
-<section class="profile-password">
-    <h2 class="profile-password__title">Thay đổi mật khẩu</h2>
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu cũ">
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu mới">
-    <input class="input-blue profile-password__input" type="password" placeholder="Nhập lại mật khẩu">
-    <button class="btn-blue profile-password__base">Thay đổi</button>
-</section>
-<!-- END CHANGE PASSWORD -->
+                    <div class="comment__input comment__input--sub commentInputSub">
+                        <textarea class='comment__area commentInputSubArea' rows='1' placeholder='Viết bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputSubBtnCancel">Hủy</button>
+                            <button class="comment__ok">Nhận xét</button>
+                        </div>
+                    </div>
+                    <!-- end input sub -->
+                </div>
+                <!-- end content current -->
+                <div class="commentContentEdit">
+                    <div class="">
+                        <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputEditBtnCancel">Hủy</button>
+                            <button class="comment__ok">Lưu</button>
+                        </div>
+                    </div>
+                    <!-- end input edit -->
+                </div>
+                <!-- end content edit -->
+                <div class="comment__group2 commentLoadControl">
+                    <a class="comment__text5 commentLoadControlShow active" href="javascript:void(0)">Xêm tất cả 20 câu trả lời<i class="icon-icon_dropdown_menu"></i></a>
+                    <a class="comment__text5 commentLoadControlHide" href="javascript:void(0)">Ẩn câu trả lời<span class="icon-up"><i class="icon-icon_dropdown_menu"></i></span></a>
+                </div>
+                <!-- end control comment -->
+            </div>
+            <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
+    </div>
+</div>
+<!-- END MENU CONTROL -->
+        </div>
+        <!-- end item main -->
+        <div class="comment__item comment__item--sub commentItem commentLoadItemSub">
+            <a href="#" class="comment__avata">
+                <img src="assets/images/tln.png" alt="">
+            </a>
+            <div class="comment__content">
+                <div class="commentContentCurrent active">
+                    <div class="comment__text1">Long Muội</div>
+                    <div class="comment__text2">Cách đây 5 phút</div>
+                    <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.</div>
+                    <a class="comment__text5" href="#">Đọc thêm</a>
+                    <div class="comment__group1">
+                        <a href="#" class="comment__text4"><i class="icon-icon_thich"></i> 2</a>
+                        <a href="#" class="comment__text4"><i class="icon-icon_khong_thich"></i> 0</a>
                     </div>
                 </div>
+                <!-- end content current -->
+                <div class="commentContentEdit">
+                    <div class="">
+                        <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputEditBtnCancel">Hủy</button>
+                            <button class="comment__ok">Lưu</button>
+                        </div>
+                    </div>
+                    <!-- end input edit -->
+                </div>
+                <!-- end content edit -->
             </div>
+            <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
+    </div>
+</div>
+<!-- END MENU CONTROL -->
+        </div>
+        <!-- end item sub -->
+        <div class="comment__item comment__item--sub commentItem commentLoadItemSub">
+            <a href="#" class="comment__avata">
+                <img src="assets/images/dq.png" alt="">
+            </a>
+            <div class="comment__content">
+                <div class="commentContentCurrent active">
+                    <div class="comment__text1">Dương Đệ</div>
+                    <div class="comment__text2">Cách đây 10 phút</div>
+                    <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.</div>
+                    <a class="comment__text5" href="#">Đọc thêm</a>
+                    <div class="comment__group1">
+                        <a href="#" class="comment__text4"><i class="icon-icon_thich"></i> 2</a>
+                        <a href="#" class="comment__text4"><i class="icon-icon_khong_thich"></i> 0</a>
+                    </div>
+                </div>
+                <!-- end content current -->
+                <div class="commentContentEdit">
+                    <div class="">
+                        <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputEditBtnCancel">Hủy</button>
+                            <button class="comment__ok">Lưu</button>
+                        </div>
+                    </div>
+                    <!-- end input edit -->
+                </div>
+                <!-- end content edit -->
+            </div>
+            <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
+    </div>
+</div>
+<!-- END MENU CONTROL -->
+        </div>
+        <!-- end item sub -->
+        <a class="comment__text5 comment__text5--more commentItem commentLoadItemSub" href="#">Xêm thêm 10 câu trả lời...</a>
+    </div>
+    <!-- END BOX -->
+
+    <div class="comment__box commentBox">
+        <div class="comment__item commentItem">
+            <a href="#" class="comment__avata">
+                <img src="assets/images/lbc.png" alt="">
+            </a>
+            <div class="comment__content">
+                <div class="commentContentCurrent active">
+                    <div class="comment__text1">Lâm Đệ</div>
+                    <div class="comment__text2">Cách đây 2 giờ</div>
+                    <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.</div>
+                    <a class="comment__text5" href="#">Đọc thêm</a>
+                    <div class="comment__group1">
+                        <a href="#" class="comment__text4"><i class="icon-icon_thich"></i> 2</a>
+                        <a href="#" class="comment__text4"><i class="icon-icon_khong_thich"></i> 0</a>
+                        <a href="javascript:void(0)" class="comment__text4 commentActionWrite"><i class="icon-icon_binh_luan"></i> 2</a>
+                    </div>
+                    <div class="comment__input comment__input--sub commentInputSub">
+                        <textarea class='comment__area commentInputSubArea' rows='1' placeholder='Viết bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputSubBtnCancel">Hủy</button>
+                            <button class="comment__ok">Nhận xét</button>
+                        </div>
+                    </div>
+                    <!-- end input sub -->
+                </div>
+                <!-- end content current -->
+                <div class="commentContentEdit">
+                    <div class="">
+                        <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputEditBtnCancel">Hủy</button>
+                            <button class="comment__ok">Lưu</button>
+                        </div>
+                    </div>
+                    <!-- end input edit -->
+                </div>
+                <!-- end content edit -->
+                <div class="comment__group2 commentLoadControl">
+                    <a class="comment__text5 commentLoadControlShow active" href="javascript:void(0)">Xêm tất cả 25 câu trả lời<i class="icon-icon_dropdown_menu"></i></a>
+                    <a class="comment__text5 commentLoadControlHide" href="javascript:void(0)">Ẩn câu trả lời<span class="icon-up"><i class="icon-icon_dropdown_menu"></i></span></a>
+                </div>
+                <!-- end control comment -->
+            </div>
+            <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
+    </div>
+</div>
+<!-- END MENU CONTROL -->
+        </div>
+        <!-- end item main -->
+        <div class="comment__item comment__item--sub commentItem commentLoadItemSub">
+            <a href="#" class="comment__avata">
+                <img src="assets/images/tln.png" alt="">
+            </a>
+            <div class="comment__content">
+                <div class="commentContentCurrent active">
+                    <div class="comment__text1">Long Muội</div>
+                    <div class="comment__text2">Cách đây 5 phút</div>
+                    <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.</div>
+                    <a class="comment__text5" href="#">Đọc thêm</a>
+                    <div class="comment__group1">
+                        <a href="#" class="comment__text4"><i class="icon-icon_thich"></i> 2</a>
+                        <a href="#" class="comment__text4"><i class="icon-icon_khong_thich"></i> 0</a>
+                    </div>
+                </div>
+                <!-- end content current -->
+                <div class="commentContentEdit">
+                    <div class="">
+                        <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputEditBtnCancel">Hủy</button>
+                            <button class="comment__ok">Lưu</button>
+                        </div>
+                    </div>
+                    <!-- end input edit -->
+                </div>
+                <!-- end content edit -->
+            </div>
+            <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
+    </div>
+</div>
+<!-- END MENU CONTROL -->
+        </div>
+        <!-- end item sub -->
+        <div class="comment__item comment__item--sub commentItem commentLoadItemSub">
+            <a href="#" class="comment__avata">
+                <img src="assets/images/dq.png" alt="">
+            </a>
+            <div class="comment__content">
+                <div class="commentContentCurrent active">
+                    <div class="comment__text1">Dương Đệ</div>
+                    <div class="comment__text2">Cách đây 10 phút</div>
+                    <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.</div>
+                    <a class="comment__text5" href="#">Đọc thêm</a>
+                    <div class="comment__group1">
+                        <a href="#" class="comment__text4"><i class="icon-icon_thich"></i> 2</a>
+                        <a href="#" class="comment__text4"><i class="icon-icon_khong_thich"></i> 0</a>
+                    </div>
+                </div>
+                <!-- end content current -->
+                <div class="commentContentEdit">
+                    <div class="">
+                        <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                        <div class="comment__btn">
+                            <button class="comment__cancel commentInputEditBtnCancel">Hủy</button>
+                            <button class="comment__ok">Lưu</button>
+                        </div>
+                    </div>
+                    <!-- end input edit -->
+                </div>
+                <!-- end content edit -->
+            </div>
+            <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
+    </div>
+</div>
+<!-- END MENU CONTROL -->
+        </div>
+        <!-- end item sub -->
+        <a class="comment__text5 comment__text5--more commentItem commentLoadItemSub" href="#">Xêm thêm 10 câu trả lời...</a>
+    </div>
+    <!-- END BOX -->
+
+    <a class="comment__text6" href="#">Xem thêm 10 bình luận</a>
+</div>
+<!-- MODAL COURSE ADD -->
+<aside class="ui modal modal-comment-report modalCommentReport">
+    <div class="modal-comment-report__header">
+        <span class="modal-comment-report__title">Báo cáo nhận xét</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-comment-report__body">
+
+        <div class="modal-comment-report__balde">
+            <div class="modal-comment-report__text">Nội dung vi phạm</div>
+            <div class="ui selection dropdown">
+                <input type="hidden" name="choose">
+                <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                <div class="default text">-- Chọn --</div>
+                <div class="menu">
+                    <div class="item" data-value="0">Spam hoặc nội dung quảng cáo không mong muốn</div>
+                    <div class="item" data-value="1">Tài liệu khiêu dâm hoặc phim khiêu dâm</div>
+                    <div class="item" data-value="2">Lời nói căm thù hoặc hình ảnh bạo lực</div>
+                    <div class="item" data-value="3">Quấy rối hoặc bắt nạt</div>
+                    <div class="item" data-value="4">Vấn đề khác</div>
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="modal-comment-report__balde">
+            <div class="modal-comment-report__text">Mô tả thêm</div>
+            <textarea class='textarea-profile  autoExpand' rows='4' data-min-rows='4' placeholder='Mô tả báo cáo'></textarea>
+        </div>
+    </div>
+    <div class="modal-comment-report__footer">
+        <a href="#" class="close btn-blue modal-comment-report__btn">Báo cáo</a>
+    </div>
+</aside>
+<!--END MODAL COURSE ADD -->
+<!-- END COMMENT -->
+    </div>
+</section>
+<!-- END BLOG DETAI CONTENT -->
+            </div>
+            <!-- BLOG RELATIVE -->
+<section class="blog-relative bg-blue">
+    <div class="container">
+        <h2 class="blog-relative__title">Có thể bạn quan tâm</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="blog-relative__item">
+                    <div class="blog-relative__img"><img src="assets/images/b6.png" alt=""></div>
+                    <a href="#" class="blog-relative__text1">Vivamus interdum fermentum velit vitae mattis. Fusce sagittis nisl nec mauris ultricies maximus.</a>
+                    <div class="blog-relative__text2">Đăng ngày 12/09/2017 bởi <a href="#">Linh Nhi</a></div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="col-lg-4">
+                <div class="blog-relative__item">
+                    <div class="blog-relative__img"><img src="assets/images/b6.png" alt=""></div>
+                    <a href="#" class="blog-relative__text1">Vivamus interdum fermentum velit vitae mattis. Fusce sagittis nisl nec mauris ultricies maximus.</a>
+                    <div class="blog-relative__text2">Đăng ngày 12/09/2017 bởi <a href="#">Linh Nhi</a></div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="col-lg-4">
+                <div class="blog-relative__item">
+                    <div class="blog-relative__img"><img src="assets/images/b6.png" alt=""></div>
+                    <a href="#" class="blog-relative__text1">Vivamus interdum fermentum velit vitae mattis. Fusce sagittis nisl nec mauris ultricies maximus.</a>
+                    <div class="blog-relative__text2">Đăng ngày 12/09/2017 bởi <a href="#">Linh Nhi</a></div>
+                </div>
+            </div>
+            <!-- end item -->
+        </div>
+    </div>
+</section>
+<section class="blog-relative">
+    <div class="container">
+        <h2 class="blog-relative__title">Bài viết cùng tác giả</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="blog-relative__item">
+                    <div class="blog-relative__img"><img src="assets/images/b6.png" alt=""></div>
+                    <a href="#" class="blog-relative__text1">Vivamus interdum fermentum velit vitae mattis. Fusce sagittis nisl nec mauris ultricies maximus.</a>
+                    <div class="blog-relative__text2">Đăng ngày 12/09/2017 bởi <a href="#">Linh Nhi</a></div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="col-lg-4">
+                <div class="blog-relative__item">
+                    <div class="blog-relative__img"><img src="assets/images/b6.png" alt=""></div>
+                    <a href="#" class="blog-relative__text1">Vivamus interdum fermentum velit vitae mattis. Fusce sagittis nisl nec mauris ultricies maximus.</a>
+                    <div class="blog-relative__text2">Đăng ngày 12/09/2017 bởi <a href="#">Linh Nhi</a></div>
+                </div>
+            </div>
+            <!-- end item -->
+            <div class="col-lg-4">
+                <div class="blog-relative__item">
+                    <div class="blog-relative__img"><img src="assets/images/b6.png" alt=""></div>
+                    <a href="#" class="blog-relative__text1">Vivamus interdum fermentum velit vitae mattis. Fusce sagittis nisl nec mauris ultricies maximus.</a>
+                    <div class="blog-relative__text2">Đăng ngày 12/09/2017 bởi <a href="#">Linh Nhi</a></div>
+                </div>
+            </div>
+            <!-- end item -->
+        </div>
+    </div>
+    <div class="blog-relative__text-wrap">
+        <a class="blog-relative__text3" href="#">Xem tất cả bài viết của tác giả Linh Nhi</a>
+    </div>
+
+</section>
+<!-- END BLOG RELATIVE -->
         </main>
         <!-- FOOTER -->
 <footer class="footer">
