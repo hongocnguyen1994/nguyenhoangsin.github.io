@@ -1,0 +1,528 @@
+<style>
+    @font-face {
+        font-family: 'Roboto-Regular';
+        src: url('assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Roboto-Regular.woff') format('woff'), url('assets/fonts/Roboto-Regular.ttf') format('truetype'), url('assets/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Roboto-Bold';
+        src: url('assets/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Roboto-Bold.woff') format('woff'), url('assets/fonts/Roboto-Bold.ttf') format('truetype'), url('assets/fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Montserrat-SemiBold';
+        src: url('assets/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Montserrat-SemiBold.woff') format('woff'), url('assets/fonts/Montserrat-SemiBold.ttf') format('truetype'), url('assets/fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Roboto-Medium';
+        src: url('assets/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Roboto-Medium.woff') format('woff'), url('assets/fonts/Roboto-Medium.ttf') format('truetype'), url('assets/fonts/Roboto-Medium.svg#assets/fonts/Roboto-Medium') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Roboto-Light';
+        src: url('assets/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Roboto-Light.woff') format('woff'), url('assets/fonts/Roboto-Light.ttf') format('truetype'), url('assets/fonts/Roboto-Light.svg#assets/fonts/Roboto-Light') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    body {
+        font-family: Roboto-Regular;
+    }
+    
+    .profile-pdf {
+        width: 850px;
+        margin: auto;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
+        background: #fff;
+    }
+    
+    .profile-pdf__title1 {
+        margin-bottom: 20px;
+        font-family: Montserrat-SemiBold;
+        font-size: 24px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #2c2c2c;
+    }
+    
+    .profile-pdf__title2 {
+        margin-bottom: 25px;
+        font-family: Montserrat-SemiBold;
+        font-size: 15px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #2c2c2c;
+    }
+    
+    .profile-pdf__title3 {
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2c2c2c;
+    }
+    
+    .profile-pdf__text1 {
+        margin-bottom: 10px;
+        font-family: Roboto-Regular;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4a4a4a;
+    }
+    
+    .profile-pdf__text2 {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #666666;
+    }
+    
+    .profile-pdf__text3 {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2c2c2c;
+    }
+    
+    .profile-pdf__info {
+        display: flex;
+        padding: 40px 30px 30px;
+        border-bottom: 2px solid #eff4f8;
+    }
+    
+    .profile-pdf__avata img {
+        width: 165px;
+        height: 165px;
+        margin-right: 40px;
+        border-radius: 50%;
+    }
+    
+    .profile-pdf__info-general {
+        width: 585px;
+    }
+    
+    .profile-pdf__info-detail {
+        display: flex;
+        width: 585px;
+    }
+    
+    .profile-pdf__info-general-left {
+        width: 50%;
+        margin-right: 30px;
+    }
+    
+    .profile-pdf__info-general-right {
+        width: 50%;
+    }
+    
+    .profile-pdf__info-general-right .profile-pdf__text1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .profile-pdf__skill {
+        padding: 24px 30px 10;
+        border-bottom: 2px solid #eff4f8;
+    }
+    
+    .profile-pdf__skill .profile-pdf__title3 {
+        width: 130px;
+        margin-right: 10px;
+    }
+    
+    .profile-pdf__skill-item {
+        display: flex;
+        margin-bottom: 32px
+    }
+    
+    .profile-pdf__skill-bar {
+        width: 240px;
+        height: 18px;
+        border: 1px solid #c9e6fe;
+        border-radius: 100px;
+        background: #f7fbfe;
+    }
+    
+    .profile-pdf__skill-level {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        border-radius: 100px;
+        font-family: Roboto-Bold;
+        font-size: 10px;
+        color: #ffffff;
+        background: #0976d3;
+    }
+    
+    .profile-pdf__exp {
+        padding: 24px 30px;
+        border-bottom: 2px solid #eff4f8;
+    }
+    
+    .profile-pdf__exp-item {
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eff4f8;
+    }
+    
+    .profile-pdf__exp-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    .profile-pdf__exp-item .profile-pdf__title3 {
+        margin-bottom: 10px;
+    }
+    
+    .profile-pdf__exp-tgroup {
+        display: flex;
+    }
+    
+    .profile-pdf__exp-tgroup .profile-pdf__text2 {
+        width: 130px;
+        margin-right: 10px;
+    }
+    
+    .profile-pdf__exp-tgroup .profile-pdf__text3 {
+        width: 650px;
+    }
+    
+    .profile-pdf__course {
+        padding: 24px 30px;
+        border-bottom: 2px solid #eff4f8;
+    }
+    
+    .profile-pdf__course-item {
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eff4f8;
+    }
+    
+    .profile-pdf__course-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    .profile-pdf__course-item .profile-pdf__title3 {
+        margin-bottom: 10px;
+    }
+    
+    .profile-pdf__awards {
+        padding: 24px 30px;
+        border-bottom: 2px solid #eff4f8;
+    }
+    
+    .profile-pdf__awards-item {
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eff4f8;
+    }
+    
+    .profile-pdf__awards-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    .profile-pdf__awards-item .profile-pdf__title3 {
+        margin-bottom: 10px;
+    }
+    
+    .profile-pdf__awards-tgroup {
+        display: flex;
+    }
+    
+    .profile-pdf__awards-tgroup .profile-pdf__text2 {
+        width: 130px;
+        margin-right: 10px;
+    }
+    
+    .profile-pdf__awards-tgroup .profile-pdf__text3 {
+        width: 650px;
+    }
+    
+    .profile-pdf__awards-ogroup {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .profile-pdf__awards-igroup {
+        display: flex;
+        width: 370px;
+    }
+    
+    .profile-pdf__awards-igroup:last-child {
+        width: 400px;
+    }
+    
+    .profile-pdf__awards-igroup .profile-pdf__text2 {
+        width: 130px;
+        margin-right: 10px;
+    }
+    
+    .profile-pdf__awards-igroup .profile-pdf__text3 {
+        width: 245px;
+    }
+    
+    .profile-pdf__scores {
+        padding: 24px 30px;
+        border-bottom: 2px solid #eff4f8;
+    }
+    
+    .profile-pdf__scores-item {
+        display: flex;
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eff4f8;
+    }
+    
+    .profile-pdf__scores-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    .profile-pdf__scores-number {
+        display: flex;
+        align-items: center;
+        width: 130px;
+        margin-right: 10px;
+        font-family: Roboto-Light;
+        font-size: 32px;
+        text-align: center;
+        color: #0976d3;
+    }
+    
+    .profile-pdf__scores-detail {
+        width: 650px;
+    }
+    
+    .profile-pdf__scores-detail .profile-pdf__title3 {
+        margin-bottom: 8px;
+    }
+    
+    .profile-pdf__lan {
+        padding: 24px 30px 50px;
+    }
+    
+    .profile-pdf__lan-item {
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eff4f8;
+    }
+    
+    .profile-pdf__lan-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    .profile-pdf__lan-item .profile-pdf__title3 {
+        margin-bottom: 10px;
+    }
+</style>
+<div class="profile-pdf">
+    <div class="profile-pdf__info">
+        <div class="profile-pdf__avata">
+            <img src="assets/images/dcb.png" alt="">
+        </div>
+        <div class="profile-pdf__info-general">
+            <div class="profile-pdf__title1">Doãn Chí Bình</div>
+            <div class="profile-pdf__info-detail">
+                <div class="profile-pdf__info-general-left">
+                    <div class="profile-pdf__text1">Master sword</div>
+                    <div class="profile-pdf__text1">binhdaica@toanchan.com</div>
+                    <div class="profile-pdf__text1">999 999 999</div>
+                    <div class="profile-pdf__text1">Chung Nam Sơn</div>
+                </div>
+                <div class="profile-pdf__info-general-right">
+                    <div class="profile-pdf__text1">www.facebook.com/binhdaica</div>
+                    <div class="profile-pdf__text1">www.linkedin.com/binhdaica</div>
+                </div>
+
+            </div>
+            <div class="profile-pdf__text1">Nhất hoa nhất thế giới, nhất diệp nhất như lai.</div>
+        </div>
+    </div>
+    <!-- end info -->
+
+    <div class="profile-pdf__skill">
+        <div class="profile-pdf__title2">Kĩ năng</div>
+        <div class="profile-pdf__skill-item">
+            <div class="profile-pdf__title3">Management</div>
+            <div class="profile-pdf__skill-bar">
+                <div class="profile-pdf__skill-level" style="width:80px">Sơ cấp</div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__skill-item">
+            <div class="profile-pdf__title3">Python</div>
+            <div class="profile-pdf__skill-bar">
+                <div class="profile-pdf__skill-level" style="width:160px">Trung cấp</div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__skill-item">
+            <div class="profile-pdf__title3">PHP/CMMI</div>
+            <div class="profile-pdf__skill-bar">
+                <div class="profile-pdf__skill-level" style="width:240px">Cao cấp</div>
+            </div>
+        </div>
+        <!-- // -->
+    </div>
+    <!-- end skill -->
+
+    <div class="profile-pdf__exp">
+        <div class="profile-pdf__title2">Kinh nghiệm</div>
+        <div class="profile-pdf__exp-item">
+            <div class="profile-pdf__title3">Thevngeek Company</div>
+            <div class="profile-pdf__exp-tgroup">
+                <div class="profile-pdf__text2">Thời gian làm việc:</div>
+                <div class="profile-pdf__text3">7/2011 - Hiện tại</div>
+            </div>
+            <div class="profile-pdf__exp-tgroup">
+                <div class="profile-pdf__text2">Đôi nét về công ty:</div>
+                <div class="profile-pdf__text3">Tôi đã và đang có khoảng thời gian tuyệt vời khi công tác tại Thevngeek Company</div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__exp-item">
+            <div class="profile-pdf__title3">Thevngeek Company</div>
+            <div class="profile-pdf__exp-tgroup">
+                <div class="profile-pdf__text2">Thời gian làm việc:</div>
+                <div class="profile-pdf__text3">7/2011 - Hiện tại</div>
+            </div>
+            <div class="profile-pdf__exp-tgroup">
+                <div class="profile-pdf__text2">Đôi nét về công ty:</div>
+                <div class="profile-pdf__text3">Tôi đã và đang có khoảng thời gian tuyệt vời khi công tác tại Thevngeek Company</div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__exp-item">
+            <div class="profile-pdf__title3">Thevngeek Company</div>
+            <div class="profile-pdf__exp-tgroup">
+                <div class="profile-pdf__text2">Thời gian làm việc:</div>
+                <div class="profile-pdf__text3">7/2011 - Hiện tại</div>
+            </div>
+            <div class="profile-pdf__exp-tgroup">
+                <div class="profile-pdf__text2">Đôi nét về công ty:</div>
+                <div class="profile-pdf__text3">Tôi đã và đang có khoảng thời gian tuyệt vời khi công tác tại Thevngeek Company</div>
+            </div>
+        </div>
+    </div>
+    <!-- end exp -->
+
+    <div class="profile-pdf__course">
+        <div class="profile-pdf__title2">Khóa học</div>
+        <div class="profile-pdf__course-item">
+            <div class="profile-pdf__title3">Sed vitae dui pellentesque, facilisis diam in.</div>
+            <div class="profile-pdf__text2">Proin convallis, nunc a egestas convallis, nisl leo aliquam ipsum, commodo finibus.</div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__course-item">
+            <div class="profile-pdf__title3">Sed vitae dui pellentesque, facilisis diam in.</div>
+            <div class="profile-pdf__text2">Proin convallis, nunc a egestas convallis, nisl leo aliquam ipsum, commodo finibus.</div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__course-item">
+            <div class="profile-pdf__title3">Sed vitae dui pellentesque, facilisis diam in.</div>
+            <div class="profile-pdf__text2">Proin convallis, nunc a egestas convallis, nisl leo aliquam ipsum, commodo finibus.</div>
+        </div>
+    </div>
+    <!-- end course -->
+
+    <div class="profile-pdf__awards">
+        <div class="profile-pdf__title2">Giải thưởng</div>
+        <div class="profile-pdf__awards-item">
+            <div class="profile-pdf__title3">Giải thưởng tin học xuất sắc</div>
+            <div class="profile-pdf__awards-tgroup">
+                <div class="profile-pdf__text2">Phát hành:</div>
+                <div class="profile-pdf__text3">Công ty TNHH công nghệ Kium</div>
+            </div>
+            <div class="profile-pdf__awards-ogroup">
+                <div class="profile-pdf__awards-igroup">
+                    <div class="profile-pdf__text2">Thời gian:</div>
+                    <div class="profile-pdf__text3">12/10/2016</div>
+                </div>
+                <div class="profile-pdf__awards-igroup">
+                    <div class="profile-pdf__text2">Nơi tổ chức:</div>
+                    <div class="profile-pdf__text3">Khách sạn Blue Sea</div>
+                </div>
+            </div>
+            <div class="profile-pdf__awards-tgroup">
+                <div class="profile-pdf__text2">Giới thiệu:</div>
+                <div class="profile-pdf__text3">Praesent lobortis mauris quis nunc ullamcorper euismod. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra</div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__awards-item">
+            <div class="profile-pdf__title3">Giải thưởng tin học xuất sắc</div>
+            <div class="profile-pdf__awards-tgroup">
+                <div class="profile-pdf__text2">Phát hành:</div>
+                <div class="profile-pdf__text3">Công ty TNHH công nghệ Kium</div>
+            </div>
+            <div class="profile-pdf__awards-ogroup">
+                <div class="profile-pdf__awards-igroup">
+                    <div class="profile-pdf__text2">Thời gian:</div>
+                    <div class="profile-pdf__text3">12/10/2016</div>
+                </div>
+                <div class="profile-pdf__awards-igroup">
+                    <div class="profile-pdf__text2">Nơi tổ chức:</div>
+                    <div class="profile-pdf__text3">Khách sạn Blue Sea</div>
+                </div>
+            </div>
+            <div class="profile-pdf__awards-tgroup">
+                <div class="profile-pdf__text2">Giới thiệu:</div>
+                <div class="profile-pdf__text3">Praesent lobortis mauris quis nunc ullamcorper euismod. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra</div>
+            </div>
+        </div>
+    </div>
+    <!-- end awards -->
+
+    <div class="profile-pdf__scores">
+        <div class="profile-pdf__title2">Điểm đạt được</div>
+        <div class="profile-pdf__scores-item">
+            <div class="profile-pdf__scores-number">10150</div>
+            <div class="profile-pdf__scores-detail">
+                <div class="profile-pdf__title3">Pellentesque egestas tempus sem et efficitur</div>
+                <div class="profile-pdf__text2">Duis consectetur risus quis elementum placerat. Nullam a tempor dolor. Aenean tristique rhoncus auctor.</div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__scores-item">
+            <div class="profile-pdf__scores-number">10150</div>
+            <div class="profile-pdf__scores-detail">
+                <div class="profile-pdf__title3">Pellentesque egestas tempus sem et efficitur</div>
+                <div class="profile-pdf__text2">Duis consectetur risus quis elementum placerat. Nullam a tempor dolor. Aenean tristique rhoncus auctor.</div>
+            </div>
+        </div>
+    </div>
+    <!-- end scores -->
+
+    <div class="profile-pdf__lan">
+        <div class="profile-pdf__title2">Ngôn ngữ</div>
+        <div class="profile-pdf__lan-item">
+            <div class="profile-pdf__title3">Tiếng Việt</div>
+            <div class="profile-pdf__text2">Trình độ chuyên nghiệp</div>
+        </div>
+        <!-- // -->
+        <div class="profile-pdf__lan-item">
+            <div class="profile-pdf__title3">English</div>
+            <div class="profile-pdf__text2">Trình độ chuyên nghiệp</div>
+        </div>
+    </div>
+    <!-- end lan -->
+
+</div>
