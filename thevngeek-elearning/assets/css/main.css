@@ -1613,10 +1613,6 @@ textarea {
   .commentContentEdit.active {
     display: block; }
 
-.commentContentCurrentText.collapse {
-  max-height: 5.3125rem;
-  overflow: hidden; }
-
 .jsCommentReadMore {
   display: none; }
   .jsCommentReadMore.active {
@@ -4474,13 +4470,12 @@ textarea {
   flex: 1 1 0%;
   width: 100%; }
 
-.lesson .lesson-bar__link.active {
-  color: #0976d3; }
-  .lesson .lesson-bar__link.active .lesson-bar__dot {
-    background: #0976d3; }
 .lesson .hamburger {
   display: none;
   align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 59px;
   padding: 0.78125rem;
   border: 0.0625rem solid #eff4f8;
   border-radius: 0.1875rem;
@@ -4488,9 +4483,7 @@ textarea {
   .lesson .hamburger:hover {
     opacity: 1; }
   .lesson .hamburger.is-active {
-    position: absolute;
-    right: -45px;
-    z-index: 1; }
+    right: -45px; }
 .lesson .hamburger-box {
   width: 2rem; }
 .lesson .hamburger-inner,
@@ -4498,6 +4491,29 @@ textarea {
 .lesson .hamburger-inner:before {
   width: 2rem;
   background-color: #fff; }
+
+.lesson-list {
+  position: relative;
+  margin-bottom: 0; }
+  .lesson-list .lesson-bar__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: normal;
+    cursor: pointer; }
+    .lesson-list .lesson-bar__title span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 0.3125rem;
+      white-space: nowrap; }
+    .lesson-list .lesson-bar__title i {
+      transition: all 0.3s; }
+      .lesson-list .lesson-bar__title i::before {
+        color: #fff; }
+  .lesson-list .lesson-bar__link.active {
+    color: #0976d3; }
+    .lesson-list .lesson-bar__link.active .lesson-bar__dot {
+      background: #0976d3; }
 
 .lesson-content {
   padding-bottom: 1.875rem; }
@@ -4605,6 +4621,18 @@ textarea {
 .jsLessonListDetail.active {
   display: block; }
 
+.jsLessonListMenu.open i {
+  transform: rotate(-90deg); }
+
+.jsLessonListBody {
+  display: none; }
+  .jsLessonListBody.open {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: #fff; }
+
 @media (min-width: 34rem) {
   .lesson-content__title {
     font-size: 1.875rem; }
@@ -4624,6 +4652,18 @@ textarea {
     width: 46%;
     text-align: right; } }
 @media (min-width: 62rem) {
+  .lesson-list {
+    margin-bottom: 1.875rem; }
+    .lesson-list .lesson-bar__title {
+      cursor: default; }
+      .lesson-list .lesson-bar__title span {
+        margin-right: 0; }
+      .lesson-list .lesson-bar__title i {
+        display: none; }
+
+  .jsLessonListBody {
+    display: block; }
+
   .lesson .hamburger {
     display: flex; }
 
