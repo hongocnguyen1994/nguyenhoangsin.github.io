@@ -915,9 +915,9 @@
     </div>
     <a class="profile-bar__link " href="profile-info.html"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
     <a class="profile-bar__link " href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
-    <a class="profile-bar__link " href="profile-test.html"><i class="icon-icon_ket_qua_bai_thi"></i>Kết quả bài thi</a>
+    <a class="profile-bar__link active" href="profile-test.html"><i class="icon-icon_ket_qua_bai_thi"></i>Kết quả bài thi</a>
     <a class="profile-bar__link " href="profile-blog.html"><i class="icon-icon_danh_sach_blog"></i>Danh sách blog</a>
-    <a class="profile-bar__link active" href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
+    <a class="profile-bar__link " href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
     <div class="profile-bar__social">
         <a class="profile-bar__social-link" href="#">
             <i class="icon-icon_rss_trang_ca_nhan">
@@ -952,15 +952,141 @@
 <!-- END PROFILE BAR -->
                     </div>
                     <div class="col-lg-9">
-                        <!-- CHANGE PASSWORD -->
-<section class="profile-password">
-    <h2 class="profile-password__title">Thay đổi mật khẩu</h2>
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu cũ">
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu mới">
-    <input class="input-blue profile-password__input" type="password" placeholder="Nhập lại mật khẩu">
-    <button class="btn-blue profile-password__base">Thay đổi</button>
-</section>
-<!-- END CHANGE PASSWORD -->
+                        <!-- PROFILE TEST -->
+<div class="profile-test">
+    <div class="profile-test__header">
+        <div class="profile-test__title">Kết quả bài thi</div>
+        <div class="ui selection dropdown" tabindex="0">
+            <input type="hidden" name="level">
+            <i class="dropdown icon icon-icon_dropdown_menu"></i>
+            <div class="default text">Tất cả khóa học</div>
+            <div class="menu transition hidden" tabindex="-1">
+                <div class="item" data-value="1">Sơ cấp</div>
+                <div class="item" data-value="0">Trung cấp</div>
+                <div class="item" data-value="0">Cao cấp</div>
+                <div class="item" data-value="0">Siêu cấp</div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-test__body">
+        <div class="profile-test__content">
+            <div class="profile-test__table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Tên bài thi</th>
+                            <th scope="col">Điểm số</th>
+                            <th scope="col">Trạng thái</th>
+                            <th scope="col">Thời gian</th>
+                            <th scope="col">Ngày thi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="success">Hoàn thành</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="failed">Thất bại</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="success">Hoàn thành</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="failed">Thất bại</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="success">Hoàn thành</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="failed">Thất bại</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="success">Hoàn thành</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="failed">Thất bại</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="success">Hoàn thành</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><a href="profile-test-result.html">Minaworks 2</a></td>
+                            <td>1/1(100%)</td>
+                            <td class="failed">Thất bại</td>
+                            <td>3 giây (3/7)</td>
+                            <td>2017-08-09 16:58:26</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="profile-test__nav">
+                <!-- PAGINATION -->
+<div class="paginations">
+    <div class="paginations__text">Hiển thị từ 1 đến 7 trên tổng số 214 bài viết</div>
+    <nav class="paginations__nav">
+        <a class="paginations__link" href="#"><i class="icon-icon_first_pagination"></i></a>
+        <a class="paginations__link" href="#"><i class="icon-icon_prev_pagination"></i></a>
+        <a class="paginations__link active" href="#">1</a>
+        <a class="paginations__link" href="#">2</a>
+        <a class="paginations__link" href="#">3</a>
+        <a class="paginations__link" href="#"><i class="icon-icon_next_pagination"></i></a>
+        <a class="paginations__link" href="#"><i class="icon-icon_end_pagination"></i></a>
+    </nav>
+</div>
+<!-- END PAGINATION -->
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- END PROFILE TEST -->
                     </div>
                 </div>
             </div>
