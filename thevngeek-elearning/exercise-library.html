@@ -35,7 +35,7 @@
                         <!-- block scroll -->
                         <div id="blockScroll" class="block-scroll">
                             <!-- logged -->
-                            <div class="dropdown logged-notifications">
+                            <div class="dropdown logged-notifications d-none">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="icon-icon_notification_sau_dang_nhap logged-notifications__icon"><span class="logged-notifications__total">12</span></i>
                                     </button>
@@ -125,7 +125,7 @@
                                     <div class="logged-notifications__viewmore"><a href="#">Xêm thêm</a></div>
                                 </div>
                             </div>
-                            <div class="dropdown logged-user">
+                            <div class="dropdown logged-user d-none">
                                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img class="logged-user__avata" src="assets/images/dcb.png" alt="">
                                         <span class="logged-user__name">Doãn Chí Bình</span>
@@ -140,8 +140,8 @@
                             </div>
                             <!-- end logged -->
                             <!-- not logged -->
-                            <a class="register large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
-                            <a class="login large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
+                            <a class="register large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
+                            <a class="login large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
                             <!-- end not logged -->
                             <div class="ui selection dropdown">
                                 <input type="hidden" name="language" value="0">
@@ -575,7 +575,7 @@
         <div class="small-header-bar__logo"><img src="assets/images/logo-small.png" alt=""></div>
         <div class="small-header-bar__action">
             <!-- logged -->
-            <div class="dropdown logged-noti-small">
+            <div class="dropdown logged-noti-small d-none">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="icon-icon_notification_sau_dang_nhap logged-noti-small__icon"><span class="logged-noti-small__total">12</span></i>
                                 </button>
@@ -665,7 +665,7 @@
                     <div class="logged-noti-small__viewmore"><a href="#">Xêm thêm</a></div>
                 </div>
             </div>
-            <div class="dropdown logged-user-small">
+            <div class="dropdown logged-user-small d-none">
                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logged-user-small__avata" src="assets/images/dcb.png" alt=""></button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Trang cá nhân</a>
@@ -677,8 +677,8 @@
             </div>
             <!-- end logged -->
             <!-- not logged -->
-            <button class="register small-header-bar__btn d-none"><i class="icon-icon_dang_ky_top"></i></button>
-            <button class="login small-header-bar__btn d-none"><i class="icon-icon_dang_nhap_top"></i></button>
+            <button class="register small-header-bar__btn"><i class="icon-icon_dang_ky_top"></i></button>
+            <button class="login small-header-bar__btn"><i class="icon-icon_dang_nhap_top"></i></button>
             <!-- end not logged -->
             <div class="ui selection dropdown">
                 <input type="hidden" name="language" value="0">
@@ -903,67 +903,664 @@
     </div>
 </aside>
 <!-- END MODAL FORGOT PASSWORD -->
-        <main class="body-content-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <!-- PROFILE BAR -->
-<div class="profile-bar">
-    <div class="profile-bar__avata">
-        <img class="profile-bar__avata-img" src="assets/images/b4.png" alt="">
-        <span class="profile-bar__avata-name">Doãn Chí Bình</span>
-    </div>
-    <a class="profile-bar__link " href="profile-info.html"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
-    <a class="profile-bar__link " href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
-    <a class="profile-bar__link " href="profile-test.html"><i class="icon-icon_ket_qua_bai_thi"></i>Kết quả bài thi</a>
-    <a class="profile-bar__link " href="profile-blog.html"><i class="icon-icon_danh_sach_blog"></i>Danh sách blog</a>
-    <a class="profile-bar__link active" href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
-    <div class="profile-bar__social">
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_rss_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--rss'>Lấy RSS của <span>Doãn Chí Bình</span></div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_facebook_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--fb'>Theo dõi <span>Doãn Chí Bình</span> trên facebook</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_youtube_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--yt'>Theo dõi <span>Doãn Chí Bình</span> trên youtube</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_linkedin_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--in'>Theo dõi <span>Doãn Chí Bình</span> trên linkedin</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_github_trang_ca_nhan"></i>
-            <div class='profile-bar__popup profile-bar__popup--gh'>Theo dõi <span>Doãn Chí Bình</span> trên github</div>
-        </a>
-    </div>
-</div>
-<!-- END PROFILE BAR -->
+        <main>
+            <!-- EXERCISE LIBRARY -->
+<section class="library-home lesson-library">
+    <div class="container">
+        <div class="library-home-title">
+            <h2 class="library-home-title__sup">Thư viện bài tập</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-4">
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập lập trình</a>
                     </div>
-                    <div class="col-lg-9">
-                        <!-- CHANGE PASSWORD -->
-<section class="profile-password">
-    <h2 class="profile-password__title">Thay đổi mật khẩu</h2>
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu cũ">
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu mới">
-    <input class="input-blue profile-password__input" type="password" placeholder="Nhập lại mật khẩu">
-    <button class="btn-blue profile-password__base">Thay đổi</button>
-</section>
-<!-- END CHANGE PASSWORD -->
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập lập trình</a>
+                    </div>
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập lập trình</a>
+                    </div>
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
                     </div>
                 </div>
             </div>
+            <!-- // -->
+            <div class="col-sm-12 col-lg-4">
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập tiếng anh</a>
+                    </div>
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập tiếng anh</a>
+                    </div>
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập tiếng anh</a>
+                    </div>
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                    </div>
+                </div>
+            </div>
+            <!-- // -->
+            <div class="col-sm-12 col-lg-4">
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập khai phá dữ liệu</a>
+                    </div>
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="library-home-learn">
+                    <div class="library-home-learn__header">
+                        <a class="library-home-learn__title" href="#">Bài tập khai phá dữ liệu</a>
+                    </div>
+                    <div class="library-home-learn__body">
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                        <div class="library-home-learn-blade">
+                            <a href="#" class="library-home-learn-blade__title">
+                                <span class="library-home-learn-blade__icon"><i></i></span>
+                                <span class="library-home-learn-blade__text">Praesent tincidunt leo non velit dictum.</span>
+                            </a>
+                        </div>
+                        <!-- end blade -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="line-ligth-blue"></div>
+</div>
+<!-- END EXERCISE LIBRARY -->
         </main>
         <!-- FOOTER -->
 <footer class="footer">

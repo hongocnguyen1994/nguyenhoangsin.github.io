@@ -914,10 +914,10 @@
         <span class="profile-bar__avata-name">Doãn Chí Bình</span>
     </div>
     <a class="profile-bar__link " href="profile-info.html"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
-    <a class="profile-bar__link " href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
+    <a class="profile-bar__link active" href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
     <a class="profile-bar__link " href="profile-test.html"><i class="icon-icon_ket_qua_bai_thi"></i>Kết quả bài thi</a>
     <a class="profile-bar__link " href="profile-blog.html"><i class="icon-icon_danh_sach_blog"></i>Danh sách blog</a>
-    <a class="profile-bar__link active" href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
+    <a class="profile-bar__link " href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
     <div class="profile-bar__social">
         <a class="profile-bar__social-link" href="#">
             <i class="icon-icon_rss_trang_ca_nhan">
@@ -952,15 +952,81 @@
 <!-- END PROFILE BAR -->
                     </div>
                     <div class="col-lg-9">
-                        <!-- CHANGE PASSWORD -->
-<section class="profile-password">
-    <h2 class="profile-password__title">Thay đổi mật khẩu</h2>
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu cũ">
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu mới">
-    <input class="input-blue profile-password__input" type="password" placeholder="Nhập lại mật khẩu">
-    <button class="btn-blue profile-password__base">Thay đổi</button>
-</section>
-<!-- END CHANGE PASSWORD -->
+                        <!-- PROFILE CHART -->
+<div class="profile-chart">
+    <div class="profile-chart__header">
+        <div class="profile-chart__title">Thống kê theo khoá học</div>
+        <div class="profile-chart__select1">
+            <div class="ui selection dropdown" tabindex="0">
+                <input type="hidden" name="level">
+                <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                <div class="default text">Khóa học lập trình PHP</div>
+                <div class="menu transition hidden" tabindex="-1">
+                    <div class="item" data-value="1">Sơ cấp</div>
+                    <div class="item" data-value="0">Trung cấp</div>
+                    <div class="item" data-value="0">Cao cấp</div>
+                    <div class="item" data-value="0">Siêu cấp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-chart__body">
+        <div class="content">
+            <div class="wrapper">
+                <canvas id="chart-0"></canvas>
+            </div>
+            <div class="toolbar">
+                <button onclick="togglePropagate(this)">Propagate</button>
+                <button onclick="toggleSmooth(this)">Smooth</button>
+                <button onclick="randomize(this)">Randomize</button>
+            </div>
+            <div id="chart-analyser" class="analyser"></div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="profile-chart">
+    <div class="profile-chart__header">
+        <div class="profile-chart__title">Thống kê tổng quát quá trình học tập</div>
+        <div class="profile-chart__select2">
+            <div class="ui selection dropdown" tabindex="0">
+                <input type="hidden" name="level">
+                <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                <div class="default text">--Chọn năm--</div>
+                <div class="menu transition hidden" tabindex="-1">
+                    <div class="item" data-value="1">2017</div>
+                    <div class="item" data-value="0">2018</div>
+                    <div class="item" data-value="0">2019</div>
+                </div>
+            </div>
+            <div class="ui selection dropdown" tabindex="0">
+                <input type="hidden" name="level">
+                <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                <div class="default text">--Chọn tháng--</div>
+                <div class="menu transition hidden" tabindex="-1">
+                    <div class="item" data-value="1">1</div>
+                    <div class="item" data-value="1">2</div>
+                    <div class="item" data-value="1">3</div>
+                    <div class="item" data-value="1">4</div>
+                    <div class="item" data-value="1">5</div>
+                    <div class="item" data-value="1">6</div>
+                    <div class="item" data-value="1">7</div>
+                    <div class="item" data-value="1">8</div>
+                    <div class="item" data-value="1">9</div>
+                    <div class="item" data-value="1">10</div>
+                    <div class="item" data-value="1">11</div>
+                    <div class="item" data-value="1">12</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-chart__body">
+
+    </div>
+</div>
+<!-- END PROFILE CHART -->
                     </div>
                 </div>
             </div>
@@ -1138,6 +1204,7 @@
 <script src="assets/js/vendor.min.js"></script>
 <script src="assets/js/main.min.js"></script>
 <!-- END SCRIPT -->
+    <script src="assets/js/Chart.custom.js"></script>
 </body>
 
 </html>
