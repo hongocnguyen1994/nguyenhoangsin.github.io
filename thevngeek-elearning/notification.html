@@ -35,7 +35,7 @@
                         <!-- block scroll -->
                         <div id="blockScroll" class="block-scroll">
                             <!-- logged -->
-                            <div class="dropdown logged-notifications d-none">
+                            <div class="dropdown logged-notifications">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="icon-icon_notification_sau_dang_nhap logged-notifications__icon"><span class="logged-notifications__total">12</span></i>
                                     </button>
@@ -125,7 +125,7 @@
                                     <div class="logged-notifications__viewmore"><a href="#">Xêm thêm</a></div>
                                 </div>
                             </div>
-                            <div class="dropdown logged-user d-none">
+                            <div class="dropdown logged-user">
                                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img class="logged-user__avata" src="assets/images/dcb.png" alt="">
                                         <span class="logged-user__name">Doãn Chí Bình</span>
@@ -140,8 +140,8 @@
                             </div>
                             <!-- end logged -->
                             <!-- not logged -->
-                            <a class="register large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
-                            <a class="login large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
+                            <a class="register large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
+                            <a class="login large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
                             <!-- end not logged -->
                             <div class="ui selection dropdown">
                                 <input type="hidden" name="language" value="0">
@@ -575,7 +575,7 @@
         <div class="small-header-bar__logo"><img src="assets/images/logo-small.png" alt=""></div>
         <div class="small-header-bar__action">
             <!-- logged -->
-            <div class="dropdown logged-noti-small d-none">
+            <div class="dropdown logged-noti-small">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="icon-icon_notification_sau_dang_nhap logged-noti-small__icon"><span class="logged-noti-small__total">12</span></i>
                                 </button>
@@ -665,7 +665,7 @@
                     <div class="logged-noti-small__viewmore"><a href="#">Xêm thêm</a></div>
                 </div>
             </div>
-            <div class="dropdown logged-user-small d-none">
+            <div class="dropdown logged-user-small">
                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logged-user-small__avata" src="assets/images/dcb.png" alt=""></button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Trang cá nhân</a>
@@ -677,8 +677,8 @@
             </div>
             <!-- end logged -->
             <!-- not logged -->
-            <button class="register small-header-bar__btn"><i class="icon-icon_dang_ky_top"></i></button>
-            <button class="login small-header-bar__btn"><i class="icon-icon_dang_nhap_top"></i></button>
+            <button class="register small-header-bar__btn d-none"><i class="icon-icon_dang_ky_top"></i></button>
+            <button class="login small-header-bar__btn d-none"><i class="icon-icon_dang_nhap_top"></i></button>
             <!-- end not logged -->
             <div class="ui selection dropdown">
                 <input type="hidden" name="language" value="0">
@@ -903,130 +903,94 @@
     </div>
 </aside>
 <!-- END MODAL FORGOT PASSWORD -->
-        <main class="body-content-wrap">
+        <main>
             <div class="container">
-                <div class="exercise">
-                    <h2 class="exercise__title">Sed vitae dui pellentesque, facilisis diam in</h2>
-                    <div class="exercise__info">
-                        <div class="exercise__text1">Ngày thi: <span class="exercise__text2">2017-07-17 14:23:05</span></div>
-                        <div class="exercise__space">|</div>
-                        <div class="exercise__text1">Số câu hỏi: <span class="exercise__text2">40</span></div>
-                        <div class="exercise__space">|</div>
-                        <div class="exercise__text1">Số điểm phải vượt qua: <span class="exercise__text2">200</span></div>
-                        <div class="exercise__space">|</div>
-                        <div class="exercise__text1">Thời gian thi: <span class="exercise__text2">40:00</span></div>
+                <div class="notification">
+                    <div class="notification__body">
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
+                        <!-- end noti -->
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
+                        <!-- end noti -->
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
+                        <!-- end noti -->
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
+                        <!-- end noti -->
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
+                        <!-- end noti -->
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
+                        <!-- end noti -->
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
+                        <!-- end noti -->
+                        <a class="logged-notifications__blade" href="#">
+                            <div class="logged-notifications__avata">
+                                <img src="assets/images/lbc.png" alt="">
+                            </div>
+                            <div class="logged-notifications__content">
+                                <div class="logged-notifications__detail"><span class="logged-notifications__name">Mỹ Tuyết</span> đã bình luận trong bài học: “Cách để quản lý giỏi hơn”</div>
+                                <div class="logged-notifications__time">10 phút trước</div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="exercise__content">
-                        <div class="exercise__body">
-                            <div class="exercise__item">
-                                <div class="exercise__qs">01. What is PHP?</div>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs1"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs1"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs1"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs1"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                            </div>
-                            <!-- end item -->
-                            <div class="exercise__item">
-                                <div class="exercise__qs">02. What is PHP?</div>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs2"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs2"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs2"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs2"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                            </div>
-                            <!-- end item -->
-                            <div class="exercise__item">
-                                <div class="exercise__qs">03. What is PHP?</div>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs3"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs3"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs3"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                                <label class="exercise__as">
-                                    <input class="exercise__input" type="radio" name="qs3"><span class="exercise__status"></span>
-                                    <span class="exercise__as-text">PHP is a Programming Language and is a Platform</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="exercise__paw">
-                            <!-- PAGINATION -->
-<div class="paginations">
-    <div class="paginations__text">Hiển thị từ 1 đến 7 trên tổng số 214 bài viết</div>
-    <nav class="paginations__nav">
-        <a class="paginations__link" href="#"><i class="icon-icon_first_pagination"></i></a>
-        <a class="paginations__link" href="#"><i class="icon-icon_prev_pagination"></i></a>
-        <a class="paginations__link active" href="#">1</a>
-        <a class="paginations__link" href="#">2</a>
-        <a class="paginations__link" href="#">3</a>
-        <a class="paginations__link" href="#"><i class="icon-icon_next_pagination"></i></a>
-        <a class="paginations__link" href="#"><i class="icon-icon_end_pagination"></i></a>
-    </nav>
-</div>
-<!-- END PAGINATION -->
-                        </div>
-                        <div class="exercise-detail__footer">
-                            <a class="btn-blue exercise-detail__btn jsExerciseDone" href="javascript:void(0)"><i class="icon-icon_hoan_thanh"></i>Hoàn thành</a>
-                        </div>
-                    </div>
+                    <a class="comment__text6" href="#">Xem thêm 10 thông báo</a>
                 </div>
             </div>
         </main>
-        <!-- CLOCK -->
-<aside class="clock">
-    <div class="clock__wrap">
-        <div class="clock__time jsClockTime"><span id="clockTimeM">3</span>:<span id="clockTimeS">3</span></div>
-        <div class="clock__icon jsClockIcon"><i class="icon-icon_clock"></i></div>
-    </div>
-</aside>
-<!-- END CLOCK -->
-        <!-- // -->
-        <!-- MODAL EXERCISE -->
-<aside class="ui modal modal-exercise jsModalExercise">
-    <div class="modal-exercise__body">
-        <i class="icon-icon_hoan_thanh_bai_thi"></i>
-        <div class="modal-exercise__noti">Bạn đã hoàn thành bài thi<br>"Sed vitae dui pellentesque, facilisis diam in"</div>
-        <div class="exercise__info">
-            <div class="exercise__text1">Ngày thi: <span class="exercise__text2">2017-07-17 14:23:05</span></div>
-            <div class="exercise__text1">Số câu đã trả lời: <span class="exercise__text2">40/40</span></div>
-            <div class="exercise__text1">Thời gian thi: <span class="exercise__text2">40:00</span></div>
-        </div>
-    </div>
-    <div class="modal-exercise__footer">
-        <a href="#" class="close btn-blue modal-exercise__btn">Về trang trước</a>
-    </div>
-</aside>
-<!--END MODAL EXERCISE -->
-        <!-- // -->
         <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
