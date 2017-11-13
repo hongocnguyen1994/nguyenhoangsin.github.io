@@ -951,8 +951,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-5 d-flex flex-column flex-sm-row flex-lg-column flex-xl-row justify-content-sm-between align-items-lg-center">
-                                    <button class="btn-blue"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Đánh giá công ty</button>
-                                    <button class="btn-blue"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Đánh giá phỏng vấn</button>
+                                    <button class="btn-blue jsBtnCompany"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Đánh giá công ty</button>
+                                    <button class="btn-blue jsBtnInterview"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Đánh giá phỏng vấn</button>
                                 </div>
                             </div>
                         </div>
@@ -1945,6 +1945,326 @@
 <!-- BACK TO TOP -->
 <div class="scroll-status back-top" title="Về đầu trang"><i class="icon-icon_dropdown_menu"></i></div>
 <!-- END BACK TO TOP -->
+        <!-- // -->
+        <!-- MODAL COMPANY -->
+<aside class="ui modal large modal-company edit jsModalCompany">
+    <div class="modal-company__header">
+        <span class="modal-company__title">Đánh giá công ty riot game</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-company__body">
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <div class="modal-company__balde">
+                    <div class="modal-company__text">Đánh giá tổng quan</div>
+                    <div class="ui star rating huge" data-max-rating="5" data-rating="0"></div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="modal-company__balde">
+                    <div class="modal-company__text">Bạn là nhân viên hiện tại hay cũ?</div>
+                    <div class="radio-group">
+                        <label class="radio-group__blade"><input class="radio-group__input" type="radio" name="email"><span class="radio-group__status"></span>Hiện tại</label>
+                        <label class="radio-group__blade"><input class="radio-group__input" type="radio" name="email"><span class="radio-group__status"></span>Cũ</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-4">
+                <div class="modal-company__balde">
+                    <div class="modal-company__text">Số năm kinh nghiệm</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="modal-company__balde">
+            <div class="modal-company__text">Tiêu đề đánh giá</div>
+            <input type="text" class="input-profile modal-company__input" placeholder="Nhập...">
+        </div>
+        <!-- // -->
+        <div class="modal-company__balde">
+            <div class="modal-company__text">Ưu điểm</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <!-- // -->
+        <div class="modal-company__balde">
+            <div class="modal-company__text">Nhược điểm</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <!-- // -->
+        <div class="modal-company__balde end">
+            <div class="modal-company__text">Đề nghị</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+    </div>
+    <div class="modal-company__footer">
+        <a href="#" class="close btn-blue modal-company__btn"><i class="icon-icon_close_popup"></i> Hủy</a>
+        <a href="#" class="close btn-blue modal-company__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
+    </div>
+</aside>
+<!--END MODAL COMPANY -->
+        <!-- // -->
+        <!-- MODAL INTERVIEW -->
+<aside class="ui modal large modal-interview edit jsModalInterview">
+    <div class="modal-interview__header">
+        <span class="modal-interview__title">Đánh giá buổi phỏng vấn tại công ty riot game</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-interview__body">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Đánh giá tổng quan</div>
+                    <div class="ui star rating huge" data-max-rating="5" data-rating="0"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Quá trình phỏng vấn như thế nào?</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Vị trí ứng tuyển</div>
+                    <input type="text" class="input-profile modal-interview__input" placeholder="Nhập...">
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Số năm kinh nghiệm</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Ngôn ngữ sử dụng trong buổi phỏng vấn</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Trang phục trong buổi phỏng vấn</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="modal-interview__balde">
+            <div class="modal-interview__text">Mô tả quy trình phỏng vấn</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <!-- // -->
+        <div class="modal-interview__balde">
+            <div class="modal-interview__text">Câu hỏi phỏng vấn</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <!-- // -->
+        <div class="modal-interview__balde">
+            <div class="modal-interview__text">Trả lời</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Độ khó của quá trình phỏng vấn</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Bạn có nhận được offer hay không?</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="modal-interview__line"></div>
+        <div class="modal-interview__title-sub">Nói cho chúng tôi biết nhiều hơn</div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Bạn nhận được buổi pv bằng cách nào?</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Quy trình pv diễn ra trong vòng bao lâu?</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Thời gian diễn ra phỏng vấn</div>
+                    <input class="choose-date input-profile modal-exp__input" type="text" placeholder="dd/MM/yyyy">
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="modal-interview__balde">
+            <div class="modal-interview__text">Nơi tổ chức buổi phỏng vấn</div>
+            <input type="text" class="input-profile modal-interview__input" placeholder="Nhập...">
+        </div>
+        <!-- // -->
+        <div class="modal-interview__line"></div>
+        <div class="modal-interview__title-sub">Các bước trong quy trình phỏng vấn</div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Loại phỏng vấn</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Bài test</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-interview__balde">
+                    <div class="modal-interview__text">Các loại khác</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // -->
+        <div class="modal-interview__balde end">
+            <div class="modal-interview__text">Lời khuyên của bạn để chuẩn bị cho buổi phỏng vấn tốt</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <!-- // -->
+    </div>
+    <div class="modal-interview__footer">
+        <a href="#" class="close btn-blue modal-interview__btn"><i class="icon-icon_close_popup"></i> Hủy</a>
+        <a href="#" class="close btn-blue modal-interview__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
+    </div>
+</aside>
+<!--END MODAL INTERVIEW -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>
