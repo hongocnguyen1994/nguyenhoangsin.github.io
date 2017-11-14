@@ -13,7 +13,7 @@
 <!-- END STYLESHEET -->
 </head>
 
-<body>
+<body class="lesson-body">
     <div id="wrapper">
         <!-- HEADER -->
 <header class="header">
@@ -951,7 +951,7 @@
                 </div>
                 <!-- // -->
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-md-5">
                         <div class="lesson-content__author">
                             <a href="#" class="lesson-content__author-avata">
                                 <img src="assets/images/dcb.png" alt="">
@@ -962,8 +962,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 d-sm-flex justify-content-sm-end align-items-sm-center">
-                        <button class="btn-blue lesson-content__follow">Theo dõi khoá học</button>
+                    <div class="col-md-7 d-flex justify-content-end">
+                        <button class="btn-blue lesson-content__add jsPopupChannel" data-html="<div class='popup-channel'>
+    <div class='popup-channel__add'>
+        <input class='input-profile' type='text' placeholder='Nhập tên...'>
+        <button class='popup-channel__btn'><i class='fa fa-plus-square fa-2x' aria-hidden='true'></i></button>
+    </div>
+    <label class='popup-channel__group'>
+        <input class='d-none popup-channel__input' type='radio' name='channel'>
+        <span class='popup-channel__status'></span>
+        <span class='popup-channel__text'>Ngôn ngữ PHP nâng cao</span>
+    </label>
+    <label class='popup-channel__group'>
+            <input class='d-none popup-channel__input' type='radio' name='channel'>
+            <span class='popup-channel__status'></span>
+            <span class='popup-channel__text'>Các kiến thức về Java</span>
+        </label>
+</div>">Thêm vào kênh</button>
+                        <a class="btn-blue lesson-content__follow" href="#">Theo dõi</a>
                     </div>
                 </div>
                 <!-- // -->
