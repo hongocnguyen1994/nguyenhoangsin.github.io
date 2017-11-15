@@ -2133,6 +2133,52 @@ textarea {
   padding: 0;
   border-radius: 0; }
 
+.modal-channel {
+  border-radius: 0.125rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background: #fff; }
+  .modal-channel__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5625rem 1.875rem;
+    border-bottom: 0.0625rem solid #eff4f8; }
+  .modal-channel__title {
+    font-family: Montserrat-SemiBold;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    text-transform: uppercase;
+    color: #2c2c2c; }
+  .modal-channel__body {
+    display: block;
+    padding: 0.9375rem 1.875rem;
+    border-bottom: 0.0625rem solid #eff4f8; }
+  .modal-channel__balde {
+    width: 100%;
+    margin-bottom: 1.25rem; }
+    .modal-channel__balde.end {
+      margin-bottom: 0; }
+  .modal-channel__text {
+    margin-bottom: 0.375rem;
+    font-family: Roboto-Bold;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #666666; }
+  .modal-channel__footer {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    justify-content: flex-end; }
+  .modal-channel__btn {
+    width: 6.5625rem;
+    height: 2.5rem;
+    font-family: Montserrat-SemiBold;
+    font-size: 0.875rem; }
+    .modal-channel__btn i {
+      margin-right: 0.5rem;
+      font-size: 0.75rem; }
+    .modal-channel__btn:hover i::before {
+      color: #0976d3; }
+
 /* LAYOUTS */
 .header .block-scroll {
   display: flex; }
@@ -4532,6 +4578,89 @@ textarea {
     margin-bottom: 0; }
   .profile-blog__detail {
     width: 75%; } }
+.profile-channel {
+  background: #fff;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.07); }
+  .profile-channel__button {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.875rem; }
+  .profile-channel__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1.875rem;
+    border-bottom: 2px solid #eff4f8;
+    align-items: start; }
+    .profile-channel__header__desc {
+      font-family: Roboto-Regular;
+      font-size: 0.875rem;
+      color: #4a4a4a; }
+  .profile-channel__heading {
+    font-family: Montserrat-SemiBold;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    padding-top: 0.625rem;
+    color: #0976d3; }
+  .profile-channel__icon {
+    font-size: 3.4375rem;
+    margin-bottom: 0.9375rem; }
+  .profile-channel a.btn-blue,
+  .profile-channel button.btn-blue {
+    padding: 0.5rem 1.5625rem;
+    font-size: 0.875rem; }
+  .profile-channel__content {
+    color: #cccccc;
+    min-height: 41.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .profile-channel__btn {
+    background: transparent;
+    padding: 0.4375rem 0 0.4375rem 2.1875rem; }
+  .profile-channel-detail {
+    padding: 1.875rem 1.875rem 0.9375rem;
+    border-bottom: 2px solid #eff4f8; }
+    .profile-channel-detail__text {
+      padding-top: 0.9375rem;
+      font-family: Roboto-Medium;
+      font-size: 0.875rem;
+      color: #2c2c2c; }
+    .profile-channel-detail .profile-channel__header {
+      padding: 0;
+      border-bottom: 1px solid #eff4f8; }
+    .profile-channel-detail__content {
+      padding: 1.875rem 1.875rem 0rem; }
+      .profile-channel-detail__content__desc {
+        font-size: 0.8125rem;
+        color: #4a4a4a; }
+      .profile-channel-detail__content .course-classify__text2 {
+        font-size: 0.875rem; }
+  .profile-channel-yes {
+    padding: 0rem 1.875rem 0.9375rem;
+    border-bottom: 2px solid #eff4f8;
+    min-height: 41.625rem; }
+    .profile-channel-yes .profile-channel__header {
+      padding: 0;
+      padding-top: 1.25rem;
+      border-bottom: 1px solid #eff4f8; }
+      .profile-channel-yes .profile-channel__header:last-child {
+        border-bottom: none; }
+    .profile-channel-yes .profile-channel__heading {
+      text-transform: none;
+      font-family: Montserrat-SemiBold;
+      font-size: 0.9375rem;
+      color: #2c2c2c; }
+
+@media (max-width: 1199px) {
+  .profile-channel__content, .profile-channel-yes {
+    min-height: 44.0625rem; } }
+@media (max-width: 991px) {
+  .profile-channel__content, .profile-channel-yes {
+    min-height: 18.75rem; }
+  .profile-channel__button {
+    margin-bottom: 1.875rem; } }
 .profile-password {
   padding: 0.9375rem 0.9375rem 1.5625rem;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);

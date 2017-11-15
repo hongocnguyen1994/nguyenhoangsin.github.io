@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -917,8 +917,8 @@
     <a class="profile-bar__link " href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
     <a class="profile-bar__link " href="profile-test.html"><i class="icon-icon_ket_qua_bai_thi"></i>Kết quả bài thi</a>
     <a class="profile-bar__link " href="profile-blog.html"><i class="icon-icon_danh_sach_blog"></i>Danh sách blog</a>
-    <a class="profile-bar__link " href="profile-channel-no.html"><i class="fa fa-podcast" aria-hidden="true"></i>Kênh học tập</a>
-    <a class="profile-bar__link active" href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
+    <a class="profile-bar__link active" href="profile-channel-no.html"><i class="fa fa-podcast" aria-hidden="true"></i>Kênh học tập</a>
+    <a class="profile-bar__link " href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
     <div class="profile-bar__social">
         <a class="profile-bar__social-link" href="#">
             <i class="icon-icon_rss_trang_ca_nhan">
@@ -953,15 +953,17 @@
 <!-- END PROFILE BAR -->
                     </div>
                     <div class="col-lg-9">
-                        <!-- CHANGE PASSWORD -->
-<section class="profile-password">
-    <h2 class="profile-password__title">Thay đổi mật khẩu</h2>
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu cũ">
-    <input class="input-blue profile-password__input" type="password" placeholder="Mật khẩu mới">
-    <input class="input-blue profile-password__input" type="password" placeholder="Nhập lại mật khẩu">
-    <button class="btn-blue profile-password__base">Thay đổi</button>
+                        <section class="profile-channel">
+	<div class="profile-channel__header">
+		<div class="profile-channel__heading">Kênh của bạn</div>
+		<button class="profile-channel__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+	</div>
+	<div class="profile-channel__content">
+		<p>Không có nội dung trong kênh học tập này.
+		<br>Hãy thêm các bài học từ thư viện</p>
+		<a class="btn-blue" href="profile-channel-detail.html">Đến thư viện bài học</a>
+	</div>
 </section>
-<!-- END CHANGE PASSWORD -->
                     </div>
                 </div>
             </div>
@@ -1044,96 +1046,6 @@
 <div class="scroll-status back-top" title="Về đầu trang"><i class="icon-icon_dropdown_menu"></i></div>
 <!-- END BACK TO TOP -->
         <!-- // -->
-        <!-- WRITE BLOG -->
-<div class="scroll-status write-blog">
-    <i class="icon-icon_viet_blog_moi"></i>
-    <div class='write-blog__popup'>Viết blog mới của bạn</div>
-</div>
-<!-- END WRITE BLOG -->
-        <!-- // -->
-        <!-- MODAL WRITE BLOG ADD -->
-<aside class="ui modal large modal-write-blog add">
-    <div class="modal-write-blog__header">
-        <span class="modal-write-blog__title">Thêm mới blog</span>
-        <i class="close icon-icon_close_popup"></i>
-    </div>
-    <div class="modal-write-blog__body">
-        <div class="modal-write-blog__balde">
-            <div class="modal-write-blog__text">Tên blog</div>
-            <input type="text" class="input-profile modal-write-blog__input" placeholder="Nhập...">
-        </div>
-        <!-- // -->
-        <div class="modal-write-blog__balde">
-            <div class="modal-write-blog__text">Mô tả blog</div>
-            <textarea class='textarea-profile  autoExpand' rows='4' placeholder='Nhập...'></textarea>
-        </div>
-        <!-- // -->
-        <div class="modal-write-blog__group">
-            <div class="modal-write-blog__balde">
-                <div class="modal-write-blog__text">Danh mục</div>
-                <div class="ui selection dropdown">
-                    <input type="hidden" name="level">
-                    <i class="dropdown icon icon-icon_dropdown_menu"></i>
-                    <div class="default text">-- Chọn --</div>
-                    <div class="menu">
-                        <div class="item" data-value="1">Sơ cấp</div>
-                        <div class="item" data-value="0">Trung cấp</div>
-                        <div class="item" data-value="0">Cao cấp</div>
-                        <div class="item" data-value="0">Siêu cấp</div>
-                    </div>
-                </div>
-            </div>
-            <!-- // -->
-            <div class="modal-write-blog__balde multiple-selection">
-                <div class="modal-write-blog__text">Tags</div>
-                <select name="tags" multiple="" class="ui fluid dropdown">
-                <option value="">Nhập...</option>
-                  <option value="angular">Angular</option>
-                  <option value="css">CSS</option>
-                  <option value="design">Graphic Design</option>
-                  <option value="ember">Ember</option>
-                  <option value="html">HTML</option>
-                  <option value="ia">Information Architecture</option>
-                  <option value="javascript">Javascript</option>
-                  <option value="mech">Mechanical Engineering</option>
-                  <option value="meteor">Meteor</option>
-                  <option value="node">NodeJS</option>
-                  <option value="plumbing">Plumbing</option>
-                  <option value="python">Python</option>
-                  <option value="rails">Rails</option>
-                  <option value="react">React</option>
-                  <option value="repair">Kitchen Repair</option>
-                  <option value="ruby">Ruby</option>
-                  <option value="ui">UI Design</option>
-                  <option value="ux">User Experience</option>
-                  </select>
-            </div>
-        </div>
-        <!-- // -->
-        <div class="modal-write-blog__balde">
-            <div class="modal-write-blog__text">Nội dung</div>
-            <textarea class='textarea-profile  autoExpand' rows='20' placeholder='Nhập...'></textarea>
-        </div>
-        <!-- // -->
-        <div class="modal-write-blog__group modal-write-blog__group--end">
-            <div class="modal-write-blog__balde">
-                <div class="modal-write-blog__text">Hình ảnh đại diện cho blog</div>
-                <div class="modal-write-blog__description">Hình đại diện blog chỉ chấp nhận những file hình có đuôi JPG, PNG, Bitmap, Gif.<br><br>Hình đại diện blog không được có dung lượng vượt quá 10mb.</div>
-            </div>
-            <!-- // -->
-            <label class="modal-write-blog__balde">
-                <div class="modal-write-blog__img">
-                    <i class="icon-icon_upload_trang_ca_nhan"></i>
-                </div>
-                <input class="modal-write-blog__file" type="file" accept='image/*'>
-            </label>
-        </div>
-    </div>
-    <div class="modal-write-blog__footer add">
-        <a href="#" class="close btn-blue modal-write-blog__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
-    </div>
-</aside>
-<!--END MODAL WRITE BLOG ADD -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>
