@@ -1659,5 +1659,80 @@ textarea {
 @media (min-width: 48rem) {
   .link-home {
     display: block; } }
+.breadcrumb {
+  background: transparent; }
+
+.breadcrumb {
+  margin-bottom: 0; }
+
+.product-info .slide {
+  border: 1px solid #eaeaea;
+  padding: 10px; }
+.product-info .carousel-indicators {
+  position: initial;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-bottom: 0;
+  margin-right: 5%; }
+  .product-info .carousel-indicators li {
+    position: relative;
+    width: 30%;
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    cursor: pointer; }
+    .product-info .carousel-indicators li::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); }
+    .product-info .carousel-indicators li::after {
+      content: none; }
+    .product-info .carousel-indicators li.active::before {
+      background: transparent; }
+.product-info__title {
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 8px; }
+.product-info__group {
+  margin-bottom: 8px; }
+.product-info__text1 {
+  font-family: Roboto-Medium;
+  font-size: 13px;
+  min-width: 90px; }
+.product-info__text2 {
+  font-size: 13px; }
+.product-info__text2.text-warning {
+  font-size: 15px;
+  font-weight: bold; }
+.product-info__text3 {
+  font-size: 14px;
+  font-family: Roboto-Light; }
+.product-info .line-ligth-blue, .product-info .line-ligth-greey-right, .product-info .line-ligth-greey-left {
+  margin-bottom: 8px; }
+
+.product-detail {
+  margin-top: 30px; }
+  .product-detail__heading {
+    font-family: Montserrat-SemiBold;
+    height: 41px;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 40px;
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .product-detail__title {
+    position: absolute;
+    bottom: -1px;
+    padding: 0 12px;
+    border-bottom: 3px solid #0976d3; }
+  .product-detail__box {
+    padding: 16px;
+    border: 1px solid #eaeaea;
+    line-height: 2; }
+  .product-detail__relationship {
+    margin-bottom: 50px; }
 
 /*# sourceMappingURL=main.css.map */
