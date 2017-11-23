@@ -122,9 +122,10 @@ textarea:-ms-input-placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 1s; }
+  transition: all 1s;
+  background: rgba(0, 0, 0, 0.3); }
   .mask:hover {
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.6); }
 
 .btn-red {
   display: flex;
@@ -251,14 +252,9 @@ textarea:-ms-input-placeholder {
   .footer__dev {
     margin-top: 2px;
     margin-bottom: 15px; }
-    .footer__dev--mini {
-      margin-bottom: 8px; }
   .footer__logo1 {
     width: 112px;
     margin-left: 11px; }
-    .footer__logo1--mini {
-      width: 85px;
-      margin-left: 6px; }
   .footer__logo2 {
     width: 128px;
     margin-bottom: 20px; }
@@ -268,8 +264,6 @@ textarea:-ms-input-placeholder {
     line-height: 1.5rem;
     text-transform: uppercase;
     color: #212121; }
-    .footer__text2--mini {
-      margin-bottom: 6px; }
   .footer__box {
     margin-bottom: 16px; }
   .footer__link {
