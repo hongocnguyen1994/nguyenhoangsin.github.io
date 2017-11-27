@@ -487,16 +487,259 @@
 <!-- END MODAL FORGOT PASSWORD -->
         <main>
             <div class="container">
-                <div class="contact">
-                    <h2 class="contact__text1">Liên hệ</h2>
-                    <div class="contact__text2">Chúng tôi rất vui nếu bạn cho chúng tôi biết bất kỳ góp ý hoặc bất cứ điều gì mà các bạn cần ở chúng tôi.</div>
-                    <div class="contact__group">
-                        <div class="contact__group-inner"><input class="input-profile" type="text" placeholder="Họ và tên..."></div>
-                        <div class="contact__group-inner"><input class="input-profile" type="text" placeholder="Email của bạn..."></div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <section class="post">
+                            <h2 class="product-detail__heading">
+                                <span class="product-detail__title">Thông tin bài đăng</span>
+                            </h2>
+                            <div class="post__content">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Chọn chuyên mục (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="ui selection dropdown">
+                                                    <div class="default text">Chọn chuyên mục</div>
+                                                    <i class="icon-icon_dropdown_menu"></i>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="0">Bất động sản</div>
+                                                        <div class="item" data-value="1">Xe ô tô</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="ui selection dropdown">
+                                                    <div class="default text">Chọn chi tiết</div>
+                                                    <i class="icon-icon_dropdown_menu"></i>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="0">Bán đất</div>
+                                                        <div class="item" data-value="1">Mua đất</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Tỉnh/Thành (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="ui selection dropdown">
+                                            <div class="default text">Chọn tỉnh/thành phố</div>
+                                            <i class="icon-icon_dropdown_menu"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="0">Quảng Nam</div>
+                                                <div class="item" data-value="1">Đà Nẵng</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Quận/Huyện (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="ui selection dropdown">
+                                            <div class="default text">Chọn quận/huyện</div>
+                                            <i class="icon-icon_dropdown_menu"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="0">Quảng Nam</div>
+                                                <div class="item" data-value="1">Đà Nẵng</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Xã/Phường</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="ui selection dropdown">
+                                            <div class="default text">Chọn xã/phường</div>
+                                            <i class="icon-icon_dropdown_menu"></i>
+                                            <div class="menu">
+                                                <div class="item" data-value="0">Quảng Nam</div>
+                                                <div class="item" data-value="1">Đà Nẵng</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Địa chỉ</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <input class="input-profile" type="text" placeholder="Số nhà">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="ui selection dropdown">
+                                                    <div class="default text">Đường</div>
+                                                    <i class="icon-icon_dropdown_menu"></i>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="0">Quảng Nam</div>
+                                                        <div class="item" data-value="1">Đà Nẵng</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Giá (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input class="input-profile" type="text" placeholder="Giá tiền (vnđ)">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Tiêu đề (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input class="input-profile" type="text" placeholder="Tóm tắt ngắn gọn nội dung, tiếng việt có đấu">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Nội dung (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <textarea class="textarea-profile  autoExpand" rows="8" placeholder="Nhập đầy đủ thông tin mô tả"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Đăng ảnh</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <label class="post__upload">
+                                            <div class="post__upload-bg">
+                                                <div class="post__text1">Đăng ảnh thật để có hiệu quả tốt nhất</div>
+                                                <i class="icon-icon_upload_trang_ca_nhan"></i>
+                                                <div class="post__text1">Mỗi ảnh không vượt quá 6M</div>
+                                            </div>
+                                            <input class="d-none post__upload-file" type="file" accept="image/*">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="product-detail__heading">
+                                <span class="product-detail__title">Thông tin liên hệ</span>
+                            </h2>
+                            <div class="post__content">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Tên liên hệ (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input class="input-profile" type="text" placeholder="Nhập tên liên hệ">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Số điện thoại (
+                                            <span>*</span>)</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input class="input-profile" type="text" placeholder="Nhập số điện thoại">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="post__text1">Địa chỉ</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input class="input-profile" type="text" placeholder="Nhập địa chỉ">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
                     </div>
-                    <div><input class="input-profile" type="text" placeholder="Tiêu đề liên hệ..."></div>
-                    <div><textarea class="textarea-profile" rows="9" placeholder="Nội dung liên hệ..."></textarea></div>
-                    <div><a class="btn-blue contact__btn" href="#"><i class="icon-icon_gui_lien_he"></i>Gửi liên hệ</a></div>
+                    <div class="col-lg-4">
+                        <div class="post-map">
+                            <img src="assets/images/map.png" alt="">
+                        </div>
+                        <div class="home-slide">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="assets/images/lh1.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/images/lh2.png" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/images/lh3.png" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home-tags">
+                            <div class="home-tags__title">
+                                <i class="fa fa-tags" aria-hidden="true"></i> Tags</div>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Điện thoại</a>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Máy tính</a>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Điện thoại</a>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Máy tính</a>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Điện thoại</a>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Máy tính</a>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Điện thoại</a>
+                            <a class="home-tags__item" href="#">
+                                <i class="fa fa-tag" aria-hidden="true"></i>Máy tính</a>
+                        </div>
+                        <div class="home-category">
+                            <div class="home-category__title">
+                                <i class="fa fa-th-list" aria-hidden="true"></i> Category</div>
+                            <div class="home-category__box">
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Điện thoại</a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Máy tính</a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Điện thoại</a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Máy tính</a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Điện thoại</a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Máy tính</a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Điện thoại</a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>Máy tính</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -576,6 +819,7 @@
 <!-- BACK TO TOP -->
 <div class="scroll-status back-top" title="Về đầu trang"><i class="icon-icon_dropdown_menu"></i></div>
 <!-- END BACK TO TOP -->
+        <!-- // -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>
