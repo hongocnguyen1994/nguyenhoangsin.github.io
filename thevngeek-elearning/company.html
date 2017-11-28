@@ -1524,18 +1524,32 @@
                                     <div class="ui tab segment" data-tab="second">
                                         <div class="company-evaluation__body">
                                             <div class="company-evaluation__item">
-                                                <div class="d-flex">
-                                                    <a class="company-evaluation__avata" href="#"><img src="assets/images/dcb.png" alt=""></a>
-                                                    <div>
-                                                        <div class="company-evaluation__text1">Bình Ca</div>
-                                                        <div class="course-classify__rating courseClassifyRating">
-                                                            <span class="d-none courseClassifyRatingNumber">3.5</span>
-                                                            <i class="courseClassifyRatingStar"></i>
-                                                            <i class="courseClassifyRatingStar"></i>
-                                                            <i class="courseClassifyRatingStar"></i>
-                                                            <i class="courseClassifyRatingStar"></i>
-                                                            <i class="courseClassifyRatingStar"></i>
-                                                            <span class="company-evaluation__text2">30/08/2017</span>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex">
+                                                        <a class="company-evaluation__avata" href="#"><img src="assets/images/dcb.png" alt=""></a>
+                                                        <div>
+                                                            <div class="company-evaluation__text1">Bình Ca</div>
+                                                            <div class="course-classify__rating courseClassifyRating">
+                                                                <span class="d-none courseClassifyRatingNumber">3.5</span>
+                                                                <i class="courseClassifyRatingStar"></i>
+                                                                <i class="courseClassifyRatingStar"></i>
+                                                                <i class="courseClassifyRatingStar"></i>
+                                                                <i class="courseClassifyRatingStar"></i>
+                                                                <i class="courseClassifyRatingStar"></i>
+                                                                <span class="company-evaluation__text2">30/08/2017</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown menu-control">
+                                                        <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <svg class="menu-control__icon">
+                                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                            </svg>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+                                                            <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+                                                            <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1567,6 +1581,28 @@
                                                 <div class="company-evaluation__text3">Trả lời:</div>
                                                 <div class="company-evaluation__text4">In rutrum maximus pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec id enim lacinia, fringilla leo quis, volutpat ex. Etiam sed eleifend ipsum,
                                                     at vehicula urna. Nullam eget ante odio. Proin faucibus volutpat ante, sit amet tincidunt odio hendrerit sit… xem thêm</div>
+                                                <div class="interview-detail__reply">
+                                        <div class="interview-detail__reply__head">
+                                            <div>Có 2 câu trả lời</div>
+                                            <button class="interview-detail__reply__btn jsBtnReply"><i class="fa fa-plus" aria-hidden="true"></i>Thêm câu Trả lời</button>
+                                        </div>
+                                        <div class="interview-detail__reply__comment">
+                                            <div class="interview-detail__reply__icon"><i class="fa fa-share" aria-hidden="true"></i></div>
+                                            <div>
+                                                <div class="interview-detail__reply__name">Lewis Williamson</div>
+                                                <div class="interview-detail__reply__date">12 năm trước</div>
+                                                <div class="interview-detail__reply__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quos hic, veritatis nihil tempore dolor excepturi sint esse. Amet, assumenda ut natus maiores saepe adipisci nostrum quidem aspernatur dolores, odit excepturi, deserunt pariatur id repellendus repudiandae tenetur esse provident tempora reprehenderit, ea ad ipsum laudantium rem hic non. Eveniet, iusto.</div>
+                                            </div>
+                                        </div>
+                                        <div class="interview-detail__reply__comment">
+                                            <div class="interview-detail__reply__icon"><i class="fa fa-share" aria-hidden="true"></i></div>
+                                            <div>
+                                                <div class="interview-detail__reply__name">Lewis Williamson</div>
+                                                <div class="interview-detail__reply__date">12 năm trước</div>
+                                                <div class="interview-detail__reply__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quos hic, veritatis nihil tempore dolor excepturi sint esse. Amet, assumenda ut natus maiores saepe adipisci nostrum quidem aspernatur dolores, odit excepturi, deserunt pariatur id repellendus repudiandae tenetur esse provident tempora reprehenderit, ea ad ipsum laudantium rem hic non. Eveniet, iusto.</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                                 <div class="d-sm-flex">
                                                     <div class="company-evaluation__text3">Độ khó của quá trình phỏng vấn:</div>
                                                     <div class="company-evaluation__text4">Khó</div>
@@ -2200,6 +2236,31 @@
     </div>
 </aside>
 <!--END MODAL INTERVIEW -->
+        <!-- // -->
+        <!-- MODAL COMPANY -->
+<aside class="ui modal large modal-reply-result edit jsModalReply">
+    <div class="modal-reply-result__header">
+        <span class="modal-reply-result__title">Trả lời câu hỏi</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-reply-result__body">
+        <!-- // -->
+        <div class="modal-reply-result__balde">
+            <div class="modal-reply-result__text">Câu hỏi</div>
+            <div class="modal-reply-result__text2">Praesent lobortis mauris quis nunc ullamcorper euismod. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia quis nunc ullamcorper euismod nostra?</div>
+        </div>
+        <!-- // -->
+        <div class="modal-reply-result__balde">
+            <div class="modal-reply-result__text">Trả lời</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+    </div>
+    <div class="modal-reply-result__footer">
+        <a href="#" class="close btn-blue modal-reply-result__btn"><i class="icon-icon_close_popup"></i> Hủy</a>
+        <a href="#" class="close btn-blue modal-reply-result__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
+    </div>
+</aside>
+<!--END MODAL COMPANY -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>

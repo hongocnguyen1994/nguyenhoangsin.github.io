@@ -35,7 +35,7 @@
                         <!-- block scroll -->
                         <div id="blockScroll" class="block-scroll">
                             <!-- logged -->
-                            <div class="dropdown logged-notifications">
+                            <div class="dropdown logged-notifications d-none">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="icon-icon_notification_sau_dang_nhap logged-notifications__icon"><span class="logged-notifications__total">12</span></i>
                                     </button>
@@ -125,7 +125,7 @@
                                     <div class="logged-notifications__viewmore"><a href="#">Xêm thêm</a></div>
                                 </div>
                             </div>
-                            <div class="dropdown logged-user">
+                            <div class="dropdown logged-user d-none">
                                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img class="logged-user__avata" src="assets/images/dcb.png" alt="">
                                         <span class="logged-user__name">Doãn Chí Bình</span>
@@ -140,8 +140,8 @@
                             </div>
                             <!-- end logged -->
                             <!-- not logged -->
-                            <a class="register large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
-                            <a class="login large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
+                            <a class="register large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
+                            <a class="login large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
                             <!-- end not logged -->
                             <div class="ui selection dropdown">
                                 <input type="hidden" name="language" value="0">
@@ -575,7 +575,7 @@
         <div class="small-header-bar__logo"><img src="assets/images/logo-small.png" alt=""></div>
         <div class="small-header-bar__action">
             <!-- logged -->
-            <div class="dropdown logged-noti-small">
+            <div class="dropdown logged-noti-small d-none">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="icon-icon_notification_sau_dang_nhap logged-noti-small__icon"><span class="logged-noti-small__total">12</span></i>
                                 </button>
@@ -665,7 +665,7 @@
                     <div class="logged-noti-small__viewmore"><a href="#">Xêm thêm</a></div>
                 </div>
             </div>
-            <div class="dropdown logged-user-small">
+            <div class="dropdown logged-user-small d-none">
                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logged-user-small__avata" src="assets/images/dcb.png" alt=""></button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Trang cá nhân</a>
@@ -677,8 +677,8 @@
             </div>
             <!-- end logged -->
             <!-- not logged -->
-            <button class="register small-header-bar__btn d-none"><i class="icon-icon_dang_ky_top"></i></button>
-            <button class="login small-header-bar__btn d-none"><i class="icon-icon_dang_nhap_top"></i></button>
+            <button class="register small-header-bar__btn"><i class="icon-icon_dang_ky_top"></i></button>
+            <button class="login small-header-bar__btn"><i class="icon-icon_dang_nhap_top"></i></button>
             <!-- end not logged -->
             <div class="ui selection dropdown">
                 <input type="hidden" name="language" value="0">
@@ -903,134 +903,263 @@
     </div>
 </aside>
 <!-- END MODAL FORGOT PASSWORD -->
-        <main class="body-content-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <!-- PROFILE BAR -->
-<div class="profile-bar">
-    <div class="profile-bar__avata">
-        <img class="profile-bar__avata-img" src="assets/images/b4.png" alt="">
-        <span class="profile-bar__avata-name">Doãn Chí Bình</span>
-    </div>
-    <a class="profile-bar__link " href="profile-info.html"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
-    <a class="profile-bar__link active" href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
-    <a class="profile-bar__link " href="profile-test.html"><i class="icon-icon_ket_qua_bai_thi"></i>Kết quả bài thi</a>
-    <a class="profile-bar__link " href="profile-blog.html"><i class="icon-icon_danh_sach_blog"></i>Danh sách blog</a>
-    <a class="profile-bar__link " href="profile-channel-no.html"><i class="fa fa-podcast" aria-hidden="true"></i>Kênh học tập</a>
-    <a class="profile-bar__link " href="profile-password.html"><i class="icon-icon_khoa_hoc_lap_trinh"></i>Thay đổi mật khẩu</a>
-    <div class="profile-bar__social">
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_rss_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--rss'>Lấy RSS của <span>Doãn Chí Bình</span></div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_facebook_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--fb'>Theo dõi <span>Doãn Chí Bình</span> trên facebook</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_youtube_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--yt'>Theo dõi <span>Doãn Chí Bình</span> trên youtube</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_linkedin_trang_ca_nhan">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-            </i>
-            <div class='profile-bar__popup profile-bar__popup--in'>Theo dõi <span>Doãn Chí Bình</span> trên linkedin</div>
-        </a>
-        <a class="profile-bar__social-link" href="#">
-            <i class="icon-icon_github_trang_ca_nhan"></i>
-            <div class='profile-bar__popup profile-bar__popup--gh'>Theo dõi <span>Doãn Chí Bình</span> trên github</div>
-        </a>
-    </div>
-</div>
-<!-- END PROFILE BAR -->
+        <main>
+            <!-- SEARCH search-interview -->
+<section class="search-interview">
+    <div class="container">
+        <h2 class="search-interview__heading">Kết quả tìm kiếm</h2>
+        <form class="search-interview__form">
+            <div class="row">
+                <div class="col-lg-10 search-interview__form__flex">
+                    <div class="search-interview__form__input1">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Nhập tên công ty..." ">
                     </div>
-                    <div class="col-lg-9">
-                        <!-- PROFILE CHART -->
-<div class="profile-chart">
-    <div class="profile-chart__header">
-        <div class="profile-chart__title">Thống kê theo khoá học</div>
-        <div class="profile-chart__select1">
-            <div class="ui selection dropdown" tabindex="0">
-                <input type="hidden" name="level">
-                <i class="dropdown icon icon-icon_dropdown_menu"></i>
-                <div class="default text">Khóa học lập trình PHP</div>
-                <div class="menu transition hidden" tabindex="-1">
-                    <div class="item" data-value="1">Sơ cấp</div>
-                    <div class="item" data-value="0">Trung cấp</div>
-                    <div class="item" data-value="0">Cao cấp</div>
-                    <div class="item" data-value="0">Siêu cấp</div>
+                    <input class="search-interview__form__input2" type="text" placeholder="Nhập tên địa điểm...">
+                    <div class="ui selection dropdown" tabindex="0">
+                        <div class="default text">Buổi phỏng vấn</div>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="menu" tabindex="-1">
+                            <div class="item active selected" data-value="0">Đánh giá</div>
+                            <div class="item" data-value="1">Buổi phỏng vấn</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn-blue"><i class="fa fa-search"></i>Tìm kiếm</button>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
-    <div class="profile-chart__body">
-        <span class="profile-chart__text">Tỉ lệ làm đúng (%)</span>
-        <div>
-            <canvas id="chart-0" class="chart"></canvas>
-        </div>
-        <div class="text-right">
-            <span class="profile-chart__text">Số bài tập đã làm</span>
-        </div>
-    </div>
-</div>
+</section>
+<!-- END SEARCH search-interview -->
+            <!-- INTERVIEW DETAIL -->
+            <section class="interview-detail">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <!-- INTERVIEW DETAIL BAR-->
+                            <div class="interview-detail__bar">
+                                <div class="interview-detail__bar__title">Công ty Thần Điêu</div>
+                                <div class="interview-detail__bar__info">
+                                    <img class="interview-detail__bar__avatar" src="assets/images/dq.png" alt="">
+                                    <div class="interview-detail__bar__evaluate">
+                                        <div class="course-classify__rating courseClassifyRating">
+                                            <span class="course-classify__rating-number courseClassifyRatingNumber">4.5</span>
+                                            <i class="courseClassifyRatingStar"></i>
+                                            <i class="courseClassifyRatingStar"></i>
+                                            <i class="courseClassifyRatingStar"></i>
+                                            <i class="courseClassifyRatingStar"></i>
+                                            <i class="courseClassifyRatingStar"></i>
+                                        </div>
+                                        <div class="interview-detail__bar__text">
+                                            32 <span>Đánh giá công ty</span>
+                                        </div>
+                                        <div class="interview-detail__bar__text">
+                                            14 <span>Đánh giá phỏng vấn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="interview-detail__bar__content">
+                                    <div class="d-flex">
+                                        <div class="interview-detail__bar__text1">Trụ sở:</div>
+                                        <div class="interview-detail__bar__text2">23 Hoàng Hoa Thám, Đà Nẵng, Việt Nam</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="interview-detail__bar__text1">Website:</div>
+                                        <a class="interview-detail__bar__text2 text-truncate" href="">www.riotgames.com</a>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="interview-detail__bar__text1">Quy mô:</div>
+                                        <div class="interview-detail__bar__text2">200 - 500 người</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="interview-detail__bar__text1">Thành lập:</div>
+                                        <div class="interview-detail__bar__text2">2006</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="interview-detail__bar__text1">Loại công ty:</div>
+                                        <div class="interview-detail__bar__text2">TNHH</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END INTERVIEW DETAIL BAR-->
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="company-detail">
+                                <div class="company-evaluation__item">
+                                    <div class="company-evaluation__text1">“Sed vitae dui pellentesque, facilisis diam in”</div>
+                                    <div class="course-classify__rating courseClassifyRating">
+                                        <span class="d-none courseClassifyRatingNumber">3.5</span>
+                                        <i class="courseClassifyRatingStar"></i>
+                                        <i class="courseClassifyRatingStar"></i>
+                                        <i class="courseClassifyRatingStar"></i>
+                                        <i class="courseClassifyRatingStar"></i>
+                                        <i class="courseClassifyRatingStar"></i>
+                                        <span class="company-evaluation__text2">30/08/2017</span>
+                                    </div>
+                                    <div class="company-evaluation__text3">Ưu điểm:</div>
+                                    <div class="company-evaluation__text4">In rutrum maximus pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec id enim lacinia, fringilla leo quis, volutpat ex. Etiam sed eleifend ipsum,
+                                        at vehicula urna. Nullam eget ante odio. Proin faucibus volutpat ante, sit amet tincidunt odio hendrerit sit… xem thêm</div>
+                                    <div class="company-evaluation__text3">Nhược điểm:</div>
+                                    <div class="company-evaluation__text4">In rutrum maximus pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec id enim lacinia, fringilla leo quis, volutpat ex. Etiam sed eleifend ipsum,
+                                        at vehicula urna. Nullam eget ante odio. Proin faucibus volutpat ante, sit amet tincidunt odio hendrerit sit… xem thêm</div>
+                                    <div class="company-evaluation__text3">Đề nghị:</div>
+                                    <div class="company-evaluation__text4">In rutrum maximus pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec id enim lacinia, fringilla leo quis, volutpat ex. Etiam sed eleifend ipsum,
+                                        at vehicula urna. Nullam eget ante odio. Proin faucibus volutpat ante, sit amet tincidunt odio hendrerit sit… xem thêm</div>
+                                    <div class="company-evaluation__flex">
+                                        <a href="">Chi tiết <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
 
-<div class="profile-chart">
-    <div class="profile-chart__header">
-        <div class="profile-chart__title">Thống kê tổng quát quá trình học tập</div>
-        <div class="profile-chart__select2">
-            <div class="ui selection dropdown" tabindex="0">
-                <input type="hidden" name="level">
-                <i class="dropdown icon icon-icon_dropdown_menu"></i>
-                <div class="default text">--Chọn năm--</div>
-                <div class="menu transition hidden" tabindex="-1">
-                    <div class="item" data-value="1">2017</div>
-                    <div class="item" data-value="0">2018</div>
-                    <div class="item" data-value="0">2019</div>
-                </div>
-            </div>
-            <div class="ui selection dropdown" tabindex="0">
-                <input type="hidden" name="level">
-                <i class="dropdown icon icon-icon_dropdown_menu"></i>
-                <div class="default text">--Chọn tháng--</div>
-                <div class="menu transition hidden" tabindex="-1">
-                    <div class="item" data-value="1">1</div>
-                    <div class="item" data-value="1">2</div>
-                    <div class="item" data-value="1">3</div>
-                    <div class="item" data-value="1">4</div>
-                    <div class="item" data-value="1">5</div>
-                    <div class="item" data-value="1">6</div>
-                    <div class="item" data-value="1">7</div>
-                    <div class="item" data-value="1">8</div>
-                    <div class="item" data-value="1">9</div>
-                    <div class="item" data-value="1">10</div>
-                    <div class="item" data-value="1">11</div>
-                    <div class="item" data-value="1">12</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="profile-chart__body">
-        <span class="profile-chart__text">Tỉ lệ làm đúng (%)</span>
-        <div>
-            <canvas id="chart-1" class="chart"></canvas>
-        </div>
-        <div class="text-right">
-            <span class="profile-chart__text">Số bài tập đã làm</span>
-        </div>
+                                    <!-- COMMENT -->
+                                    <div class="comment">
+                                        <div class="company-evaluation__comment-statistics"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
+                                        <div class="comment__input commentInputMain">
+                                            <textarea class='comment__area comment__area--main commentInputMainArea' rows='1' placeholder='Viết bình luận...'></textarea>
+                                            <div class="comment__btn commentInputMainBtn">
+                                                <button class="comment__cancel commentInputMainBtnCancel" type="button">Hủy</button>
+                                                <button class="comment__ok">Nhận xét</button>
+                                            </div>
+                                        </div>
+                                        <!-- end input main -->
+
+                                        <div class="comment__box commentBox">
+                                            <div class="comment__item commentItem">
+                                                <a href="#" class="comment__avata">
+                                                    <img src="assets/images/dcb.png" alt="">
+                                                </a>
+                                                <div class="comment__content">
+                                                    <div class="commentContentCurrent active">
+                                                        <div class="comment__text1 comment__my">Doãn Huynh</div>
+                                                        <div class="comment__text2">Cách đây 15 phút</div>
+                                                        <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.
+                                                            Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet
+                                                            suscipit.
+                                                        </div>
+                                                        <a class="comment__text5 jsCommentReadMore" href="javascript:void(0)">Đọc thêm</a>
+                                                    </div>
+                                                    <!-- end content current -->
+                                                    <div class="commentContentEdit">
+                                                        <div class="">
+                                                            <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                                                            <div class="comment__btn">
+                                                                <button class="comment__cancel commentInputEditBtnCancel" type="button">Hủy</button>
+                                                                <button class="comment__ok">Lưu</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end input edit -->
+                                                    </div>
+                                                    <!-- end content edit -->
+                                                </div>
+                                                <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
     </div>
 </div>
-<!-- END PROFILE CHART -->
-                    </div>
+<!-- END MENU CONTROL -->
+                                            </div>
+                                        </div>
+                                        <!-- END BOX -->
+
+                                        <div class="comment__box commentBox">
+                                            <div class="comment__item commentItem">
+                                                <a href="#" class="comment__avata">
+                                                    <img src="assets/images/lbc.png" alt="">
+                                                </a>
+                                                <div class="comment__content">
+                                                    <div class="commentContentCurrent active">
+                                                        <div class="comment__text1">Lâm Đệ</div>
+                                                        <div class="comment__text2">Cách đây 2 giờ</div>
+                                                        <div class="comment__text3 commentContentCurrentText">Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet suscipit.
+                                                            Morbi quis blandit dolor. Mauris non congue massa. Vestibulum orci elit, commodo ut imperdiet nec, viverra quis magna. Vestibulum vel tellus quis mauris condimentum lorem dosit amet
+                                                            suscipit.
+                                                        </div>
+                                                        <a class="comment__text5 jsCommentReadMore" href="javascript:void(0)">Đọc thêm</a>
+                                                    </div>
+                                                    <!-- end content current -->
+                                                    <div class="commentContentEdit">
+                                                        <div class="">
+                                                            <textarea class='comment__area commentInputEditArea' rows='1' placeholder='Thay đổi bình luận...'></textarea>
+                                                            <div class="comment__btn">
+                                                                <button class="comment__cancel commentInputEditBtnCancel" type="button">Hủy</button>
+                                                                <button class="comment__ok">Lưu</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end input edit -->
+                                                    </div>
+                                                    <!-- end content edit -->
+                                                </div>
+                                                <!-- MENU CONTROL -->
+<div class="dropdown menu-control">
+    <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg class="menu-control__icon">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+        </svg>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item menuCommentContentEdit" href="javascript:void(0)">Chỉnh sửa</a>
+        <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+        <a class="dropdown-item menuCommentReport" href="javascript:void(0)">Báo cáo</a>
+    </div>
+</div>
+<!-- END MENU CONTROL -->
+                                            </div>
+                                        </div>
+                                        <!-- END BOX -->
+
+                                        <a class="comment__text6" href="#">Xem thêm 10 bình luận</a>
+                                    </div>
+                                    <!-- MODAL COURSE ADD -->
+<aside class="ui modal modal-comment-report modalCommentReport">
+    <div class="modal-comment-report__header">
+        <span class="modal-comment-report__title">Báo cáo nhận xét</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-comment-report__body">
+
+        <div class="modal-comment-report__balde">
+            <div class="modal-comment-report__text">Nội dung vi phạm</div>
+            <div class="ui selection dropdown">
+                <input type="hidden" name="choose">
+                <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                <div class="default text">-- Chọn --</div>
+                <div class="menu">
+                    <div class="item" data-value="0">Spam hoặc nội dung quảng cáo không mong muốn</div>
+                    <div class="item" data-value="1">Tài liệu khiêu dâm hoặc phim khiêu dâm</div>
+                    <div class="item" data-value="2">Lời nói căm thù hoặc hình ảnh bạo lực</div>
+                    <div class="item" data-value="3">Quấy rối hoặc bắt nạt</div>
+                    <div class="item" data-value="4">Vấn đề khác</div>
                 </div>
             </div>
+        </div>
+        <!-- // -->
+        <div class="modal-comment-report__balde">
+            <div class="modal-comment-report__text">Mô tả thêm</div>
+            <textarea class='textarea-profile  autoExpand' rows='4' data-min-rows='4' placeholder='Mô tả báo cáo'></textarea>
+        </div>
+    </div>
+    <div class="modal-comment-report__footer">
+        <a href="#" class="close btn-blue modal-comment-report__btn">Báo cáo</a>
+    </div>
+</aside>
+<!--END MODAL COURSE ADD -->
+                                    <!-- END COMMENT -->
+                                </div>
+                                <!-- end item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END INTERVIEW DETAIL -->
         </main>
         <!-- FOOTER -->
 <footer class="footer">
@@ -1110,102 +1239,36 @@
 <div class="scroll-status back-top" title="Về đầu trang"><i class="icon-icon_dropdown_menu"></i></div>
 <!-- END BACK TO TOP -->
         <!-- // -->
-        <!-- WRITE BLOG -->
-<div class="scroll-status write-blog">
-    <i class="icon-icon_viet_blog_moi"></i>
-    <div class='write-blog__popup'>Viết blog mới của bạn</div>
-</div>
-<!-- END WRITE BLOG -->
-        <!-- // -->
-        <!-- MODAL WRITE BLOG ADD -->
-<aside class="ui modal large modal-write-blog add">
-    <div class="modal-write-blog__header">
-        <span class="modal-write-blog__title">Thêm mới blog</span>
+        <!-- MODAL COMPANY -->
+<aside class="ui modal large modal-reply-result edit jsModalReply">
+    <div class="modal-reply-result__header">
+        <span class="modal-reply-result__title">Trả lời câu hỏi</span>
         <i class="close icon-icon_close_popup"></i>
     </div>
-    <div class="modal-write-blog__body">
-        <div class="modal-write-blog__balde">
-            <div class="modal-write-blog__text">Tên blog</div>
-            <input type="text" class="input-profile modal-write-blog__input" placeholder="Nhập...">
+    <div class="modal-reply-result__body">
+        <!-- // -->
+        <div class="modal-reply-result__balde">
+            <div class="modal-reply-result__text">Câu hỏi</div>
+            <div class="modal-reply-result__text2">Praesent lobortis mauris quis nunc ullamcorper euismod. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia quis nunc ullamcorper euismod nostra?</div>
         </div>
         <!-- // -->
-        <div class="modal-write-blog__balde">
-            <div class="modal-write-blog__text">Mô tả blog</div>
-            <textarea class='textarea-profile  autoExpand' rows='4' placeholder='Nhập...'></textarea>
-        </div>
-        <!-- // -->
-        <div class="modal-write-blog__group">
-            <div class="modal-write-blog__balde">
-                <div class="modal-write-blog__text">Danh mục</div>
-                <div class="ui selection dropdown">
-                    <input type="hidden" name="level">
-                    <i class="dropdown icon icon-icon_dropdown_menu"></i>
-                    <div class="default text">-- Chọn --</div>
-                    <div class="menu">
-                        <div class="item" data-value="1">Sơ cấp</div>
-                        <div class="item" data-value="0">Trung cấp</div>
-                        <div class="item" data-value="0">Cao cấp</div>
-                        <div class="item" data-value="0">Siêu cấp</div>
-                    </div>
-                </div>
-            </div>
-            <!-- // -->
-            <div class="modal-write-blog__balde multiple-selection">
-                <div class="modal-write-blog__text">Tags</div>
-                <select name="tags" multiple="" class="ui fluid dropdown">
-                <option value="">Nhập...</option>
-                  <option value="angular">Angular</option>
-                  <option value="css">CSS</option>
-                  <option value="design">Graphic Design</option>
-                  <option value="ember">Ember</option>
-                  <option value="html">HTML</option>
-                  <option value="ia">Information Architecture</option>
-                  <option value="javascript">Javascript</option>
-                  <option value="mech">Mechanical Engineering</option>
-                  <option value="meteor">Meteor</option>
-                  <option value="node">NodeJS</option>
-                  <option value="plumbing">Plumbing</option>
-                  <option value="python">Python</option>
-                  <option value="rails">Rails</option>
-                  <option value="react">React</option>
-                  <option value="repair">Kitchen Repair</option>
-                  <option value="ruby">Ruby</option>
-                  <option value="ui">UI Design</option>
-                  <option value="ux">User Experience</option>
-                  </select>
-            </div>
-        </div>
-        <!-- // -->
-        <div class="modal-write-blog__balde">
-            <div class="modal-write-blog__text">Nội dung</div>
-            <textarea class='textarea-profile  autoExpand' rows='20' placeholder='Nhập...'></textarea>
-        </div>
-        <!-- // -->
-        <div class="modal-write-blog__group modal-write-blog__group--end">
-            <div class="modal-write-blog__balde">
-                <div class="modal-write-blog__text">Hình ảnh đại diện cho blog</div>
-                <div class="modal-write-blog__description">Hình đại diện blog chỉ chấp nhận những file hình có đuôi JPG, PNG, Bitmap, Gif.<br><br>Hình đại diện blog không được có dung lượng vượt quá 10mb.</div>
-            </div>
-            <!-- // -->
-            <label class="modal-write-blog__balde">
-                <div class="modal-write-blog__img">
-                    <i class="icon-icon_upload_trang_ca_nhan"></i>
-                </div>
-                <input class="modal-write-blog__file" type="file" accept='image/*'>
-            </label>
+        <div class="modal-reply-result__balde">
+            <div class="modal-reply-result__text">Trả lời</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
         </div>
     </div>
-    <div class="modal-write-blog__footer add">
-        <a href="#" class="close btn-blue modal-write-blog__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
+    <div class="modal-reply-result__footer">
+        <a href="#" class="close btn-blue modal-reply-result__btn"><i class="icon-icon_close_popup"></i> Hủy</a>
+        <a href="#" class="close btn-blue modal-reply-result__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
     </div>
 </aside>
-<!--END MODAL WRITE BLOG ADD -->
+<!--END MODAL COMPANY -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>
 <script src="assets/js/main.min.js"></script>
 <!-- END SCRIPT -->
-    <script src="assets/js/Chart.custom.js"></script>
+    <script src="assets/js/particles.custom.js"></script>
 </body>
 
 </html>
