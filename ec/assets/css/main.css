@@ -224,7 +224,8 @@ textarea {
   background-image: linear-gradient(90deg, rgba(216, 216, 216, 0) 0%, #d8d8d8 100%); }
 
 .body-content-wrap {
-  margin-top: 24px; }
+  margin-top: 24px;
+  min-height: 100vh; }
 
 @media (min-width: 75rem) {
   .wrapper {
@@ -1661,6 +1662,96 @@ textarea {
     font-size: 15px;
     line-height: 1.5; }
 
+@media (min-width: 768px) {
+  .profile-info {
+    min-height: 428px; } }
+.profile-post {
+  margin-bottom: 1.25rem;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
+  background-color: #fff; }
+  .profile-post .sale-news {
+    margin-top: 0; }
+
+@media (min-width: 768px) {
+  .profile-post {
+    min-height: 428px; } }
+.profile-fav {
+  margin-bottom: 1.25rem;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
+  background-color: #fff; }
+  .profile-fav .sale-news {
+    margin-top: 0; }
+
+@media (min-width: 768px) {
+  .profile-fav {
+    min-height: 428px; } }
+.profile-change-info {
+  margin-bottom: 1.25rem;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
+  background-color: #fff; }
+  .profile-change-info__avata {
+    width: 108px;
+    margin: auto;
+    margin-bottom: 12px;
+    padding: 3px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px; }
+    .profile-change-info__avata img {
+      width: 100px;
+      border-radius: 5px; }
+  .profile-change-info__change-ava {
+    font-family: Roboto-Regular;
+    width: 124px;
+    height: 30px;
+    margin: auto;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s; }
+    .profile-change-info__change-ava:hover {
+      color: #fff;
+      background-color: #0056b3; }
+  .profile-change-info__text1 {
+    font-family: Roboto-Medium;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 8px; }
+  .profile-change-info .line-ligth-blue, .profile-change-info .line-ligth-greey-right, .profile-change-info .line-ligth-greey-left {
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  .profile-change-info__text2 {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #4a4a4a; }
+    .profile-change-info__text2 span {
+      color: #FF8A00; }
+  .profile-change-info__text3 {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666; }
+  .profile-change-info__text4 {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.5; }
+  .profile-change-info .post {
+    padding-bottom: 0; }
+  .profile-change-info__save {
+    margin: 16px auto;
+    width: 130px;
+    height: 36px;
+    font-size: 13px;
+    transition: all 0.5s; }
+
+@media (min-width: 768px) {
+  .profile-change-info {
+    min-height: 428px; } }
 .profile-password {
   margin-bottom: 40px;
   padding: 0.9375rem 0.9375rem 1.5625rem;
@@ -1695,7 +1786,7 @@ textarea {
     padding: 1.875rem 20% 3.125rem; } }
 @media (min-width: 62rem) {
   .profile-password {
-    padding: 3.125rem 20% 6.5625rem; } }
+    padding: 4.8125rem 20% 6.5625rem; } }
 .change-password {
   padding: 15% 5%;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
@@ -1847,28 +1938,32 @@ textarea {
 .breadcrumb {
   margin-bottom: 0; }
 
-.product-info .owl-nav {
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  font-size: 11px;
-  color: #9b9b9b;
-  padding: 2px 2px 0; }
-.product-info .owl-prev,
+.product-info .owl-prev {
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  margin-top: -24px;
+  font-size: 32px;
+  color: #fff;
+  padding: 0 5px; }
 .product-info .owl-next {
-  transition: all 0.3s; }
-  .product-info .owl-prev:hover,
-  .product-info .owl-next:hover {
-    color: #0976d3; }
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -24px;
+  font-size: 32px;
+  color: #fff;
+  padding: 0 5px; }
 .product-info .owl-dots {
   display: none; }
 .product-info .slide {
   border: 1px solid #eaeaea;
   padding: 10px;
   margin-bottom: 25px; }
+.product-info .carousel-item {
+  margin-bottom: 20px; }
 .product-info .carousel-indicators {
-  position: initial;
-  margin-top: 10px;
+  position: relative;
   margin-left: 0;
   margin-bottom: 0;
   margin-right: 0; }
@@ -2030,10 +2125,11 @@ textarea {
 .view-all__tags a {
   padding: 1px 4px;
   border: 1px solid #eaeaea;
+  border-color: #9b9b9b;
   border-radius: 8px;
   font-size: 11px;
   line-height: 1;
-  color: #9b9b9b;
+  color: #4a4a4a;
   transition: all 0.3s; }
   .view-all__tags a:hover {
     color: #539fe0;
