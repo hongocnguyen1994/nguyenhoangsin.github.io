@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="description">
+    <meta name="keyworks" content="keyworks">
+    <title>Sofi forums</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/main.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- HEADER -->
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- LOGO AND SEARCH -->
+                <a class="header__logo" href="#"><img src="images/logo.svg" alt=""></a>
+                <form id="formsearch" class="ui search fluid formsearch" action="#" method="get">
+                    <button class="btn-clean formsearch__submit" type="submit" title="Tìm ngay"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+                    <input type="text" class="prompt form-control formsearch__input" placeholder="Tìm kiếm..." name="search">
+                </form>
+                <div class="results"></div>
+                <script>
+                    var contentSourceSearch = [{
+                        title: 'Google',
+                        description: 'Dịch vụ ngân hàng',
+                        url: 'https://semantic-ui.com'
+                    }, {
+                        title: 'Facebook',
+                        description: 'Dịch vụ bảo hiểm',
+                        url: 'https://semantic-ui.com'
+                    }, {
+                        title: 'Microsoft',
+                        description: 'Dịch vụ đầu tư',
+                        url: 'https://semantic-ui.com'
+                    }];
+                    $('#formsearch')
+                        .search({
+                            source: contentSourceSearch,
+                            templates: {
+                                message: function() {
+                                    html = '<div class="message empty"><div class="description">Không tìm thấy kết quả</div></div>';
+                                    return html;
+                                }
+                            },
+                        });
+                </script>
+                <!-- END LOGO AND SEARCH -->
+            </div>
+            <div class="col-sm-4">
+                <!-- MENU -->
+                <ul class="header-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Tín dụng"><i class="fa fa-usd header-nav__i" aria-hidden="true"></i></i><span class="noti-new visi-hidden">999</span></a>
+                        <ul class="dropdown-menu pull-right">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Bạn bè"><i class="fa fa-address-book header-nav__i" aria-hidden="true"></i></i><span class="noti-new visi-hidden">999</span></a>
+                        <ul class="dropdown-menu pull-right">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+
+                    <!--  MESSENGER -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Tin nhắn"><i class="fa fa-comment header-nav__i" aria-hidden="true"></i><span class="noti-new">999</span></a>
+                        <!-- MESSENGER DROPDOWN -->
+                        <ul class="dropdown-menu pull-right messenger-menu">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <p class="messenger-menu__header">Tin nhắn<a href="#">Đánh dấu tất cả đã đọc</a><a href="#">Cài đặt</a></p>
+                            <!-- MESSENGER DROPDOWN CONTENT -->
+                            <li class="messenger-menu__content">
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                            </li>
+                            <!-- END MESSENGER DROPDOWN CONTENT -->
+                            <p class="messenger-menu__footer"><a href="#">Xem tất cả</a></p>
+                        </ul>
+                        <!-- END MESSENGER DROPDOWN -->
+                    </li>
+                    <!-- END MESSENGER-->
+
+                    <!-- NOTIFICATION -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="Thông báo"><i class="fa fa-bell header-nav__i" aria-hidden="true"></i><span class="noti-new">10</span></a>
+                        <!-- NOTIFICATION DROPDOWN -->
+                        <ul class="dropdown-menu pull-right notification-menu">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <p class="notification-menu__header">Thông báo <a href="#">Đánh dấu tất cả đã đọc</a><a href="#">Cài đặt</a></p>
+                            <!-- NOTIFICATION DROPDOWN CONTENT -->
+                            <li class="notification-menu__content">
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                            </li>
+                            <!-- END NOTIFICATION DROPDOWN CONTENT -->
+                            <p class="notification-menu__footer"><a href="#">Xem tất cả</a></p>
+                        </ul>
+                        <!-- END NOTIFICATION DROPDOWN -->
+                    </li>
+                    <!-- END NOTIFICATION -->
+
+                    <!-- PROFILE -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a header-nav__a-end" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Cá nhân hóa"><img class="header-nav__img" src="images/avata.png" alt="" width="100%"></a>
+                        <ul class="dropdown-menu pull-right profile-menu">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer space-pointer-end"></span>
+                            <li><a href="#">Xem hồ sơ của bạn</a></li>
+                            <li><a href="#">Nhật ký hoạt động</a></li>
+                            <li><a href="#">Tùy chọn</a></li>
+                            <li><a href="#">Chi tiết cá nhân</a></li>
+                            <li><a href="#">Thiết lập</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Trợ giúp</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Thoát</a></li>
+                        </ul>
+                    </li>
+                    <!-- END PROFILE -->
+                </ul>
+                <!-- END MENU -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+        
+<!-- MAIN -->
+<main id="index">
+    <div class="container">
+        <div class="row">
+            <!-- LEFT -->
+            <div id="main-content" class="col-sm-9 col-sm-9-fix-pr">
+                <!-- MODAL -->
+                <!-- MODAL LIKE -->
+<div id="view-like-order-number" class="ui modal mini view-like-modal">
+    <div class="header view-like-modal__header">Thành viên yêu thích chủ đề</div>
+    <div class="content view-like-modal__content">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+    </div>
+    <div class="actions view-like-modal__footer">
+        <a href="#">Xem thêm</a>
+    </div>
+</div>
+<script>
+    function runModalViewLike() {
+        $('#view-like-order-number')
+            .modal('show');
+    }
+</script>
+<!-- END MODAL LIKE --> <!-- MODAL EDIT CONTENT -->
+<div id="modal-edit-content" class="ui modal small basic">
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <textarea class="modal-edit-content__text"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="actions modal-edit-content__action">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i> không
+        </div>
+        <div class="ui green ok inverted button">
+            <i class="checkmark icon"></i> Có
+        </div>
+    </div>
+</div>
+<script>
+    function runModalEditContent() {
+        $('#modal-edit-content')
+            .modal('show');
+    }
+</script>
+<!-- END MODAL EDIT CONTENT --> <!-- MODAL CONFIRM -->
+<div id="modal-confirm" class="ui modal mini basic modal-confirm">
+    <div class="content">
+        <p class="modal-confirm__messenger">Bạn chắc chắn muốn xóa nội dung này?</p>
+    </div>
+    <div class="actions modal-confirm__action">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i> không
+        </div>
+        <div class="ui green button" onclick="hideModalConfirm()">
+            <i class="checkmark icon"></i> Có
+        </div>
+    </div>
+</div>
+<script>
+    function runModalConfirm() {
+        $('#modal-confirm')
+            .modal('show');
+    };
+
+    function hideModalConfirm() {
+        $('#modal-confirm')
+            .modal('hide');
+        notificationMessenger();
+    };
+
+    function notificationMessenger() {
+        toastr.success('Đã thực hiện thành công!', 'Thông báo');
+    }
+</script>
+<!-- END MODAL CONFIRM --> <!-- MODAL REPORT -->
+<div id="modal-report" class="ui modal small basic modal-report">
+    <div class="header modal-report__title">Báo cáo sai phạm</div>
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <textarea class="modal-report__text"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="actions modal-report__action">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i> không
+        </div>
+        <div class="ui green ok inverted button">
+            <i class="checkmark icon"></i> Có
+        </div>
+    </div>
+</div>
+<script>
+    function runModalReport() {
+        $('#modal-report')
+            .modal('show');
+    }
+</script>
+<!-- END MODAL EDIT CONTENT -->
+                <!-- END MODAL -->
+                <!-- BREADCRUMB -->
+<div class="breadcrumb-wrap">
+    <div class="ui breadcrumb breadcrumb-wrap__content">
+        <a class="section">Home</a>
+        <i class="right chevron icon divider"></i>
+        <a class="section">Registration</a>
+        <i class="right arrow icon divider"></i>
+        <div class="active section">Personal Information</div>
+    </div>
+</div>
+<!-- END BREADCRUMB --> <!-- CATEGORY -->
+<section class="category">
+    <div class="panel-group category__group" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default category__wrap">
+            <div class="panel-heading category__heading" role="tab" id="headingOne">
+                <h4 class="panel-title category__title">
+                    <a class="category__nav" role="button" data-toggle="collapse" href="#category-1" aria-expanded="true" aria-controls="category-1">
+                        <span>Diễn dàn chung</span><i class="fa fa-chevron-down category__icon" aria-hidden="true"></i>
+                    </a>
+                </h4>
+            </div>
+            <div id="category-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <!-- LIST FORUM -->
+                <div class="panel-body">
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề nổi bật</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề gần đây</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Thông báo từ ban điều hành</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                </div>
+                <!-- END LIST FORUM -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CATEGORY -->
+
+<!-- CATEGORY -->
+<!-- CATEGORY -->
+<section class="category">
+    <div class="panel-group category__group" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default category__wrap">
+            <div class="panel-heading category__heading" role="tab" id="headingOne">
+                <h4 class="panel-title category__title">
+                    <a class="category__nav" role="button" data-toggle="collapse" href="#category-2" aria-expanded="true" aria-controls="category-2">
+                        <span>Diễn dàn khác</span><i class="fa fa-chevron-down category__icon" aria-hidden="true"></i>
+                    </a>
+                </h4>
+            </div>
+            <div id="category-2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <!-- LIST FORUM -->
+                <div class="panel-body">
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề nổi bật</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề gần đây</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Thông báo từ ban điều hành</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề nổi bật</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề gần đây</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Thông báo từ ban điều hành</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề nổi bật</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Chủ đề gần đây</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                    <div class="media sofi-topic-item">
+                        <div class="media-left">
+                            <a class="sofi-topic-item__avata" href="#">
+                                <img class="media-object" src="images/topic.png" alt="..." width="100%">
+                            </a>
+                        </div>
+                        <div class="media-body sofi-topic-item__body">
+                            <h5 class="media-heading sofi-topic-item__heading">
+                                <a class="sofi-topic-item__title" href="#">Thông báo từ ban điều hành</a>
+                            </h5>
+                            <p class="sofi-topic-item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint, sit at dolorum quae ipsum ab error hic aut commodi repellendus deserunt laudantium architecto</p>
+                            <p class="sofi-topic-item__footer">Số bài viết: <span>999</span></p>
+                        </div>
+                    </div>
+                    <!-- end item -->
+                </div>
+                <!-- END LIST FORUM -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CATEGORY -->
+
+            </div>
+            <!-- END LEFT -->
+
+            <!-- RIGHT -->
+            <div id="side-bar-right" class="col-sm-3 col-sm-3-fix-pl">
+                <!-- SLIDER -->
+<section class="slider-right">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item slider-right__item active" style="background:url(images/slider1.png) no-repeat center center; background-size:cover">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item slider-right__item" style="background:url(images/slider2.png) no-repeat center center; background-size:cover">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item slider-right__item" style="background:url(images/slider3.png) no-repeat center center; background-size:cover">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!-- END SLIDER -->
+ <!-- TOTAL USER -->
+<section class="total-user">
+    <div class="total-user__header">
+        <a class="total-user__title" href="#">Thống kê cá nhân</a>
+    </div>
+    <ul class="list-group total-user__content">
+        <li class="list-group-item g-nowrap-text">
+            Tham gia từ: 7 tháng 7 2017
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">140</span> <a class="total-user__link" href="">Bài viết</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">14</span> <a class="total-user__link" href="">Được thích</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">4</span> <a class="total-user__link" href="">Đi thích dạo</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">1</span> <a class="total-user__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+    </ul>
+</section>
+<!-- END TOTAL USER --> <!-- SOFI ROLE -->
+<section class="sofi-role">
+    <div class="sofi-role__header">
+        <a class="sofi-role__title" href="#">Quy định tại Sofi forums</a>
+    </div>
+    <ul class="list-group sofi-role__content">
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+    </ul>
+</section>
+<!-- END SOFI ROLE --> <!-- USER ONLINE -->
+<section class="user-online">
+    <div class="user-online__header">
+        <a class="user-online__title" href="#">Thành viên đang online</a>
+    </div>
+    <div class="user-online__content">
+        <a class="btn btn-default user-online__member">Tây Môn Khánh</a>
+        <a class="btn btn-default user-online__member">Phan Kim Liên</a>
+        <a class="btn btn-default user-online__member">Khoai Môn Kho Tuyết</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+    </div>
+</section>
+<!-- END USER ONLINE --> <!-- TOTAL FORUM -->
+<section class="total-forum">
+    <div class="total-forum__header">
+        <a class="total-forum__title" href="#">Thống kê diễn đàn</a>
+    </div>
+    <ul class="list-group total-forum__content">
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">999</span> <a class="total-forum__link" href="">Đề tài</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">140</span> <a class="total-forum__link" href="">Bài viết</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">14</span> <a class="total-forum__link" href="">Thành viên</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">4</span> <a class="total-forum__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">1</span> <a class="total-forum__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+    </ul>
+</section>
+<!-- END TOTAL FORUM -->
+            </div>
+            <!-- END RIGHT -->
+        </div>
+    </div>
+</main>
+<!-- END MAIN -->
+
+        <!-- FOOTER -->
+<footer class="footer">
+    <p class="footer__info"><span>© 2017 Sofi. All Rights Reserved.</span> <a class="footer__design" href="http://minaworks.vn/" target="_blank">Design by MINAWORKS</a></p>
+</footer>
+<!-- END FOOTER -->
+
+<!--SCROLL-->
+<a id="scroll-back-top" class="scroll-back-top" href="javascript:void(0);" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+<!--END SCROLL-->
+    </div>
+</body>
+</html>

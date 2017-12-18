@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="description">
+    <meta name="keyworks" content="keyworks">
+    <title>Sofi forums</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/main.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- HEADER -->
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- LOGO AND SEARCH -->
+                <a class="header__logo" href="#"><img src="images/logo.svg" alt=""></a>
+                <form id="formsearch" class="ui search fluid formsearch" action="#" method="get">
+                    <button class="btn-clean formsearch__submit" type="submit" title="Tìm ngay"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+                    <input type="text" class="prompt form-control formsearch__input" placeholder="Tìm kiếm..." name="search">
+                </form>
+                <div class="results"></div>
+                <script>
+                    var contentSourceSearch = [{
+                        title: 'Google',
+                        description: 'Dịch vụ ngân hàng',
+                        url: 'https://semantic-ui.com'
+                    }, {
+                        title: 'Facebook',
+                        description: 'Dịch vụ bảo hiểm',
+                        url: 'https://semantic-ui.com'
+                    }, {
+                        title: 'Microsoft',
+                        description: 'Dịch vụ đầu tư',
+                        url: 'https://semantic-ui.com'
+                    }];
+                    $('#formsearch')
+                        .search({
+                            source: contentSourceSearch,
+                            templates: {
+                                message: function() {
+                                    html = '<div class="message empty"><div class="description">Không tìm thấy kết quả</div></div>';
+                                    return html;
+                                }
+                            },
+                        });
+                </script>
+                <!-- END LOGO AND SEARCH -->
+            </div>
+            <div class="col-sm-4">
+                <!-- MENU -->
+                <ul class="header-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Tín dụng"><i class="fa fa-usd header-nav__i" aria-hidden="true"></i></i><span class="noti-new visi-hidden">999</span></a>
+                        <ul class="dropdown-menu pull-right">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Bạn bè"><i class="fa fa-address-book header-nav__i" aria-hidden="true"></i></i><span class="noti-new visi-hidden">999</span></a>
+                        <ul class="dropdown-menu pull-right">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+
+                    <!--  MESSENGER -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Tin nhắn"><i class="fa fa-comment header-nav__i" aria-hidden="true"></i><span class="noti-new">999</span></a>
+                        <!-- MESSENGER DROPDOWN -->
+                        <ul class="dropdown-menu pull-right messenger-menu">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <p class="messenger-menu__header">Tin nhắn<a href="#">Đánh dấu tất cả đã đọc</a><a href="#">Cài đặt</a></p>
+                            <!-- MESSENGER DROPDOWN CONTENT -->
+                            <li class="messenger-menu__content">
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="messenger-item" href="#">
+                                    <img class="messenger-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="messenger-item__content">
+                                        <h6 class="messenger-item__username">Username</h6>
+                                        <p class="messenger-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="messenger-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle messenger-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                            </li>
+                            <!-- END MESSENGER DROPDOWN CONTENT -->
+                            <p class="messenger-menu__footer"><a href="#">Xem tất cả</a></p>
+                        </ul>
+                        <!-- END MESSENGER DROPDOWN -->
+                    </li>
+                    <!-- END MESSENGER-->
+
+                    <!-- NOTIFICATION -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="Thông báo"><i class="fa fa-bell header-nav__i" aria-hidden="true"></i><span class="noti-new">10</span></a>
+                        <!-- NOTIFICATION DROPDOWN -->
+                        <ul class="dropdown-menu pull-right notification-menu">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer"></span>
+                            <p class="notification-menu__header">Thông báo <a href="#">Đánh dấu tất cả đã đọc</a><a href="#">Cài đặt</a></p>
+                            <!-- NOTIFICATION DROPDOWN CONTENT -->
+                            <li class="notification-menu__content">
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                                <a class="notification-item" href="#">
+                                    <img class="notification-item__img" src="images/avata.png" alt="" width="100%">
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__username">Username</h6>
+                                        <p class="notification-item__noti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptatibus ipsa maiores facere cumque at illum maxime adipisci voluptatem.</p>
+                                        <time class="notification-item__time">2 minutes ago</time>
+                                    </div>
+                                    <i class="fa fa-circle notification-item__status visi-hidden" aria-hidden="true" title="Chưa xem"></i>
+                                </a>
+                                <!-- end item -->
+                            </li>
+                            <!-- END NOTIFICATION DROPDOWN CONTENT -->
+                            <p class="notification-menu__footer"><a href="#">Xem tất cả</a></p>
+                        </ul>
+                        <!-- END NOTIFICATION DROPDOWN -->
+                    </li>
+                    <!-- END NOTIFICATION -->
+
+                    <!-- PROFILE -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle header-nav__a header-nav__a-end" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Cá nhân hóa"><img class="header-nav__img" src="images/avata.png" alt="" width="100%"></a>
+                        <ul class="dropdown-menu pull-right profile-menu">
+                            <span class="glyphicon glyphicon-triangle-top space-pointer space-pointer-end"></span>
+                            <li><a href="#">Xem hồ sơ của bạn</a></li>
+                            <li><a href="#">Nhật ký hoạt động</a></li>
+                            <li><a href="#">Tùy chọn</a></li>
+                            <li><a href="#">Chi tiết cá nhân</a></li>
+                            <li><a href="#">Thiết lập</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Trợ giúp</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Thoát</a></li>
+                        </ul>
+                    </li>
+                    <!-- END PROFILE -->
+                </ul>
+                <!-- END MENU -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER -->
+        
+<!-- MAIN -->
+<main id="index">
+    <div class="container">
+        <div class="row">
+            <!-- LEFT -->
+            <div id="main-content" class="col-sm-9 col-sm-9-fix-pr">
+                <!-- MODAL -->
+                <!-- MODAL LIKE -->
+<div id="view-like-order-number" class="ui modal mini view-like-modal">
+    <div class="header view-like-modal__header">Thành viên yêu thích chủ đề</div>
+    <div class="content view-like-modal__content">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/avata.png" alt="..." width="60px" height="60px">
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading"><a href="#">Lâm Bình Chi</a></h5>
+                <h5>Tổng số bài viết: 69</h5>
+                <h5 class="view-like-modal__begin">Tham gia diễn đàn từ: 2017/7/7</h5>
+            </div>
+        </div>
+        <!-- end item -->
+    </div>
+    <div class="actions view-like-modal__footer">
+        <a href="#">Xem thêm</a>
+    </div>
+</div>
+<script>
+    function runModalViewLike() {
+        $('#view-like-order-number')
+            .modal('show');
+    }
+</script>
+<!-- END MODAL LIKE --> <!-- MODAL EDIT CONTENT -->
+<div id="modal-edit-content" class="ui modal small basic">
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <textarea class="modal-edit-content__text"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="actions modal-edit-content__action">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i> không
+        </div>
+        <div class="ui green ok inverted button">
+            <i class="checkmark icon"></i> Có
+        </div>
+    </div>
+</div>
+<script>
+    function runModalEditContent() {
+        $('#modal-edit-content')
+            .modal('show');
+    }
+</script>
+<!-- END MODAL EDIT CONTENT --> <!-- MODAL CONFIRM -->
+<div id="modal-confirm" class="ui modal mini basic modal-confirm">
+    <div class="content">
+        <p class="modal-confirm__messenger">Bạn chắc chắn muốn xóa nội dung này?</p>
+    </div>
+    <div class="actions modal-confirm__action">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i> không
+        </div>
+        <div class="ui green button" onclick="hideModalConfirm()">
+            <i class="checkmark icon"></i> Có
+        </div>
+    </div>
+</div>
+<script>
+    function runModalConfirm() {
+        $('#modal-confirm')
+            .modal('show');
+    };
+
+    function hideModalConfirm() {
+        $('#modal-confirm')
+            .modal('hide');
+        notificationMessenger();
+    };
+
+    function notificationMessenger() {
+        toastr.success('Đã thực hiện thành công!', 'Thông báo');
+    }
+</script>
+<!-- END MODAL CONFIRM --> <!-- MODAL REPORT -->
+<div id="modal-report" class="ui modal small basic modal-report">
+    <div class="header modal-report__title">Báo cáo sai phạm</div>
+    <div class="content">
+        <div class="ui form">
+            <div class="field">
+                <textarea class="modal-report__text"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="actions modal-report__action">
+        <div class="ui red basic cancel inverted button">
+            <i class="remove icon"></i> không
+        </div>
+        <div class="ui green ok inverted button">
+            <i class="checkmark icon"></i> Có
+        </div>
+    </div>
+</div>
+<script>
+    function runModalReport() {
+        $('#modal-report')
+            .modal('show');
+    }
+</script>
+<!-- END MODAL EDIT CONTENT -->
+                <!-- END MODAL -->
+                <!-- BREADCRUMB -->
+<div class="breadcrumb-wrap">
+    <div class="ui breadcrumb breadcrumb-wrap__content">
+        <a class="section">Home</a>
+        <i class="right chevron icon divider"></i>
+        <a class="section">Registration</a>
+        <i class="right arrow icon divider"></i>
+        <div class="active section">Personal Information</div>
+    </div>
+</div>
+<!-- END BREADCRUMB --> <!-- POST -->
+<section class="post-wrap">
+    <!-- NAV TABS -->
+    <ul class="nav nav-tabs post-tab" role="tablist">
+        <li class="post-tab__item active" role="presentation"><a href="#status" aria-controls="status" role="tab" data-toggle="tab"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> STATUS</a></li>
+        <li class="post-tab__item" role="presentation"><a href="#topic" aria-controls="topic" role="tab" data-toggle="tab"><i class="fa fa-newspaper-o" aria-hidden="true"></i> TOPIC</a></li>
+    </ul>
+    <!-- END NAV TABS -->
+
+    <div class="tab-content">
+        <div id="status" class="tab-pane fade in active" role="tabpanel">
+            <!-- STATUS -->
+            <div class="post-status">
+                <!-- INPUT TEXT -->
+                <div class="post-status__content">
+                    <textarea class="form-control post-status__textarea" rows="6" cols="" placeholder="Cập nhật trạng thái..."></textarea>
+                </div>
+                <!-- END INPUT TEXT -->
+                <!-- GMAP MAP API -->
+<div id="google-map-api-wrap">
+    <!-- GET GEOLOCATION -->
+    <div id="google-map-api-get-geolocation">
+    </div>
+    <!-- END GET GEOLOCATION -->
+
+    <!-- GET LOCATION NAME -->
+    <input id="pac-input" class="controls" type="text" placeholder="Enter a location">
+    <!-- END GET LOCATION NAME -->
+
+    <!-- GET LOCATION INFO -->
+    <div id="infowindow-content">
+        <span id="place-name" class="title"></span><br> Place ID <span id="place-id"></span><br>
+        <span id="place-address"></span>
+    </div>
+    <!-- END GET LOCATION INFO -->
+    <div id="map" class="google-map-api"></div>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 16.0544068,
+                    lng: 108.20216670000002
+                },
+                zoom: 13
+            });
+
+            var input = document.getElementById('pac-input');
+            var getGeolocaltion = document.getElementById('google-map-api-get-geolocation');
+
+            var autocomplete = new google.maps.places.Autocomplete(input);
+            autocomplete.bindTo('bounds', map);
+
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+            var infowindow = new google.maps.InfoWindow();
+            var infowindowContent = document.getElementById('infowindow-content');
+            infowindow.setContent(infowindowContent);
+
+            var marker = new google.maps.Marker({});
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+
+            // Get location when search
+            autocomplete.addListener('place_changed', function() {
+                // Clear marker of event click
+                markerClick.setMap(null);
+
+                var place = autocomplete.getPlace();
+                if (!place.geometry) {
+                    return;
+                }
+
+                if (place.geometry.viewport) {
+                    map.fitBounds(place.geometry.viewport);
+                } else {
+                    map.setCenter(place.geometry.location);
+                    map.setZoom(17);
+                }
+
+                // Set the position of the marker using the place ID and location.
+                marker.setPlace({
+                    placeId: place.place_id,
+                    location: place.geometry.location
+                });
+                // marker.setVisible(true);
+
+                infowindowContent.children['place-name'].textContent = place.name;
+                infowindowContent.children['place-id'].textContent = place.place_id;
+                infowindowContent.children['place-address'].textContent = place.formatted_address;
+
+                marker.setMap(map);
+                infowindow.open(map, marker);
+
+                // Get geolocation when search - Push value into input
+                getGeolocaltion.innerHTML = "<input id='get-latitude' type='text' value='" + place.geometry.location.lat() + "'><input id='get-longitude' type='text' value='" + place.geometry.location.lng() + "'>";
+
+            });
+
+            // Get location when click
+            var markerClick = new google.maps.Marker({});
+            markerClick.addListener('click', function() {
+                infowindow.open(map, markerClick);
+            });
+            var geocoder = new google.maps.Geocoder;
+
+            // Add event
+            map.addListener('click', function(x) {
+                var latlng = x.latLng;
+
+                // Clear marker of event search
+                marker.setMap(null);
+
+                // Reverse geocoding
+                geocoder.geocode({
+                    'location': latlng
+                }, function(results, status) {
+                    if (status === 'OK') {
+                        if (results[0]) {
+                            // infowindow.setContent(results[0].formatted_address);
+                            infowindowContent.children['place-name'].textContent = results[0].name || 'Không có tên';
+                            infowindowContent.children['place-id'].textContent = results[0].place_id;
+                            infowindowContent.children['place-address'].textContent = results[0].formatted_address;
+                            // Push address into input search
+                            input.value = infowindowContent.children['place-address'].textContent;
+                        } else {
+                            window.alert('No results found');
+                        }
+                    } else {
+                        window.alert('Geocoder failed due to: ' + status);
+                    }
+                });
+
+                // Create map marker when click
+                markerClick.setPosition(latlng);
+                markerClick.setMap(map);
+                infowindow.open(map, markerClick);
+
+                // Push value into input
+                getGeolocaltion.innerHTML = "<input id='get-latitude' type='text' value='" + latlng.lat() + "'><input id='get-longitude' type='text' value='" + latlng.lng() + "'>";
+            });
+        }
+
+        function gmapShow(map) {
+            var status = $('#google-map-api-wrap');
+            if (status.css('display') == 'none') {
+                $('#google-map-api-wrap').css('display', 'block');
+                initMap();
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjfKcse9ihTLOpnB92rODemXRu69drLdA&libraries=places" async defer></script>
+</div>
+<!-- END GMAP API --> <!-- TAG FRIEND -->
+<div id="tag-friend" class="tag-friend">
+    <div class="ui loading fluid multiple search selection dropdown">
+        <input type="hidden" name="country" value="">
+        <i id="tag-friend-icon" class="dropdown icon"></i>
+        <input id="tag-friend-search" class="search" autofocus onfocus="tagFriendSearch(this)" onblur="tagFriendIconHide()">
+        <div class="default text">Tag friends...</div>
+        <!-- DATA FRIEND -->
+        <div id="tag-friend-data" class="menu tag-friend__data">
+            <div class="item">doanchibinh</div>
+            <div class="item">lambinhchi</div>
+            <div class="item">doanduykhanh</div>
+            <div class="item">doanchinhthuan</div>
+            <div class="item">nhacmatquan</div>
+            <div class="item">taymonkhanh</div>
+            <div class="item">phamkimlien</div>
+        </div>
+        <!-- END DATA FRIEND -->
+    </div>
+</div>
+<script>
+    function tagFriendSearch(inputSearch) {
+        $('#tag-friend-icon').css('display', 'inline-block');
+        // var result = inputSearch.value;
+        // var resultStatus = result.replace(/ /g, '');
+        // var data = $('#tag-friend-data>.item');
+        // if (resultStatus == '') {
+        //     data.css('display', 'none');
+        // } else {
+        //     data.css('display', 'block');
+        // }
+
+    }
+
+    function tagFriendShow() {
+        $('#tag-friend').css('display', 'block');
+    }
+
+    function tagFriendIconHide() {
+        $('#tag-friend-icon').css('display', 'none');
+    }
+</script>
+<!-- END TAG FRIEND --> <!-- SMILE SHOW -->
+<div id="smile-show" class="smile-show">
+</div>
+<!-- END SMILE SHOW -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- BUTTON ACTION -->
+                        <div class="post-status__cleft">
+                            <label class="post-status__action"><input class="hide" type="file" name="" value=""><i class="fa fa-picture-o" aria-hidden="true"></i></label>
+                            <!-- SMILE -->
+                            <div class="ui dropdown status-smile">
+                                <label class="post-status__action"><i class="fa fa-smile-o" aria-hidden="true"></i></label>
+                                <div class="menu">
+                                    <div class="item">
+                                        <i class="dropdown icon"></i>
+                                        <span class="text status-smile__text">Cảm xúc</span>
+                                        <div class="right menu">
+                                            <div class="status-smile__icon">Vui vẻ <img src="images/ic0.png" alt=""></div>
+                                            <div class="status-smile__icon">Phấn khởi <img src="images/ic1.png" alt=""></div>
+                                            <div class="status-smile__icon">Hạnh phúc <img src="images/ic2.png" alt=""></div>
+                                            <div class="status-smile__icon">Tình yêu <img src="images/ic2.png" alt=""></div>
+                                            <div class="status-smile__icon">Buồn <img src="images/ic3.png" alt=""></div>
+                                            <div class="status-smile__icon">Giận dỗi <img src="images/ic5.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="dropdown icon"></i>
+                                        <span class="text status-smile__text">Hoạt động</span>
+                                        <div class="right menu">
+                                            <div class="status-smile__icon">Đá bóng <img src="images/ic6.png" alt=""></div>
+                                            <div class="status-smile__icon">Nghe nhạc <img src="images/ic7.png" alt=""></div>
+                                            <div class="status-smile__icon">Đọc sách <img src="images/ic8.png" alt=""></div>
+                                            <div class="status-smile__icon">Xem phim <img src="images/ic9.png" alt=""></div>
+                                            <div class="status-smile__icon">Chơi game <img src="images/ic10.png" alt=""></div>
+                                            <div class="status-smile__icon">Nghe nhạc <img src="images/ic11.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END SMILE -->
+                            <label class="post-status__action" onclick="gmapShow(this)"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                            <label class="post-status__action" onclick="tagFriendShow()"><i class="fa fa-at" aria-hidden="true"></i></label>
+
+                        </div>
+                        <!-- END BUTTON ACTION -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="post-status__cright">
+                            <!-- SELECT BOX -->
+                            <div class="ui fluid selection dropdown post-status__share">
+                                <input type="hidden" name="user">
+                                <i class="dropdown icon post-status__share-icon"></i>
+                                <div class="default text post-status__share-text">
+                                    <i class="fa fa-globe" aria-hidden="true"></i> Mọi người
+                                </div>
+                                <div class="menu post-status__share-menu">
+                                    <div class="item active selected post-status__share-item" data-value="public">
+                                        <i class="fa fa-globe" aria-hidden="true"></i> Mọi người
+                                    </div>
+                                    <!-- end item -->
+                                    <div class="item post-status__share-item" data-value="friend">
+                                        <i class="fa fa-user-plus" aria-hidden="true"></i> Bạn bè
+                                    </div>
+                                    <!-- end item -->
+                                    <div class="item post-status__share-item" data-value="private">
+                                        <i class="fa fa-lock" aria-hidden="true"></i> Riêng tư
+                                    </div>
+                                    <!-- end item -->
+                                </div>
+                            </div>
+                            <!-- END SELECT BOX -->
+                            <button class="btn btn-warning btn-submit" type="submit">Đăng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END STATUS -->
+        </div>
+        <div id="topic" class="tab-pane fade" role="tabpanel">
+            <!-- TOPIC -->
+            <div class="post-topic">
+                <!-- INPUT TEXT -->
+                <div class="post-topic__title">
+                    <input class="form-control post-topic__input" rows="10" cols="" placeholder="Tên chủ đề..."></input>
+                </div>
+                <div class="post-topic__content">
+                    <textarea class="form-control post-topic__textarea" rows="10" cols="" placeholder="Nội dung chủ đề..."></textarea>
+                </div>
+                <!-- END INPUT TEXT -->
+                <div class="row">
+                    <div class="col-sm-8">
+                        <!-- BUTTON ACTION -->
+                        <div class="post-topic__cleft">
+                            <!-- SELECT BOX -->
+                            <div class="ui fluid selection dropdown post-topic__choose">
+                                <input type="hidden" name="user">
+                                <i class="dropdown icon post-topic__choose-icon"></i>
+                                <div class="default text post-topic__choose-text">
+                                    Chọn diễn đàn dùng class="active selected"
+                                </div>
+                                <div class="menu post-topic__choose-menu">
+                                    <div class="post-topic__choose-item">
+                                        <i class="fa fa-university" aria-hidden="true"></i> Dịch vụ ngân hàng
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="bank">Dịch vụ ngân hàng 1
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="bank">Dịch vụ ngân hàng 2
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="bank">Dịch vụ ngân hàng 3
+                                    </div>
+                                    <!-- end group item -->
+                                    <div class="post-topic__choose-item" data-value="insurance">
+                                        <i class="fa fa-user" aria-hidden="true"></i> Dịch vụ bảo hiểm
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="insurance">Dịch vụ bảo hiểm 1
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="insurance">Dịch vụ bảo hiểm 2
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="insurance">Dịch vụ bảo hiểm 3
+                                    </div>
+                                    <!-- end group item -->
+                                    <div class="post-topic__choose-item" data-value="investment">
+                                        <i class="fa fa-usd" aria-hidden="true"></i> Dịch vụ đầu tư
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="investment">Dịch vụ đầu tư 1
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="investment">Dịch vụ đầu tư 2
+                                    </div>
+                                    <div class="item post-topic__choose-item" data-value="investment">Dịch vụ đầu tư 3
+                                    </div>
+                                    <!-- end group item -->
+                                </div>
+                            </div>
+                            <!-- END SELECT BOX -->
+                            <label class="post-topic__action" title="Tập tin đính kèm"><input class="hide" type="file" name="" value=""><i class="fa fa-paperclip" aria-hidden="true"></i></label>
+                            <!-- END BUTTON ACTION -->
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="post-topic__cright">
+                            <button class="btn btn-warning btn-submit" type="submit">Đăng</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TOPIC -->
+            </div>
+        </div>
+</section>
+<!-- END POST --> <!-- STATUS LINE -->
+<section class="status-line-item">
+    <!-- STATUS ITEM HEADER -->
+    <div class="status-line-item-header">
+        <div class="status-line-item-header__left">
+            <a class="status-line-item-header__avata" href="#">
+                <img src="images/avata.png" alt="..." width="100%">
+            </a>
+        </div>
+        <div class="status-line-item-header__right">
+            <div class="status-line-item-header__title">
+                <div>
+                    <a class="" href="#">Doãn Chí Bình</a> đã làm cái chi đó với <a href="#">Tiểu Long Nữ</a><span> - Phấn khởi <img src="images/ic1.png" alt="" width="20" height="20"></span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="status-line-item-header__info">
+                <time class="status-line-item-header__time" datetime="">Hôm qua lúc 9:00 PM</time>
+                <address class="status-line-item-header__address">Tại <a href="#">Triều Tiên</a></address>
+                <!-- SELECT BOX -->
+                <div class="ui fluid selection dropdown post-status__share">
+                    <input type="hidden" name="user">
+                    <i class="dropdown icon post-status__share-icon"></i>
+                    <div class="default text post-status__share-text">
+                        <i class="fa fa-globe" aria-hidden="true"></i> Mọi người
+                    </div>
+                    <div class="menu post-status__share-menu">
+                        <div class="item active selected post-status__share-item" data-value="public">
+                            <i class="fa fa-globe" aria-hidden="true"></i> Mọi người
+                        </div>
+                        <!-- end item -->
+                        <div class="item post-status__share-item" data-value="friend">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i> Bạn bè
+                        </div>
+                        <!-- end item -->
+                        <div class="item post-status__share-item" data-value="private">
+                            <i class="fa fa-lock" aria-hidden="true"></i> Riêng tư
+                        </div>
+                        <!-- end item -->
+                    </div>
+                </div>
+                <!-- END SELECT BOX -->
+            </div>
+        </div>
+    </div>
+    <!-- END STATUS ITEM HEADER -->
+
+    <!-- STATUS CONTENT TEXT -->
+    <div class="status-line-item-content-text">
+        <p>Bất cứ vấn đề gì cũng đều có 2 mặt của nó cả. Khi 2 người cãi nhau nghĩa là lúc đó 2 người, mỗi người chỉ nhìn thấy 1 mặt của vấn đề, 2 người nhìn 2 mặt hoàn toàn khác nhau. Nếu lúc đó ai bình tĩnh suy nghĩ kỹ hiểu hết mặt</p>
+    </div>
+    <a href="#">Xem thêm</a>
+    <!-- END STATUS CONTENT TEXT -->
+
+    <!-- STATUS CONTENT IMAGE -->
+    <div class="status-line-item-content-image">
+        <div id="view-image-multi">
+            <script>
+                $('#view-image-multi').imagesGrid({
+                    images: ['images/1.png', 'images/2.png', 'images/3.png', 'images/slider2.png'],
+                    align: true,
+                    getViewAllText: function(imgsCount) {
+                        return 'Xem tất cả'
+                    }
+                });
+            </script>
+        </div>
+    </div>
+    <!-- END STATUS CONTENT IMAGE -->
+
+    <!-- STATUS CONTENT COMMENT-->
+    <div class="status-line-item-content-comment">
+        <a class="status-line-item-content-comment__status status-line-item-content-comment__status-like active-like" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+        <a class="status-line-item-content-comment__status status-line-item-content-comment__status-view-like" href="javascript:void(0)" onclick="runModalViewLike()">Thích: 69</a>
+        <a class="status-line-item-content-comment__status" href="#"><i class="glyphicon glyphicon-comment"></i> Bình luận: 0</a> <!-- COMMENT -->
+<div class="comment-wrap">
+    <!-- FORM COMMENT -->
+    <form class="comment-form comment-form--simplebox" action="#" method="get">
+        <div class="comment-form__content">
+            <img class="comment-form__img" src="images/avata.png" alt="" width="32" height="32">
+            <textarea class="form-control comment-form__text" rows="1" placeholder="Thêm nhận xét công khai..."></textarea>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-default comment-form__btn" type="button">Hủy</button>
+            <button class="btn btn-primary comment-form__btn" type="button">Nhận xét</button>
+        </div>
+    </form>
+    <!-- END FORM COMMENT -->
+
+    <!-- COMMENT USER -->
+    <div class="comment-user">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- END COMMENT USER -->
+
+    <!-- SUB COMMENT -->
+    <div class="comment-user comment-user--sub">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+        </div>
+    </div>
+    <form class="comment-form comment-form--sub" action="#" method="get">
+        <div class="comment-form__content">
+            <img class="comment-form__img" src="images/avata.png" alt="" width="32" height="32">
+            <textarea class="form-control comment-form__text" rows="1" placeholder="Thêm nhận xét công khai..."></textarea>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-default comment-form__btn" type="button">Hủy</button>
+            <button class="btn btn-primary comment-form__btn" type="button">Nhận xét</button>
+        </div>
+    </form>
+    <!-- END SUB COMMENT -->
+
+    <!-- end item -->
+
+    <!-- COMMENT USER -->
+    <div class="comment-user">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- END COMMENT USER -->
+
+    <!-- SUB COMMENT -->
+    <div class="comment-user comment-user--sub">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+        </div>
+    </div>
+    <form class="comment-form comment-form--sub" action="#" method="get">
+        <div class="comment-form__content">
+            <img class="comment-form__img" src="images/avata.png" alt="" width="32" height="32">
+            <textarea class="form-control comment-form__text" rows="1" placeholder="Thêm nhận xét công khai..."></textarea>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-default comment-form__btn" type="button">Hủy</button>
+            <button class="btn btn-primary comment-form__btn" type="button">Nhận xét</button>
+        </div>
+    </form>
+    <!-- END SUB COMMENT -->
+
+    <!-- end item -->
+
+    <!-- READMORE COMMENT -->
+    <div class="comment-readmore">
+        <a href="#">Xem thêm bình luận</a>
+        <span>2 trong số 99</span>
+    </div>
+    <!-- END READMORE COMMENT -->
+</div>
+<!-- END COMMENT -->
+    </div>
+    <!-- END STATUS CONTENT COMMENT -->
+</section>
+<!-- END STATUS LINE --> <!-- TOPIC LINE -->
+<section class="topic-line-item">
+    <!-- STATUS ITEM HEADER -->
+    <div class="topic-line-item-header">
+        <div class="topic-line-item-header__left">
+            <a class="topic-line-item-header__avata" href="#">
+                <img src="images/avata-f.png" alt="..." width="100%">
+            </a>
+        </div>
+        <div class="topic-line-item-header__right">
+            <div class="topic-line-item-header__title">
+                <div>
+                    <a class="" href="#">Lâm bình chi</a> đã đăng một bài viết <time datetime="">- Hôm qua lúc 9:00 PM</time>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <h5>Bài viết: Đạo dùng kiếm</h5>
+        </div>
+    </div>
+    <!-- END STATUS ITEM HEADER -->
+
+    <!-- STATUS CONTENT TEXT -->
+    <div class="topic-line-item-content-text">
+        <p>Bất kì thanh kiếm nào cũng có 2 lưỡi, nếu nhiều hoặc ít hơn 2 lưỡi thì không thể gọi là kiếm được. Kiếm có to nhỏ dài ngắn, kiếm to dài mà không bền thì không đùng được, nhưng đạo dùng kiếm há lại coi trọng những điều phàm tục này. Người đời cứ
+            mãi chạy theo những thứ phàm tục mà quên đí đạo của kiếm. Đến cả Dương đại hiệp tuy một tay vẫn ham hố vác thanh huyền thiết trọng kiếm gần trăm cân đi lòe thiên hạ...</p>
+    </div>
+    <a href="#">Xem thêm</a>
+    <!-- END STATUS CONTENT TEXT -->
+
+    <!-- STATUS CONTENT IMAGE -->
+    <div class="topic-line-item-content-image">
+        <div id="view-image-multi-2">
+            <script>
+                $('#view-image-multi-2').imagesGrid({
+                    images: ['images/1.png', 'images/2.png', 'images/3.png', 'images/slider2.png'],
+                    align: true,
+                    getViewAllText: function(imgsCount) {
+                        return 'Xem tất cả'
+                    }
+                });
+            </script>
+        </div>
+    </div>
+    <!-- END STATUS CONTENT IMAGE -->
+
+    <!-- STATUS ATTACH FILE -->
+    <div class="topic-line-item-attach-file">
+        <p>Tệp tin đính kèm: <span class="btn btn-primary topic-line-item-attach-file-name">Tịch tà phổ</span></p>
+    </div>
+    <!-- END STATUS ATTACH FILE -->
+
+    <!-- STATUS CONTENT COMMENT-->
+    <div class="topic-line-item-content-comment">
+        <a class="topic-line-item-content-comment__status topic-line-item-content-comment__status-like active-like" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> </a>
+        <a class="topic-line-item-content-comment__status topic-line-item-content-comment__status-view-like" href="javascript:void(0)" onclick="runModalViewLike()">Thích: 69</a>
+        <a class="topic-line-item-content-comment__status" href="#"><i class="glyphicon glyphicon-comment"></i> Bình luận: 0</a> <!-- COMMENT -->
+<div class="comment-wrap">
+    <!-- FORM COMMENT -->
+    <form class="comment-form comment-form--simplebox" action="#" method="get">
+        <div class="comment-form__content">
+            <img class="comment-form__img" src="images/avata.png" alt="" width="32" height="32">
+            <textarea class="form-control comment-form__text" rows="1" placeholder="Thêm nhận xét công khai..."></textarea>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-default comment-form__btn" type="button">Hủy</button>
+            <button class="btn btn-primary comment-form__btn" type="button">Nhận xét</button>
+        </div>
+    </form>
+    <!-- END FORM COMMENT -->
+
+    <!-- COMMENT USER -->
+    <div class="comment-user">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- END COMMENT USER -->
+
+    <!-- SUB COMMENT -->
+    <div class="comment-user comment-user--sub">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+        </div>
+    </div>
+    <form class="comment-form comment-form--sub" action="#" method="get">
+        <div class="comment-form__content">
+            <img class="comment-form__img" src="images/avata.png" alt="" width="32" height="32">
+            <textarea class="form-control comment-form__text" rows="1" placeholder="Thêm nhận xét công khai..."></textarea>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-default comment-form__btn" type="button">Hủy</button>
+            <button class="btn btn-primary comment-form__btn" type="button">Nhận xét</button>
+        </div>
+    </form>
+    <!-- END SUB COMMENT -->
+
+    <!-- end item -->
+
+    <!-- COMMENT USER -->
+    <div class="comment-user">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- END COMMENT USER -->
+
+    <!-- SUB COMMENT -->
+    <div class="comment-user comment-user--sub">
+        <div class="comment-user__avata">
+            <a href="#"><img src="images/avata.png" alt="" width="32" height="32"></a>
+        </div>
+        <div class="comment-user__content">
+            <div class="comment-user__header">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=Ug-2Mn0chEc">Tình yêu đó mày đem cho ai</a>
+                    <span>1 triệu năm trước</span>
+                </div>
+                <!-- DROPDOWN CONTROL -->
+<div class="dropdown dropdown-control">
+    <div class="dropdown-control__icon" data-toggle="dropdown"><i class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i></div>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-control__dropdown">
+        <li onclick="runModalEditContent()"><a href="javascript:void(0)">Chỉnh sửa</a></li>
+        <li onclick="runModalConfirm()"><a href="javascript:void(0)">Xóa</a></li>
+        <li onclick="runModalReport()"><a href="javascript:void(0)">Report</a></li>
+    </ul>
+</div>
+<!-- END DROPDOWN CONTROL -->
+            </div>
+            <div class="comment-user__body">
+                <div class="comment-user__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit qui nam, itaque cum sapiente repudiandae sint aut iste, labore iure suscipit pariatur facilis, corrupti molestias deserunt ratione ea asperiores.</div>
+                <div class="comment-user__text-toggle">
+                    <button><span>Đọc thêm</span></button>
+                    <button><span>Ẩn bớt</span></button>
+                </div>
+            </div>
+            <div class="comment-user__footer">
+                <button><span>Trả lời</span></button>
+                <button><i class="fa fa-thumbs-up active-like" aria-hidden="true"></i></button>
+                <button onclick="runModalViewLike()"><span class="comment-user__footer-quantity"> 10</span></button>
+            </div>
+        </div>
+    </div>
+    <form class="comment-form comment-form--sub" action="#" method="get">
+        <div class="comment-form__content">
+            <img class="comment-form__img" src="images/avata.png" alt="" width="32" height="32">
+            <textarea class="form-control comment-form__text" rows="1" placeholder="Thêm nhận xét công khai..."></textarea>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-default comment-form__btn" type="button">Hủy</button>
+            <button class="btn btn-primary comment-form__btn" type="button">Nhận xét</button>
+        </div>
+    </form>
+    <!-- END SUB COMMENT -->
+
+    <!-- end item -->
+
+    <!-- READMORE COMMENT -->
+    <div class="comment-readmore">
+        <a href="#">Xem thêm bình luận</a>
+        <span>2 trong số 99</span>
+    </div>
+    <!-- END READMORE COMMENT -->
+</div>
+<!-- END COMMENT -->
+    </div>
+    <!-- END STATUS CONTENT COMMENT -->
+</section>
+<!-- END TOPIC LINE -->
+            </div>
+            <!-- END LEFT -->
+
+            <!-- RIGHT -->
+            <div id="side-bar-right" class="col-sm-3 col-sm-3-fix-pl">
+                <!-- SLIDER -->
+<section class="slider-right">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item slider-right__item active" style="background:url(images/slider1.png) no-repeat center center; background-size:cover">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item slider-right__item" style="background:url(images/slider2.png) no-repeat center center; background-size:cover">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item slider-right__item" style="background:url(images/slider3.png) no-repeat center center; background-size:cover">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!-- END SLIDER -->
+ <!-- TOTAL USER -->
+<section class="total-user">
+    <div class="total-user__header">
+        <a class="total-user__title" href="#">Thống kê cá nhân</a>
+    </div>
+    <ul class="list-group total-user__content">
+        <li class="list-group-item g-nowrap-text">
+            Tham gia từ: 7 tháng 7 2017
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">140</span> <a class="total-user__link" href="">Bài viết</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">14</span> <a class="total-user__link" href="">Được thích</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">4</span> <a class="total-user__link" href="">Đi thích dạo</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">1</span> <a class="total-user__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+    </ul>
+</section>
+<!-- END TOTAL USER --> <!-- SOFI ROLE -->
+<section class="sofi-role">
+    <div class="sofi-role__header">
+        <a class="sofi-role__title" href="#">Quy định tại Sofi forums</a>
+    </div>
+    <ul class="list-group sofi-role__content">
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <a class="sofi-role__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+    </ul>
+</section>
+<!-- END SOFI ROLE --> <!-- USER ONLINE -->
+<section class="user-online">
+    <div class="user-online__header">
+        <a class="user-online__title" href="#">Thành viên đang online</a>
+    </div>
+    <div class="user-online__content">
+        <a class="btn btn-default user-online__member">Tây Môn Khánh</a>
+        <a class="btn btn-default user-online__member">Phan Kim Liên</a>
+        <a class="btn btn-default user-online__member">Khoai Môn Kho Tuyết</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+        <a class="btn btn-default user-online__member">CoCo Lee</a>
+        <a class="btn btn-default user-online__member">Di Da Di</a>
+        <a class="btn btn-default user-online__member">Vô Danh</a>
+    </div>
+</section>
+<!-- END USER ONLINE --> <!-- TOTAL FORUM -->
+<section class="total-forum">
+    <div class="total-forum__header">
+        <a class="total-forum__title" href="#">Thống kê diễn đàn</a>
+    </div>
+    <ul class="list-group total-forum__content">
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">999</span> <a class="total-forum__link" href="">Đề tài</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">140</span> <a class="total-forum__link" href="">Bài viết</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">14</span> <a class="total-forum__link" href="">Thành viên</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">4</span> <a class="total-forum__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+        <li class="list-group-item g-nowrap-text">
+            <span class="badge">1</span> <a class="total-forum__link" href="">Cras justo odio cras justo odio cras justo odio cras justo odio</a>
+        </li>
+    </ul>
+</section>
+<!-- END TOTAL FORUM -->
+            </div>
+            <!-- END RIGHT -->
+        </div>
+    </div>
+</main>
+<!-- END MAIN -->
+
+        <!-- FOOTER -->
+<footer class="footer">
+    <p class="footer__info"><span>© 2017 Sofi. All Rights Reserved.</span> <a class="footer__design" href="http://minaworks.vn/" target="_blank">Design by MINAWORKS</a></p>
+</footer>
+<!-- END FOOTER -->
+
+<!--SCROLL-->
+<a id="scroll-back-top" class="scroll-back-top" href="javascript:void(0);" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+<!--END SCROLL-->
+    </div>
+</body>
+</html>
