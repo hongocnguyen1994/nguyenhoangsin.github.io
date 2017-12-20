@@ -486,11 +486,15 @@
 </aside>
 <!-- END MODAL FORGOT PASSWORD -->
         <main>
-            <!-- FILTER -->
+            <!-- HOME SEARCH -->
             <aside class="home-search">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="col-md-12 col-lg-4">
+                            <input class="input-blue" type="text" placeholder="Nhập nội dung...">
+                        </div>
+                        <div class="col-md-8 col-lg-3">
+                            <!-- <input class="input-blue" type="text" placeholder="Nhập địa điểm..."> -->
                             <div class="ui selection dropdown">
                                 <div class="default text">Chọn tỉnh thành</div>
                                 <i class="icon-icon_dropdown_menu"></i>
@@ -500,9 +504,66 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="col-md-4 col-lg-3">
                             <div class="ui selection dropdown">
                                 <div class="default text">Chọn danh mục</div>
+                                <i class="icon-icon_dropdown_menu"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="0">Điện tử</div>
+                                    <div class="item" data-value="1">Bất động sản</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-2">
+                            <button class="btn-blue">
+                                <i class="fa fa-search"></i>Tìm kiếm</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!--END HOME SEARCH -->
+
+            <!-- FILTER -->
+            <aside class="home-search">
+                <div class="container">
+                    <div class="search-statistic">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a class="search-statistic__item" href="#">Thống kê 1
+                                    <span>(6.339)</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="search-statistic__item" href="#">Thống kê 2
+                                    <span>(6.339)</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="search-statistic__item" href="#">Thống kê 3
+                                    <span>(6.339)</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a class="search-statistic__item" href="#">Thống kê 4
+                                    <span>(6.339)</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="ui selection dropdown">
+                                <div class="default text">Điều kiện lọc</div>
+                                <i class="icon-icon_dropdown_menu"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="0">Quảng Nam</div>
+                                    <div class="item" data-value="1">Đà Nẵng</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="ui selection dropdown">
+                                <div class="default text">Điều kiện lọc</div>
                                 <i class="icon-icon_dropdown_menu"></i>
                                 <div class="menu">
                                     <div class="item" data-value="0">Điện tử</div>
@@ -534,9 +595,28 @@
                 </div>
             </aside>
             <!--END FILTER -->
+
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
+                        <div class="row view-all-bar">
+                            <div class="col-sm-6 col-md-8">
+                                <div class="view-all-bar__text">Kết quả 1 - 20 trong 11.917</div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 view-all-order">
+                                <div class="ui selection dropdown">
+                                    <div class="default text">Sắp xếp theo</div>
+                                    <i class="icon-icon_dropdown_menu"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="0">Mặc định</div>
+                                        <div class="item" data-value="1">Tin mới nhất</div>
+                                        <div class="item" data-value="1">Giá tăng dần</div>
+                                        <div class="item" data-value="1">Giá giảm dần</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- BOX -->
                         <section class="sale-news view-all">
                             <div class="sale-news__title">
@@ -841,6 +921,70 @@
                                     <i class="fa fa-location-arrow" aria-hidden="true"></i>Điện thoại</a>
                                 <a class="home-category__item" href="#">
                                     <i class="fa fa-location-arrow" aria-hidden="true"></i>Máy tính</a>
+                            </div>
+                        </div>
+
+                        <div class="home-category">
+                            <div class="home-category__title">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> Địa điểm</div>
+                            <div class="home-category__box">
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>Quận Cẩm Lệ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>Quận Cẩm Lệ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>Quận Cẩm Lệ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>Quận Cẩm Lệ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>Quận Cẩm Lệ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>Quận Cẩm Lệ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="home-category">
+                            <div class="home-category__title">
+                                <i class="fa fa-money" aria-hidden="true"></i> Khoảng giá</div>
+                            <div class="home-category__box">
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>Thấp hơn 100 triệu
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>100 triệu - 300 triệu
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>300 triệu - 500 triệu
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>500 triệu - 1 Tỷ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>1 Tỷ - 2 Tỷ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+                                <a class="home-category__item" href="#">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>1 Tỷ - 5 Tỷ
+                                    <span class="text-secondary">(766)</span>
+                                </a>
+
                             </div>
                         </div>
                     </div>
