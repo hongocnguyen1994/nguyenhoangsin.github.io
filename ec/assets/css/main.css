@@ -466,6 +466,39 @@ textarea {
   .ui.modal.modal-forgot-password {
     width: 26.5rem;
     margin-left: -13.375rem; } }
+.menu-control__btn {
+  background: transparent; }
+  .menu-control__btn::after {
+    display: none; }
+  .menu-control__btn:hover .menu-control__icon {
+    fill: #0976d3; }
+.menu-control__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.125rem 0;
+  fill: #ccc; }
+.menu-control.show .menu-control__icon {
+  fill: #0976d3; }
+.menu-control.show .menu-control__btn {
+  opacity: 1; }
+.menu-control .dropdown-menu {
+  z-index: 10;
+  min-width: 8rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.125rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  font-size: 0.875rem;
+  background-clip: border-box; }
+
+.menu-control-wrap {
+  position: relative; }
+  .menu-control-wrap__action {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .menu-control-wrap__limit {
+    max-width: 80%; }
+
 /* LAYOUTS */
 .header .block-scroll {
   display: flex; }
@@ -1595,7 +1628,7 @@ textarea {
   .link-home {
     display: block; } }
 .profile-bar {
-  margin-bottom: 1.875rem;
+  margin-bottom: 20px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
   border: 1px solid #eaeaea;
   background: #fff; }
@@ -1625,6 +1658,10 @@ textarea {
         color: #0976d3; }
     .profile-bar__link:last-child {
       border-bottom: none; }
+  .profile-bar__out {
+    height: 38px;
+    margin-bottom: 1.875rem;
+    font-size: 14px; }
 
 @media (min-width: 62rem) {
   .profile-bar__link {
@@ -1635,6 +1672,7 @@ textarea {
   .profile-bar__link i::before {
     margin-right: 1.5625rem; } }
 .profile-info {
+  position: relative;
   margin-bottom: 1.25rem;
   padding: 20px;
   border: 1px solid #eaeaea;
@@ -1672,6 +1710,11 @@ textarea {
     margin-bottom: 8px;
     font-size: 15px;
     line-height: 1.5; }
+  .profile-info__edit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px; }
 
 @media (min-width: 768px) {
   .profile-info {
