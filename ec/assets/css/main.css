@@ -2635,4 +2635,12 @@ textarea {
     font-size: 15px;
     color: #4a4a4a; }
 
+.p404 {
+  padding-top: 90px;
+  padding-bottom: 100px; }
+  .p404 img {
+    max-width: 698px; }
+  .p404 a {
+    font-size: 20px; }
+
 /*# sourceMappingURL=main.css.map */
