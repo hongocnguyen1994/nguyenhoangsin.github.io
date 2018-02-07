@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Begin header -->
+    <header class="header">
+      <div class="header-head">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+          <h1 class="mb-0 header-head__title">Chào mừng bạn đến với FVG Travel</h1>
+          <div class="d-flex flex-wrap m-adapter m-adapter--header">
+            <div class="ui dropdown d-flex justify-content-between align-items-center border-right-0">
+              <input type="hidden" name="lan">
+              <div class="text d-flex align-items-center">
+                <img src="images/ic-vn.svg">Việt Nam
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                        <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                    </svg>
+              <div class="menu">
+                <div class="item d-flex align-items-center" data-value="0">
+                  <img src="images/ic-vn.svg">Việt Nam
+                </div>
+                <div class="item d-flex align-items-center" data-value="1">
+                  <img src="images/ic-gb.svg">English
+                </div>
+              </div>
+            </div>
+            <div class="ui dropdown d-flex justify-content-between align-items-center">
+              <input type="hidden" name="mRate">
+              <div class="text">
+                <span class="mr-2 text-1">VNĐ</span>
+                <span class="text-2">Việt Nam đồng</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                        <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                    </svg>
+              <div class="menu">
+                <div class="item" data-value="0">
+                  <span class="mr-2 text-1">VNĐ</span>
+                  <span class="text-2">Việt Nam đồng</span>
+                </div>
+                <div class="item" data-value="1">
+                  <span class="mr-2 text-1">BC</span>
+                  <span class="text-2">Bitcoin đồng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white header-menu">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center header-menu__wrap">
+          <a class="d-inline-block" href="#">
+                <img class="header-menu__logo" src="images/ic-logo.png" alt="">
+            </a>
+          <div class="d-flex flex-wrap align-items-center">
+            <nav class="d-flex flex-wrap">
+              <a class="text-uppercase header-menu__link" href="">Tour du lịch</a>
+              <a class="text-uppercase header-menu__link" href="">Khách sạn</a>
+              <a class="text-uppercase header-menu__link" href="">Thuê xe du lịch</a>
+              <div class="dropdown">
+                <a class="d-flex align-items-center text-uppercase header-menu__link" href="" data-toggle="dropdown">
+                            <span class="mr-1">Dịch vụ khác</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                                <path fill="#4A4A4A" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                            </svg>
+                        </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a class="text-uppercase header-menu__link" href="">Tin khuyến mãi</a>
+            </nav>
+            <div class="dropdown">
+              <button class="d-flex justify-content-center align-items-center pr-3 pl-3 border-0 header__user-btn" data-toggle="dropdown">
+                        <img class="rounded-circle header__avata" src="images/lbc.png" alt="">
+                        <span class="ml-2 text-truncate">Sync</span>
+                    </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Hồ sơ cá nhân</a>
+                <div class="mt-1 mb-1 line-ligth-blue"></div>
+                <a class="dropdown-item" href="#">Đăng xuất</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+    <!-- // -->
+    <!-- Begin banner search -->
+    <section class="banner-search" style="background:url(images/p1.png) center center / cover">
+      <div class="container d-flex justify-content-center align-items-center banner-search__wrap">
+        <div class="search-filter">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active d-flex align-items-center m-rounded-tl" data-toggle="tab" href="#tab1">
+                        <svg fill="#9B9B9B" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"
+                            />
+                        </svg>
+                        <span class="ml-2">Tour du lịch</span>
+                    </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" data-toggle="tab" href="#tab2">
+                        <svg fill="#9B9B9B" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+                            />
+                        </svg>
+                        <span class="ml-2">Khách sạn</span>
+                    </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center m-rounded-tr" data-toggle="tab" href="#tab3">
+                        <svg fill="#9B9B9B" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"
+                            />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                        <span class="ml-2">Thuê xe</span>
+                    </a>
+            </li>
+          </ul>
+          <div class="tab-content d-flex flex-wrap justify-content-between align-items-center rounded-bottom m-rounded-tr">
+            <div class="tab-pane fade show active" id="tab1">
+              <div class="form-group d-inline-block mr-2 pr-1">
+                <input class="form-control pr-4 search-filter__style1" type="text" placeholder="Địa điểm...">
+              </div>
+              <div class="form-group d-inline-block mr-2 pr-1 search-filter__style2">
+                <div class="form-control d-flex align-items-center">
+                  <span class="mr-1 search-filter__label">Giá:</span>
+                  <input class="border-0 search-filter__input" type="text" placeholder="0">
+                  <span class="ml-1 search-filter__label">đ</span>
+                </div>
+              </div>
+              <div class="form-group d-inline-block mr-2 pr-1 search-filter__style2">
+                <div class="form-control d-flex align-items-center">
+                  <span class="mr-1 search-filter__label">Dài:</span>
+                  <input class="border-0 search-filter__input" type="text" placeholder="0">
+                  <span class="ml-1 search-filter__label">ngày</span>
+                </div>
+              </div>
+              <div class="form-group d-inline-block search-filter__style2">
+                <div class="form-control d-flex align-items-center">
+                  <span class="mr-1 search-filter__label">Phương tiện:</span>
+                  <input class="border-0 search-filter__input" type="text" placeholder="Loại xe">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab2">2</div>
+            <div class="tab-pane fade" id="tab3">3</div>
+            <button class="d-flex justify-content-center align-items-center border-0 rounded-right search-filter__btn">
+                    <svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner search -->
+    <main>
+      <!-- Begin highlights hotel -->
+      <section class="m-pd-tb hl-hotel">
+        <div class="container">
+          <h2 class="mb-4 text-uppercase text-center m-title">Khách sạn nổi bật</h2>
+          <div class="js3ItemOwlCarousel owl-carousel owl-theme">
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p2.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                  <p class="d-flex align-items-center mb-2">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <span class="ml-1 hl-item__text1">(Tốt 7.9)</span>
+                  </p>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                    <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                    <a class="hl-item__link1" href="">Xem bản đồ</a>
+                  </p>
+                  <p class="mb-0">
+                    <span class="mr-1 hl-item__text2">340,000</span>
+                    <span class="mr-1 hl-item__text3">đ</span>
+                    <span class="hl-item__text1">/1 đêm</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p3.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                  <p class="d-flex align-items-center mb-2">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <span class="ml-1 hl-item__text1">(Tốt 7.9)</span>
+                  </p>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                    <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                    <a class="hl-item__link1" href="">Xem bản đồ</a>
+                  </p>
+                  <p class="mb-0">
+                    <span class="mr-1 hl-item__text2">340,000</span>
+                    <span class="mr-1 hl-item__text3">đ</span>
+                    <span class="hl-item__text1">/1 đêm</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p4.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                  <p class="d-flex align-items-center mb-2">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <span class="ml-1 hl-item__text1">(Tốt 7.9)</span>
+                  </p>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                    <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                    <a class="hl-item__link1" href="">Xem bản đồ</a>
+                  </p>
+                  <p class="mb-0">
+                    <span class="mr-1 hl-item__text2">340,000</span>
+                    <span class="mr-1 hl-item__text3">đ</span>
+                    <span class="hl-item__text1">/1 đêm</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p5.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                  <p class="d-flex align-items-center mb-2">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                    <span class="ml-1 hl-item__text1">(Tốt 7.9)</span>
+                  </p>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                    <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                    <a class="hl-item__link1" href="">Xem bản đồ</a>
+                  </p>
+                  <p class="mb-0">
+                    <span class="mr-1 hl-item__text2">340,000</span>
+                    <span class="mr-1 hl-item__text3">đ</span>
+                    <span class="hl-item__text1">/1 đêm</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 mb-3 pt-1 text-center"><a class="m-text-rm" href="">Xem tất cả</a></div>
+        </div>
+      </section>
+      <!-- End highlights hotel -->
+      <!-- // -->
+      <!-- Begin banner-bg promotion -->
+      <section class="banner-bg" style="background:url(images/p11.png) center center / cover">
+        <div class="m-mask-grey banner-bg__mask1">
+          <div class="container">
+            <div id="carouselControls1" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="m-z-outer"><img class="w-100 m-z-inner" src="images/p12.png" alt=""></div>
+                    </div>
+                    <div class="col-md-6 align-self-center mb-4">
+                      <div class="ml-xl-3 banner-bg__content1">
+                        <h5 class="mb-2 text-uppercase banner-bg__text1">Khuyến mãi</h5>
+                        <h5 class="mb-3 text-white m-title">Tưng bừng khuyến mãi khi mua tour sớm cùng FVG Travel</h5>
+                        <p class="mb-4 banner-bg__text2">In in leo enim. Morbi in consequat justo. Praesent vitae enim efficitur nisl ultrices convallis vitae in libero. Sed porttitor semper augue vitae faucibus. Cras laoreet vulputate pellentesque.</p>
+                        <a class="m-btn m-btn-white" href="">Xem chi tiết</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="m-z-outer"><img class="w-100 m-z-inner" src="images/p13.png" alt=""></div>
+                    </div>
+                    <div class="col-md-6 align-self-center mb-4">
+                      <div class="ml-xl-3 banner-bg__content1">
+                        <h5 class="mb-2 text-uppercase banner-bg__text1">Khuyến mãi</h5>
+                        <h5 class="mb-3 text-white m-title">Tưng bừng khuyến mãi khi mua tour sớm cùng FVG Travel</h5>
+                        <p class="mb-4 banner-bg__text2">In in leo enim. Morbi in consequat justo. Praesent vitae enim efficitur nisl ultrices convallis vitae in libero. Sed porttitor semper augue vitae faucibus. Cras laoreet vulputate pellentesque.</p>
+                        <a class="m-btn m-btn-white" href="">Xem chi tiết</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls1" data-slide="prev">
+                    <img class="d-none d-sm-block" src="images/ic-sl.png" alt="">
+                </a>
+              <a class="carousel-control-next" href="#carouselControls1" data-slide="next">
+                    <img class="d-none d-sm-block"  src="images/ic-sr.png" alt="">
+                </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End banner-bg promotion -->
+      <!-- // -->
+      <!-- Begin highlights tour -->
+      <section class="m-pd-tb hl-tour">
+        <div class="container">
+          <h2 class="mb-4 text-uppercase text-center m-title">Tour du lịch hấp dẫn</h2>
+          <div class="js3ItemOwlCarousel owl-carousel owl-theme">
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p6.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Khởi hành:</span>
+                    <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Dài:</span>
+                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
+                      </p>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
+                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
+                      </p>
+                    </div>
+                    <h6 class="mb-1">
+                      <span class="mr-1 hl-item__text2">340,000</span>
+                      <span class="hl-item__text3">đ</span>
+                      <br>
+                      <div class="text-right">
+                        <span class="hl-item__text1">1 người</span>
+                      </div>
+                    </h6>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                            </svg>
+                    <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p7.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Khởi hành:</span>
+                    <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Dài:</span>
+                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
+                      </p>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
+                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
+                      </p>
+                    </div>
+                    <h6 class="mb-1">
+                      <span class="mr-1 hl-item__text2">340,000</span>
+                      <span class="hl-item__text3">đ</span>
+                      <br>
+                      <div class="text-right">
+                        <span class="hl-item__text1">1 người</span>
+                      </div>
+                    </h6>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                            </svg>
+                    <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p8.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Khởi hành:</span>
+                    <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Dài:</span>
+                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
+                      </p>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
+                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
+                      </p>
+                    </div>
+                    <h6 class="mb-1">
+                      <span class="mr-1 hl-item__text2">340,000</span>
+                      <span class="hl-item__text3">đ</span>
+                      <br>
+                      <div class="text-right">
+                        <span class="hl-item__text1">1 người</span>
+                      </div>
+                    </h6>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                            </svg>
+                    <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-1 hl-item">
+              <div class="bg-white hl-item__wrap1">
+                <div class="m-z-outer">
+                  <img class="m-z-inner" src="images/p9.png" alt="">
+                </div>
+                <div class="hl-item__content1">
+                  <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
+                  <p class="mb-2">
+                    <span class="mr-1 hl-item__label1">Khởi hành:</span>
+                    <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Dài:</span>
+                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
+                      </p>
+                      <p class="mb-1">
+                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
+                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
+                      </p>
+                    </div>
+                    <h6 class="mb-1">
+                      <span class="mr-1 hl-item__text2">340,000</span>
+                      <span class="hl-item__text3">đ</span>
+                      <br>
+                      <div class="text-right">
+                        <span class="hl-item__text1">1 người</span>
+                      </div>
+                    </h6>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                            </svg>
+                    <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 mb-3 pt-1 text-center">
+            <a class="m-text-rm" href="">Xem tất cả</a>
+          </div>
+        </div>
+      </section>
+      <!-- End highlights tour -->
+      <!-- // -->
+      <!-- Begin banner-bg tour -->
+      <section class="banner-bg" style="background:url(images/p14.png) center center / cover">
+        <div class="m-mask-grey banner-bg__mask2">
+          <div class="container">
+            <div class="mx-auto text-center banner-bg__content2">
+              <h5 class="mb-4 text-uppercase text-white m-title">Trải nghiệm tự tạo tour tuyệt vời cùng FVG Travel</h5>
+              <a class="d-inline-block mt-2 m-btn m-btn-orange" href="">Tạo ngay</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End banner-bg tour -->
+      <!-- // -->
+      <!-- Begin highlights service -->
+      <section class="m-pd-tb m-bg-grey hl-service">
+        <div class="container">
+          <h2 class="mb-4 text-uppercase text-center m-title">Dịch vụ khác</h2>
+          <div class="row pb-1">
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white m-z-outer hl-item__wrap1">
+                  <img class="w-100 m-z-inner" src="images/p15.png" alt="">
+                  <div class="hl-item__content2">
+                    <h5 class="mb-1 text-white hl-item__title1">Thuê xe du lịch</h5>
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                                </svg>
+                      <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white m-z-outer hl-item__wrap1">
+                  <img class="w-100 m-z-inner" src="images/p16.png" alt="">
+                  <div class="hl-item__content2">
+                    <h5 class="mb-1 text-white hl-item__title1">Ẩm thực</h5>
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                        <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                                    </svg>
+                      <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white m-z-outer hl-item__wrap1">
+                  <img class="w-100 m-z-inner" src="images/p17.png" alt="">
+                  <div class="hl-item__content2">
+                    <h5 class="mb-1 text-white hl-item__title1">Spa</h5>
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                                        </svg>
+                      <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white m-z-outer hl-item__wrap1">
+                  <img class="w-100 m-z-inner" src="images/p18.png" alt="">
+                  <div class="hl-item__content2">
+                    <h5 class="mb-1 text-white hl-item__title1">Nghỉ dưỡng</h5>
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
+                                                <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
+                                            </svg>
+                      <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End highlights service -->
+      <!-- // -->
+      <!-- Begin highlights handbook -->
+      <section class="m-pd-tb hl-handbook">
+        <div class="container">
+          <h2 class="mb-4 text-uppercase text-center m-title">Cẩm nang du lịch</h2>
+          <div class="row pb-1">
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p19.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Đón Noel và năm mới tại Silk Path Grand, resort 5* sang chảnh</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p20.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Tạm quên thành phố đầy khói bụi để an nghỉ ở miền cực lạc</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p21.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Du lịch Pleiku: điểm đến thơ mộng và lãng mạn chẳng kém Đà Lạt</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p22.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Trí Nang, bản làng người Thái xinh đẹp của xứ Thanh</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p23.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Những "cánh đồng bất tận" ở SangHeo</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p24.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Những chú gấu Bắc Cực ở Nam Cực</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p25.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Những chú sóc con ở bản Đôn</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 mb-4">
+              <div class="hl-item">
+                <div class="bg-white">
+                  <div class="mb-2 m-z-outer">
+                    <img class="w-100 rounded m-z-inner" src="images/p26.png" alt="">
+                  </div>
+                  <div class="pt-1">
+                    <a class="d-inline-block mb-1 hl-item__title2" href="">Nét truyền thống cổ xưa của làng gốm Bát Tràng</a>
+                    <p class="mb-1 hl-item__text1">24/11/2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End highlights handbook -->
+    </main>
+    <!-- Begin footer -->
+    <footer class="footer pt-4">
+      <div class="container pt-3">
+        <div class="row mb-2">
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <h2 class="footer__title">Tour trong nước</h2>
+            <div class="d-flex flex-column">
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <h2 class="footer__title">Tour ngoài nước</h2>
+            <div class="d-flex flex-column">
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <h2 class="footer__title">Tour trong ngày</h2>
+            <div class="d-flex flex-column">
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <h2 class="footer__title">Tour dài ngày</h2>
+            <div class="d-flex flex-column">
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat</a>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4 pb-2 m-line-light-grey"></div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <a class="d-inline-block mb-4" href="">
+                    <img class="footer__logo" src="images/ic-logo.png" alt="">
+                </a>
+            <div class="m-adapter m-adapter--footer">
+              <div class="ui dropdown d-flex justify-content-between align-items-center mb-3">
+                <input type="hidden" name="lan">
+                <div class="text d-flex align-items-center">
+                  <img src="images/ic-vn.svg">Việt Nam
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                            <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                        </svg>
+                <div class="menu">
+                  <div class="item d-flex align-items-center" data-value="0">
+                    <img src="images/ic-vn.svg">Việt Nam
+                  </div>
+                  <div class="item d-flex align-items-center" data-value="1">
+                    <img src="images/ic-gb.svg">English
+                  </div>
+                </div>
+              </div>
+              <div class="ui dropdown d-flex justify-content-between align-items-center mb-3">
+                <input type="hidden" name="mRate">
+                <div class="text">
+                  <span class="mr-2 text-1">VNĐ</span>
+                  <span class="text-2">Việt Nam đồng</span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                            <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                        </svg>
+                <div class="menu">
+                  <div class="item" data-value="0">
+                    <span class="mr-2 text-1">VNĐ</span>
+                    <span class="text-2">Việt Nam đồng</span>
+                  </div>
+                  <div class="item" data-value="1">
+                    <span class="mr-2 text-1">BC</span>
+                    <span class="text-2">Bitcoin đồng</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <h2 class="footer__title">FVG Travel</h2>
+            <div class="d-flex flex-column">
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <h2 class="footer__title">Thông tin cần thiết</h2>
+            <div class="d-flex flex-column">
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <h2 class="footer__title">Quản lý cá nhân</h2>
+            <div class="d-flex flex-column">
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat varius at viverra</a>
+              <a class="text-truncate footer__link" href="">Vestibulum lorem erat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="m-line-light-grey"></div>
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <h2 class="mb-0 py-2 footer__license">Bản quyền thuộc về FVG Travel © 2018 </h2>
+        <div class="d-flex py-2">
+          <a class="d-flex align-items-center ml-2" href="">
+                <svg version="1.1" id="Facebook_w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" width="20" height="20">
+                    <path fill="#FFFFFF" d="M10,0.4c-5.302,0-9.6,4.298-9.6,9.6s4.298,9.6,9.6,9.6s9.6-4.298,9.6-9.6S15.302,0.4,10,0.4z M12.274,7.034
+                   h-1.443c-0.171,0-0.361,0.225-0.361,0.524V8.6h1.805l-0.273,1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545V7.726
+                   c0-1.254,0.87-2.273,2.064-2.273h1.443V7.034z" />
+                </svg>
+            </a>
+          <a class="d-flex align-items-center ml-2" href="">
+                <svg version="1.1" id="Twitter_w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" width="20" height="20">
+                    <path fill="#FFFFFF" d="M10,0.4c-5.302,0-9.6,4.298-9.6,9.6s4.298,9.6,9.6,9.6s9.6-4.298,9.6-9.6S15.302,0.4,10,0.4z M13.905,8.264
+          c0.004,0.082,0.005,0.164,0.005,0.244c0,2.5-1.901,5.381-5.379,5.381c-1.068,0-2.062-0.312-2.898-0.85
+          c0.147,0.018,0.298,0.025,0.451,0.025c0.886,0,1.701-0.301,2.348-0.809c-0.827-0.016-1.525-0.562-1.766-1.312
+          c0.115,0.021,0.233,0.033,0.355,0.033c0.172,0,0.34-0.023,0.498-0.066c-0.865-0.174-1.517-0.938-1.517-1.854V9.033
+          C6.257,9.174,6.549,9.26,6.859,9.27C6.351,8.93,6.018,8.352,6.018,7.695c0-0.346,0.093-0.672,0.256-0.951
+          c0.933,1.144,2.325,1.896,3.897,1.977c-0.033-0.139-0.049-0.283-0.049-0.432c0-1.043,0.846-1.891,1.891-1.891
+          c0.543,0,1.035,0.23,1.38,0.598c0.431-0.086,0.835-0.242,1.2-0.459c-0.141,0.441-0.44,0.812-0.831,1.047
+          c0.383-0.047,0.747-0.148,1.086-0.299C14.595,7.664,14.274,7.998,13.905,8.264z" />
+                </svg>
+            </a>
+          <a class="d-flex align-items-center ml-2" href="">
+                <svg version="1.1" id="Google_x2B__w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" width="20" height="20">
+                    <path fill="#FFFFFF" d="M10,0.4c-5.302,0-9.6,4.298-9.6,9.6s4.298,9.6,9.6,9.6s9.6-4.298,9.6-9.6S15.302,0.4,10,0.4z M9.447,14.121
+         c-0.603,0.293-1.252,0.324-1.503,0.324c-0.048,0-0.075,0-0.075,0s-0.023,0-0.054,0c-0.392,0-2.343-0.09-2.343-1.867
+         c0-1.746,2.125-1.883,2.776-1.883h0.017c-0.376-0.502-0.298-1.008-0.298-1.008c-0.033,0.002-0.081,0.004-0.14,0.004
+         c-0.245,0-0.718-0.039-1.124-0.301c-0.498-0.32-0.75-0.865-0.75-1.619c0-2.131,2.327-2.217,2.35-2.219h2.324v0.051
+         c0,0.26-0.467,0.311-0.785,0.354C9.734,5.973,9.517,5.994,9.456,6.025C10.045,6.34,10.14,6.834,10.14,7.57
+         c0,0.838-0.328,1.281-0.676,1.592C9.248,9.355,9.079,9.506,9.079,9.709c0,0.199,0.232,0.402,0.502,0.639
+         c0.441,0.389,1.046,0.918,1.046,1.811C10.627,13.082,10.23,13.742,9.447,14.121z M14.5,10H13v1.5h-1V10h-1.5V9H12V7.5h1V9h1.5V10z
+          M8.223,11.15c-0.052,0-0.104,0.002-0.157,0.006c-0.444,0.033-0.854,0.199-1.15,0.469c-0.294,0.266-0.444,0.602-0.423,0.941
+         c0.045,0.711,0.808,1.127,1.735,1.061c0.912-0.066,1.52-0.592,1.476-1.303C9.662,11.656,9.081,11.15,8.223,11.15z M9.097,7.285
+         c-0.242-0.85-0.632-1.102-1.238-1.102c-0.065,0-0.131,0.01-0.194,0.027C7.402,6.285,7.193,6.504,7.077,6.83
+         C6.958,7.16,6.951,7.504,7.053,7.896c0.185,0.701,0.683,1.209,1.185,1.209c0.066,0,0.132-0.008,0.194-0.027
+         C8.981,8.924,9.325,8.086,9.097,7.285z" />
+                </svg>
+            </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
