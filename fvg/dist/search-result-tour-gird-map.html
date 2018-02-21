@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
     <!-- Begin header -->
-    <header class="header">
+    <header class="d-none d-lg-block header">
       <div class="header-head">
         <div class="container d-flex flex-wrap justify-content-between align-items-center">
           <h1 class="mb-0 header-head__title">Chào mừng bạn đến với FVG Travel</h1>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="bg-white header-menu">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center header-menu__wrap">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 header-menu__wrap">
           <a class="d-inline-block" href="#">
                 <img class="header-menu__logo" src="images/ic-logo.png" alt="">
             </a>
@@ -70,7 +70,7 @@
               <a class="text-uppercase header-menu__link" href="">Khách sạn</a>
               <a class="text-uppercase header-menu__link" href="">Thuê xe du lịch</a>
               <div class="dropdown">
-                <a class="d-flex align-items-center text-uppercase header-menu__link" href="" data-toggle="dropdown">
+                <a class="d-flex align-items-center  text-uppercase header-menu__link" href="" data-toggle="dropdown">
                             <span class="mr-1">Dịch vụ khác</span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
                                 <path fill="#4A4A4A" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
@@ -108,92 +108,188 @@
       </div>
     </header>
     <!-- End header -->
+
+    <!-- Begin header mobile -->
+    <section class="d-lg-none header-mobile">
+      <div class="d-flex justify-content-between align-items-center w-100 py-1 pr-2 pl-3 bg-white header-mobile__fixed">
+        <a class="navbar-brand" href="#">
+            <img class="header-mobile__logo" src="images/ic-logo.png" alt="">
+        </a>
+        <button id="callHeaderMobileMenu" class="d-flex justify-content-center align-items-center border-0 bg-white">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                enable-background="new 0 0 20 20" xml:space="preserve" width="32" height="32">
+                <path fill="#EBA32E" d="M16.4,9H3.6C3.048,9,3,9.447,3,10c0,0.553,0.048,1,0.6,1h12.8c0.552,0,0.6-0.447,0.6-1S16.952,9,16.4,9z
+                                    M16.4,13H3.6C3.048,13,3,13.447,3,14c0,0.553,0.048,1,0.6,1h12.8c0.552,0,0.6-0.447,0.6-1S16.952,13,16.4,13z M3.6,7h12.8
+                                   C16.952,7,17,6.553,17,6s-0.048-1-0.6-1H3.6C3.048,5,3,5.447,3,6S3.048,7,3.6,7z"></path>
+            </svg>
+        </button>
+      </div>
+      <div id="headerMobileMenu" class="header-mobile-menu px-2">
+        <div class="header-mobile-menu__limit-height">
+          <nav class="pt-4 pb-3 header-mobile-menu__wrap">
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Tour du lịch</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Khách sạn</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Thuê xe du lịch</a>
+            </div>
+            <div class="dropdown d-flex mb-2">
+              <a class="d-flex align-items-center text-uppercase header-menu__link" href="" data-toggle="dropdown">
+                        <span class="mr-1">Dịch vụ khác</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                            <path fill="#4A4A4A" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                        </svg>
+                    </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Tin khuyến mãi</a>
+            </div>
+          </nav>
+          <div class="pt-4 pb-3 header-mobile-menu__wrap">
+            <div class="mb-2">
+              <a class="callModalLogin text-uppercase header-menu__link" href="javascript:void(0)">Đăng nhập</a>
+            </div>
+            <div class="mb-1">
+              <a class="callModalRegister text-uppercase header-menu__link" href="javascript:void(0)">Đăng ký</a>
+            </div>
+          </div>
+          <div class="py-4 px-3 m-adapter m-adapter--menu-mobile">
+            <div class="ui dropdown d-flex justify-content-between align-items-center mb-3" tabindex="0">
+              <input type="hidden" name="lan">
+              <div class="text d-flex align-items-center">
+                <img src="images/ic-vn.svg">Việt Nam
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                        <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                    </svg>
+              <div class="menu" tabindex="-1">
+                <div class="item d-flex align-items-center" data-value="0">
+                  <img src="images/ic-vn.svg">Việt Nam
+                </div>
+                <div class="item d-flex align-items-center" data-value="1">
+                  <img src="images/ic-gb.svg">English
+                </div>
+              </div>
+            </div>
+            <div class="ui dropdown d-flex justify-content-between align-items-center mb-3" tabindex="0">
+              <input type="hidden" name="mRate">
+              <div class="text">
+                <span class="mr-2 text-1">VNĐ</span>
+                <span class="text-2">Việt Nam đồng</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                        <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                    </svg>
+              <div class="menu" tabindex="-1">
+                <div class="item" data-value="0">
+                  <span class="mr-2 text-1">VNĐ</span>
+                  <span class="text-2">Việt Nam đồng</span>
+                </div>
+                <div class="item" data-value="1">
+                  <span class="mr-2 text-1">BC</span>
+                  <span class="text-2">Bitcoin đồng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End header mobile -->
     <main class="m-height-screen m-bg-grey">
       <!-- Begin search result head -->
       <section class="bg-white search-result__head">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center">
-          <div class="d-flex flex-wrap align-items-center search-filter">
-            <div class="d-flex flex-wrap align-items-center">
-              <div id="searchTour" class="ui search form-group">
-                <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm địa điểm...">
-                <div class="results w-100 mt-0"></div>
-              </div>
-              <div class="form-group">
-                <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w235">
-                  <input type="hidden" name="price">
-                  <div class="default text">Chọn khoảng giá</div>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
-                                    <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
-                                </svg>
-                  <div class="menu">
-                    <div class="item" data-value="0">
-                      <span>Từ</span> 1.000.000
-                      <span>&#60;</span> 10.000.000
-                      <span>đ</span>
-                    </div>
-                    <div class="item" data-value="1">
-                      <span>Từ</span> 10.000.000
-                      <span>&#60;</span> 100.000.000
-                      <span>đ</span>
-                    </div>
-                    <div class="item" data-value="2">
-                      <span>Từ</span> 100.000.000
-                      <span>&#60;</span> 900.000.000
-                      <span>đ</span>
-                    </div>
+        <div class="container d-xl-flex justify-content-between align-items-center search-result__head-wrap">
+          <div class="d-xl-flex align-items-center search-filter">
+            <div id="searchTour" class="ui search form-group">
+              <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm địa điểm...">
+              <div class="results w-100 mt-0"></div>
+            </div>
+            <div class="form-group">
+              <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w235">
+                <input type="hidden" name="price">
+                <div class="default text">Chọn khoảng giá</div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                                <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                            </svg>
+                <div class="menu">
+                  <div class="item" data-value="0">
+                    <span>Từ</span> 1.000.000
+                    <span>&#60;</span> 10.000.000
+                    <span>đ</span>
+                  </div>
+                  <div class="item" data-value="1">
+                    <span>Từ</span> 10.000.000
+                    <span>&#60;</span> 100.000.000
+                    <span>đ</span>
+                  </div>
+                  <div class="item" data-value="2">
+                    <span>Từ</span> 100.000.000
+                    <span>&#60;</span> 900.000.000
+                    <span>đ</span>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w180">
-                  <input type="hidden" name="price">
-                  <div class="default text">Chọn khoảng thời gian</div>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
-                                    <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
-                                </svg>
-                  <div class="menu">
-                    <div class="item" data-value="0">
-                      <span>Từ</span> 1
-                      <span>đến dưới</span> 7
-                      <span>ngày</span>
-                    </div>
-                    <div class="item" data-value="1">
-                      <span>Từ</span> 7
-                      <span>đến dưới</span> 14
-                      <span>ngày</span>
-                    </div>
-                    <div class="item" data-value="2">
-                      <span>Từ</span> 14
-                      <span>đến dưới</span> 31
-                      <span>ngày</span>
-                    </div>
+            </div>
+            <div class="form-group">
+              <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w180">
+                <input type="hidden" name="price">
+                <div class="default text">Chọn khoảng thời gian</div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                                <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                            </svg>
+                <div class="menu">
+                  <div class="item" data-value="0">
+                    <span>Từ</span> 1
+                    <span>đến dưới</span> 7
+                    <span>ngày</span>
+                  </div>
+                  <div class="item" data-value="1">
+                    <span>Từ</span> 7
+                    <span>đến dưới</span> 14
+                    <span>ngày</span>
+                  </div>
+                  <div class="item" data-value="2">
+                    <span>Từ</span> 14
+                    <span>đến dưới</span> 31
+                    <span>ngày</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="d-flex flex-wrap align-items-center">
-            <div class="mr-3 search-result__head-space"></div>
-            <button class="d-flex justify-content-center align-items-center mr-2 border-0 search-result__head-btn active">
-                        <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
-                            <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                    </button>
-            <button class="d-flex justify-content-center align-items-center border-0 search-result__head-btn">
-                        <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z" />
-                            <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                    </button>
-            <div class="mr-3 ml-3 search-result__head-space"></div>
-            <button class="d-flex justify-content-center align-items-center mr-3 border-0 search-result__head-btn active">
-                        <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 8c0-3.31-2.69-6-6-6S6 4.69 6 8c0 4.5 6 11 6 11s6-6.5 6-11zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.89 2-2 2c-1.1 0-2-.9-2-2zM5 20v2h14v-2H5z"
-                            />
-                            <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                    </button>
+          <div class="d-sm-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="d-none d-xl-block mr-3 search-result__head-space"></div>
+              <button class="d-flex justify-content-center align-items-center mr-2 border-0 search-result__head-btn active">
+                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                        </button>
+              <button class="d-flex justify-content-center align-items-center border-0 search-result__head-btn">
+                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z" />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                        </button>
+              <div class="mr-3 ml-3 search-result__head-space"></div>
+              <button class="d-flex justify-content-center align-items-center mr-sm-3 border-0 search-result__head-btn active">
+                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 8c0-3.31-2.69-6-6-6S6 4.69 6 8c0 4.5 6 11 6 11s6-6.5 6-11zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.89 2-2 2c-1.1 0-2-.9-2-2zM5 20v2h14v-2H5z"
+                                />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                        </button>
+            </div>
             <a class="d-flex justify-content-center align-items-center m-btn m-btn-grey search-result__head-btn-create" href="create-custom-tour.html">Tự thiết kế tour</a>
           </div>
         </div>

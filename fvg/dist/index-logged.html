@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
     <!-- Begin header -->
-    <header class="header">
+    <header class="d-none d-lg-block header">
       <div class="header-head">
         <div class="container d-flex flex-wrap justify-content-between align-items-center">
           <h1 class="mb-0 header-head__title">Chào mừng bạn đến với FVG Travel</h1>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="bg-white header-menu">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center header-menu__wrap">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 header-menu__wrap">
           <a class="d-inline-block" href="#">
                 <img class="header-menu__logo" src="images/ic-logo.png" alt="">
             </a>
@@ -100,10 +100,111 @@
       </div>
     </header>
     <!-- End header -->
+
+    <!-- Begin header mobile -->
+    <section class="d-lg-none header-mobile">
+      <div class="d-flex justify-content-between align-items-center w-100 py-1 pr-2 pl-3 bg-white header-mobile__fixed">
+        <a class="navbar-brand" href="#">
+            <img class="header-mobile__logo" src="images/ic-logo.png" alt="">
+        </a>
+        <button id="callHeaderMobileMenu" class="d-flex justify-content-center align-items-center border-0 bg-white">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                enable-background="new 0 0 20 20" xml:space="preserve" width="32" height="32">
+                <path fill="#EBA32E" d="M16.4,9H3.6C3.048,9,3,9.447,3,10c0,0.553,0.048,1,0.6,1h12.8c0.552,0,0.6-0.447,0.6-1S16.952,9,16.4,9z
+                                        M16.4,13H3.6C3.048,13,3,13.447,3,14c0,0.553,0.048,1,0.6,1h12.8c0.552,0,0.6-0.447,0.6-1S16.952,13,16.4,13z M3.6,7h12.8
+                                       C16.952,7,17,6.553,17,6s-0.048-1-0.6-1H3.6C3.048,5,3,5.447,3,6S3.048,7,3.6,7z"></path>
+            </svg>
+        </button>
+      </div>
+      <div id="headerMobileMenu" class="header-mobile-menu px-2">
+        <div class="header-mobile-menu__limit-height">
+          <nav class="pt-4 pb-3 header-mobile-menu__wrap">
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Tour du lịch</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Khách sạn</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Thuê xe du lịch</a>
+            </div>
+            <div class="dropdown d-flex mb-2">
+              <a class="d-flex align-items-center text-uppercase header-menu__link" href="" data-toggle="dropdown">
+                        <span class="mr-1">Dịch vụ khác</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                            <path fill="#4A4A4A" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                        </svg>
+                    </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="mb-2">
+              <a class="text-uppercase header-menu__link" href="">Tin khuyến mãi</a>
+            </div>
+          </nav>
+          <div class="pt-4 pb-3 header-mobile-menu__wrap">
+            <div class="dropdown mb-1">
+              <button class="d-flex justify-content-center align-items-center pr-3 pl-3 border-0 header__user-btn" data-toggle="dropdown">
+                        <img class="rounded-circle header__avata" src="images/lbc.png" alt="">
+                        <span class="ml-2 text-truncate">Sync</span>
+                    </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Hồ sơ cá nhân</a>
+                <div class="mt-1 mb-1 line-ligth-blue"></div>
+                <a class="dropdown-item" href="#">Đăng xuất</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-4 px-3 m-adapter m-adapter--menu-mobile">
+            <div class="ui dropdown d-flex justify-content-between align-items-center mb-3" tabindex="0">
+              <input type="hidden" name="lan">
+              <div class="text d-flex align-items-center">
+                <img src="images/ic-vn.svg">Việt Nam
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                        <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                    </svg>
+              <div class="menu" tabindex="-1">
+                <div class="item d-flex align-items-center" data-value="0">
+                  <img src="images/ic-vn.svg">Việt Nam
+                </div>
+                <div class="item d-flex align-items-center" data-value="1">
+                  <img src="images/ic-gb.svg">English
+                </div>
+              </div>
+            </div>
+            <div class="ui dropdown d-flex justify-content-between align-items-center mb-3" tabindex="0">
+              <input type="hidden" name="mRate">
+              <div class="text">
+                <span class="mr-2 text-1">VNĐ</span>
+                <span class="text-2">Việt Nam đồng</span>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                        <path fill="#DFDFDF" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                    </svg>
+              <div class="menu" tabindex="-1">
+                <div class="item" data-value="0">
+                  <span class="mr-2 text-1">VNĐ</span>
+                  <span class="text-2">Việt Nam đồng</span>
+                </div>
+                <div class="item" data-value="1">
+                  <span class="mr-2 text-1">BC</span>
+                  <span class="text-2">Bitcoin đồng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End header mobile -->
     <!-- // -->
     <!-- Begin banner search -->
     <section class="banner-search" style="background:url(images/p1.png) center center / cover">
-      <div class="container d-flex justify-content-center align-items-center m-height-screen">
+      <div class="container d-flex justify-content-center align-items-center py-5 m-height-screen">
         <div class="search-filter">
           <ul class="nav">
             <li class="nav-item">
@@ -113,7 +214,7 @@
                             <path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"
                             />
                         </svg>
-                        <span class="ml-2">Tour du lịch</span>
+                        <span class="ml-sm-2">Tour du lịch</span>
                     </a>
             </li>
             <li class="nav-item">
@@ -123,7 +224,7 @@
                             <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
                             />
                         </svg>
-                        <span class="ml-2">Khách sạn</span>
+                        <span class="ml-sm-2">Khách sạn</span>
                     </a>
             </li>
             <li class="nav-item">
@@ -133,20 +234,20 @@
                             />
                             <path d="M0 0h24v24H0z" fill="none" />
                         </svg>
-                        <span class="ml-2">Thuê xe</span>
+                        <span class="ml-sm-2">Thuê xe</span>
                     </a>
             </li>
           </ul>
           <div class="tab-content rounded-bottom m-rounded-tr">
             <!-- Begin search tour -->
             <div class="tab-pane fade show active" id="tab1">
-              <div class="d-flex flex-wrap justify-content-between align-items-center search-filter">
-                <div class="d-flex flex-wrap justify-content-between align-items-center search-filter__wrap">
-                  <div id="searchTour" class="ui search form-group mr-2 mr-sm-3">
+              <div class="d-xl-flex justify-content-between align-items-center search-filter">
+                <div class="d-xl-flex justify-content-between align-items-center search-filter__wrap">
+                  <div id="searchTour" class="ui search form-group mr-xl-3">
                     <input class="prompt rounded form-control m-selection__w300 search-filter__bg-search" type="text" placeholder="Tìm địa điểm...">
                     <div class="results w-100 mt-0"></div>
                   </div>
-                  <div class="ui dropdown d-flex justify-content-between align-items-center mr-2 mr-sm-3 mb-3 pr-2 form-control m-selection m-selection__w235">
+                  <div class="ui dropdown d-flex justify-content-between align-items-center mr-xl-3 mb-3 pr-2 form-control m-selection m-selection__w235">
                     <input type="hidden" name="price">
                     <div class="default text">Chọn khoảng giá</div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
@@ -195,32 +296,35 @@
                     </div>
                   </div>
                 </div>
-                <button class="d-flex justify-content-center align-items-center border-0 rounded-right search-filter__btn-search">
-                            <svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </button>
+                <div class="search-filter__btn-wrap">
+                  <button class="d-flex justify-content-center align-items-center border-0 rounded-right search-filter__btn-search">
+                                <svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                    />
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                </svg>
+                                <span class="d-xl-none ml-1">Tìm kiếm</span>
+                            </button>
+                </div>
               </div>
             </div>
             <!-- End search tour -->
 
             <!-- Begin search hotel -->
             <div class="tab-pane fade" id="tab2">
-              <div class="d-flex flex-wrap justify-content-between align-items-center search-filter">
-                <div class="d-flex flex-wrap justify-content-between align-items-center search-filter__wrap">
-                  <div id="searchHotel" class="ui search form-group mr-2 mr-sm-3">
+              <div class="d-xl-flex justify-content-between align-items-center search-filter">
+                <div class="d-xl-flex justify-content-between align-items-center search-filter__wrap">
+                  <div id="searchHotel" class="ui search form-group mr-xl-3">
                     <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm khách sạn...">
                     <div class="results w-100 mt-0"></div>
                   </div>
-                  <div class="form-group mr-2 mr-sm-3">
+                  <div class="form-group mr-xl-3">
                     <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày nhận phòng">
                   </div>
-                  <div class="form-group mr-2 mr-sm-3">
+                  <div class="form-group mr-xl-3">
                     <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày trả phòng">
                   </div>
-                  <div class="ui dropdown d-flex justify-content-between align-items-center mr-2 mr-sm-3 mb-3 pr-2 form-control m-selection m-selection__w120">
+                  <div class="ui dropdown d-flex justify-content-between align-items-center mr-xl-3 mb-3 pr-2 form-control m-selection m-selection__w120">
                     <input type="hidden" name="adult">
                     <div class="default text">Người lớn: 0</div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
@@ -257,33 +361,36 @@
                     </div>
                   </div>
                 </div>
-                <button class="d-flex justify-content-center align-items-center border-0 rounded-right search-filter__btn-search">
-                            <svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </button>
+                <div class="search-filter__btn-wrap">
+                  <button class="d-flex justify-content-center align-items-center border-0 rounded-right search-filter__btn-search">
+                                <svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                    />
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                </svg>
+                                <span class="d-xl-none ml-1">Tìm kiếm</span>
+                            </button>
+                </div>
               </div>
             </div>
             <!-- End search hotel -->
 
             <!-- Begin search car -->
             <div class="tab-pane fade" id="tab3">
-              <div class="d-flex flex-wrap justify-content-between align-items-center search-filter">
-                <div class="d-flex flex-wrap justify-content-between align-items-center search-filter__wrap">
-                  <div id="searchCarFrom" class="ui search form-group mr-2 mr-sm-3">
+              <div class="d-xl-flex justify-content-between align-items-center search-filter">
+                <div class="d-xl-flex justify-content-between align-items-center search-filter__wrap">
+                  <div id="searchCarFrom" class="ui search form-group mr-xl-3">
                     <input class="prompt rounded form-control m-selection__w180 search-filter__bg-location" type="text" placeholder="Điểm khởi hành...">
                     <div class="results w-100 mt-0"></div>
                   </div>
-                  <div id="searchCarTo" class="ui search form-group mr-2 mr-sm-3">
+                  <div id="searchCarTo" class="ui search form-group mr-xl-3">
                     <input class="prompt rounded form-control m-selection__w180 search-filter__bg-location" type="text" placeholder="Điếm đếm...">
                     <div class="results w-100 mt-0"></div>
                   </div>
-                  <div class="form-group mr-2 mr-sm-3">
+                  <div class="form-group mr-xl-3">
                     <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày nhận xe">
                   </div>
-                  <div class="form-group mr-2 mr-sm-3">
+                  <div class="form-group mr-xl-3">
                     <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày trả xe">
                   </div>
                   <div class="ui dropdown d-flex justify-content-between align-items-center mb-3 pr-2 form-control m-selection m-selection__w180">
@@ -308,13 +415,16 @@
                     </div>
                   </div>
                 </div>
-                <button class="d-flex justify-content-center align-items-center border-0 rounded-right search-filter__btn-search">
-                            <svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </button>
+                <div class="search-filter__btn-wrap">
+                  <button class="d-flex justify-content-center align-items-center border-0 rounded-right search-filter__btn-search">
+                                <svg fill="#fff" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                    />
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                </svg>
+                                <span class="d-xl-none ml-1">Tìm kiếm</span>
+                            </button>
+                </div>
               </div>
             </div>
             <!-- End search car -->
