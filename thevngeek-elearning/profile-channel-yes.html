@@ -911,7 +911,9 @@
 <div class="profile-bar">
     <div class="profile-bar__avata">
         <img class="profile-bar__avata-img" src="assets/images/b4.png" alt="">
+        <a class="profile-bar__avata-up" href=""><i class="fa fa-camera profile-bar__avata-icon" aria-hidden="true"></i></a>
         <span class="profile-bar__avata-name">Doãn Chí Bình</span>
+        <button class="btn-blue profile-bar__avata-follow">Theo dõi</button>
     </div>
     <a class="profile-bar__link " href="profile-info.html"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
     <a class="profile-bar__link " href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
@@ -964,14 +966,21 @@
 				<a href="" class="profile-channel__heading">Ngôn ngữ PHP nâng cao</a>
 				<p class="profile-channel__header__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</p>
 			</div>
-			<button class="profile-channel__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+			<div class="profile-channel-yes__flex">
+				<button class="profile-channel__btn jsBtnChannel"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+				<button class="profile-channel-yes__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+			</div>
+
 		</div>
 		<div class="profile-channel__header">
 			<div>
 				<a href="" class="profile-channel__heading">Các kiến thức về Java</a>
 				<p class="profile-channel__header__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</p>
 			</div>
-			<button class="profile-channel__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+			<div class="profile-channel-yes__flex">
+				<button class="profile-channel__btn jsBtnChannel"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+				<button class="profile-channel-yes__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+			</div>
 		</div>
 	</div>
 </section>
@@ -1075,10 +1084,27 @@
         </div>
     </div>
     <div class="modal-channel__footer add">
-        <a href="#" class="close btn-blue modal-channel__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
+        <a href="#" class="close btn-blue modal-channel__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Tạo</a>
     </div>
 </aside>
 <!--END MODAL channel ADD -->
+        <!-- // -->
+        <!-- MODAL remove -->
+<aside class="ui modal large modal-remove edit jsModalRemove">
+    <div class="modal-remove__header">
+        <span class="modal-remove__title">Xác nhận</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-remove__body">
+        <p>Bạn có đồng ý xoá khoá học</p>
+        <b>“Sed vitae dui pellentesque, facilisis diam in”</b> không?
+    </div>
+    <div class="modal-remove__footer">
+        <a href="#" class="modal-remove__btn-y">Có</a>
+        <a href="#" class="close modal-remove__btn-n">Không</a>
+    </div>
+</aside>
+<!--END MODAL remove -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>

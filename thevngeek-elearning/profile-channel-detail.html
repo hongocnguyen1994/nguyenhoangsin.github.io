@@ -911,7 +911,9 @@
 <div class="profile-bar">
     <div class="profile-bar__avata">
         <img class="profile-bar__avata-img" src="assets/images/b4.png" alt="">
+        <a class="profile-bar__avata-up" href=""><i class="fa fa-camera profile-bar__avata-icon" aria-hidden="true"></i></a>
         <span class="profile-bar__avata-name">Doãn Chí Bình</span>
+        <button class="btn-blue profile-bar__avata-follow">Theo dõi</button>
     </div>
     <a class="profile-bar__link " href="profile-info.html"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
     <a class="profile-bar__link " href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
@@ -960,74 +962,106 @@
 				<div class="profile-channel__heading">Kênh của bạn</div>
 				<p class="profile-channel__header__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</p>
 			</div>
-			<button class="profile-channel__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+			<div class="profile-channel-yes__flex">
+                <button class="profile-channel__btn jsBtnChannel"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+                <button class="profile-channel-yes__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+            </div>
 		</div>
 		<div class="profile-channel-detail__text">Bạn đã hoàn thành 20% trên tổng 4 bài học</div>
 	</div>
-	<div class="profile-channel-detail__content">
+    <div class="profile-channel-detail__box">
+        <div class="profile-channel-detail__head">Khóa học</div>
 		<div class="row">
 			<div class="col-md-6 col-lg-4">
                 <div class="course-classify__item">
-                    <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt="" style="display: none;"><div class="setRateImageBackground" style="height: 189.75px; background: url(&quot;assets/images/b6.png&quot;) center center / cover;"></div></div>
+                    <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
                     <div class="course-classify__content">
                         <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
-                        <div class="profile-channel-detail__content__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
-                    </div>
-                    <div class="course-classify__rate courseClassifyRate active">
-                        <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">67</span>%</div>
-                        <div class="course-classify__process">
-                            <div class="course-classify__process-current courseClassifyProcessCurrent" style="width: 27%;"></div>
+                        <div class="profile-channel-detail__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
+                        <div class="profile-channel-detail__level">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            Cấp độ 3
                         </div>
                     </div>
+                    <div class="course-classify__rate courseClassifyRate">
+                        <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">67</span>%</div>
+                        <div class="course-classify__process">
+                            <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                        </div>
+                    </div>
+                    <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
                 </div>
             </div>
+            <!-- End item -->
             <div class="col-md-6 col-lg-4">
                 <div class="course-classify__item">
-                    <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt="" style="display: none;"><div class="setRateImageBackground" style="height: 189.75px; background: url(&quot;assets/images/b6.png&quot;) center center / cover;"></div></div>
+                    <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
                     <div class="course-classify__content">
                         <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
-                        <div class="profile-channel-detail__content__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
-                    </div>
-                    <div class="course-classify__rate courseClassifyRate active">
-                        <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">67</span>%</div>
-                        <div class="course-classify__process">
-                            <div class="course-classify__process-current courseClassifyProcessCurrent" style="width: 27%;"></div>
+                        <div class="profile-channel-detail__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
+                        <div class="profile-channel-detail__level">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            Cấp độ 3
                         </div>
                     </div>
+                    <div class="course-classify__rate courseClassifyRate">
+                        <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">67</span>%</div>
+                        <div class="course-classify__process">
+                            <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                        </div>
+                    </div>
+                    <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
                 </div>
             </div>
+            <!-- End item -->
             <div class="col-md-6 col-lg-4">
                 <div class="course-classify__item">
-                    <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt="" style="display: none;"><div class="setRateImageBackground" style="height: 189.75px; background: url(&quot;assets/images/b6.png&quot;) center center / cover;"></div></div>
+                    <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
                     <div class="course-classify__content">
                         <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
-                        <div class="profile-channel-detail__content__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
-                    </div>
-                    <div class="course-classify__rate courseClassifyRate active">
-                        <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">67</span>%</div>
-                        <div class="course-classify__process">
-                            <div class="course-classify__process-current courseClassifyProcessCurrent" style="width: 27%;"></div>
+                        <div class="profile-channel-detail__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
+                        <div class="profile-channel-detail__level">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            Cấp độ 3
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="course-classify__item">
-                    <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt="" style="display: none;"><div class="setRateImageBackground" style="height: 189.75px; background: url(&quot;assets/images/b6.png&quot;) center center / cover;"></div></div>
-                    <div class="course-classify__content">
-                        <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
-                        <div class="profile-channel-detail__content__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
-                    </div>
-                    <div class="course-classify__rate courseClassifyRate active">
+                    <div class="course-classify__rate courseClassifyRate">
                         <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">67</span>%</div>
                         <div class="course-classify__process">
-                            <div class="course-classify__process-current courseClassifyProcessCurrent" style="width: 27%;"></div>
+                            <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
                         </div>
                     </div>
+                    <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
                 </div>
             </div>
+            <!-- End item -->
 		</div>
 	</div>
+    <!-- end box -->
+    <div class="profile-channel-detail__box">
+        <div class="profile-channel-detail__head">Learning Path</div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="course-classify__item">
+                    <div class="course-classify__content">
+                        <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                        <div class="profile-channel-detail__desc">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla.</div>
+                        <div class="profile-channel-detail__level">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            Cấp độ 3
+                        </div>
+                    </div>
+                    <div class="course-classify__rate courseClassifyRate">
+                        <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">67</span>%</div>
+                        <div class="course-classify__process">
+                            <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                        </div>
+                    </div>
+                    <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
                     </div>
                 </div>
@@ -1111,6 +1145,45 @@
 <div class="scroll-status back-top" title="Về đầu trang"><i class="icon-icon_dropdown_menu"></i></div>
 <!-- END BACK TO TOP -->
         <!-- // -->
+         <!-- MODAL channel ADD -->
+<aside class="ui modal modal-channel jsModalChannel edit">
+    <div class="modal-channel__header">
+        <span class="modal-channel__title">tạo kênh</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-channel__body">
+        <div class="modal-channel__balde">
+            <div class="modal-channel__text">Đặt tên</div>
+            <input type="text" class="input-profile modal-channel__input" placeholder="Nhập...">
+        </div>
+        <!-- // -->
+        <div class="modal-channel__balde">
+            <div class="modal-channel__text">Giới thiệu</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Mô tả kênh của bạn...'></textarea>
+        </div>
+    </div>
+    <div class="modal-channel__footer add">
+        <a href="#" class="close btn-blue modal-channel__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Tạo</a>
+    </div>
+</aside>
+<!--END MODAL channel ADD -->
+        <!-- // -->
+        <!-- MODAL remove -->
+<aside class="ui modal large modal-remove edit jsModalRemove">
+    <div class="modal-remove__header">
+        <span class="modal-remove__title">Xác nhận</span>
+        <i class="close icon-icon_close_popup"></i>
+    </div>
+    <div class="modal-remove__body">
+        <p>Bạn có đồng ý xoá khoá học</p>
+        <b>“Sed vitae dui pellentesque, facilisis diam in”</b> không?
+    </div>
+    <div class="modal-remove__footer">
+        <a href="#" class="modal-remove__btn-y">Có</a>
+        <a href="#" class="close modal-remove__btn-n">Không</a>
+    </div>
+</aside>
+<!--END MODAL remove -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>

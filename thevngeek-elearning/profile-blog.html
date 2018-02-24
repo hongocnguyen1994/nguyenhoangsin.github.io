@@ -911,7 +911,9 @@
 <div class="profile-bar">
     <div class="profile-bar__avata">
         <img class="profile-bar__avata-img" src="assets/images/b4.png" alt="">
+        <a class="profile-bar__avata-up" href=""><i class="fa fa-camera profile-bar__avata-icon" aria-hidden="true"></i></a>
         <span class="profile-bar__avata-name">Doãn Chí Bình</span>
+        <button class="btn-blue profile-bar__avata-follow">Theo dõi</button>
     </div>
     <a class="profile-bar__link " href="profile-info.html"><i class="icon-icon_thong_tin_ca_nhan_active"></i>Thông tin cá nhân</a>
     <a class="profile-bar__link " href="profile-chart.html"><i class="icon-icon_bieu_do_thong_ke"></i>Biểu đồ thống kê</a>
@@ -981,139 +983,17 @@
                         </div>
                     </div>
                     <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
+                        <!-- MENU CONTROL -->
+                        <div class="dropdown menu-control">
+                            <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-icon_edit_trang_ca_nhan"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item profile-control__btn" href="javascript:void(0)">Chỉnh sửa</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+                        <!-- END MENU CONTROL -->
                     </div>
                 </div>
                 <!-- end blade -->
@@ -1156,95 +1036,17 @@
                         </div>
                     </div>
                     <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
+                        <!-- MENU CONTROL -->
+                        <div class="dropdown menu-control">
+                            <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-icon_edit_trang_ca_nhan"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item profile-control__btn" href="javascript:void(0)">Chỉnh sửa</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+                        <!-- END MENU CONTROL -->
                     </div>
                 </div>
                 <!-- end blade -->
@@ -1272,28 +1074,6 @@
                 <div class="profile-blog__blade">
                     <div class="profile-blog__content">
                         <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
                             <img src="assets/images/b4.png" alt="">
                         </div>
                         <div class="profile-blog__detail">
@@ -1309,95 +1089,17 @@
                         </div>
                     </div>
                     <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
+                        <!-- MENU CONTROL -->
+                        <div class="dropdown menu-control">
+                            <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-icon_edit_trang_ca_nhan"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item profile-control__btn" href="javascript:void(0)">Chỉnh sửa</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
-                    </div>
-                </div>
-                <!-- end blade -->
-                <div class="profile-blog__blade">
-                    <div class="profile-blog__content">
-                        <div class="profile-blog__img">
-                            <img src="assets/images/b3.png" alt="">
-                        </div>
-                        <div class="profile-blog__detail">
-                            <a href="#" class="profile-blog__text1">Sed vitae dui pellentesque, facilisis diam in.</a>
-                            <div class="profile-blog__text2">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                            <div class="profile-blog__text3">Đăng ngày 12/09/2017</div>
-                            <div class="profile-blog__group">
-                                <div class="profile-blog__text4">124 lượt xem</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_thich"></i> Thích: 2</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_khong_thich"></i> Không thích: 0</div>
-                                <div class="profile-blog__text5"><i class="icon-icon_binh_luan"></i> Bình luận: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile-control">
-                        <button class="profile-control__btn"><i class="icon-icon_edit_trang_ca_nhan"></i></button>
+                        <!-- END MENU CONTROL -->
                     </div>
                 </div>
                 <!-- end blade -->

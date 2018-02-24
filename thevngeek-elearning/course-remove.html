@@ -35,7 +35,7 @@
                         <!-- block scroll -->
                         <div id="blockScroll" class="block-scroll">
                             <!-- logged -->
-                            <div class="dropdown logged-notifications">
+                            <div class="dropdown logged-notifications d-none">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="icon-icon_notification_sau_dang_nhap logged-notifications__icon"><span class="logged-notifications__total">12</span></i>
                                     </button>
@@ -125,7 +125,7 @@
                                     <div class="logged-notifications__viewmore"><a href="#">Xêm thêm</a></div>
                                 </div>
                             </div>
-                            <div class="dropdown logged-user">
+                            <div class="dropdown logged-user d-none">
                                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img class="logged-user__avata" src="assets/images/dcb.png" alt="">
                                         <span class="logged-user__name">Doãn Chí Bình</span>
@@ -140,8 +140,8 @@
                             </div>
                             <!-- end logged -->
                             <!-- not logged -->
-                            <a class="register large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
-                            <a class="login large-header-features-action__soul large-header-features-action__soul--action d-none" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
+                            <a class="register large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_ky_top"></i>Đăng ký</a>
+                            <a class="login large-header-features-action__soul large-header-features-action__soul--action" href="javascript:void(0)"><i class="icon-icon_dang_nhap_top"></i>Đăng nhập</a>
                             <!-- end not logged -->
                             <div class="ui selection dropdown">
                                 <input type="hidden" name="language" value="0">
@@ -575,7 +575,7 @@
         <div class="small-header-bar__logo"><img src="assets/images/logo-small.png" alt=""></div>
         <div class="small-header-bar__action">
             <!-- logged -->
-            <div class="dropdown logged-noti-small">
+            <div class="dropdown logged-noti-small d-none">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="icon-icon_notification_sau_dang_nhap logged-noti-small__icon"><span class="logged-noti-small__total">12</span></i>
                                 </button>
@@ -665,7 +665,7 @@
                     <div class="logged-noti-small__viewmore"><a href="#">Xêm thêm</a></div>
                 </div>
             </div>
-            <div class="dropdown logged-user-small">
+            <div class="dropdown logged-user-small d-none">
                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logged-user-small__avata" src="assets/images/dcb.png" alt=""></button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Trang cá nhân</a>
@@ -677,8 +677,8 @@
             </div>
             <!-- end logged -->
             <!-- not logged -->
-            <button class="register small-header-bar__btn d-none"><i class="icon-icon_dang_ky_top"></i></button>
-            <button class="login small-header-bar__btn d-none"><i class="icon-icon_dang_nhap_top"></i></button>
+            <button class="register small-header-bar__btn"><i class="icon-icon_dang_ky_top"></i></button>
+            <button class="login small-header-bar__btn"><i class="icon-icon_dang_nhap_top"></i></button>
             <!-- end not logged -->
             <div class="ui selection dropdown">
                 <input type="hidden" name="language" value="0">
@@ -903,215 +903,518 @@
     </div>
 </aside>
 <!-- END MODAL FORGOT PASSWORD -->
-        <main class="body-content-wrap aq">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="aq__header">
-                            <div class="aq__title">Hỏi đáp</div>
-                            <button class="btn-blue aq__btn jsAQAnswer"><i class="fa fa-pencil-square-o"></i> Đặt câu hỏi</button>
-                        </div>
-                        <div class="aq__body">
-                            <div class="aq__item">
-                                <div class="aq__text1">Sed vitae dui pellentesque, facilisis diam in.</div>
-                                <div class="aq__user">
-                                    <div class="aq__user__flex">
-                                        <a class="aq__avata" href="#">
-                                            <img src="assets/images/dcb.png" alt="">
-                                        </a>
-                                        <div class="aq__info">
-                                            <a class="aq__text2" href="#">Bình Ca</a>
-                                            <div class="aq__text3">50m ago</div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown menu-control">
-                                        <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg class="menu-control__icon">
-                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(36px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item jsAQAnswer" href="javascript:void(0)">Chỉnh sửa</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aq__text4">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                                <a class="aq__text5" href="aq-detail.html">Xem trả lời</a>
-                            </div>
-                            <!-- end item -->
-                            <div class="aq__item">
-                                <div class="aq__text1">Sed vitae dui pellentesque, facilisis diam in.</div>
-                                <div class="aq__user">
-                                    <div class="aq__user__flex">
-                                        <a class="aq__avata" href="#">
-                                            <img src="assets/images/dcb.png" alt="">
-                                        </a>
-                                        <div class="aq__info">
-                                            <a class="aq__text2" href="#">Bình Ca</a>
-                                            <div class="aq__text3">50m ago</div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown menu-control">
-                                        <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg class="menu-control__icon">
-                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(36px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item jsAQAnswer" href="javascript:void(0)">Chỉnh sửa</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aq__text4">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                                <a class="aq__text5" href="aq-detail.html">Xem trả lời</a>
-                            </div>
-                            <!-- end item -->
-                            <div class="aq__item">
-                                <div class="aq__text1">Sed vitae dui pellentesque, facilisis diam in.</div>
-                                <div class="aq__user">
-                                    <div class="aq__user__flex">
-                                        <a class="aq__avata" href="#">
-                                            <img src="assets/images/dcb.png" alt="">
-                                        </a>
-                                        <div class="aq__info">
-                                            <a class="aq__text2" href="#">Bình Ca</a>
-                                            <div class="aq__text3">50m ago</div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown menu-control">
-                                        <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg class="menu-control__icon">
-                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(36px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item jsAQAnswer" href="javascript:void(0)">Chỉnh sửa</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aq__text4">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                                <a class="aq__text5" href="aq-detail.html">Xem trả lời</a>
-                            </div>
-                            <!-- end item -->
-                            <div class="aq__item">
-                                <div class="aq__text1">Sed vitae dui pellentesque, facilisis diam in.</div>
-                                <div class="aq__user">
-                                    <div class="aq__user__flex">
-                                        <a class="aq__avata" href="#">
-                                            <img src="assets/images/dcb.png" alt="">
-                                        </a>
-                                        <div class="aq__info">
-                                            <a class="aq__text2" href="#">Bình Ca</a>
-                                            <div class="aq__text3">50m ago</div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown menu-control">
-                                        <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg class="menu-control__icon">
-                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(36px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item jsAQAnswer" href="javascript:void(0)">Chỉnh sửa</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aq__text4">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                                <a class="aq__text5" href="aq-detail.html">Xem trả lời</a>
-                            </div>
-                            <!-- end item -->
-                            <div class="aq__item">
-                                <div class="aq__text1">Sed vitae dui pellentesque, facilisis diam in.</div>
-                                <div class="aq__user">
-                                    <div class="aq__user__flex">
-                                        <a class="aq__avata" href="#">
-                                            <img src="assets/images/dcb.png" alt="">
-                                        </a>
-                                        <div class="aq__info">
-                                            <a class="aq__text2" href="#">Bình Ca</a>
-                                            <div class="aq__text3">50m ago</div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown menu-control">
-                                        <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg class="menu-control__icon">
-                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(36px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item jsAQAnswer" href="javascript:void(0)">Chỉnh sửa</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aq__text4">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                                <a class="aq__text5" href="aq-detail.html">Xem trả lời</a>
-                            </div>
-                            <!-- end item -->
-                            <div class="aq__item">
-                                <div class="aq__text1">Sed vitae dui pellentesque, facilisis diam in.</div>
-                                <div class="aq__user">
-                                    <div class="aq__user__flex">
-                                        <a class="aq__avata" href="#">
-                                            <img src="assets/images/dcb.png" alt="">
-                                        </a>
-                                        <div class="aq__info">
-                                            <a class="aq__text2" href="#">Bình Ca</a>
-                                            <div class="aq__text3">50m ago</div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown menu-control">
-                                        <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <svg class="menu-control__icon">
-                                                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(36px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item jsAQAnswer" href="javascript:void(0)">Chỉnh sửa</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aq__text4">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris.</div>
-                                <a class="aq__text5" href="aq-detail.html">Xem trả lời</a>
-                            </div>
-                            <!-- end item -->
-                            <div class="aq__paw">
-                                <!-- PAGINATION -->
-<div class="paginations">
-    <div class="paginations__text">Hiển thị từ 1 đến 7 trên tổng số 214 bài viết</div>
-    <nav class="paginations__nav">
-        <a class="paginations__link" href="#"><i class="icon-icon_first_pagination"></i></a>
-        <a class="paginations__link" href="#"><i class="icon-icon_prev_pagination"></i></a>
-        <a class="paginations__link active" href="#">1</a>
-        <a class="paginations__link" href="#">2</a>
-        <a class="paginations__link" href="#">3</a>
-        <a class="paginations__link" href="#"><i class="icon-icon_next_pagination"></i></a>
-        <a class="paginations__link" href="#"><i class="icon-icon_end_pagination"></i></a>
-    </nav>
-</div>
-<!-- END PAGINATION -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="aq__bar">
-                            <div class="aq__text6 text-truncate">Các Câu hỏi thường gặp</div>
-                            <a class="aq__text7" href="#"><i class="fa fa-circle"></i><span>Maecenas commodo orci ac lacus laoreet ultrices. Ut vel felis sed diam.</span></a>
-                            <a class="aq__text7" href="#"><i class="fa fa-circle"></i><span>Maecenas commodo orci ac lacus laoreet ultrices. Ut vel felis sed diam.</span></a>
-                            <a class="aq__text7" href="#"><i class="fa fa-circle"></i><span>Maecenas commodo orci ac lacus laoreet ultrices. Ut vel felis sed diam.</span></a>
-                            <a class="aq__text7" href="#"><i class="fa fa-circle"></i><span>Maecenas commodo orci ac lacus laoreet ultrices. Ut vel felis sed diam.</span></a>
-                            <a class="aq__text7" href="#"><i class="fa fa-circle"></i><span>Maecenas commodo orci ac lacus laoreet ultrices. Ut vel felis sed diam.</span></a>
-                            <a class="aq__text7" href="#"><i class="fa fa-circle"></i><span>Maecenas commodo orci ac lacus laoreet ultrices. Ut vel felis sed diam.</span></a>
-                            <a class="aq__text7" href="#"><i class="fa fa-circle"></i><span>Maecenas commodo orci ac lacus laoreet ultrices. Ut vel felis sed diam.</span></a>
-                        </div>
-                    </div>
+        <main>
+            <!-- COURSE SEARCH -->
+<section class="course-search">
+    <div class="container">
+        <h2 class="course-search__title">Khoá học lập trình</h2>
+        <div class="course-search__box">
+            <div class="course-search__box1">
+                <input class="course-search__input" type="text" placeholder="Nhập tên khóa học...">
+                <button class="course-search__btn"><i class="icon-icon_search_trang_khoa_hoc"></i></button>
+            </div>
+
+            <div class="course-search__box2 course-search__box2--first">
+                <div class="course-search__text1">Sắp xếp theo:</div>
+                <select class="ui dropdown">
+                    <option value="">Từ A - Z</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+            </div>
+            <div class="course-search__box2">
+                <div class="course-search__text1">Lọc theo:</div>
+                <select class="ui dropdown">
+                    <option value="">Không lọc</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="course-search__introduction">
+            <div class="course-search__content">
+                <div class="course-search__text2">Sed mollis sapien eget sagittis ullamcorper. Curabitur at augue ornare, rutrum ligula vitae, semper mi. Vestibulum aliquet vehicula tristique. Vestibulum vitae condimentum elit. Pellentesque nec nisl quis risus posuere fringilla. Vivamus
+                    ut elit at ex rhoncus ultricies. Sed lobortis vulputate leo. Sed ac erat quis tortor interdum rhoncus. Nam mollis facilisis augue, quis laoreet urna suscipit at.</div>
+                <div class="course-search__text2">
+                    Morbi sapien odio, dignissim eget blandit quis, accumsan eu sem. Nulla commodo purus eu sem aliquet, sed mattis enim lobortis. In facilisis leo sit amet quam luctus varius. Maecenas tincidunt molestie cursus. Vestibulum quis sapien dictum, condimentum
+                    mauris eget, condimentum nisl. Aliquam non lectus id augue hendrerit pellentesque. Sed luctus massa id viverra sagittis. Aliquam sit amet ex nec enim interdum mollis et vitae risus. Maecenas orci risus, accumsan vel mollis a, suscipit
+                    et est.</div>
+                <button class="btn-blue course-search__add jsBtnRemove">Xoá khoá học này ra khỏi kênh</button>
+            </div>
+            <div class="course-search__img">
+                <div class="course-search__img-inner">
+                    <img class="courseSearchSetRateImages-5-3" src="assets/images/b6.png" alt="">
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<!-- END COURSE SEARCH -->
+            <!-- // -->
+            <!-- COURSE CLASSIFY -->
+<section class="course-classify">
+    <div class="container">
+        <div class="course-classify__box">
+            <h2 class="course-classify__title">Trình độ sơ cấp</h2>
+            <div class="course-classify__text1">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris. Nam et ornare nisi. Nulla finibus euismod ante, ut finibus neque scelerisque sit amet. Suspendisse
+                nec lacus placerat, posuere odio id, tincidunt neque.</div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">4.3</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">27</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">4.5</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">50</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">1.8</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">0</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">1.7</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">0.5</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+        </div>
+        <!-- END BOX -->
+        <div class="course-classify__box">
+            <h2 class="course-classify__title">Trình độ trung cấp</h2>
+            <div class="course-classify__text1">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris. Nam et ornare nisi. Nulla finibus euismod ante, ut finibus neque scelerisque sit amet. Suspendisse
+                nec lacus placerat, posuere odio id, tincidunt neque.</div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">4.3</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">27</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">4.5</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">50</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">1.8</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">0</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">1.7</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">0.5</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">1.7</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">0.5</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">2.1</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">90</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+        </div>
+        <!-- END BOX -->
+        <div class="course-classify__box">
+            <h2 class="course-classify__title">Trình độ cao cấp</h2>
+            <div class="course-classify__text1">Donec in risus nibh. Phasellus dignissim pellentesque sem, non accumsan nulla. Nunc elementum est tempus, ornare enim maximus, tincidunt mauris. Nam et ornare nisi. Nulla finibus euismod ante, ut finibus neque scelerisque sit amet. Suspendisse
+                nec lacus placerat, posuere odio id, tincidunt neque.</div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">4.3</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">27</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b6.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">4.5</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">50</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b2.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">1.8</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">0</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="course-classify__item">
+                        <div class="course-classify__img"><img class="courseClassifySetRateImages-4-3" src="assets/images/b1.png" alt=""></div>
+                        <div class="course-classify__content">
+                            <a href="#" class="course-classify__text2">Sed vitae dui pellentesque, facilisis diam in</a>
+                            <div class="course-classify__author">
+                                <a href="#" class="course-classify__avata"><img src="assets/images/dcb.png" alt=""></a>
+                                <div class="course-classify__info">
+                                    <div class="course-classify__text3">Tác giả <span>Bình Ca</span></div>
+                                    <div class="course-classify__text4">In in pellentesque nulla</div>
+                                </div>
+                            </div>
+                            <div class="course-classify__rating courseClassifyRating">
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <i class="courseClassifyRatingStar"></i>
+                                <span class="course-classify__rating-number courseClassifyRatingNumber">4.7</span>
+                            </div>
+                        </div>
+                        <div class="course-classify__rate courseClassifyRate">
+                            <div class="course-classify__rate-number"><span class="courseClassifyRateNumber">20</span>%</div>
+                            <div class="course-classify__process">
+                                <div class="course-classify__process-current courseClassifyProcessCurrent"></div>
+                            </div>
+                        </div>
+                        <button class="course-classify__remove jsBtnRemove"><i class="close icon-icon_close_popup"></i></button>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+        </div>
+        <!-- END BOX -->
+    </div>
+</section>
+<!-- END COURSE CLASSIFY -->
         </main>
         <!-- FOOTER -->
 <footer class="footer">
@@ -1282,29 +1585,22 @@
 </aside>
 <!--END MODAL WRITE BLOG ADD -->
         <!-- // -->
-        <!-- MODAL AQ -->
-<aside class="ui modal modal-aq jsModalAQ">
-    <div class="modal-aq__header">
-        <span class="modal-aq__title">Đặt câu hỏi</span>
+        <!-- MODAL remove -->
+<aside class="ui modal large modal-remove edit jsModalRemove">
+    <div class="modal-remove__header">
+        <span class="modal-remove__title">Xác nhận</span>
         <i class="close icon-icon_close_popup"></i>
     </div>
-    <div class="modal-aq__body">
-        <div class="modal-aq__balde">
-            <div class="modal-aq__text">Tên câu hỏi</div>
-            <input type="text" class="input-profile modal-aq__input" placeholder="Nhập...">
-        </div>
-        <!-- // -->
-        <div class="modal-aq__balde modal-aq__balde--end">
-            <div class="modal-aq__text">Nội dung hỏi</div>
-            <textarea class='textarea-profile  autoExpand' rows='4' data-min-rows='4' placeholder='Nhập...'></textarea>
-        </div>
+    <div class="modal-remove__body">
+        <p>Bạn có đồng ý xoá khoá học</p>
+        <b>“Sed vitae dui pellentesque, facilisis diam in”</b> không?
     </div>
-    <div class="modal-aq__footer">
-        <a href="#" class="close btn-blue modal-aq__btn cancel"><i class="close icon-icon_close_popup"></i>Hủy</a>
-        <a href="#" class="close btn-blue modal-aq__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
+    <div class="modal-remove__footer">
+        <a href="#" class="modal-remove__btn-y">Có</a>
+        <a href="#" class="close modal-remove__btn-n">Không</a>
     </div>
 </aside>
-<!--END MODAL AQ -->
+<!--END MODAL remove -->
     </div>
     <!-- SCRIPT -->
 <script src="assets/js/vendor.min.js"></script>

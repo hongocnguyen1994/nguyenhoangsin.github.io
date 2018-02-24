@@ -913,7 +913,7 @@
                 <div class="col-lg-10 search-interview__form__flex">
                     <div class="search-interview__form__input1">
                         <i class="fa fa-search" aria-hidden="true"></i>
-                        <input type="text" placeholder="Nhập tên công ty..." ">
+                        <input type="text" placeholder="Nhập tên công ty...">
                     </div>
                     <input class="search-interview__form__input2" type="text" placeholder="Nhập tên địa điểm...">
                     <div class="ui selection dropdown" tabindex="0">
@@ -988,7 +988,20 @@
                         <div class="col-lg-8">
                             <div class="company-detail">
                                 <div class="company-evaluation__item">
-                                    <div class="company-evaluation__text1">“Sed vitae dui pellentesque, facilisis diam in”</div>
+                                    <div class="company-evaluation__dflex">
+                                        <div class="company-evaluation__text1">“Sed vitae dui pellentesque, facilisis diam in”</div>
+                                        <div class="dropdown menu-control">
+                                            <button class="dropdown-toggle menu-control__btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="menu-control__icon">
+                                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(36px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item jsBtnCompany" href="javascript:void(0)">Chỉnh sửa</a>
+                                                <a class="dropdown-item" href="javascript:void(0)">Xóa</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="course-classify__rating courseClassifyRating">
                                         <span class="d-none courseClassifyRatingNumber">3.5</span>
                                         <i class="courseClassifyRatingStar"></i>
@@ -1240,26 +1253,69 @@
 <!-- END BACK TO TOP -->
         <!-- // -->
         <!-- MODAL COMPANY -->
-<aside class="ui modal large modal-reply-result edit jsModalReply">
-    <div class="modal-reply-result__header">
-        <span class="modal-reply-result__title">Trả lời câu hỏi</span>
+<aside class="ui modal large modal-company edit jsModalCompany">
+    <div class="modal-company__header">
+        <span class="modal-company__title">Đánh giá công ty riot game</span>
         <i class="close icon-icon_close_popup"></i>
     </div>
-    <div class="modal-reply-result__body">
-        <!-- // -->
-        <div class="modal-reply-result__balde">
-            <div class="modal-reply-result__text">Câu hỏi</div>
-            <div class="modal-reply-result__text2">Praesent lobortis mauris quis nunc ullamcorper euismod. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia quis nunc ullamcorper euismod nostra?</div>
+    <div class="modal-company__body">
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <div class="modal-company__balde">
+                    <div class="modal-company__text">Đánh giá tổng quan</div>
+                    <div class="ui star rating huge" data-max-rating="5" data-rating="0"></div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="modal-company__balde">
+                    <div class="modal-company__text">Bạn là nhân viên hiện tại hay cũ?</div>
+                    <div class="radio-group">
+                        <label class="radio-group__blade"><input class="radio-group__input" type="radio" name="email"><span class="radio-group__status"></span>Hiện tại</label>
+                        <label class="radio-group__blade"><input class="radio-group__input" type="radio" name="email"><span class="radio-group__status"></span>Cũ</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-4">
+                <div class="modal-company__balde">
+                    <div class="modal-company__text">Số năm kinh nghiệm</div>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="level">
+                        <i class="dropdown icon icon-icon_dropdown_menu"></i>
+                        <div class="default text">-- Chọn --</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="0">2</div>
+                            <div class="item" data-value="0">3</div>
+                            <div class="item" data-value="0">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- // -->
-        <div class="modal-reply-result__balde">
-            <div class="modal-reply-result__text">Trả lời</div>
+        <div class="modal-company__balde">
+            <div class="modal-company__text">Tiêu đề đánh giá</div>
+            <input type="text" class="input-profile modal-company__input" placeholder="Nhập...">
+        </div>
+        <!-- // -->
+        <div class="modal-company__balde">
+            <div class="modal-company__text">Ưu điểm</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <!-- // -->
+        <div class="modal-company__balde">
+            <div class="modal-company__text">Nhược điểm</div>
+            <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
+        </div>
+        <!-- // -->
+        <div class="modal-company__balde end">
+            <div class="modal-company__text">Đề nghị</div>
             <textarea class='textarea-profile  autoExpand' rows='5' placeholder='Nhập...'></textarea>
         </div>
     </div>
-    <div class="modal-reply-result__footer">
-        <a href="#" class="close btn-blue modal-reply-result__btn"><i class="icon-icon_close_popup"></i> Hủy</a>
-        <a href="#" class="close btn-blue modal-reply-result__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
+    <div class="modal-company__footer">
+        <a href="#" class="close btn-blue modal-company__btn"><i class="icon-icon_close_popup"></i> Hủy</a>
+        <a href="#" class="close btn-blue modal-company__btn"><i class="icon-icon_luu_trang_ca_nhan"></i> Lưu</a>
     </div>
 </aside>
 <!--END MODAL COMPANY -->
