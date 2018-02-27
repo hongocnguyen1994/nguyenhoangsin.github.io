@@ -210,57 +210,51 @@
             <div class="container d-xl-flex justify-content-between align-items-center search-result__head-wrap">
                 <div class="d-xl-flex align-items-center search-filter">
                     <div id="searchTour" class="ui search form-group">
-                        <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm địa điểm...">
+                        <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm khách sạn...">
                         <div class="results w-100 mt-0"></div>
                     </div>
                     <div class="form-group">
-                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w235">
-                            <input type="hidden" name="price">
-                            <div class="default text">Chọn khoảng giá</div>
+                        <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày nhận phòng">
+                    </div>
+                    <div class="form-group">
+                        <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày trả phòng">
+                    </div>
+                    <div class="form-group">
+                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w120">
+                            <input type="hidden" name="adult">
+                            <div class="default text">Người lớn: 0</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
                                 <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
                             </svg>
                             <div class="menu">
                                 <div class="item" data-value="0">
-                                    <span>Từ</span> 1.000.000
-                                    <span>&#60;</span> 10.000.000
-                                    <span>đ</span>
+                                    <span>Người lớn:</span> 0
                                 </div>
                                 <div class="item" data-value="1">
-                                    <span>Từ</span> 10.000.000
-                                    <span>&#60;</span> 100.000.000
-                                    <span>đ</span>
+                                    <span>Người lớn:</span> 1
                                 </div>
                                 <div class="item" data-value="2">
-                                    <span>Từ</span> 100.000.000
-                                    <span>&#60;</span> 900.000.000
-                                    <span>đ</span>
+                                    <span>Người lớn:</span> 22
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w180">
-                            <input type="hidden" name="price">
-                            <div class="default text">Chọn khoảng thời gian</div>
+                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w120">
+                            <input type="hidden" name="child">
+                            <div class="default text">Trẻ em: 0</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
                                 <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
                             </svg>
                             <div class="menu">
                                 <div class="item" data-value="0">
-                                    <span>Từ</span> 1
-                                    <span>đến dưới</span> 7
-                                    <span>ngày</span>
+                                    <span>Trẻ em:</span> 0
                                 </div>
                                 <div class="item" data-value="1">
-                                    <span>Từ</span> 7
-                                    <span>đến dưới</span> 14
-                                    <span>ngày</span>
+                                    <span>Trẻ em:</span> 1
                                 </div>
                                 <div class="item" data-value="2">
-                                    <span>Từ</span> 14
-                                    <span>đến dưới</span> 31
-                                    <span>ngày</span>
+                                    <span>Trẻ em:</span> 2
                                 </div>
                             </div>
                         </div>
@@ -282,7 +276,7 @@
                             </svg>
                         </button>
                         <div class="mr-3 ml-3 search-result__head-space"></div>
-                        <button class="d-flex justify-content-center align-items-center mr-sm-3 border-0 search-result__head-btn active">
+                        <button class="d-flex justify-content-center align-items-center mr-sm-3 border-0 search-result__head-btn">
                             <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18 8c0-3.31-2.69-6-6-6S6 4.69 6 8c0 4.5 6 11 6 11s6-6.5 6-11zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.89 2-2 2c-1.1 0-2-.9-2-2zM5 20v2h14v-2H5z"
                                 />
@@ -290,7 +284,6 @@
                             </svg>
                         </button>
                     </div>
-                    <a class="d-flex justify-content-center align-items-center m-btn m-btn-grey search-result__head-btn-create" href="create-custom-tour.html">Tự thiết kế tour</a>
                 </div>
             </div>
         </section>
@@ -298,340 +291,629 @@
 
         <!-- Begin search sesult body -->
         <section class="search-result__body">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 pr-xl-0 pt-4">
-                        <div class="hl-item mb-4 mb-sm-3">
-                            <div class="bg-white hl-item__wrap1">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-4 pr-sm-0">
-                                        <div class="h-100 m-z-outer">
-                                            <img class="d-sm-none w-100 m-z-inner" src="images/p7.png" alt="">
-                                            <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p7.png) center center / cover"></div>
+                    <div class="col-xl-3 mb-xl-4">
+                        <div class="search-result__filter-bar">
+                            <div class="filter-bar">
+                                <div class="filter-bar__head">Xếp hạng sao</div>
+                                <div class="filter-bar__body">
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-8 pl-sm-0">
-                                        <div class="hl-item__content1">
-                                            <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                                <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                                <div class="d-md-flex">
-                                                    <p class="mb-1 mr-md-4">
-                                                        <span class="mr-1 hl-item__label1">Dài:</span>
-                                                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                                    </p>
-                                                    <p class="mb-1">
-                                                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                                    </p>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <img src="images/ic-star.svg" alt="">
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-bar">
+                                <div class="filter-bar__head">Tiện nghi</div>
+                                <div class="filter-bar__body">
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Hồ bơi</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Wifi</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Đổi tiền tệ</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Tủ lạnh</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Điện thoại</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-bar">
+                                <div class="filter-bar__head">Mức giá khách sạn</div>
+                                <div class="filter-bar__body">
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Dưới</span>
+                                            <span class="filter-bar__text3">499,000</span>
+                                            <span class="filter-bar__text4">đ</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">500,000 - 999,999</span>
+                                            <span class="filter-bar__text4">đ</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">1,000,000 - 1,999,999</span>
+                                            <span class="filter-bar__text4">đ</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">2,000,000 - 3,999,999</span>
+                                            <span class="filter-bar__text4">đ</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Trên</span>
+                                            <span class="filter-bar__text3">4,000,000</span>
+                                            <span class="filter-bar__text4">đ</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-bar">
+                                <div class="filter-bar__head">Đánh giá cao nhất</div>
+                                <div class="filter-bar__body">
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">9+</span>
+                                            <span class="filter-bar__text2">Trên cả tuyệt vời</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">8+</span>
+                                            <span class="filter-bar__text2">Xuất sắc</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">7+</span>
+                                            <span class="filter-bar__text2">Rất tốt</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">6+</span>
+                                            <span class="filter-bar__text2">Hài lòng</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text3">5+</span>
+                                            <span class="filter-bar__text2">Bình thường</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 mb-4">
+                        <div class="search-result__content">
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p2.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p2.png) center center / cover"></div>
+                                                        <h6 class="position-absolute py-2 px-3 badge badge-danger hl-item__badge">Giảm giá 15%</h6>
+                                                    </div>
                                                 </div>
-                                                <h6 class="mb-1">
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
                                                     <span class="mr-1 hl-item__text2">340,000</span>
                                                     <span class="hl-item__text3">đ</span>
                                                     <br>
-                                                    <div class="text-right">
-                                                        <span class="hl-item__text1">1 người</span>
-                                                    </div>
-                                                </h6>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
                                             </div>
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                                </svg>
-                                                <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p3.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p3.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p4.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p4.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p5.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p5.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p2.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p2.png) center center / cover"></div>
+                                                        <h6 class="position-absolute py-2 px-3 badge badge-danger hl-item__badge">Giảm giá 15%</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p3.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p3.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p4.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p4.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p5.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p5.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0 hl-item__bdr1">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">May De Ville Legend Hotel</a>
+                                                        <p class="d-flex align-items-center mb-2">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                            <img class="mr-1 hl-item__star" src="images/ic-star.svg" alt="">
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">17 Cua Dong, Quận Hoàn Kiếm, Hà Nội, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div class="d-flex justify-content-end align-items-center mb-3">
+                                                    <div class="mr-3">
+                                                        <div class="hl-item__text5">Rất tốt</div>
+                                                        <div class="hl-item__text6">212 nhận xét</div>
+                                                    </div>
+                                                    <h6 class="mb-0 badge badge-warning text-white hl-item__badge1">7.7</h6>
+                                                </div>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 đêm</span>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="hl-item mb-4 mb-sm-3">
-                            <div class="bg-white hl-item__wrap1">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-4 pr-sm-0">
-                                        <div class="h-100 m-z-outer">
-                                            <img class="d-sm-none w-100 m-z-inner" src="images/p8.png" alt="">
-                                            <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p8.png) center center / cover"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-8 pl-sm-0">
-                                        <div class="hl-item__content1">
-                                            <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                                <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                                <div class="d-md-flex">
-                                                    <p class="mb-1 mr-md-4">
-                                                        <span class="mr-1 hl-item__label1">Dài:</span>
-                                                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                                    </p>
-                                                    <p class="mb-1">
-                                                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                                    </p>
-                                                </div>
-                                                <h6 class="mb-1">
-                                                    <span class="mr-1 hl-item__text2">340,000</span>
-                                                    <span class="hl-item__text3">đ</span>
-                                                    <br>
-                                                    <div class="text-right">
-                                                        <span class="hl-item__text1">1 người</span>
-                                                    </div>
-                                                </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                                </svg>
-                                                <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hl-item mb-4 mb-sm-3">
-                            <div class="bg-white hl-item__wrap1">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-4 pr-sm-0">
-                                        <div class="h-100 m-z-outer">
-                                            <img class="d-sm-none w-100 m-z-inner" src="images/p9.png" alt="">
-                                            <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p9.png) center center / cover"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-8 pl-sm-0">
-                                        <div class="hl-item__content1">
-                                            <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                                <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                                <div class="d-md-flex">
-                                                    <p class="mb-1 mr-md-4">
-                                                        <span class="mr-1 hl-item__label1">Dài:</span>
-                                                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                                    </p>
-                                                    <p class="mb-1">
-                                                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                                    </p>
-                                                </div>
-                                                <h6 class="mb-1">
-                                                    <span class="mr-1 hl-item__text2">340,000</span>
-                                                    <span class="hl-item__text3">đ</span>
-                                                    <br>
-                                                    <div class="text-right">
-                                                        <span class="hl-item__text1">1 người</span>
-                                                    </div>
-                                                </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                                </svg>
-                                                <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hl-item mb-4 mb-sm-3">
-                            <div class="bg-white hl-item__wrap1">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-4 pr-sm-0">
-                                        <div class="h-100 m-z-outer">
-                                            <img class="d-sm-none w-100 m-z-inner" src="images/p10.png" alt="">
-                                            <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p10.png) center center / cover"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-8 pl-sm-0">
-                                        <div class="hl-item__content1">
-                                            <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                                <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                                <div class="d-md-flex">
-                                                    <p class="mb-1 mr-md-4">
-                                                        <span class="mr-1 hl-item__label1">Dài:</span>
-                                                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                                    </p>
-                                                    <p class="mb-1">
-                                                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                                    </p>
-                                                </div>
-                                                <h6 class="mb-1">
-                                                    <span class="mr-1 hl-item__text2">340,000</span>
-                                                    <span class="hl-item__text3">đ</span>
-                                                    <br>
-                                                    <div class="text-right">
-                                                        <span class="hl-item__text1">1 người</span>
-                                                    </div>
-                                                </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                                </svg>
-                                                <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hl-item mb-4 mb-sm-3">
-                            <div class="bg-white hl-item__wrap1">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-4 pr-sm-0">
-                                        <div class="h-100 m-z-outer">
-                                            <img class="d-sm-none w-100 m-z-inner" src="images/p7.png" alt="">
-                                            <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p7.png) center center / cover"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-8 pl-sm-0">
-                                        <div class="hl-item__content1">
-                                            <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                                <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                                <div class="d-md-flex">
-                                                    <p class="mb-1 mr-md-4">
-                                                        <span class="mr-1 hl-item__label1">Dài:</span>
-                                                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                                    </p>
-                                                    <p class="mb-1">
-                                                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                                    </p>
-                                                </div>
-                                                <h6 class="mb-1">
-                                                    <span class="mr-1 hl-item__text2">340,000</span>
-                                                    <span class="hl-item__text3">đ</span>
-                                                    <br>
-                                                    <div class="text-right">
-                                                        <span class="hl-item__text1">1 người</span>
-                                                    </div>
-                                                </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                                </svg>
-                                                <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hl-item mb-4 mb-sm-3">
-                            <div class="bg-white hl-item__wrap1">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-4 pr-sm-0">
-                                        <div class="h-100 m-z-outer">
-                                            <img class="d-sm-none w-100 m-z-inner" src="images/p8.png" alt="">
-                                            <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p8.png) center center / cover"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-8 pl-sm-0">
-                                        <div class="hl-item__content1">
-                                            <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                                <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                                <div class="d-md-flex">
-                                                    <p class="mb-1 mr-md-4">
-                                                        <span class="mr-1 hl-item__label1">Dài:</span>
-                                                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                                    </p>
-                                                    <p class="mb-1">
-                                                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                                    </p>
-                                                </div>
-                                                <h6 class="mb-1">
-                                                    <span class="mr-1 hl-item__text2">340,000</span>
-                                                    <span class="hl-item__text3">đ</span>
-                                                    <br>
-                                                    <div class="text-right">
-                                                        <span class="hl-item__text1">1 người</span>
-                                                    </div>
-                                                </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                                </svg>
-                                                <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hl-item mb-4 mb-sm-3">
-                            <div class="bg-white hl-item__wrap1">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-4 pr-sm-0">
-                                        <div class="h-100 m-z-outer">
-                                            <img class="d-sm-none w-100 m-z-inner" src="images/p9.png" alt="">
-                                            <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p9.png) center center / cover"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-7 col-md-8 col-lg-9 col-xl-8 pl-sm-0">
-                                        <div class="hl-item__content1">
-                                            <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                                <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                                <div class="d-md-flex">
-                                                    <p class="mb-1 mr-md-4">
-                                                        <span class="mr-1 hl-item__label1">Dài:</span>
-                                                        <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                                    </p>
-                                                    <p class="mb-1">
-                                                        <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                        <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                                    </p>
-                                                </div>
-                                                <h6 class="mb-1">
-                                                    <span class="mr-1 hl-item__text2">340,000</span>
-                                                    <span class="hl-item__text3">đ</span>
-                                                    <br>
-                                                    <div class="text-right">
-                                                        <span class="hl-item__text1">1 người</span>
-                                                    </div>
-                                                </h6>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                                    <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                                </svg>
-                                                <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-1 pb-3">
-                            <!-- Begin navigate -->
+                        <div class="py-3">
+                            <div class="mb-4"><!-- Begin navigate -->
 <nav class="d-flex flex-wrap justify-content-center align-items-center rounded-circle m-navigate">
     <a href="" class="d-flex flex-wrap justify-content-center align-items-center rounded-circle m-navigate__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16">
@@ -657,11 +939,8 @@
         </svg>
     </a>
 </nav>
-<!-- End navigate -->
+<!-- End navigate --></div>
                         </div>
-                    </div>
-                    <div class="col-xl-6 pr-xl-0">
-                        <div class="h-100 search-result__map" style="background:url(images/p-map.png) center center / cover"></div>
                     </div>
                 </div>
             </div>
