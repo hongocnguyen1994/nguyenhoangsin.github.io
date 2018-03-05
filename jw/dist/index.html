@@ -25,10 +25,7 @@
             <div class="col-xl-9 d-flex justify-content-between align-items-center">
                 <ul class="d-flex flex-wrap mb-0 pl-0">
                     <li class="">
-                        <a class="d-block px-3 py-2 text-uppercase header__link active" href="">Tuyển dụng</a>
-                    </li>
-                    <li class="">
-                        <a class="d-block px-3 py-2 text-uppercase header__link" href="">Tìm việc</a>
+                        <a class="d-block px-3 py-2 text-uppercase header__link active" href="">Trang chủ</a>
                     </li>
                     <li class="">
                         <a class="d-block px-3 py-2 text-uppercase header__link" href="">Nhà tuyển dụng</a>
@@ -58,16 +55,43 @@
 <!-- End header -->
     <main class="py-3">
         <div class="container">
+            <!-- Begin seach -->
+            <div class="search">
+                <div class="row m-row-4">
+                    <div class="col-xl-4 mb-2 px-1">
+                        <input class="w-100 px-3 rounded m-form-control" type="text" placeholder="Tìm kiếm...">
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-2 mb-2 px-1">
+                        <select class="w-100 px-3 rounded m-form-control">
+                            <option value="volvo">Tất cả ngành nghề</option>
+                            <option value="saab">Lập trình</option>
+                            <option value="mercedes">Bán hàng</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-2 mb-2 px-1">
+                        <select class="w-100 px-3 rounded m-form-control">
+                            <option value="volvo">Tất cả địa điểm</option>
+                            <option value="saab">Đà Nẵng</option>
+                            <option value="mercedes">Sài Gòn</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-2 mb-2 px-1">
+                        <select class="w-100 px-3 rounded m-form-control">
+                            <option value="volvo">Tất cả tin</option>
+                            <option value="saab">Tin tuyển dụng</option>
+                            <option value="mercedes">Tin tìm việc</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 mb-2 px-1">
+                        <button class="w-100 m-btn m-btn-green search__btn">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End search -->
             <div class="row">
-                <div class="col-lg-8 col-xl-9">
-                    <!-- Begin seach -->
-<div class="search">
-    <input class="w-100 py-1 search__tcontent" type="text" placeholder="Tìm kiếm trên JuniorWorks...">
-</div>
-<!-- End search -->
-                    <!-- // -->
+                <div class="col-xl-8">
                     <!-- Begin time line -->
-<section class="pt-3 time-line">
+<section class="time-line">
     <div class="my-4 p-4 rounded time-line-news">
         <div class="d-flex justify-content-between mb-4">
             <div class="d-flex align-items-center">
@@ -75,7 +99,11 @@
                     <img class="mr-3 rounded-circle user-info__avata" src="images/a-lbc.png" alt="">
                 </a>
                 <div>
-                    <a class="user-info__name" href="">Xiaohan Zeng</a>
+                    <div>
+                        <a class="user-info__name" href="">Xiaohan Zeng</a>
+                        <span class="px-2">-</span>
+                        <span class="user-info__des">Tìm việc</span>
+                    </div>
                     <div class="user-info__date">Oct 25, 2018</div>
                 </div>
             </div>
@@ -87,6 +115,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -96,56 +125,28 @@
         <h5>
             <a class="time-line-news__title" href="">Việc nhẹ lương cao, làm việc thoải mái</a>
         </h5>
-        <div class="time-line-news__info">
-            <div>
-                <span>Vị trí: Đà Nẵng</span>
-                <span class="mx-2">-</span>
-                <span>Công ty:
-                    <a href="">Tencent</a>
-                </span>
-            </div>
-            <div>
-                <span>Lương: 10.000.000đ</span>
-                <span class="mx-2">-</span>
-                <span>Thời hạn: Oct 30, 2018</span>
-                </p>
-            </div>
-        </div>
-        <p>Cần tuyển mấy thanh niên đẹp trai, cao to có sức khỏe để làm thêm vệ sĩ. Công việc nhẹ nhàng thoải mái, lương thưởng
-            hậu hỉnh, bao ăn, bao uống, bao ngủ. Yêu cầu chăm ngoan và biết nghe lời.</p>
+        <div class="mb-2">Cần tuyển mấy thanh niên đẹp trai, cao to có sức khỏe để làm thêm vệ sĩ. Công việc nhẹ nhàng thoải mái, lương thưởng
+            hậu hỉnh, bao ăn, bao uống, bao ngủ. Yêu cầu chăm ngoan và biết nghe lời.</div>
+        <ul class="pl-0 time-line-news__info">
+            <li>Vị trí: Đà Nẵng</li>
+            <li>Công ty: Tencent</li>
+            <li>Lương: 10.000.000đ</li>
+            <li>Thời hạn: Oct 30, 2018</li>
+        </ul>
         <img class="w-100 mb-3" src="https://cdn-images-1.medium.com/fit/t/800/240/1*NlLiEMz6YDvfpBSgdyQqYA.jpeg">
         <p>
             <a class="m-readmore" href="">Xem chi tiết...</a>
         </p>
-        <p class="mb-4">
-            <a class="d-inline-block mr-1 mb-1 rounded m-tag" href="">Lập trình</a>
-            <a class="d-inline-block mr-1 mb-1 rounded m-tag" href="">Kinh doanh</a>
-            <a class="d-inline-block mr-1 mb-1 rounded m-tag" href="">Bán hàng</a>
-        </p>
         <div class="d-flex justify-content-between">
-            <div class="d-flex align-items-center mr-3 time-line-news__action">
-                <a class="mr-1 time-line-news__comment" href="">Bình luận:</a>
-                <span>100</span>
+            <a class="mr-1 time-line-news__comment" href="">Bình luận: 100</a>
+            <div class="d-flex align-items-center mr-3">
+                <a class="mr-1 time-line-news__action-1" href="" data-toggle="tooltip" data-placement="top" title="Thích">
+                    <svg viewBox="0 0 576 512" width="22" height="22">
+                        <path fill="#A2A5A5" d="M403.7 24c-42.8 0-83.9 25.7-115.7 54.7C256.2 49.8 215.1 24 172.3 24 80.8 24 24 80.6 24 171.7c0 73.2 62.4 132.4 68.1 137.7l170.3 168.2c14.1 13.9 37.1 14 51.2 0l170.2-167.8.5-.5c15.9-15.5 67.7-71.1 67.7-137.6C552 80.6 495.2 24 403.7 24zm57.7 263L291.2 454.7c-1.8 1.8-4.5 1.8-6.3 0L114.3 286.4C85.8 259.6 56 214 56 171.7 56 98.2 98.4 56 172.3 56c45.1 0 85.4 37 115.7 67.4C303.8 107.6 351.7 56 403.7 56 477.6 56 520 98.2 520 171.7c0 42.4-28.2 85.2-58.6 115.3z"></path>
+                    </svg>
+                </a>
+                <a class="time-line-news__action-2" href="" data-toggle="tooltip" data-placement="top" title="Xem người thích">100</a>
             </div>
-            <div class="d-flex">
-                <div class="d-flex align-items-center mr-3 time-line-news__action" data-toggle="tooltip" data-placement="top" title="Thích">
-                    <a class="mr-1" href="">
-                        <svg viewBox="0 0 576 512" width="22" height="22">
-                            <path fill="#A2A5A5" d="M403.7 24c-42.8 0-83.9 25.7-115.7 54.7C256.2 49.8 215.1 24 172.3 24 80.8 24 24 80.6 24 171.7c0 73.2 62.4 132.4 68.1 137.7l170.3 168.2c14.1 13.9 37.1 14 51.2 0l170.2-167.8.5-.5c15.9-15.5 67.7-71.1 67.7-137.6C552 80.6 495.2 24 403.7 24zm57.7 263L291.2 454.7c-1.8 1.8-4.5 1.8-6.3 0L114.3 286.4C85.8 259.6 56 214 56 171.7 56 98.2 98.4 56 172.3 56c45.1 0 85.4 37 115.7 67.4C303.8 107.6 351.7 56 403.7 56 477.6 56 520 98.2 520 171.7c0 42.4-28.2 85.2-58.6 115.3z"></path>
-                        </svg>
-                    </a>
-                    <span>100</span>
-                </div>
-                <div class="d-flex align-items-center mr-3 time-line-news__action" data-toggle="tooltip" data-placement="top" title="Ứng tuyển">
-                    <a class="mr-1" href="">
-                        <svg viewBox="0 0 576 512" width="22" height="22">
-                            <path fill="#a2a5a5" d="M430.769 312.653l-48.658-13.902C427.833 251.806 432 197.605 432 176 432 78.845 353.262 0 256 0 158.859 0 80 78.724 80 176c0 21.609 4.167 75.806 49.889 122.751l-48.658 13.902C19.49 330.294 0 386.442 0 420.344V448c0 35.29 28.71 64 64 64h384c35.29 0 64-28.71 64-64v-27.656c0-33.198-18.981-89.905-81.231-107.691zM256 32c79.529 0 144 64.471 144 144s-64.471 144-144 144-144-64.471-144-144S176.471 32 256 32zm224 416c0 17.673-14.327 32-32 32H64c-17.673 0-32-14.327-32-32v-27.656c0-35.718 23.678-67.109 58.022-76.922l69.862-19.961C176.969 334.613 210.109 352 256 352c45.897 0 79.038-17.392 96.116-28.538l69.862 19.961C456.322 353.235 480 384.626 480 420.344V448z"></path>
-                        </svg>
-                    </a>
-                    <span>100</span>
-                </div>
-            </div>
-
         </div>
         <!-- Begin comment -->
 <div class="pt-4 comment">
@@ -181,6 +182,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -213,6 +215,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -245,6 +248,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -262,10 +266,14 @@
         <div class="d-flex justify-content-between mb-4">
             <div class="d-flex align-items-center">
                 <a href="">
-                    <img class="mr-3 rounded-circle user-info__avata" src="images/a-lbc.png" alt="">
+                    <img class="mr-3 rounded-circle user-info__avata" src="images/a-dcb.png" alt="">
                 </a>
                 <div>
-                    <a class="user-info__name" href="">Xiaohan Zeng</a>
+                    <div>
+                        <a class="user-info__name" href="">Toàn Chân Group</a>
+                        <span class="px-2">-</span>
+                        <span class="user-info__des">Tuyển dụng</span>
+                    </div>
                     <div class="user-info__date">Oct 25, 2018</div>
                 </div>
             </div>
@@ -277,6 +285,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -286,56 +295,28 @@
         <h5>
             <a class="time-line-news__title" href="">Việc nhẹ lương cao, làm việc thoải mái</a>
         </h5>
-        <div class="time-line-news__info">
-            <div>
-                <span>Vị trí: Đà Nẵng</span>
-                <span class="mx-2">-</span>
-                <span>Công ty:
-                    <a href="">Tencent</a>
-                </span>
-            </div>
-            <div>
-                <span>Lương: 10.000.000đ</span>
-                <span class="mx-2">-</span>
-                <span>Thời hạn: Oct 30, 2018</span>
-                </p>
-            </div>
-        </div>
-        <p>Cần tuyển mấy thanh niên đẹp trai, cao to có sức khỏe để làm thêm vệ sĩ. Công việc nhẹ nhàng thoải mái, lương thưởng
-            hậu hỉnh, bao ăn, bao uống, bao ngủ. Yêu cầu chăm ngoan và biết nghe lời.</p>
+        <div class="mb-2">Cần tuyển mấy thanh niên đẹp trai, cao to có sức khỏe để làm thêm vệ sĩ. Công việc nhẹ nhàng thoải mái, lương thưởng
+            hậu hỉnh, bao ăn, bao uống, bao ngủ. Yêu cầu chăm ngoan và biết nghe lời.</div>
+        <ul class="pl-0 time-line-news__info">
+            <li>Vị trí: Đà Nẵng</li>
+            <li>Công ty: Tencent</li>
+            <li>Lương: 10.000.000đ</li>
+            <li>Thời hạn: Oct 30, 2018</li>
+        </ul>
         <img class="w-100 mb-3" src="https://cdn-images-1.medium.com/fit/t/800/240/1*NlLiEMz6YDvfpBSgdyQqYA.jpeg">
         <p>
             <a class="m-readmore" href="">Xem chi tiết...</a>
         </p>
-        <p class="mb-4">
-            <a class="d-inline-block mr-1 mb-1 rounded m-tag" href="">Lập trình</a>
-            <a class="d-inline-block mr-1 mb-1 rounded m-tag" href="">Kinh doanh</a>
-            <a class="d-inline-block mr-1 mb-1 rounded m-tag" href="">Bán hàng</a>
-        </p>
         <div class="d-flex justify-content-between">
-            <div class="d-flex align-items-center mr-3 time-line-news__action">
-                <a class="mr-1 time-line-news__comment" href="">Bình luận:</a>
-                <span>100</span>
+            <a class="mr-1 time-line-news__comment" href="">Bình luận: 100</a>
+            <div class="d-flex align-items-center mr-3">
+                <a class="mr-1 time-line-news__action-1" href="" data-toggle="tooltip" data-placement="top" title="Thích">
+                    <svg viewBox="0 0 576 512" width="22" height="22">
+                        <path fill="#A2A5A5" d="M403.7 24c-42.8 0-83.9 25.7-115.7 54.7C256.2 49.8 215.1 24 172.3 24 80.8 24 24 80.6 24 171.7c0 73.2 62.4 132.4 68.1 137.7l170.3 168.2c14.1 13.9 37.1 14 51.2 0l170.2-167.8.5-.5c15.9-15.5 67.7-71.1 67.7-137.6C552 80.6 495.2 24 403.7 24zm57.7 263L291.2 454.7c-1.8 1.8-4.5 1.8-6.3 0L114.3 286.4C85.8 259.6 56 214 56 171.7 56 98.2 98.4 56 172.3 56c45.1 0 85.4 37 115.7 67.4C303.8 107.6 351.7 56 403.7 56 477.6 56 520 98.2 520 171.7c0 42.4-28.2 85.2-58.6 115.3z"></path>
+                    </svg>
+                </a>
+                <a class="time-line-news__action-2" href="" data-toggle="tooltip" data-placement="top" title="Xem người thích">100</a>
             </div>
-            <div class="d-flex">
-                <div class="d-flex align-items-center mr-3 time-line-news__action" data-toggle="tooltip" data-placement="top" title="Thích">
-                    <a class="mr-1" href="">
-                        <svg viewBox="0 0 576 512" width="22" height="22">
-                            <path fill="#A2A5A5" d="M403.7 24c-42.8 0-83.9 25.7-115.7 54.7C256.2 49.8 215.1 24 172.3 24 80.8 24 24 80.6 24 171.7c0 73.2 62.4 132.4 68.1 137.7l170.3 168.2c14.1 13.9 37.1 14 51.2 0l170.2-167.8.5-.5c15.9-15.5 67.7-71.1 67.7-137.6C552 80.6 495.2 24 403.7 24zm57.7 263L291.2 454.7c-1.8 1.8-4.5 1.8-6.3 0L114.3 286.4C85.8 259.6 56 214 56 171.7 56 98.2 98.4 56 172.3 56c45.1 0 85.4 37 115.7 67.4C303.8 107.6 351.7 56 403.7 56 477.6 56 520 98.2 520 171.7c0 42.4-28.2 85.2-58.6 115.3z"></path>
-                        </svg>
-                    </a>
-                    <span>100</span>
-                </div>
-                <div class="d-flex align-items-center mr-3 time-line-news__action" data-toggle="tooltip" data-placement="top" title="Ứng tuyển">
-                    <a class="mr-1" href="">
-                        <svg viewBox="0 0 576 512" width="22" height="22">
-                            <path fill="#a2a5a5" d="M430.769 312.653l-48.658-13.902C427.833 251.806 432 197.605 432 176 432 78.845 353.262 0 256 0 158.859 0 80 78.724 80 176c0 21.609 4.167 75.806 49.889 122.751l-48.658 13.902C19.49 330.294 0 386.442 0 420.344V448c0 35.29 28.71 64 64 64h384c35.29 0 64-28.71 64-64v-27.656c0-33.198-18.981-89.905-81.231-107.691zM256 32c79.529 0 144 64.471 144 144s-64.471 144-144 144-144-64.471-144-144S176.471 32 256 32zm224 416c0 17.673-14.327 32-32 32H64c-17.673 0-32-14.327-32-32v-27.656c0-35.718 23.678-67.109 58.022-76.922l69.862-19.961C176.969 334.613 210.109 352 256 352c45.897 0 79.038-17.392 96.116-28.538l69.862 19.961C456.322 353.235 480 384.626 480 420.344V448z"></path>
-                        </svg>
-                    </a>
-                    <span>100</span>
-                </div>
-            </div>
-
         </div>
         <!-- Begin comment -->
 <div class="pt-4 comment">
@@ -371,6 +352,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -403,6 +385,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -435,6 +418,7 @@
         </svg>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Sửa</a>
         <a class="dropdown-item" href="#">Xóa</a>
         <a class="dropdown-item" href="#">Báo cáo</a>
     </div>
@@ -460,7 +444,309 @@
 </section>
 <!-- End time line -->
                 </div>
-                <div class="col-lg-4 col-xl-3"></div>
+                <div class="col-xl-4">
+                    <!-- Begin side bar employer -->
+<div class="my-4 side-bar">
+    <h5 class="d-flex align-items-center mb-4 pb-3 pb-3 text-uppercase side-bar__head">
+        <svg viewBox="0 0 576 512" width="20" height="20">
+            <path fill="#28a745" d="M501.1 64c32.3 0 42.9 79.9 42.9 103.1 0 170.4-168.3 259.6-285.7 259.6-73 0-134.3-34.4-134.3-34.4-14.3 0-31.4 55.6-56.3 55.6-24 0-35.7-20.6-35.7-33 0-28.4 56.6-50.5 56.6-66.3 0 0-11.1-18.1-11.1-50.7 0-86.7 72.3-148.6 153.4-174.3 58.6-18.5 183.1 3 222.9-33C469.4 76.8 477.1 64 501.1 64m0-32c-38 0-54.3 22.1-68.6 34.8l-.1.1-.1.1c-25.8 23.4-151.8 7.5-211 26.2C124.6 123.7 45.4 198.1 45.4 298c0 18.8 3 34 6.4 45.3C32.5 358.4 0 380 0 415c0 31.7 27.6 65 67.7 65 31.1 0 48.9-26.9 63.2-48.9 26.6 11.4 74 27.6 127.4 27.6 128.9 0 317.7-97.6 317.7-291.6C576 113.5 556 32 501.1 32zM158.7 334c54.9-74.9 125.6-109.8 227.7-102.2 8.8.7 16.5-5.9 17.2-14.8.7-8.8-5.9-16.5-14.8-17.2-110.6-8.3-192.9 29.2-255.9 115.1-5.2 7.1-3.7 17.1 3.4 22.4 7.1 5.4 17.2 3.9 22.4-3.3z"></path>
+        </svg>
+        <span class="ml-3">Nhà tuyển dụng nổi bật</span>
+    </h5>
+    <div class="row">
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3">
+                    <img class="item__logo" src="images/logo-fpt.png" alt="">
+                </div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">FPT software</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Sài Gòn</span>
+                        <span class="mx-2">|</span>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Điểm đánh giá">
+                            <span>4.5</span>
+                            <svg viewBox="0 0 576 512" width="14" height="14">
+                                <path fill="#ffc107" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item__summary">FPT software là tập đoàn gia công phần mềm lớn nhất Việt Nam với hơn 3000 nhân viên.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3">
+                    <img class="item__logo" src="images/logo-vnpt.png" alt="">
+                </div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">VNPT software</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Hà Nội</span>
+                        <span class="mx-2">|</span>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Điểm đánh giá">
+                            <span>4.0</span>
+                            <svg viewBox="0 0 576 512" width="14" height="14">
+                                <path fill="#ffc107" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item__summary">FPT software là tập đoàn gia công phần mềm lớn nhất Việt Nam với hơn 3000 nhân viên.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3">
+                    <img class="item__logo" src="images/logo-ks.png" alt="">
+                </div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">KingSoft Group</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Hà Nội</span>
+                        <span class="mx-2">|</span>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Điểm đánh giá">
+                            <span>4.5</span>
+                            <svg viewBox="0 0 576 512" width="14" height="14">
+                                <path fill="#ffc107" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item__summary">FPT software là tập đoàn gia công phần mềm lớn nhất Việt Nam với hơn 3000 nhân viên.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Begin side bar employer -->
+                    <!-- // -->
+                    <!-- Begin side bar candidate -->
+<div class="my-4 side-bar">
+    <h5 class="d-flex align-items-center mb-4 pb-3 pb-3 text-uppercase side-bar__head">
+        <svg viewBox="0 0 576 512" width="20" height="20">
+            <path fill="#28a745" d="M501.1 64c32.3 0 42.9 79.9 42.9 103.1 0 170.4-168.3 259.6-285.7 259.6-73 0-134.3-34.4-134.3-34.4-14.3 0-31.4 55.6-56.3 55.6-24 0-35.7-20.6-35.7-33 0-28.4 56.6-50.5 56.6-66.3 0 0-11.1-18.1-11.1-50.7 0-86.7 72.3-148.6 153.4-174.3 58.6-18.5 183.1 3 222.9-33C469.4 76.8 477.1 64 501.1 64m0-32c-38 0-54.3 22.1-68.6 34.8l-.1.1-.1.1c-25.8 23.4-151.8 7.5-211 26.2C124.6 123.7 45.4 198.1 45.4 298c0 18.8 3 34 6.4 45.3C32.5 358.4 0 380 0 415c0 31.7 27.6 65 67.7 65 31.1 0 48.9-26.9 63.2-48.9 26.6 11.4 74 27.6 127.4 27.6 128.9 0 317.7-97.6 317.7-291.6C576 113.5 556 32 501.1 32zM158.7 334c54.9-74.9 125.6-109.8 227.7-102.2 8.8.7 16.5-5.9 17.2-14.8.7-8.8-5.9-16.5-14.8-17.2-110.6-8.3-192.9 29.2-255.9 115.1-5.2 7.1-3.7 17.1 3.4 22.4 7.1 5.4 17.2 3.9 22.4-3.3z"></path>
+        </svg>
+        <span class="ml-3">Ứng viên nổi bật</span>
+    </h5>
+    <div class="row">
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3">
+                    <img class="rounded-circle item__avata" src="images/a-dcb.png" alt="">
+                </div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Nguyễn Chí Bình</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Đà Nẵng</span>
+                        <span class="mx-2">|</span>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Được yêu thích">
+                            <span>3000</span>
+                            <svg viewBox="0 0 576 512" width="14" height="14">
+                                <path fill="#F8890A" d="M403.7 24c-42.8 0-83.9 25.7-115.7 54.7C256.2 49.8 215.1 24 172.3 24 80.8 24 24 80.6 24 171.7c0 73.2 62.4 132.4 68.1 137.7l170.3 168.2c14.1 13.9 37.1 14 51.2 0l170.2-167.8.5-.5c15.9-15.5 67.7-71.1 67.7-137.6C552 80.6 495.2 24 403.7 24zm57.7 263L291.2 454.7c-1.8 1.8-4.5 1.8-6.3 0L114.3 286.4C85.8 259.6 56 214 56 171.7 56 98.2 98.4 56 172.3 56c45.1 0 85.4 37 115.7 67.4C303.8 107.6 351.7 56 403.7 56 477.6 56 520 98.2 520 171.7c0 42.4-28.2 85.2-58.6 115.3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item__summary">Lập trình viên web nhiều năm kinh nghiệm</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3">
+                    <img class="rounded-circle item__avata" src="images/a-dq.png" alt="">
+                </div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Trần Quá</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Đà Nẵng</span>
+                        <span class="mx-2">|</span>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Được yêu thích">
+                            <span>3000</span>
+                            <svg viewBox="0 0 576 512" width="14" height="14">
+                                <path fill="#F8890A" d="M403.7 24c-42.8 0-83.9 25.7-115.7 54.7C256.2 49.8 215.1 24 172.3 24 80.8 24 24 80.6 24 171.7c0 73.2 62.4 132.4 68.1 137.7l170.3 168.2c14.1 13.9 37.1 14 51.2 0l170.2-167.8.5-.5c15.9-15.5 67.7-71.1 67.7-137.6C552 80.6 495.2 24 403.7 24zm57.7 263L291.2 454.7c-1.8 1.8-4.5 1.8-6.3 0L114.3 286.4C85.8 259.6 56 214 56 171.7 56 98.2 98.4 56 172.3 56c45.1 0 85.4 37 115.7 67.4C303.8 107.6 351.7 56 403.7 56 477.6 56 520 98.2 520 171.7c0 42.4-28.2 85.2-58.6 115.3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item__summary">Lập trình viên web nhiều năm kinh nghiệm ở MinaWorks</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3">
+                    <img class="rounded-circle item__avata" src="images/a-tln.png" alt="">
+                </div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Tiểu Long</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Đà Nẵng</span>
+                        <span class="mx-2">|</span>
+                        <div class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Được yêu thích">
+                            <span>3000</span>
+                            <svg viewBox="0 0 576 512" width="14" height="14">
+                                <path fill="#F8890A" d="M403.7 24c-42.8 0-83.9 25.7-115.7 54.7C256.2 49.8 215.1 24 172.3 24 80.8 24 24 80.6 24 171.7c0 73.2 62.4 132.4 68.1 137.7l170.3 168.2c14.1 13.9 37.1 14 51.2 0l170.2-167.8.5-.5c15.9-15.5 67.7-71.1 67.7-137.6C552 80.6 495.2 24 403.7 24zm57.7 263L291.2 454.7c-1.8 1.8-4.5 1.8-6.3 0L114.3 286.4C85.8 259.6 56 214 56 171.7 56 98.2 98.4 56 172.3 56c45.1 0 85.4 37 115.7 67.4C303.8 107.6 351.7 56 403.7 56 477.6 56 520 98.2 520 171.7c0 42.4-28.2 85.2-58.6 115.3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item__summary">Lập trình viên web nhiều năm kinh nghiệm</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Begin side bar candidate -->
+                    <!-- // -->
+                    <!-- Begin side bar recruitment -->
+<div class="my-4 side-bar">
+    <h5 class="d-flex align-items-center mb-4 pb-3 pb-3 text-uppercase side-bar__head">
+        <svg viewBox="0 0 576 512" width="20" height="20">
+            <path fill="#28a745" d="M501.1 64c32.3 0 42.9 79.9 42.9 103.1 0 170.4-168.3 259.6-285.7 259.6-73 0-134.3-34.4-134.3-34.4-14.3 0-31.4 55.6-56.3 55.6-24 0-35.7-20.6-35.7-33 0-28.4 56.6-50.5 56.6-66.3 0 0-11.1-18.1-11.1-50.7 0-86.7 72.3-148.6 153.4-174.3 58.6-18.5 183.1 3 222.9-33C469.4 76.8 477.1 64 501.1 64m0-32c-38 0-54.3 22.1-68.6 34.8l-.1.1-.1.1c-25.8 23.4-151.8 7.5-211 26.2C124.6 123.7 45.4 198.1 45.4 298c0 18.8 3 34 6.4 45.3C32.5 358.4 0 380 0 415c0 31.7 27.6 65 67.7 65 31.1 0 48.9-26.9 63.2-48.9 26.6 11.4 74 27.6 127.4 27.6 128.9 0 317.7-97.6 317.7-291.6C576 113.5 556 32 501.1 32zM158.7 334c54.9-74.9 125.6-109.8 227.7-102.2 8.8.7 16.5-5.9 17.2-14.8.7-8.8-5.9-16.5-14.8-17.2-110.6-8.3-192.9 29.2-255.9 115.1-5.2 7.1-3.7 17.1 3.4 22.4 7.1 5.4 17.2 3.9 22.4-3.3z"></path>
+        </svg>
+        <span class="ml-3">Việc làm nổi bật</span>
+    </h5>
+    <div class="row">
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3 item__pic" style="background: url(images/p1.png) center center / cover"></div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Nhân viên làm gốm</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Sài Gòn</span>
+                        <span class="mx-2">|</span>
+                        <span class="item__text-orange">15tr</span>
+                    </div>
+                    <div class="item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora molestias itaque assumenda quam!
+                        Dolorum, ab, maiores animi repellat voluptas cupiditate, culpa ipsam fugiat magni laudantium ipsum
+                        sapiente atque consequuntur.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3 item__pic" style="background: url(images/p2.png) center center / cover"></div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Nhân viên chụp ảnh</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Sài Gòn</span>
+                        <span class="mx-2">|</span>
+                        <span class="item__text-orange">15tr</span>
+                    </div>
+                    <div class="item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora molestias itaque assumenda quam!
+                        Dolorum, ab, maiores animi repellat voluptas cupiditate, culpa ipsam fugiat magni laudantium ipsum
+                        sapiente atque consequuntur.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3 item__pic" style="background: url(images/p3.png) center center / cover"></div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Chuyên viên người mẫu</a>
+                    </h6>
+                    <div class="mb-1 item__info">
+                        <span>Sài Gòn</span>
+                        <span class="mx-2">|</span>
+                        <span class="item__text-orange">15tr</span>
+                    </div>
+                    <div class="item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora molestias itaque assumenda quam!
+                        Dolorum, ab, maiores animi repellat voluptas cupiditate, culpa ipsam fugiat magni laudantium ipsum
+                        sapiente atque consequuntur.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Begin side bar recruitment -->
+                    <!-- // -->
+                    <!-- Begin side bar blog -->
+<div class="my-4 side-bar">
+    <h5 class="d-flex align-items-center mb-4 pb-3 pb-3 text-uppercase side-bar__head">
+        <svg viewBox="0 0 576 512" width="20" height="20">
+            <path fill="#28a745" d="M501.1 64c32.3 0 42.9 79.9 42.9 103.1 0 170.4-168.3 259.6-285.7 259.6-73 0-134.3-34.4-134.3-34.4-14.3 0-31.4 55.6-56.3 55.6-24 0-35.7-20.6-35.7-33 0-28.4 56.6-50.5 56.6-66.3 0 0-11.1-18.1-11.1-50.7 0-86.7 72.3-148.6 153.4-174.3 58.6-18.5 183.1 3 222.9-33C469.4 76.8 477.1 64 501.1 64m0-32c-38 0-54.3 22.1-68.6 34.8l-.1.1-.1.1c-25.8 23.4-151.8 7.5-211 26.2C124.6 123.7 45.4 198.1 45.4 298c0 18.8 3 34 6.4 45.3C32.5 358.4 0 380 0 415c0 31.7 27.6 65 67.7 65 31.1 0 48.9-26.9 63.2-48.9 26.6 11.4 74 27.6 127.4 27.6 128.9 0 317.7-97.6 317.7-291.6C576 113.5 556 32 501.1 32zM158.7 334c54.9-74.9 125.6-109.8 227.7-102.2 8.8.7 16.5-5.9 17.2-14.8.7-8.8-5.9-16.5-14.8-17.2-110.6-8.3-192.9 29.2-255.9 115.1-5.2 7.1-3.7 17.1 3.4 22.4 7.1 5.4 17.2 3.9 22.4-3.3z"></path>
+        </svg>
+        <span class="ml-3">Bài viết nổi bật</span>
+    </h5>
+    <div class="row">
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3 item__pic" style="background: url(images/p4.png) center center / cover"></div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Những điều cần biết về Linuxmint</a>
+                    </h6>
+                    <div class="mb-1 item__date">
+                        <svg viewBox="0 0 448 512" width="14" height="14">
+                            <path fill="#A2A5A5" d="M400 64h-48V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H128V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h352c8.8 0 16 7.2 16 16v48H32v-48c0-8.8 7.2-16 16-16zm352 384H48c-8.8 0-16-7.2-16-16V192h384v272c0 8.8-7.2 16-16 16zM148 320h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 96h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm192 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12z"></path>
+                        </svg>
+                        <span class="ml-1">Oct 25, 2018</span>
+                    </div>
+                    <div class="item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora molestias itaque assumenda quam!
+                        Dolorum, ab, maiores animi repellat voluptas cupiditate, culpa ipsam fugiat magni laudantium ipsum
+                        sapiente atque consequuntur.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3 item__pic" style="background: url(images/p5.png) center center / cover"></div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Con đường trở thành developer</a>
+                    </h6>
+                    <div class="mb-1 item__date">
+                        <svg viewBox="0 0 448 512" width="14" height="14">
+                            <path fill="#A2A5A5" d="M400 64h-48V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H128V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h352c8.8 0 16 7.2 16 16v48H32v-48c0-8.8 7.2-16 16-16zm352 384H48c-8.8 0-16-7.2-16-16V192h384v272c0 8.8-7.2 16-16 16zM148 320h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 96h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm192 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12z"></path>
+                        </svg>
+                        <span class="ml-1">Oct 25, 2018</span>
+                    </div>
+                    <div class="item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora molestias itaque assumenda quam!
+                        Dolorum, ab, maiores animi repellat voluptas cupiditate, culpa ipsam fugiat magni laudantium ipsum
+                        sapiente atque consequuntur.</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-12">
+            <div class="d-flex mb-4 item">
+                <div class="mr-3 item__pic" style="background: url(images/p6.png) center center / cover"></div>
+                <div>
+                    <h6 class="mb-1 item__title">
+                        <a href="">Kĩ thuật mạng ngang hàng</a>
+                    </h6>
+                    <div class="mb-1 item__date">
+                        <svg viewBox="0 0 448 512" width="14" height="14">
+                            <path fill="#A2A5A5" d="M400 64h-48V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H128V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h352c8.8 0 16 7.2 16 16v48H32v-48c0-8.8 7.2-16 16-16zm352 384H48c-8.8 0-16-7.2-16-16V192h384v272c0 8.8-7.2 16-16 16zM148 320h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 96h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm192 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12z"></path>
+                        </svg>
+                        <span class="ml-1">Oct 25, 2018</span>
+                    </div>
+                    <div class="item__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet tempora molestias itaque assumenda quam!
+                        Dolorum, ab, maiores animi repellat voluptas cupiditate, culpa ipsam fugiat magni laudantium ipsum
+                        sapiente atque consequuntur.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Begin side bar blog -->
+                </div>
             </div>
         </div>
     </main>
