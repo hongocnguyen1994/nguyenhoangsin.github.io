@@ -38,18 +38,64 @@
                     </li>
                 </ul>
                 <div class="d-flex flex-wrap align-items-center">
-                    <button class="callModalLogin d-flex align-items-center mr-2 p-1 header__action" data-toggle="tooltip" data-placement="bottom"
-                        title="Đăng nhập">
-                        <svg viewBox="0 0 512 512" width="24" height="24">
-                            <path fill="#A2A5A5" d="M32 217.1c0-8.8 7.2-16 16-16h144v-93.9c0-7.1 8.6-10.7 13.6-5.7l141.6 143.1c6.3 6.3 6.3 16.4 0 22.7L205.6 410.4c-5 5-13.6 1.5-13.6-5.7v-93.9H48c-8.8 0-16-7.2-16-16v-77.7m-32 0v77.7c0 26.5 21.5 48 48 48h112v61.9c0 35.5 43 53.5 68.2 28.3l141.7-143c18.8-18.8 18.8-49.2 0-68L228.2 78.9c-25.1-25.1-68.2-7.3-68.2 28.3v61.9H48c-26.5 0-48 21.6-48 48zM512 400V112c0-26.5-21.5-48-48-48H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c8.8 0 16 7.2 16 16v288c0 8.8-7.2 16-16 16H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c26.5 0 48-21.5 48-48z"></path>
-                        </svg>
-                    </button>
-                    <button class="callModalRegister d-flex align-items-center mr-2 p-1 header__action" data-toggle="tooltip" data-placement="bottom"
-                        title="Đăng ký">
-                        <svg viewBox="0 0 512 512" width="23" height="23">
-                            <path fill="#A2A5A5" d="M430.769 312.653l-48.658-13.902C427.833 251.806 432 197.605 432 176 432 78.845 353.262 0 256 0 158.859 0 80 78.724 80 176c0 21.609 4.167 75.806 49.889 122.751l-48.658 13.902C19.49 330.294 0 386.442 0 420.344V448c0 35.29 28.71 64 64 64h384c35.29 0 64-28.71 64-64v-27.656c0-33.198-18.981-89.905-81.231-107.691zM256 32c79.529 0 144 64.471 144 144s-64.471 144-144 144-144-64.471-144-144S176.471 32 256 32zm224 416c0 17.673-14.327 32-32 32H64c-17.673 0-32-14.327-32-32v-27.656c0-35.718 23.678-67.109 58.022-76.922l69.862-19.961C176.969 334.613 210.109 352 256 352c45.897 0 79.038-17.392 96.116-28.538l69.862 19.961C456.322 353.235 480 384.626 480 420.344V448z"></path>
-                        </svg>
-                    </button>
+                    <div class="dropdown mr-2">
+                        <button class="d-flex justify-content-center align-items-center border-0 header__action" data-toggle="dropdown">
+                            <svg viewBox="0 0 448 512" width="24" height="24">
+                                <path fill="#A2A5A5" d="M433.884 366.059C411.634 343.809 384 316.118 384 208c0-79.394-57.831-145.269-133.663-157.83A31.845 31.845 0 0 0 256 32c0-17.673-14.327-32-32-32s-32 14.327-32 32c0 6.75 2.095 13.008 5.663 18.17C121.831 62.731 64 128.606 64 208c0 108.118-27.643 135.809-49.893 158.059C-16.042 396.208 5.325 448 48.048 448H160c0 35.29 28.71 64 64 64s64-28.71 64-64h111.943c42.638 0 64.151-51.731 33.941-81.941zM224 480c-17.645 0-32-14.355-32-32h64c0 17.645-14.355 32-32 32zm175.943-64H48.048c-14.223 0-21.331-17.296-11.314-27.314C71.585 353.836 96 314.825 96 208c0-70.741 57.249-128 128-128 70.74 0 128 57.249 128 128 0 106.419 24.206 145.635 59.257 180.686C421.314 398.744 414.11 416 399.943 416z"></path>
+                            </svg>
+                            <span class="d-flex justify-content-center align-items-center rounded-circle header__noti-total">99</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right header__noti-menu noti">
+                            <div>
+                                <a class="d-flex align-items-center noti__item" href="">
+                                    <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                    <div>
+                                        <div class="noti__mes">
+                                            <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                        <div class="noti__date">Oct 25, 2018</div>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center noti__item" href="">
+                                    <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                    <div>
+                                        <div class="noti__mes">
+                                            <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                        <div class="noti__date">Oct 25, 2018</div>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center noti__item" href="">
+                                    <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                    <div>
+                                        <div class="noti__mes">
+                                            <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                        <div class="noti__date">Oct 25, 2018</div>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center noti__item" href="">
+                                    <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                    <div>
+                                        <div class="noti__mes">
+                                            <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                        <div class="noti__date">Oct 25, 2018</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a class="noti__more" href="">Xem tất cả</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown mr-3">
+                        <button class="d-flex justify-content-center align-items-center border-0 header__action" data-toggle="dropdown">
+                            <img class="rounded-circle header__avata" src="images/a-lbc.png" alt="">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right header__user-menu">
+                            <div class="dropdown-item px-3">Bình Chi</div>
+                            <div class="dropdown-divider my-1"></div>
+                            <a class="dropdown-item px-3" href="#">Quản lý tài khoản</a>
+                            <a class="dropdown-item px-3" href="#">Đăng xuất</a>
+                        </div>
+                    </div>
                     <a class="p-1" href="" data-toggle="tooltip" data-placement="bottom" title="Ngôn ngữ">
                         <img class="header__flag" src="images/ic-vn.svg" alt="">
                     </a>
@@ -66,19 +112,65 @@
         <div class="container-fluid d-flex justify-content-between align-items-center w-100 bg-white header-small__fixed">
             <img class="header-small__logo" src="images/logo-top.png" alt="">
             <div class="d-flex flex-wrap align-items-center">
-                <button class="callModalLogin d-flex align-items-center mr-2 p-1 header__action" data-toggle="tooltip" data-placement="bottom"
-                    title="Đăng nhập">
-                    <svg viewBox="0 0 512 512" width="24" height="24">
-                        <path fill="#A2A5A5" d="M32 217.1c0-8.8 7.2-16 16-16h144v-93.9c0-7.1 8.6-10.7 13.6-5.7l141.6 143.1c6.3 6.3 6.3 16.4 0 22.7L205.6 410.4c-5 5-13.6 1.5-13.6-5.7v-93.9H48c-8.8 0-16-7.2-16-16v-77.7m-32 0v77.7c0 26.5 21.5 48 48 48h112v61.9c0 35.5 43 53.5 68.2 28.3l141.7-143c18.8-18.8 18.8-49.2 0-68L228.2 78.9c-25.1-25.1-68.2-7.3-68.2 28.3v61.9H48c-26.5 0-48 21.6-48 48zM512 400V112c0-26.5-21.5-48-48-48H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c8.8 0 16 7.2 16 16v288c0 8.8-7.2 16-16 16H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c26.5 0 48-21.5 48-48z"></path>
-                    </svg>
-                </button>
-                <button class="callModalRegister d-flex align-items-center mr-2 p-1 header__action" data-toggle="tooltip" data-placement="bottom"
-                    title="Đăng ký">
-                    <svg viewBox="0 0 512 512" width="23" height="23">
-                        <path fill="#A2A5A5" d="M430.769 312.653l-48.658-13.902C427.833 251.806 432 197.605 432 176 432 78.845 353.262 0 256 0 158.859 0 80 78.724 80 176c0 21.609 4.167 75.806 49.889 122.751l-48.658 13.902C19.49 330.294 0 386.442 0 420.344V448c0 35.29 28.71 64 64 64h384c35.29 0 64-28.71 64-64v-27.656c0-33.198-18.981-89.905-81.231-107.691zM256 32c79.529 0 144 64.471 144 144s-64.471 144-144 144-144-64.471-144-144S176.471 32 256 32zm224 416c0 17.673-14.327 32-32 32H64c-17.673 0-32-14.327-32-32v-27.656c0-35.718 23.678-67.109 58.022-76.922l69.862-19.961C176.969 334.613 210.109 352 256 352c45.897 0 79.038-17.392 96.116-28.538l69.862 19.961C456.322 353.235 480 384.626 480 420.344V448z"></path>
-                    </svg>
-                </button>
-                <a class="mr-2 p-1" href="" data-toggle="tooltip" data-placement="bottom" title="Ngôn ngữ">
+                <div class="dropdown mr-2">
+                    <button class="d-flex justify-content-center align-items-center border-0 header__action" data-toggle="dropdown">
+                        <svg viewBox="0 0 448 512" width="24" height="24">
+                            <path fill="#A2A5A5" d="M433.884 366.059C411.634 343.809 384 316.118 384 208c0-79.394-57.831-145.269-133.663-157.83A31.845 31.845 0 0 0 256 32c0-17.673-14.327-32-32-32s-32 14.327-32 32c0 6.75 2.095 13.008 5.663 18.17C121.831 62.731 64 128.606 64 208c0 108.118-27.643 135.809-49.893 158.059C-16.042 396.208 5.325 448 48.048 448H160c0 35.29 28.71 64 64 64s64-28.71 64-64h111.943c42.638 0 64.151-51.731 33.941-81.941zM224 480c-17.645 0-32-14.355-32-32h64c0 17.645-14.355 32-32 32zm175.943-64H48.048c-14.223 0-21.331-17.296-11.314-27.314C71.585 353.836 96 314.825 96 208c0-70.741 57.249-128 128-128 70.74 0 128 57.249 128 128 0 106.419 24.206 145.635 59.257 180.686C421.314 398.744 414.11 416 399.943 416z"></path>
+                        </svg>
+                        <span class="d-flex justify-content-center align-items-center rounded-circle header__noti-total">99</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right header-small__noti-menu noti">
+                        <div>
+                            <a class="d-flex align-items-center noti__item" href="">
+                                <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                <div>
+                                    <div class="noti__mes">
+                                        <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                    <div class="noti__date">Oct 25, 2018</div>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center noti__item" href="">
+                                <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                <div>
+                                    <div class="noti__mes">
+                                        <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                    <div class="noti__date">Oct 25, 2018</div>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center noti__item" href="">
+                                <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                <div>
+                                    <div class="noti__mes">
+                                        <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                    <div class="noti__date">Oct 25, 2018</div>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center noti__item" href="">
+                                <img class="mr-2 rounded-circle noti__avata" src="images/a-dcb.png" alt="">
+                                <div>
+                                    <div class="noti__mes">
+                                        <span>Bình Ca</span> đã thích bài viết "Đường chân trời" của bạn</div>
+                                    <div class="noti__date">Oct 25, 2018</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="noti__more" href="">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown mr-2">
+                    <button class="d-flex justify-content-center align-items-center border-0 header__action" data-toggle="dropdown">
+                        <img class="rounded-circle header__avata" src="images/a-lbc.png" alt="">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right header-small__user-menu">
+                        <div class="dropdown-item px-3">Bình Chi</div>
+                        <div class="dropdown-divider my-1"></div>
+                        <a class="dropdown-item px-3" href="#">Quản lý tài khoản</a>
+                        <a class="dropdown-item px-3" href="#">Đăng xuất</a>
+                    </div>
+                </div>
+                <a class="p-1" href="" data-toggle="tooltip" data-placement="bottom" title="Ngôn ngữ">
                     <img class="header__flag" src="images/ic-vn.svg" alt="">
                 </a>
                 <button id="callHeaderSmallMenu" class="d-flex justify-content-center align-items-center header__action">
