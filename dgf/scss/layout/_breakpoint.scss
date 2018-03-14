@@ -1,0 +1,396 @@
+// scren retina
+@media (max-width: 1696px){
+	html {
+	    font-size: 9.5px;
+	}
+	.header {
+		&__right {
+			margin-left: -3rem;
+		}
+	}
+}
+@media (max-width: 1601px){
+	html {
+	    font-size: 9px;
+	}
+	#sportPerformNoslpats {
+		.container {
+			max-width: 135rem;
+		}
+	}
+}
+@media (max-width: 1510px){
+	html {
+	    font-size: 8px;
+	}
+}
+@media (max-width: 1400px){
+	html {
+	    font-size: 7.03px;
+	}
+	#sportPerformNoslpats {
+		.container {
+			max-width: 170rem;
+		}
+	}
+	.sportPerformNoslpats__arow {
+		right: 15px;
+	}
+	.controleGroup .ui-spinner-up {
+	    background-size: auto 75%;
+	}
+	.gridBlock__mainThumb img {
+	    max-width: 100%;
+	}
+}
+// scren retina
+
+// responsite
+@media (max-width: 1165px){
+	nav.navbar {
+		.navbar-nav {
+			a {
+				padding: 0 1rem;
+			}
+		}
+	}
+	#banner.bannerNosplats {
+		.bannerNosplats__textbox {
+			right: 2.5rem;
+		}
+	}
+}
+
+@media (max-width: 1110px){
+	header {
+		.logo {
+			img {
+				width: 20.5rem;
+			}
+		}
+	}	
+}
+
+// scren sm
+
+@media (max-width: 991px){
+	nav.navbar {
+		.navbar-nav {
+			width: 0;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			z-index: 999;
+			height: auto;
+			@include transition(all 0.5s ease-in-out 0s);
+			li {
+				display: block;
+				width: 100%;
+				text-align: center;
+				height: auto;
+				a {
+					display: block;
+					width: 100%;
+					overflow: hidden;
+					padding: 22px 15px 22px 30px;
+					font-size: 3rem;
+					line-height: 3.6rem;
+					color: #8B5283;
+					background: #AAD4BA;
+					border-top: .3rem solid #528072;
+					text-align: left;
+					&:hover {
+						background: #AAD4BA;
+					}
+				}
+				& > ul {
+					position: initial;
+					opacity: 1;
+					height: auto;
+					display: none;
+					li {
+						border-top: .3rem solid #528072;
+						border-bottom: none;
+						a {
+							background: none;
+							border: none;
+							font-size: 2.8rem;
+    						line-height: 2.6rem;
+    						padding: 22px 15px 22px 45px;
+    						&:first-child {
+    							padding: 22px 15px 22px 45px;
+    						}
+						}
+					}
+				}
+			}
+			.theme-icon-close {
+				display: block;
+			}
+			&__mobile {
+				width: 100% !important;			
+				padding-right: 50px;			
+			}
+		}		
+	}
+	.header {
+		&__logo {
+			height: 12.7rem;
+			padding: 0 15px;
+			text-align: center;
+			display: flex;
+		    justify-content: center;	
+		    .logo {
+			    padding-top: 1.5rem;
+			    position: absolute;
+			    left: auto;
+			    top: 0;
+			}	
+		}
+		&__right {
+			margin: 0;
+			text-align: center;
+		}
+		&__mobileMenu {
+			height: 12.7rem;
+			display: flex !important;
+    		align-items: center;
+		}
+	}
+	.sportPerform {
+		&__head {
+			padding: 0;
+		}
+	}
+	.noslpatsMenu {
+		&__listItem {		
+			.noslpatsMenu__thumb {
+				width: 18.5rem;
+				height: 18.5rem;
+				img {
+					width: 8.5rem;
+				}
+			}
+		}
+	}
+	.gridBlock {
+		&__listItem {
+			margin-left: 0 !important;
+		}		
+	}
+	.restaurant {
+		&__leftContent {
+		    padding: 4.7rem 2rem 5.7rem;
+		}
+		&__rightContent {
+			padding: 4.7rem 2rem 6.4rem;
+		}
+	}
+	.suisJe {
+		&__leftContent {
+			&__mainBox {
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+		}
+	}
+	.nomCompte {
+		&__nav {
+			position: initial;
+			max-width: 100%;
+			webkit-transform: translate(0, 0);
+		    -khtml-transform: translate(0, 0);
+    		transform: translate(0, 0);
+			li {
+				margin-bottom: 2rem;
+				width: 100%;
+			}
+		}
+		&__listItems {
+			padding: 0 2rem 5.4rem;
+		}
+	}
+	.smoothie {
+		&__mainBox {
+			max-width: 75.6rem;
+		}
+		&__listItems {
+			height: auto;
+			margin-bottom: 6rem;
+		}
+		&__thumb {
+			position: relative;
+		}
+	}
+	.panier {
+		#recapitulatif {
+		    height: 100%;
+		    max-height: 600px;
+		    overflow: auto;
+		}
+	}
+	.recapitulatif__mainContentBox:last-child {
+		border-left: none;
+	}
+	.footer {
+		&__right {
+			padding-left: 15px;
+		}
+		&__mobile {
+			padding-top: 4rem;
+		}
+	}
+}
+
+@media  (max-width: 767px){
+	.modal-nous {
+		padding: 3rem !important;
+		.modalWrap {
+			webkit-transform: translate(0, 0) !important;
+		    -ms-transform: translate(0, 0) !important;
+		    -o-transform: translate(0, 0) !important;
+		    transform: translate(0, 0) !important;
+		    top: 0;
+		}
+	}
+	.restaurant {
+		&__leftContent {
+		    text-align: center;
+		}
+		&__rightContent {
+			padding: 4.7rem 0 0;			
+			&__mainBox {
+				text-align: center !important;
+			}
+		}
+		&__calculer {
+			&__thumb {
+				@include flex-center-colum;
+				max-width: 100%;
+				h3 {
+				    background: #A05198;
+				    display: inline-block;
+				    font-size: 5rem;
+				    line-height: 5.6rem;
+				    font-weight: 300;
+				    padding: 1.5rem 3rem;
+				    color: $text-color;
+				}
+			}
+		}
+	}
+	.suisJe {
+		&__leftContent {
+			padding-right: 0;
+		}
+	}
+	.baseProduct {
+		&__listItem {
+			@include flex-center-colum;
+			justify-content: center !important;
+			margin-bottom: 4rem;
+		}
+	}
+	.recapitulatif {
+		&__contentBox {
+			margin-top: 2rem;
+		}
+	}
+	.btn-addMobile {
+		display: flex !important;
+	}
+	.top-banner {
+		display: none;
+	}	
+	.header {
+		&__logo {
+			.logo {
+				padding-top: 4rem;
+			}
+		}
+	}
+	header {
+		.logo {
+			img {
+			    width: 16.5rem;
+			}
+		}
+	}
+}
+
+@media  (max-width: 575px){
+	.sportPerform {
+		&__head {
+			h2 {
+				padding: 0;
+				text-align: center;
+			}
+		}
+		&__iconBlock {
+			margin-top: 3rem;
+		}
+	}
+	.sportPerform {
+		&__listItem {
+			width: 100%;
+		}
+	}
+	.bannerNosplats {
+		&__thumb {
+			padding: 0 50px;
+			img {
+				width: 100% !important;
+			}
+		}
+	}
+	.gridBlock {
+		&__listItem {
+			width: 50%;
+		}		
+	}
+	.recapitulatif {
+		&__listGroup {
+			.btn {
+				font-size: 2rem;
+			}
+		}
+	}
+	.footer {
+		&__pour,
+		&__retrouvez {
+			height: auto;
+		}
+		&__head {
+			h2 {
+				font-size: 7rem;
+				line-height: 7.6rem;
+			}
+		}
+		&__mid {
+			width: 100%;
+		}
+		&__right {
+			width: 100%;			
+			padding-top: 4rem;
+			.form-group {
+				justify-content: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px){
+	.noslpatsMenu__listItem {
+		h3 {
+			font-size: 2rem;
+		}
+	}
+	.panier {
+		.recapitulatif__listGroup .btn {
+		    font-size: 1.5rem;
+		}
+	}
+	
+}

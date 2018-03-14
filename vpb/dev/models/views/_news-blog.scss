@@ -1,0 +1,45 @@
+.news-blog {
+    padding: 3.625rem 0 5rem;
+    background-color: $colorBackground1;
+    transition: all 0.3s ease;
+}
+
+.news-blog-blade {
+    margin: 2rem 0;
+    &__img {
+        overflow: hidden;
+        &:hover {
+            .news-blog-blade__img-background {
+                transform: scale(1.2) rotate(3deg);
+            }
+        }
+    }
+    &__img-background {
+        display: block;
+        height: 11.384rem;
+        transition: all 0.3s ease;
+    }
+    &__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.7rem 0 0;
+        font-family: Gotham-Medium;
+        font-size: 1.125rem;
+        line-height: 2.625rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: $colorText1;
+    }
+    &__summary {
+        font-size: 0.938rem;
+        line-height: 1.5rem;
+        color: $colorText2;
+    }
+    &__more {
+        text-transform: uppercase;
+        color: $colorMain;
+        &:hover {
+            color: $colorMain;
+        }
+    }
+}

@@ -1,0 +1,256 @@
+<style>
+    .mail-order {
+        max-width: 817px;
+        margin: auto;
+        border: 1px solid #A05198;
+        background-color: #FFF4E8;
+    }
+    
+    .mail-order__title-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .mail-order__title-sub {
+        position: absolute;
+        left: 15px;
+        font-size: 18px;
+        color: #A05198;
+    }
+    
+    .mail-order__title-main {
+        margin: 10px 0;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        color: #A05198;
+    }
+    
+    .mail-order__content {
+        padding: 10px 30px 30px;
+    }
+    
+    .mail-order__title-content-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .mail-order__title-content {
+        width: 46%;
+        font-size: 24px;
+        font-weight: bold;
+        color: #A05198;
+    }
+    
+    .mail-order__box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .mail-order-blade {
+        width: 46%;
+    }
+    
+    .mail-order-blade__choose {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #A05198;
+    }
+    
+    .mail-order-blade-product {
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .mail-order-blade-product__name {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #A05198;
+    }
+    
+    .mail-order-blade-product__quantity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15px;
+        margin-bottom: 6px;
+        padding-bottom: 1px;
+        border-bottom: 2px solid #A05198;
+        font-size: 14px;
+        color: #A05198;
+    }
+    
+    .mail-order-blade__wall {
+        margin-left: 15px;
+        border-right: 2px solid #A05198;
+    }
+    
+    .mail-order__line {
+        margin-bottom: 20px;
+        border-bottom: 1px dotted #A05198;
+    }
+    
+    .mail-order-total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .mail-order-total__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        margin-top: 5px;
+        padding-bottom: 1px;
+        border-bottom: 2px solid #A05198;
+        font-size: 24px;
+        font-weight: bold;
+        color: #A05198;
+    }
+</style>
+<!-- MAIL CONTENT -->
+<article class="mail-order">
+    <div class="mail-order__title-wrap">
+        <div class="mail-order__title-sub">Dr. Good Food</div>
+        <h2 class="mail-order__title-main">ORDER</h2>
+    </div>
+    <div class="mail-order__content">
+        <div class="mail-order__title-content-wrap">
+            <div class="mail-order__title-content">Prescription(s):</div>
+            <div class="mail-order__title-content">Other(s):</div>
+        </div>
+        <!-- BOX -->
+        <div class="mail-order__box">
+            <div class="mail-order-blade">
+                <div class="mail-order-blade__choose">
+                    <div>1. COMPLETE</div>
+                    <div>... 15€</div>
+                </div>
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                </div>
+                <!-- end product -->
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                </div>
+                <!-- end product -->
+            </div>
+            <!-- end balde-->
+            <!-- // -->
+            <div class="mail-order-blade__wall"></div>
+            <!-- // -->
+            <div class="mail-order-blade">
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                </div>
+                <!-- end product -->
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                </div>
+                <!-- end product -->
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                </div>
+                <!-- end product -->
+            </div>
+            <!-- end balde -->
+        </div>
+        <div class="mail-order__line"></div>
+        <!-- END BOX -->
+
+        <!-- BOX -->
+        <div class="mail-order__box">
+            <div class="mail-order-blade">
+                <div class="mail-order-blade__choose">
+                    <div>1. COMPLETE</div>
+                    <div>... 15€</div>
+                </div>
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                </div>
+                <!-- end product -->
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX</div>
+                </div>
+                <!-- end product -->
+            </div>
+            <!-- end balde-->
+            <!-- // -->
+            <div class="mail-order-blade__wall"></div>
+            <!-- // -->
+            <div class="mail-order-blade">
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                </div>
+                <!-- end product -->
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                </div>
+                <!-- end product -->
+                <div class="mail-order-blade-product">
+                    <div class="mail-order-blade-product__name">PURE & CARE :</div>
+                    <div class="mail-order-blade-product__quantity">1 x LE DETOX
+                        <div>… 19.80€</div>
+                    </div>
+                </div>
+                <!-- end product -->
+            </div>
+            <!-- end balde -->
+        </div>
+        <div class="mail-order__line"></div>
+        <!-- END BOX -->
+        <div class="mail-order-total">
+            <div class="mail-order-total__item">Total HT
+                <div>… 144.27€</div>
+            </div>
+            <div class="mail-order-total__item">Total TTC
+                <div>… 160.30€</div>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- END MAIL CONTENT -->

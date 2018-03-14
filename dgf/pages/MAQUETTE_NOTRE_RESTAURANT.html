@@ -1,0 +1,64 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+{% import '../templates/partials/navigation.html' as nav %}{{nav.active('RESTAURANT')}}
+{% include "../templates/partials/banner-restaurant.html" %}
+
+	<section id="restaurant">
+	    <article class="container">
+	    	<div class="restaurant__mainContent">
+	    		<div class="row">
+	    			<div class="restaurant__leftContent col-sm-4">
+	    				<h2>HORAIRES<br>D’OUVERTURE</h2>
+	    				<div class="restaurant__leftContent__mainBox">
+	    					<div class="restaurant__listItem">
+	    						<h3>LUNDI</h3>
+	    						<p>07:00 - 9h30</p>
+	    						<p>11:00 - 14H30</p>
+	    					</div>
+	    					<div class="restaurant__listItem">
+	    						<h3>MARDI</h3>
+	    						<p>07:00 - 9h30</p>
+	    						<p>11:00 - 14H30</p>
+	    					</div>
+	    					<div class="restaurant__listItem">
+	    						<h3>MERCREDI</h3>
+	    						<p>07:00 - 9h30</p>
+	    						<p>11:00 - 14H30</p>
+	    					</div>
+	    					<div class="restaurant__listItem">
+	    						<h3>JEUDI</h3>
+	    						<p>07:00 - 9h30</p>
+	    						<p>11:00 - 14H30</p>
+	    					</div>
+	    					<div class="restaurant__listItem">
+	    						<h3>VENDREDI</h3>
+	    						<p>07:00 - 9h30</p>
+	    						<p>11:00 - 14H30</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="restaurant__rightContent col-sm-8">
+	    				<div class="restaurant__rightContent__mainBox text-right">
+	    					<h2>ADRESSE & COORDONNÉES</h2>
+	    					<div class="restaurant__midbox">
+	    						<p>34 rue sommeiller<br>
+	    						74000<br>
+	    						ANNECY</p>
+	    						<P>06 45 89 52 14</P>
+	    						<p><a href="mailto:contact@drgoodfood.com">contact@drgoodfood.com</a></p>
+	    					</div>
+	    					<div class="restaurant__calculer">
+	    						<h3 class="hidden-xs">Calculer l’itinéraire</h3>
+	    						<div class="restaurant__calculer__thumb">
+	    							<h3 class="visible-xs">Calculer l’itinéraire</h3>
+	    						</div>
+	    						<div class="clear"></div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </article>
+	</section>
+	<!-- /sportPerform -->
+{% endblock %}

@@ -1,0 +1,67 @@
+{% macro active(activePage='home') %}
+    <header id="header">
+        <div class="header__top">
+            <h1>Consultation gourmande & équilibrée</h1>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="header__mobileMenu col-xs-4 visible-xs visible-sm hidden-md hidden-lg">
+                        <div class="button-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="header__logo col-xs-4 col-md-2">
+                        <div class="logo">
+                            <a href="index.html" title="logo">
+                                <img class="header__logo__main" src="images/logo.png" alt="logo">
+                                <img class="header__logo__scroll" src="images/scroll-logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav col-md-9 col-sm-12">                        
+                        <li><a href="index.html" class="{%if activePage == 'home' %}active{% endif %}">HOME</a></li>
+                        <li>
+                            <a href="MAQUETTE_DGF_NOS_PLATS.html" class="{%if activePage == 'NOSPLATS' %}active{% endif %}">NOS PLATS</a>
+                            <ul class="nosPlast">
+                                <li><a href="#">sport & perform</a></li>
+                                <li><a href="#">pure & care</a></li>
+                                <li><a href="#">veg & free</a></li>
+                                <li><a href="#">yummy & energy </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="MAQUETTE_DGF_CHOISIS_TON_PLAT.html" class="{%if activePage == 'tonplat' %}active{% endif %}">COMMANDER EN LIGNE</a>
+                            <ul>
+                                <li><a href="MAQUETTE_DGF_CHOISIS_TON_PLAT.html">Choisis ton plat</a></li>
+                                <li><a href="MAQUETTE_DGF_COMPOSER_VOTRE_PLAT.html">Compose ton plat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="MAQUETTE_QUI_SUIS_JE.html" class="{%if activePage == 'je' %}active{% endif %}">QUI SUIS-JE</a></li>
+                        <!-- <li><a href="#" class="{%if activePage == '' %}active{% endif %}">NOS EXPERTS</a></li> -->
+                        <li>
+                            <a href="MAQUETTE_NOS_INGREDIENTS.html" class="{%if activePage == 'INGREDIENTS' %}active{% endif %}">NOS INGRÉDIENTS</a>
+                            <ul>
+                                <li><a href="#">FRUITS</a></li>
+                                <li><a href="#">PROTEINES</a></li>
+                                <li><a href="#">FÉCULENTS</a></li>
+                                <li><a href="#">CRUDITÉS</a></li>
+                                <li><a href="#">FRUIT SEC</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="MAQUETTE_NOTRE_RESTAURANT.html" class="{%if activePage == 'RESTAURANT' %}active{% endif %}">NOTRE RESTAURANT</a></li>
+                        <li><a href="#" class="{%if activePage == '' %}active{% endif %}">LA COMMUNAUTÉ DGF</a></li>
+                    </ul>
+                    <div class="header__right col-md-1 col-xs-4">
+                        <a href="#" title="user"><i class="theme-icon-user"></i></a>
+                        <a href="#" title="post"><i class="theme-icon-post"></i></a>
+                        <a href="#" title="cart"><i class="theme-icon-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /header -->    
+{% endmacro %}

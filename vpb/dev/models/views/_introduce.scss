@@ -1,0 +1,172 @@
+.introduce {
+    padding: 6.25rem 0 3.75rem;
+    transition: all 0.3s ease;
+    &__stroke {
+        margin-bottom: 1.25rem;
+        height: 0.375rem;
+        border-top: 0.125rem solid $colorBorder1;
+        border-bottom: 0.125rem solid $colorBorder1;
+    }
+    &__slogan {
+        margin-bottom: 1.25rem;
+        font-size: 1.4rem;
+        line-height: 2.125rem;
+        text-align: center;
+        color: $colorText1;
+    }
+    &__pdf {
+        margin-bottom: 1.25rem;
+        font-size: 0.813rem;
+        line-height: 1.875rem;
+        text-align: center;
+        color: $colorText2;
+        a {
+            color: $colorText2;
+            &:hover {
+                color: $colorMain;
+            }
+        }
+    }
+}
+
+.introduce-dd {
+    margin-bottom: 1.2rem;
+    &__title {
+        font-size: 1.4rem;
+        text-align: center;
+        color: $colorText1;
+    }
+    &__content {
+        font-size: 0.875rem;
+        line-height: 1.875rem;
+        text-align: justify;
+        color: $colorText2;
+    }
+}
+
+.introduce-or {
+    margin-bottom: 2rem;
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+    &__title {
+        font-size: 1.125rem;
+        color: $colorText1;
+    }
+    &__text1 {
+        margin: 0.9rem 0;
+        padding-left: 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.875rem;
+        color: $colorText2;
+    }
+    &__text2 {
+        font-size: 0.813rem;
+        line-height: 1.875rem;
+        color: $colorText2;
+    }
+}
+
+.introduce-fe {
+    padding-bottom: 2.75rem;
+}
+
+.introduce-fe-blade {
+    margin-bottom: 2rem;
+    &__img {
+        display: block;
+        margin: 0 auto 0.625rem;
+    }
+    &__title {
+        margin-bottom: 1.25rem;
+        font-size: 1.063rem;
+        line-height: 1.25rem;
+        text-align: center;
+        color: #394041;
+    }
+    &__summary {
+        max-width: 12.5rem;
+        margin: auto;
+        font-size: 0.75rem;
+        line-height: 1.313rem;
+        text-align: center;
+        color: $colorText2;
+    }
+    &__more {
+        display: block;
+        font-size: 0.75rem;
+        line-height: 1.313rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: $colorText2;
+        &:hover {
+            color: $colorMain;
+        }
+    }
+}
+
+@media (min-width: 34rem) {
+    .introduce {
+        &__slogan {
+            font-size: 1.6rem;
+        }
+    }
+    .introduce-dd {
+        &__title {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (min-width: 62rem) {
+    .introduce-or {
+        margin-bottom: 1.2rem;
+    }
+    .introduce-fe-blade {
+        &--stroke {
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -0.25rem;
+                right: -32%;
+                width: 9rem;
+                border-bottom: 0.1rem solid rgba($colorText2, 0.5);
+            }
+        }
+        &__summary {
+            max-width: 100%;
+            text-align: left;
+        }
+        &__more {
+            display: inline;
+        }
+    }
+}
+
+@media (min-width: 75rem) {
+    .introduce {
+        &__wrap {
+            padding: 0 10%;
+        }
+        &__slogan {
+            font-size: 1.875rem;
+        }
+    }
+    .introduce-dd {
+        &__title {
+            font-size: 2.375rem;
+        }
+    }
+}

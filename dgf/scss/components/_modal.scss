@@ -1,0 +1,77 @@
+.modal-nous {
+    padding: 0 !important;
+    .modalWrap {
+        width: 100%;
+        margin: 0 auto;
+        background: #518072;
+        max-width: 100rem;    
+        top: 50%;
+        bottom: auto;
+        -webkit-transform: translate(0, -50%) !important;
+        -ms-transform: translate(0, -50%) !important;
+        -o-transform: translate(0, -50%) !important;
+        transform: translate(0, -50%) !important;
+    }    
+    .modal-header {
+        border: none;
+        h3 {
+            text-align: center;
+            color: #FFF2E6;
+            font-size: 5.7rem;
+            line-height: 6.3rem;
+            font-family: $nav-font-family;
+            padding: 1.8rem 0;
+            font-weight: 300;
+        }
+        .close {
+            margin-top: -16px;
+            margin-right: -16px;
+            opacity: 1;
+        }
+    }
+    .modal-body {
+        text-align: center;
+        &__head {
+            p {
+                margin-bottom: 0;
+                font-family: $nav-font-family;
+                color: #FFFFFF;
+                font-size: 5.7rem;
+                line-height: 6.3rem;
+                margin-bottom: .3rem;
+            }
+        }
+        &__boot {
+            text-align: center;
+            h3 {
+                text-align: center;
+                color: #FFF2E6;
+                font-size: 5.7rem;
+                line-height: 6.3rem;
+                font-family: $nav-font-family;
+                padding: 1.8rem 0;
+                font-weight: 300;
+            }
+            p {
+                margin-bottom: 0;
+                font-family: $nav-font-family;
+                color: #FFF2E6;
+                font-size: 4rem;
+                line-height: 4.6rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .modal-footer {
+        text-align: center;
+        border: none;
+        background: #A05198;
+        h3 {
+            font-family: $nav-font-family;
+            color: #FFF2E6;
+            font-size: 4rem;
+            line-height: 4.6rem;
+            padding: 1.8rem 0;
+        }
+    }
+}

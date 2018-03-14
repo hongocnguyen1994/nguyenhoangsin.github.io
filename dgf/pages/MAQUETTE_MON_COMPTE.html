@@ -1,0 +1,126 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+{% import '../templates/partials/navigation.html' as nav %}{{nav.active('nomCompte')}}
+
+	<section id="nomCompte">
+	    <article class="container">
+	    	<div class="nomCompte__nav">
+	    		<ul>
+	    			<li class="active item1"><a href="#identification" title="title Name">1- Identification</a></li>
+	    			<li class="item2"><a href="#click-collect" title="#title Name">2- Click & Collect</a></li>
+	    			<li class="item3"><a href="#paiement" title="title Name">3- Paiement</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="nomCompte__formGroup">
+	    		<div id="identification" class="nomCompte__listItems">
+	    			<div class="nomCompte__head">
+	    				<h2>IDENTIFICATION</h2>
+	    				<span>1 -</span>
+	    			</div>
+	    			<div class="nomCompte__mainBox">
+	    				<form action="" method="get" accept-charset="utf-8">
+	    					<div class="form-group">
+	    						<input type="text" name="E-mail" placeholder="E-mail">
+	    						<hr>
+	    					</div>
+	    					<div class="form-group form-group__true">
+	    						<h2>AVEZ-VOUS UN MOT DE PASSE ?</h2>
+	    						<p>Oui, j’ai un mot de passe</p>
+	    					</div>
+	    					<div class="form-group form-group__three">
+	    						<input type="text" name="Mot de passe" placeholder="Mot de passe">
+	    						<p class="text-right mot-de-passe">Mot de passe ?</p>
+	    						<p>Non, je n’ai pas de mot de passe</p>
+	    					</div>
+	    					<div class="form-group text-center form-group__input">
+	    						<input type="text" name="Prenom" placeholder="Prénom">
+	    						<input type="text" name="Nom" placeholder="Mot de passe">
+	    						<input type="text" name="Date de naissance" placeholder="Date de naissance">
+	    						<input type="text" name="Mot de passe" placeholder="Mot de passe">
+	    						<hr>
+	    					</div>
+	    					<div class="form-group form-group__button">
+	    						<button type="button" class="btn btn-connection">Connection</button>
+	    						<button type="button" class="btn btn-facebook">Facebook</button>
+	    					</div>
+	    				</form>
+	    			</div>
+	    		</div>
+	    		<div id="click-collect" class="nomCompte__listItems">
+	    			<div class="nomCompte__head">
+	    				<h2>CLICK & COLLECT</h2>
+	    				<span>2 -</span>
+	    			</div>
+	    			<div class="nomCompte__mainBox">
+	    				<form action="" method="get" accept-charset="utf-8">
+	    					<div class="form-group">
+	    						<h3 class="">RETIRER MA COMMANDE À PARTIR DE :</h3>
+	    						<div class="list-select-box">
+									<select name="salutation" class="salutation">
+										<option disabled selected>selected</option>
+										<option value="">selected</option>
+										<option value="">selected</option>
+										<option value="">selected</option>
+									</select>
+								</div>
+	    						<hr>
+	    					</div>
+	    					<div class="form-group form-group__button">
+	    						<button type="button" class="btn btn-primary">VALIDER & PAYER</button>
+	    					</div>
+	    				</form>
+	    			</div>
+	    		</div>
+	    		<div id="paiement" class="nomCompte__listItems paiement">
+	    			<div class="nomCompte__head">
+	    				<h2>Paiement</h2>
+	    				<span>3 -</span>
+	    			</div>
+	    			<div class="nomCompte__mainBox">
+	    				<form action="" method="get" accept-charset="utf-8">
+	    					<div class="form-group">
+	    						<h2>PAIMEMENT PAR CARTE BANCAIRE</h2>
+	    						<input type="text" name="Numero de la carte" placeholder="Numéro de la carte">
+	    						<input type="text" name="Titulaire de la carte" placeholder="Titulaire de la carte">
+	    						<label>Date d’expiration</label>
+	    						<div class="row">
+	    							<div class="list-select-box col-md-6">
+										<select name="salutation" class="salutation">
+											<option disabled selected>selected</option>
+											<option value="">selected</option>
+											<option value="">selected</option>
+											<option value="">selected</option>
+										</select>
+									</div>
+									<div class="list-select-box col-md-6">
+										<select name="salutation" class="salutation">
+											<option disabled selected>selected</option>
+											<option value="">selected</option>
+											<option value="">selected</option>
+											<option value="">selected</option>
+										</select>
+									</div>
+	    						</div>
+	    					</div>
+	    					<div class="form-group">
+	    						<input type="text" name="Code de verification" placeholder="Code de vérification">
+	    						<hr>
+	    						<div class="form-group-checkBox">
+	    							<label>
+		    							<input type="checkbox" name="checkbox" class="checkboxradio">
+		    							<span>J'accepte les conditions d'utilisation et je les accepte<br>Lisez les conditions d'utilisation)</span>
+	    							</label>
+	    						</div>
+	    					</div>
+	    					<div class="form-group form-group__button">
+	    						<span class="price">23,00€</span>
+	    						<button type="button" class="btn">PAYER</button>
+	    					</div>
+	    				</form>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </article>
+	</section>
+	<!-- /sportPerform -->
+{% endblock %}

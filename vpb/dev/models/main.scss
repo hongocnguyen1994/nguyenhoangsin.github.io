@@ -1,0 +1,19 @@
+/* MODELS */
+
+@import "models/variables.scss";
+@import "models/font.scss";
+@import "models/typography.scss";
+@import "models/general.scss";
+
+/* VIEWS */
+
+@import "views/header.scss";
+@import "views/footer.scss";
+
+/* CONTROLLERS */
+
+// INDEX PAGE
+@import "controllers/index.scss";
+@import "views/slider-banner.scss";
+@import "views/news-blog.scss";
+@import "views/introduce.scss";

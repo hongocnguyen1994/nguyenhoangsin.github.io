@@ -1,0 +1,89 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+{% import '../templates/partials/navigation.html' as nav %}{{nav.active('home')}}
+{% include "../templates/partials/banner.html" %}
+
+	<section id="sportPerform">
+	    <article class="container">
+	    	<div class="sportPerform__head">
+	    		<!-- <h2>sport & perform</h2> -->
+	    		<div class="sportPerform__iconBlock text-center">
+	    			<img src="images/sport-perform-icon-block.png" alt="icon sport & perform">
+	    		</div>
+	    	</div>
+	    	<div class="sportPerform__grid row">
+	    		<div class="sportPerform__listItem col-xs-6">
+	    			<div class="sportPerform__wrap">
+		    			<div class="sportPerform__mainItem">
+		    				<a href="#" title="title"><img src="images/sportPerformItem.png" alt="sportPerformItem"></a>		    				
+		    			</div>
+		    			<h2>sport & perform</h2>
+	    			</div>
+	    		</div>
+	    		<div class="sportPerform__listItem col-xs-6">
+	    			<div class="sportPerform__wrap">
+		    			<div class="sportPerform__mainItem">
+		    				<a href="#" title="title"><img src="images/sportPerformItem.png" alt="sportPerformItem"></a>		    				
+		    			</div>
+		    			<h2>pure & care</h2>
+	    			</div>
+	    		</div>
+	    		<div class="sportPerform__listItem col-xs-6">
+	    			<div class="sportPerform__wrap">
+		    			<div class="sportPerform__mainItem">
+		    				<a href="#" title="title"><img src="images/sportPerformItem.png" alt="sportPerformItem"></a>		    				
+		    			</div>
+		    			<h2>veg & free</h2>
+	    			</div>
+	    		</div>
+	    		<div class="sportPerform__listItem col-xs-6">
+	    			<div class="sportPerform__wrap">
+		    			<div class="sportPerform__mainItem">
+		    				<a href="#" title="title"><img src="images/sportPerformItem.png" alt="sportPerformItem"></a>		    				
+		    			</div>
+		    			<h2>yummy & energy</h2>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="sportPerform__composeTonPlat">
+	    		<h2><a href="MAQUETTE_DGF_CHOISIS_TON_PLAT.html" title="title">Compose ton plat</a></h2>
+	    	</div>
+	    </article>
+	</section>
+	<!-- /sportPerform -->
+
+	<section id="bannerListItem">
+		<article class="container">
+			<img src="images/bannerListItem.png">
+		</article>
+	</section>
+	<!-- /bannerListItem -->
+	<div class="modal modal-nous fade" id="myModal">
+		<div class="modalWrap modal-dialog">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">
+					<i class="theme-icon-close-modal">					
+					</i>
+				</a>
+				<h3>NOUS SOMMES OUVERT !</h3>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body__head">
+					<p>DU LUNDI AU VENDREDI</p>
+					<p>11h30 - 14h30</p>
+					<p>SAMEDI ET DIMANCHE</p>
+					<p>11H30 - 16H</p>
+				</div>			
+				<div class="modal-body__boot">
+					<h3>34 rue sommeiller, 74000 ANNECY</h3>
+					<p>04 50 56 54 26</p>
+					<p>Sur place ou à emporter</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<h3>TÉLÉCHARGER LA CARTE</h3>
+			</div>
+		</div>		
+	</div>
+	<!-- /modal-nous -->
+{% endblock %}

@@ -1,0 +1,61 @@
+.btn {
+	font-size: $btn-font-size;
+	padding: .9rem 1.3rem;	
+	background: $text-theme-color;
+	border-color: $text-theme-color;
+	color: $brand-primary;
+	font-family: $heading-font-family;	
+	border-radius: $radius;
+	@include transition(all 400ms ease-in-out);
+	&:hover {
+		background: #518072;
+		color: $text-color;
+	}
+}
+.btn-primary {
+	font-size: 5rem;
+	background: $brand-primary-bg;
+	border-color: $base-boder-color;
+	color: $text-theme-color;
+	border-radius: 0;
+	padding: .1rem 1.5rem;
+	border-width: .3rem;
+	&:focus,
+	&:hover {
+		background: #A05198;
+		color: #fff;
+		border-color: #A05198; 
+	}
+}
+.btn-white {
+	color: #518072;
+	background: #FFF4E8;
+	border-color: #FFF4E8;
+	&:hover {
+		background: #A05198;
+		color: #fff;
+		border-color: #A05198; 
+	}
+}
+.btn-connection {
+	font-size: 5rem;
+	background: #A05198;
+	border-color: #A05198;
+	border-radius: 0;
+	padding: .1rem 1.5rem;
+	&:hover {
+		background: #518072;
+		border-color: #518072; 
+	}
+}
+.btn-facebook {
+	font-size: 5rem;
+	background: #3A5998;
+	border-color: #3A5998;
+	border-radius: 0;
+	padding: .1rem 1.5rem;
+	&:hover {
+		background: #518072;
+		border-color: #518072; 
+	}
+}

@@ -1,0 +1,104 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+{% import '../templates/partials/navigation.html' as nav %}{{nav.active('INGREDIENTS')}}
+{% include "../templates/partials/banner-ingredients.html" %}
+
+	<section id="bannerBio">
+	    <article class="container">
+	    	<div class="bannerBio__mainContent text-center">
+	    		<h2>Salade BIO</h2>
+	    		<p>Opposita vultus se quos inmensum ad ignorantes puta ad quos,<br>
+	    		cultorum superasse feracium solem ad inmensum ut inmensum ut put. </p>
+	    	</div>
+	    </article>
+	</section>
+	<!-- /bannerBio -->
+
+	<section id="listProduct" class="gridBlock">
+	    <article class="container">
+	    	<div class="gridBlock__wrapListItem">
+		    	<div class="row">
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4" id="p1">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Carotte</h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p2">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Salade <span>BIO</span></h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p3">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Chou</h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p4">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Tomate <span>BIO</span></h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p5">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Poivrons <span>BIO</span></h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4" id="p1">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Champignon</h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p2">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Épinard</h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p3">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Betterave</h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p4">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Brocolis</h3>	    		
+		    		</div>
+		    		<div class="gridBlock__listItem col-md-2 col-sm-3 col-xs-4 col-half-offset" id="p5">
+			    		<div class="gridBlock__thumb">
+			    			<div class="gridBlock__mainThumb">
+			    			</div>
+			    		</div>
+			    		<h3>Courgette</h3>	    		
+		    		</div>	
+		    	</div>
+    		</div>
+	    </article>
+	</section>
+	<!-- /gridBlock -->
+
+	<section id="iconDrop">
+	    <article class="container text-center">
+	    	<img src="images/iconDrop.png" alt="iconDrop">
+	    </article>
+	</section>
+	<!-- /iconDrop -->
+
+{% endblock %}

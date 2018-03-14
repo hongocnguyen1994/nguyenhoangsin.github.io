@@ -1,0 +1,305 @@
+
+#sportPerformNoslpats {
+  background: none;
+}
+
+section.sport-perform {
+  background-image: url('../images/cat-sport-perform.jpg') !important;
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 430px;
+}
+section.yummy-energy {
+  background-image: url('../images/cat-yummy-energy.jpg') !important;
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 430px;
+}
+section.pure-care {
+  background-image: url('../images/cat-pure-care.jpg') !important;
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 430px;
+}
+section.veg-free {
+  background-image: url('../images/cat-veg-free.jpg') !important;
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 430px;
+}
+
+@media (min-width: 1200px){
+    section.sport-perform,
+    section.yummy-energy,
+    section.pure-care,
+    section.veg-free {
+         height: 495px;
+    }
+}
+
+.disabled {
+  display: none !important;
+}
+.error {
+  color : red !important;
+}
+.m-l-0 {
+  margin-left: 0px !important;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+#pdf .modal-dialog {
+  width: 900px;
+  height: 550px;
+}
+#pdf .modal-dialog .modal-body {
+  overflow-y: hidden !important;
+}
+
+h4.modal-title {
+  color: #A05198;
+}
+
+.description {
+    text-align: center;
+    padding: 10px 10px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.owl-carousel .owl-item img {
+  height: 100%;
+}
+
+.gridBlock__thumb .w-h-216 {
+  width: 216px;
+  height: 216px;
+}
+
+.page_content ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.page_content ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.page_content strong {
+  font-weight: bold;
+}
+
+.bannerBio__mainContent h2 {
+    font-size: 5rem;
+    padding: 5px 5px;
+    line-height: 40px;
+}
+.m-t-70 {
+  margin-top: 70px;
+}
+.m-t-8r {
+  margin-top: 8rem;
+}
+#suisJe img {
+      margin-right: 8px;
+}
+#suisJe .info-right {
+    display: inherit;
+    padding-left: 150px;
+    word-wrap: break-word;
+}
+
+.wp-product .bannerBio__mainContent p{
+    line-height: 2.5rem;
+}
+
+.wp-product .bannerBio__mainContent p.jsDescription {
+    margin-top: 35px;
+}
+
+.h-200 {
+  height: 200px !important;
+}
+.jsRemoveItem, .jsRemoveOrder, .jsRemoveBill {
+    float: right !important;
+    margin-top: 3px;
+    margin-right: -20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.jsRemoveItem:hover, .jsRemoveOrder:hover, .jsRemoveBill:hover {
+    color: red;
+}
+
+.jsRemoveOrder {
+    margin-top: -17px;
+}
+
+.jsRemoveBill {
+    margin-right: 13px;
+    margin-top: 0px;
+}
+.p-l-5r {
+  padding-left: 5rem;
+}
+.w-400 {
+  width: 400px !important;
+}
+#imagesInstagram a:hover {
+  opacity: 0.7;
+}
+hr.dot {
+    border-top: dotted 1px;
+}
+
+.header__right a.avatar {
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+}
+
+/*History*/
+#history {
+    color: #A05198;
+}
+
+#history h2, #history h3 {
+    color: #A05198;
+}
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+#nomCompte .logo {
+    margin: 20px 20px;
+}
+
+#choisisTaBoisson {
+    padding: 0 0;
+}
+.recapitulatif__mainContentBox .recapitulatif__listGroup h2 {
+    margin: 5px 0px !important;
+}
+
+#legal p, #term p {
+    font-size: 2rem;
+}
+#legal strong, #term strong {
+    font-weight: bold;
+}
+#legal .content__mainBox, #term .content__mainBox {
+    padding: 4.4rem 12rem 10.3rem 12rem;
+    background: #FFF4E8;
+}
+.b-l-none {
+  border-left: none !important;
+}
+.p-t-16 {
+  padding-top: 2.3rem;
+}
+
+.jsCancel, .jsCancel:visited {
+  color : #FFF4E8 !important;
+}
+.header--language {
+   margin-left: 2.2rem;
+}
+span.term {
+    padding: 8px 8px;
+    position: absolute;
+}
+.notComplete {
+    color: red;
+    font-size: 12px;
+}
+.jsMenus .controleGroup .ui-spinner-up {
+    background-image: url(../images/ui-spinner-up.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: right;
+    margin-left: 1.5rem;
+}
+.jsMenus .controleGroup .ui-spinner-down {
+    background-image: url(../images/ui-spinner-down.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 1.5rem;
+}
+.jsMenus .controleGroup input {
+    max-width: 9.2rem;
+}
+.controleGroup .ui-spinner-button {
+    width: 9.4rem;
+}
+@media (max-width: 991px) {
+    section.sport-perform, section.pure-care, section.veg-free, section.yummy-energy {
+      height: 360px;
+    }
+    .modal-dialog {
+        width: 95%;
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+    section.sport-perform, section.pure-care, section.veg-free, section.yummy-energy {
+        height: 230px;
+    }
+    #legal .content__mainBox, #term .content__mainBox {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media (max-width: 575px){
+  section.sport-perform, section.pure-care, section.veg-free, section.yummy-energy {
+    height: 190px;
+  }
+}
+@media (max-width: 440px){
+  section.sport-perform, section.pure-care, section.veg-free, section.yummy-energy {
+    height: 160px;
+  }
+  #suisJe img {
+      width: 140px !important;
+  }
+}
+@media (max-width: 414px){
+  section.sport-perform, section.pure-care, section.veg-free, section.yummy-energy {
+    height: 140px;
+  }
+}
+@media (max-width: 360px){
+  section.sport-perform, section.pure-care, section.veg-free, section.yummy-energy {
+    height: 130px;
+  }
+}
+@media (max-width: 320px){
+  section.sport-perform, section.pure-care, section.veg-free, section.yummy-energy {
+    height: 110px;
+  }
+}

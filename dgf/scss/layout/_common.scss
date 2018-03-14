@@ -1,0 +1,219 @@
+/* -------------------->>> COMMON <<<-------------------- */
+html {
+	font-size: $global-font-size; //font-size: 62.5%; /* Mac dinh ve gia tri 10px */
+}
+body{
+	background: $body-bg;
+    font-family: $base-font-family;
+    color: $text-theme-color;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    overflow-x: hidden;
+}
+
+@include basehr($base-boder-color, $hr-border-width);
+
+.container {
+	width: $full-width;
+	max-width: $container-width;
+}
+
+p {
+	margin-bottom: 15px;
+}
+.col-half-offset{
+    margin-left:4.166666667%
+}
+.clear {
+    clear: both;
+}
+b {
+    font-weight: 700;
+}
+input[type="text"] {
+    height: 7.5rem;
+    border: .3rem solid $base-boder-color;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    color: $text-theme-color;
+    font-family: $heading-font-family;
+    @include input-placeholder {
+        color: $text-theme-color;
+    }
+}
+
+hr {
+    border-width: $hr-border-width;
+    border-color: $hr-border-color;
+    margin: $hr-margin;
+}
+
+.ui-selectmenu-button {
+    width: $full-width;
+    padding: 1.6rem 2rem;
+    display: block;
+    border: .3rem solid $base-boder-color;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-family: $heading-font-family;
+    color: $text-theme-color;
+    text-align: left;
+    cursor: pointer;
+    .ui-selectmenu-icon {
+        @include background('../images/iconDrop2.png');
+        background-size: 100% auto; 
+        float: right;
+        width: 4.2rem;
+        height: 2.3rem;
+        margin-top: 1.0rem;
+    }    
+}
+.ui-selectmenu-menu {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;    
+    .ui-widget-content {
+        border: .3rem solid $base-boder-color;
+        background: #fff;
+        .ui-menu-item {
+            margin: 0;
+            cursor: pointer;
+        }
+        .ui-state-disabled {
+            cursor: default !important;
+            opacity: .35;
+        }
+        .ui-menu-item-wrapper {
+            position: relative;
+            padding: 3px 1em 3px .4em;
+        }
+    }
+}
+.ui-selectmenu-open {
+    display: block;
+    z-index: 9999;
+}
+
+.ui-widget {
+    .ui-checkboxradio-icon {
+        display: inline-block;
+        width: 4.5rem;
+        height: 4.5rem;
+        background: #fff;
+        border: .3rem solid $base-boder-color;
+        cursor: pointer;
+        &.ui-icon-check {
+            @include background('../images/checkboxradio.png');
+            background-size: 100% auto;
+        }
+    }
+    .checkboxradio {
+        display: none;
+    }
+}
+
+.block-title {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    font-weight: 300;
+    color: $text-theme-color;
+    font-family: $base-font-family;
+    padding: 3.2rem 1.5rem;
+    background: $text-color;
+    text-align: center;
+    margin-bottom: 5.7rem;
+}
+
+.controleGroup {
+    width: 100%;
+    max-width: 34rem;
+    height: 5.2rem;
+    @include push--auto;
+    input {
+        max-width: 10.2rem;
+        height: 100%;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 4.6rem;
+    }
+    .ui-spinner-button {
+        display: block;
+        width: 10.4rem;
+        height: 100%;
+        cursor: pointer;
+        background-color: $text-theme-color;
+    }
+    .ui-spinner-up {
+        @include background('../images/ui-spinner-up.png', center center);
+        float: left;
+        margin-right: 1.5rem;
+    }
+    .ui-spinner-down {
+        @include background('../images/ui-spinner-down.png', center center);
+        float: right;
+        margin-left: 1.5rem;
+    }
+}
+
+.ctlGroup {
+    @include flex-center-colum;
+    @include transition(all 400ms ease-in-out);    
+    input {
+        width: 8.3rem;        
+        text-align: center;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        float: left;        
+        height: 5.8rem;
+    }
+    .ui-spinner-button {
+        display: block;
+        width: 3rem;
+        height: 2.9rem;
+        cursor: pointer;
+        float: left;
+        background-color: #fff;
+        border-top: .3rem solid $base-boder-color;
+    }
+    .ui-spinner-up {
+        @include background('../images/ui-spinner-up2.png', center center);
+    }
+    .ui-spinner-down {
+        @include background('../images/ui-spinner-down2.png', center center);
+        border-bottom: .3rem solid $base-boder-color;
+    }
+    &__items {
+        width: 11.3rem;
+        position: relative;
+        .cl {
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            color: $text-theme-color;
+            position: absolute;
+            top: 1.8rem;
+            right: 4.3rem;
+        }
+        &:last-child {
+            .ui-spinner-button {
+                border-right: .3rem solid $base-boder-color;
+            }
+        }
+    }
+}
+
+.btn-addMobile {
+    width: 15.5rem;
+    height: 7.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+}

@@ -1,0 +1,1546 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+{% import '../templates/partials/navigation.html' as nav %}{{nav.active('tonplat')}}
+{% include "../templates/partials/banner-votreplat.html" %}
+
+	<section id="bannerTonPlat">
+	    <article class="container text-center">
+	    	<p>Compose ton plat = 10€ ( hors supplément),<br>1 base + 1 protéine + 1 féculent + 4 ingrédients + 1 sauce</p>
+	    </article>
+	</section>
+	<!-- /bannerTonPlat -->
+
+	<section id="prescription">
+	    <div class="prescription__listItem">
+	    	<div class="container">
+	    		<h2>PRESCRIPTION SIMPLE = 1 PLAT + 1 BOISSON <span class="pull-right"><span>.......................</span> 12 euros</span></h2>
+	    	</div>
+	    </div>
+	     <div class="prescription__listItem">
+	    	<div class="container">
+	    		<h2>PRESCRIPTION SPÉCIALE = 1 PLAT + 1 BOISSON + 1 ENCAS <span class="pull-right"><span>.......................</span> 15 euros</span></h2>
+	    	</div>
+	    </div>
+	</section>
+	<!-- /prescription -->	
+
+	<section id="choisisTonEncasPlat" class="choisisTonEncasVotrePlat">
+	    <article class="container">
+	    	<h2 class="block-title">COMPOSE TON PLAT = 1 BASE + 1 PROTÉINE + 1 FÉCULENT + 4 INGRÉDIENTS + 1 SAUCE</h2>	    	
+	    	<div class="choisisTaBoisson__mainBox">
+	    		<div id="listProduct" class="gridBlock">
+	    			<div class="gridBlock__head">
+	    				<h4>CHOISIS 1 BASE <span>( Pas de supplément possible )</span></h4>
+	    				<span>1 -</span>
+	    			</div>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="gridBlock__listItem gridBlock__sport-perform add-thumb col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat1.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Salade</h3>	    
+						    		</div>							    		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__pure-care add-thumb col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<img src="images/choisisTonEncasVotrePlat2.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Oeuf</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__veg-free add-thumb col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">						    			
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat3.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Wrapy</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__yummy-energy add-thumb col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat4.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Baguettine</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    	</div>
+		    		</div>
+				</div>
+				<div id="listProduct" class="gridBlock gridBlockStep2">
+	    			<div class="gridBlock__head">
+	    				<h4>CHOISIS TON FÉCULENT <span>( 1,50€ par supplément )</span></h4>
+	    				<span>2 -</span>
+	    			</div>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="gridBlock__listItem gridBlock__sport-perform add-thumb col-md-2 col-sm 4 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat5.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Riz semi-complet</h3>	    
+						    		</div>							    		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__pure-care add-thumb col-md-2 col-sm 4 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<img src="images/choisisTonEncasVotrePlat6.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Patate douce</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__veg-free add-thumb col-md-2 col-sm 4 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">						    			
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat7.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Quinoa ou millet</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__yummy-energy add-thumb col-md-2 col-sm 4 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<img src="images/choisisTonEncasVotrePlat8.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Baguettine</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__yummy-energy add-thumb col-md-2 col-sm 4 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat9.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Pois chiche </h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__yummy-energy add-thumb col-md-2 col-sm 4 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat10.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Lentille belluga</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    	</div>
+		    		</div>
+				</div>
+				<div id="listProduct" class="gridBlock gridBlockStep3">
+	    			<div class="gridBlock__head">
+	    				<h4>CHOISIS TA PROTÉINE<span>( 1,50€ par supplément )</span></h4>
+	    				<span>3 -</span>
+	    			</div>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="add-thumb gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat11.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Thon</h3>	    
+						    		</div>							    		
+					    		</div>
+				    		</div>
+				    		<div class="add-thumb gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<img src="images/choisisTonEncasVotrePlat12.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Poulet <span>BIO</span></h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="add-thumb gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p3">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">						    			
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat13.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Mozzarella</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="add-thumb gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p4">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat14.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Feta</h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="add-thumb gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p5">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<div class="gridBlock__mainThumb">
+						    				<span class="gridBlock__thumb__lableActive">0</span>
+						    				<img src="images/choisisTonEncasVotrePlat15.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Œuf <span>BIO</span></h3>	    
+						    		</div>		
+					    		</div>
+				    		</div>
+
+				    	</div>
+		    		</div>
+				</div>
+				<div id="listProduct" class="gridBlock gridBlockStep4">
+	    			<div class="gridBlock__head">
+	    				<h4>CHOISIS TES 4 INGRÉDIENTS (CRUDITÉS & FRUITS SECS)<span>( 1,50€ par supplément )</span></h4>
+	    				<span>4 -</span>
+	    			</div>
+	    			<h4>CRUDITÉS</h4>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p3">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p4">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p5">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p3">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p4">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p5">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>	
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p3">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>	
+				    		</div>	
+				    	</div>
+		    		</div>
+		    		<h4>FRUITS SECS</h4>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p3">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p4">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p5">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>	
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p3">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>	
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p4">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<span>3,50€</span>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    	</div>
+		    		</div>
+				</div>
+				<div id="listProduct" class="gridBlock gridBlockStep5">
+	    			<div class="gridBlock__head">
+	    				<h4>CHOISIS TA SAUCE</h4>
+	    				<span>5 -</span>
+	    			</div>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>	
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>	
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p3">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>	
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p4">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>				
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p5">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>				
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6" id="p1">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>			
+				    		</div>
+				    		<div class="gridBlock__listItem col-md-2 col-sm-4 col-xs-6 col-half-offset" id="p2">
+					    		<div class="gridBlock__thumb">
+					    			<span class="gridBlock__thumb__lableActive">0</span>
+					    			<div class="gridBlock__mainThumb">
+						    			<button type="button" class="btn btn-addMobile visible-xs">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+					    			</div>
+					    		</div>
+					    		<h3>Carotte</h3>	    
+					    		<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>	
+					    		<div class="hidden-xs btnHidden">
+						    		<div class="gridBlock__addAndRemove">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    	</div>		
+				    		</div>
+				    	</div>
+		    		</div>
+				</div>
+	    	</div>
+	    	<div class="smoothie">
+					<h4>SMOOTHIE <span>( Supplément 3€ )</span></h4>
+					<div class="smoothie__mainBox">
+						<div class="row">
+							<div class="smoothie__listItems smoothie__sport-perform col-md-3 col-xs-6">
+								<div class="smoothie__thumb">
+									<img src="images/smoothie__listItems.png" alt="thumb">
+									<button type="button" class="btn btn-addMobile hidden-md hidden-lg">
+					    				<i class="theme-icon-add"></i>
+					    			</button>
+								</div>
+								<div class="hidden-md hidden-lg smoothie__textBoxMobile">
+									<p>sport & perform <span class="pull-right">3,50€</span></p>
+								</div>
+								<div class="visible-md visible-lg">
+									<div class="ctlGroup">
+										<!-- <div class="ctlGroup__items">
+											<input class="spinner" type="text" value="1">
+											<span class="cl">cl.</span>
+										</div> -->
+										<div class="ctlGroup__items">
+											<input type="text" value="0">
+											<a class="ui-spinner-button ui-spinner-up"></a>
+											<a class="ui-spinner-button ui-spinner-down"></a>
+											<!-- <span class="cl">cl.</span> -->
+										</div>
+									</div>
+									<div class="smoothie__textBox">
+										<h3>sport & perform</h3>
+										<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>
+										<span>3,50€</span>
+									</div>
+								</div>
+							</div>
+							<div class="smoothie__listItems smoothie__pure-care col-md-3 col-xs-6">
+								<div class="smoothie__thumb">
+									<img src="images/smoothie__listItems.png" alt="thumb">
+									<button type="button" class="btn btn-addMobile hidden-md hidden-lg">
+					    				<i class="theme-icon-add"></i>
+					    			</button>
+								</div>
+								<div class="hidden-md hidden-lg smoothie__textBoxMobile">
+									<p>pure & care <span class="pull-right">3,50€</span></p>
+								</div>
+								<div class="visible-md visible-lg">
+									<div class="ctlGroup">
+										<!-- <div class="ctlGroup__items">
+											<input class="spinner" type="text" value="1">
+											<span class="cl">cl.</span>
+										</div> -->
+										<div class="ctlGroup__items">
+											<input type="text" value="0">
+											<a class="ui-spinner-button ui-spinner-up"></a>
+											<a class="ui-spinner-button ui-spinner-down"></a>
+											<!-- <span class="cl">cl.</span> -->
+										</div>
+									</div>
+									<div class="smoothie__textBox">
+										<h3>pure & care</h3>
+										<p>Carotte, Celeri, Pomme verte,<br>Epinard</p>
+										<span>3,50€</span>
+									</div>
+								</div>
+							</div>
+							<div class="smoothie__listItems smoothie__veg-free col-md-3 col-xs-6">
+								<div class="smoothie__thumb">
+									<img src="images/smoothie__listItems.png" alt="thumb">
+									<button type="button" class="btn btn-addMobile hidden-md hidden-lg">
+					    				<i class="theme-icon-add"></i>
+					    			</button>
+								</div>
+								<div class="hidden-md hidden-lg smoothie__textBoxMobile">
+									<p>veg & free <span class="pull-right">3,50€</span></p>
+								</div>
+								<div class="visible-md visible-lg">
+									<div class="ctlGroup">
+										<!-- <div class="ctlGroup__items">
+											<input class="spinner" type="text" value="1">
+											<span class="cl">cl.</span>
+										</div> -->
+										<div class="ctlGroup__items">
+											<input type="text" value="0">
+											<a class="ui-spinner-button ui-spinner-up"></a>
+											<a class="ui-spinner-button ui-spinner-down"></a>
+											<!-- <span class="cl">cl.</span> -->
+										</div>
+									</div>
+									<div class="smoothie__textBox">
+										<h3>veg & free</h3>
+										<p>Lait de soja, Banane, Framboise,<br>Fraise, Gingembre</p>
+										<span>3,50€</span>
+									</div>
+								</div>
+							</div>
+							<div class="smoothie__listItems smoothie__yummy-energy col-md-3 col-xs-6">
+								<div class="smoothie__thumb">
+									<img src="images/smoothie__listItems.png" alt="thumb">
+									<button type="button" class="btn btn-addMobile hidden-md hidden-lg">
+					    				<i class="theme-icon-add"></i>
+					    			</button>
+								</div>
+								<div class="hidden-md hidden-lg smoothie__textBoxMobile">
+									<p>yummy & energy <span class="pull-right">3,50€</span></p>
+								</div>
+								<div class="visible-md visible-lg">
+									<div class="ctlGroup">
+										<!-- <div class="ctlGroup__items">
+											<input class="spinner" type="text" value="1">
+											<span class="cl">cl.</span>
+										</div> -->
+										<div class="ctlGroup__items">
+											<input type="text" value="0">
+											<a class="ui-spinner-button ui-spinner-up"></a>
+											<a class="ui-spinner-button ui-spinner-down"></a>
+											<!-- <span class="cl">cl.</span> -->
+										</div>
+									</div>
+									<div class="smoothie__textBox">
+										<h3>yummy & energy</h3>
+										<p>Lait de soja, Banane, Cacao,<br>Framboise</p>
+										<span>3,50€</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	    	</div>
+	    </article>
+	</section>
+	<!-- /choisisTonEncasPlat -->
+
+	<section id="choisisTonEncasPlat">
+	    <article class="container">
+	    	<h2 class="block-title">CHOISIS TON DESSERT</h2>	    	
+	    	<div class="choisisTaBoisson__mainBox">
+	    		<div id="listProduct" class="gridBlock">
+	    			<h4>DESSERT PETITE FAIM</h4>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="gridBlock__listItem gridBlock__sport-perform col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="hidden-xs">
+							    		<div class="gridBlock__addAndRemove">
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-remove"></i>
+							    			</button>
+							    		</div>
+							    	</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>					    		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__pure-care col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="hidden-xs">
+							    		<div class="gridBlock__addAndRemove">
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-remove"></i>
+							    			</button>
+							    		</div>
+							    	</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>	
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__veg-free col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="hidden-xs">
+							    		<div class="gridBlock__addAndRemove">
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-remove"></i>
+							    			</button>
+							    		</div>
+							    	</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__yummy-energy col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="hidden-xs">
+							    		<div class="gridBlock__addAndRemove">
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+							    			<button type="button" class="btn btn-addAndRemove">
+							    				<i class="theme-icon-remove"></i>
+							    			</button>
+							    		</div>
+							    	</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>	
+					    		</div>
+				    		</div>
+				    	</div>
+		    		</div>
+				</div>
+				<div id="listProduct" class="gridBlock">
+	    			<h4>DESSERT GRANDE FAIM<span>( Supplément 3€ )</span></h4>
+			    	<div class="gridBlock__wrapListItem clickShowBt">
+				    	<div class="row">
+				    		<div class="gridBlock__listItem gridBlock__sport-perform col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>							    		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__pure-care add-thumb col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<img src="images/gridBlock__mainThumb1.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__veg-free add-thumb col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<img src="images/gridBlock__mainThumb2.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>		
+					    		</div>
+				    		</div>
+				    		<div class="gridBlock__listItem gridBlock__yummy-energy add-thumb col-sm-3 col-xs-6">
+				    			<div class="gridBlock__wrap">
+						    		<div class="gridBlock__thumb">
+						    			<span class="gridBlock__thumb__lable"></span>
+						    			<span class="gridBlock__thumb__lableActive">0</span>
+						    			<div class="gridBlock__mainThumb">
+						    				<img src="images/gridBlock__mainThumb3.png" alt="thumb">
+						    				<button type="button" class="btn btn-addMobile visible-xs">
+							    				<i class="theme-icon-add"></i>
+							    			</button>
+						    			</div>
+						    		</div>
+						    		<div class="gridBlock__addAndRemove hidden-xs">
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-add"></i>
+						    			</button>
+						    			<button type="button" class="btn btn-addAndRemove">
+						    				<i class="theme-icon-remove"></i>
+						    			</button>
+						    		</div>
+						    		<div class="gridBlock__textBox">
+							    		<h3>Carotte</h3>	    
+							    		<span>3,50€</span>	
+						    		</div>		
+					    		</div>
+				    		</div>
+				    	</div>
+		    		</div>
+				</div>
+	    	</div>
+	    </article>
+	</section>
+	<!-- /choisisTonEncasPlat -->
+
+	<section id="recapitulatif">
+	    <article class="container">
+	    	<h2 class="block-title">RÉCAPITULATIF</h2>	    	
+	    	<div class="recapitulatif__mainBox">
+	    		<h3 class="text-center">PANIER :</h3>
+	    		<div class="recapitulatif__head hidden-xs">
+	    			<h3>Dr. Good Food - ORDONNANCE</h3>
+	    			<p>35 , rue someilleir<br>74000 ANNECY</p>
+	    			<p>
+		    			Consultations :<br>
+						<b>-Le matin :</b><br>
+						du Lundi au Samedi de 9 h à 12h<br>
+						<b>-L’aprés-midi :</b><br>
+						Lundi, Mardi, Mercredi<br>
+						et Vendredi de 14 h à 19 h<br>
+					</p>
+	    		</div>
+	    		<div class="recapitulatif__contentBox">
+	    			<div class="row">
+	    				<div class="recapitulatif__mainContentBox col-md-6">
+	    					<h2>Détail : </h2>
+	    					<div class="recapitulatif__listGroup">
+	    						<h3>BASE :</h3>
+	    						<div class="recapitulatif__listGroup__main">
+		    						<p><span>1</span> Wrapy </p>
+		    						<hr>
+	    						</div>
+	    					</div>
+	    					<div class="recapitulatif__listGroup">
+	    						<h3>FÉCULENT :</h3>
+	    						<div class="recapitulatif__listGroup__main">
+		    						<p><span>1</span> Patate douce </p>
+		    						<hr>
+	    						</div>
+	    					</div>
+	    					<div class="recapitulatif__listGroup">
+	    						<h3>INGRÉDIENT :</h3>
+	    						<div class="recapitulatif__listGroup__main">
+		    						<p><span>1</span> Epinard</p>
+		    						<p><span>1</span> Celeri</p>
+		    						<p><span>1</span> Courgette</p>
+		    						<p><span>1</span> Avocat</p>
+	    						<hr>
+	    						</div>
+	    					</div>
+	    					<div class="recapitulatif__listGroup">
+	    						<h3>SAUCE :</h3>
+	    						<div class="recapitulatif__listGroup__main">
+		    						<p><span>1</span> Houmous avec ail</p>
+		    						<hr>
+		    					</div>
+	    					</div>
+	    				</div>
+	    				<div class="recapitulatif__mainContentBox col-md-6">
+	    					<div class="recapitulatif__listGroup">
+	    						<h3>BOISSON :</h3>
+	    						<div class="recapitulatif__listGroup__main">
+		    						<p><span>1</span> Ice tea <span class="pull-right">……… 2,50€</span></p>
+		    						<hr>
+		    					</div>
+	    					</div>
+	    					<div class="recapitulatif__listGroup">
+	    						<h3>ENCAS :</h3>
+	    						<div class="recapitulatif__listGroup__main">
+		    						<p><span>1</span> Mousse<span class="pull-right">……… 3,50€</span></p>
+		    						<hr>
+		    					</div>
+	    					</div>	
+	    					<h2>Menu :</h2>
+	    					<div class="recapitulatif__listGroup">
+	    						<h3>ENCAS :</h3>
+	    						<div class="recapitulatif__listGroup__main">
+		    						<p><span>1</span> Prescription spéciale<span class="pull-right">……… 12€</span></p>
+		    						<p><span>1</span> Dessert<span class="pull-right">……… 3,50€</span></p>
+	    						<hr>
+	    						</div>
+	    					</div>	
+	    					<div class="recapitulatif__listGroup">
+	    						<p>Total<span class="pull-right">……… 15€</span></p>
+	    						<hr>
+	    					</div>
+	    					<div class="recapitulatif__listGroup">
+	    						<button type="button" class="btn btn-recapitulatif">POURSUIVRE MA COMMANDE</button>
+	    						<button type="button" class="btn btn-recapitulatif">COMMANDER</button>
+	    					</div>	
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </article>
+	</section>
+	<!-- /recapitulatif -->
+
+{% endblock %}

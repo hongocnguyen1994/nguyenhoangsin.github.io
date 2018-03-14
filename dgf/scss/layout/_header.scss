@@ -1,0 +1,52 @@
+header {
+	height: 25.2rem;
+	position: relative;
+	z-index: 999;
+	.logo {
+		padding-top: 1.3rem;
+		position: absolute;
+		left: 3.2rem;
+		top: 0;
+		img {
+			width: 22.5rem;
+			height: auto;
+		}
+	}
+}
+.header {
+	&__top {
+		text-align: center;
+		@include flex-center-colum;
+		height: 12.5rem;
+		background: $header-bg;	
+	}
+	&__logo {		
+		padding-right: 0;
+		z-index: 99;
+	}
+	&__right {
+		@include flex-center-colum;
+		margin-left: -1%;
+		height: 12.7rem;
+		a {
+			margin-left: 2.2rem;
+		}
+	}
+	&__logo {
+		&__main {
+			display: block;
+			@include transition(all 0.5s ease-in-out 0s);
+		}
+		&__scroll {
+			display: none;
+		}
+	}	
+}
+.navbar-fixed-top {
+	.header__logo__main {
+		display: none;
+	}
+	.header__logo__scroll {
+		display: block;
+	}
+}

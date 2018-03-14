@@ -1,0 +1,51 @@
+.header {
+    min-height: 3.625rem;
+    padding: 0.563rem 0;
+    background-color: $colorMain;
+    transition: all 0.3s ease;
+    .navbar-nav {
+        align-items: center;
+        span {
+            display: none;
+            margin: 0 0.75rem;
+            font-size: 0.75rem;
+        }
+    }
+    .navbar-dark {
+        .nav-link {
+            font-size: 1.125rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #000;
+        }
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        border: 0.063rem solid rgba(#fff, 0.5);
+        outline: none;
+        cursor: pointer;
+    }
+    .show+.navbar-toggler {
+        .navbar-toggler-icon {
+            background-image: url(../images/x.png);
+            background-size: contain;
+            background-position: center center;
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url(../images/bars.png);
+        background-size: contain;
+        background-position: center center;
+    }
+}
+
+@media (min-width: 62rem) {
+    .header {
+        .navbar-nav {
+            span {
+                display: block;
+            }
+        }
+    }
+}
