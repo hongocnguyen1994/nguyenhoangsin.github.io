@@ -205,6 +205,97 @@
 </section>
 <!-- End header mobile -->
     <main class="pb-2 m-height-screen m-bg-grey">
+        <!-- Begin search result head -->
+        <section class="bg-white search-result__head">
+            <div class="container d-xl-flex justify-content-between align-items-center search-result__head-wrap">
+                <div class="d-xl-flex align-items-center search-filter">
+                    <div id="searchTour" class="ui search form-group">
+                        <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm địa điểm...">
+                        <div class="results w-100 mt-0"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w235">
+                            <input type="hidden" name="price">
+                            <div class="default text">Chọn khoảng giá</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                                <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                            </svg>
+                            <div class="menu">
+                                <div class="item" data-value="0">
+                                    <span>Từ</span> 1.000.000
+                                    <span>&#60;</span> 10.000.000
+                                    <span>đ</span>
+                                </div>
+                                <div class="item" data-value="1">
+                                    <span>Từ</span> 10.000.000
+                                    <span>&#60;</span> 100.000.000
+                                    <span>đ</span>
+                                </div>
+                                <div class="item" data-value="2">
+                                    <span>Từ</span> 100.000.000
+                                    <span>&#60;</span> 900.000.000
+                                    <span>đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w180">
+                            <input type="hidden" name="price">
+                            <div class="default text">Chọn khoảng thời gian</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                                <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                            </svg>
+                            <div class="menu">
+                                <div class="item" data-value="0">
+                                    <span>Từ</span> 1
+                                    <span>đến dưới</span> 7
+                                    <span>ngày</span>
+                                </div>
+                                <div class="item" data-value="1">
+                                    <span>Từ</span> 7
+                                    <span>đến dưới</span> 14
+                                    <span>ngày</span>
+                                </div>
+                                <div class="item" data-value="2">
+                                    <span>Từ</span> 14
+                                    <span>đến dưới</span> 31
+                                    <span>ngày</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-none d-xl-block mr-3 search-result__head-space"></div>
+                        <button class="d-flex justify-content-center align-items-center mr-2 border-0 search-result__head-btn">
+                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                        </button>
+                        <button class="d-flex justify-content-center align-items-center border-0 search-result__head-btn">
+                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z" />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                        </button>
+                        <div class="mr-3 ml-3 search-result__head-space"></div>
+                        <button class="d-flex justify-content-center align-items-center mr-sm-3 border-0 search-result__head-btn">
+                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 8c0-3.31-2.69-6-6-6S6 4.69 6 8c0 4.5 6 11 6 11s6-6.5 6-11zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.89 2-2 2c-1.1 0-2-.9-2-2zM5 20v2h14v-2H5z"
+                                />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                        </button>
+                    </div>
+                    <a class="d-flex justify-content-center align-items-center m-btn m-btn-grey search-result__head-btn-create" href="book.html">Tự thiết kế tour</a>
+                </div>
+            </div>
+        </section>
+        <!-- End search result head -->
+
         <div class="container">
             <!-- Begin breadcrumb -->
 <nav class="pt-3 m-breadcrumb">
@@ -217,105 +308,132 @@
     </ol>
 </nav>
 <!-- End breadcrumb -->
-            <!-- Begin create custom tour -->
-            <section class="mt-3 mb-5 bg-white create-custom-tour">
-                <div class="create-custom-tour__body">
-                    <div class="mx-auto p-3 create-custom-tour__content">
-                        <h2 class="my-4 pb-3 create-custom-tour__htext">Tự thiết kế tour</h2>
-                        <div class="mb-4">
-                            <div class="mb-4 text-uppercase create-custom-tour__title">Thông tin khách hàng</div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Tên khách hàng</div>
-                                <input class="mb-3 form-control" type="text">
-                            </div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Email</div>
-                                <input class="mb-3 form-control" type="text">
-                            </div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Điện thoại</div>
-                                <input class="mb-3 form-control" type="text">
-                            </div>
+        </div>
+
+        <!-- Begin body -->
+        <section class="mt-3 mb-5 book">
+            <div class="container">
+                <div class="bg-white book__wrap">
+                    <div class="mx-auto px-3 py-4 book__content">
+                        <!-- Begin block -->
+                        <div class="pt-4 text-center">
+                            <img src="images/ic-success.svg" alt="">
+                            <p class="book__title mt-3 mb-1">Thành công</p>
+                            <p class="book__text-18 mb-0">Cảm ơn quý khách đã sử dụng dịch vụ của FVG Travel.</p>
+                            <p class="book__text-18 ">Vui lòng kiểm tra email để nhận phiếu xác nhận đặt tour thành công từ FVG Travel</p>
+                            <button class="m-btn m-btn-grey mb-4">
+                                <img src="images/ic-print.svg" alt="">
+                                <span class="book__text-19 ml-1">In</span>
+                            </button>
                         </div>
-                        <div class="mb-4">
-                            <div class="mb-4 text-uppercase create-custom-tour__title">Khoảng thời gian khởi hành</div>
-                            <div class="d-sm-flex align-items-sm-center">
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="mr-4 mb-3 create-custom-tour__label create-custom-tour__label--date">Từ ngày</div>
-                                    <div class="position-relative w-100">
-                                        <input class="jsDatepicker mb-3 form-control" type="text">
-                                        <img class="position-absolute create-custom-tour__ic-input" src="images/ic-date-range.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="mr-4 mb-3 ml-sm-4 create-custom-tour__label create-custom-tour__label--hook create-custom-tour__label--date">Đến</div>
-                                    <div class="position-relative w-100">
-                                        <input class="jsDatepicker mb-3 form-control" type="text">
-                                        <img class="position-absolute create-custom-tour__ic-input" src="images/ic-date-range.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="mb-4 text-uppercase create-custom-tour__title">Điểm đến</div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Tìm kiếm</div>
-                                <div class="position-relative w-100">
-                                    <input class="mb-3 pr-4 form-control" type="text">
-                                    <img class="position-absolute create-custom-tour__ic-input" src="images/ic-search.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">hoặc nhập</div>
-                                <input class="mb-3 form-control" type="text">
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="mb-4 text-uppercase create-custom-tour__title">Mức giá</div>
-                            <div class="d-sm-flex mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Chọn khoảng giá</div>
-                                <div class="w-100 mt-2 mb-4 m-no-ui-slider-pick-price">
-                                    <div id="noUiSliderPickPrice" class="w-100 mb-3"></div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="">
-                                            <input class="text-center create-custom-tour__input-price" type="text" id="noUiSliderPickPriceInput1">
-                                            <span class="create-custom-tour__money-price">tr</span>
+                        <div class="mt-2">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="book__wrap2">
+                                        <div class="book__title2 mb-3">Phiếu xác nhận đặt tour</div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Mã Tour:</span>
+                                            <span class="book__text-10">T20</span>
                                         </div>
-                                        <div class="">
-                                            <input class="text-center create-custom-tour__input-price" type="text" id="noUiSliderPickPriceInput2">
-                                            <span class="create-custom-tour__money-price">tr</span>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Tên tour:</span>
+                                            <span class="book__text-10">Du lịch danh lam thắng cảnh Đà Nẵng - Hạ Long</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Nơi khởi hành:</span>
+                                            <span class="book__text-10">Đà Nẵng</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Hành trình:</span>
+                                            <span class="book__text-10">Đà Nẵng - Hạ Long/ Hạ Long - Đà Nẵng</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Ngày đi:</span>
+                                            <span class="book__text-10">22/01/2018</span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-1 book__text-20">Ngày về:</span>
+                                            <span class="book__text-10">24/01/2018g</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="mb-4 text-uppercase create-custom-tour__title">Số lượng hành khách</div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Người lớn</div>
-                                <input class="mb-3 form-control" type="text">
-                            </div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Trẻ em > 12 tuổi</div>
-                                <input class="mb-3 form-control" type="text">
-                            </div>
-                            <div class="d-sm-flex align-items-sm-center mb-2">
-                                <div class="mr-4 mb-3 create-custom-tour__label">Trẻ em
-                                    < 12 tuổi</div>
-                                        <input class="mb-3 form-control" type="text">
+                                <div class="col-md-6">
+                                    <div class="book__wrap2">
+                                        <div class="book__title2 mb-3">Thông tin liên lạc</div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Họ tên:</span>
+                                            <span class="book__text-10">Nguyễn Văn An</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Email:</span>
+                                            <span class="book__text-10">annv@gmail.com</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-2">
+                                                <span class="mr-1 book__text-20">Di động:</span>
+                                                <span class="book__text-10">0905222222</span>
+                                            </div>
+                                            <div class="col-md-6 mb-2">
+                                                <span class="mr-1 book__text-20">Điện thoại:</span>
+                                                <span class="book__text-10">0983111111</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Địa chỉ:</span>
+                                            <span class="book__text-10">122 Nguyễn Hoàng, Đà Nẵng</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Số khách:</span>
+                                            <span class="book__text-10">1 (Người lớn: 1  Trẻ em: 0  Trẻ nhỏ: 0  Em bé: 0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="mr-1 book__text-20">Ghi chú: </span>
+                                            <span class="book__text-10"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="book__wrap2">
+                                        <div class="book__title2 mb-3">Chi tiết đặt tour</div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Mã đơn hàng:</span>
+                                            <span class="book__text-10">436518992  (Quý khách vui lòng nhớ số booking (Booking No) để thuận tiện cho các giao dịch sau này)</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Tổng chi phí đơn hàng:</span>
+                                            <span class="book__text-6">700,000</span>
+                                            <span class="book__text-8">đ</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Ngày đặt tour:</span>
+                                            <span class="book__text-10">14/01/2018 13:41:33 (Theo giờ Việt Nam)</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Hình thức thanh toán:</span>
+                                            <span class="book__text-10">Chuyển khoản/ Internet banking</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Tình trạng:</span>
+                                            <span class="book__text-10">Đơn đặt hàng của quý khách đã được chúng tôi xác nhận thành công</span>
+                                        </div>
+                                        <div class="mb-2">
+                                            <span class="mr-1 book__text-20">Thời hạn thanh toán:</span>
+                                            <span class="book__text-10">21/01/2018 15:41:33 (Theo giờ Việt Nam) (Nếu quá thời hạn trên mà quý khách chưa thanh toán. FVG Travel sẽ hủy booking này)</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="create-custom-tour__foot">
-                        <div class="d-flex justify-content-between align-items-center mx-auto p-3 create-custom-tour__content">
-                            <button class="m-btn m-btn-grey">Hủy tạo</button>
-                            <button class="m-btn m-btn-orange callModalCreateTourSuccess">Gửi yêu cầu</button>
-                        </div>
+                    <div class="mt-3 mb-2 book__line"></div>
+                    <div class="d-flex justify-content-center align-items-center mx-auto px-3 pt-3 pb-4 book__content text-right">
+                        <button class="m-btn m-btn-grey mr-3">Về Trang Chủ</button>
+                        <button class="m-btn m-btn-orange">Trang quản lý tour</button>
                     </div>
-            </section>
-            <!-- End create custom tour -->
+                </div>
             </div>
+        </section>
+        <!-- End body -->
     </main>
     <!-- Begin footer -->
 <footer class="footer pt-4">
@@ -679,28 +797,33 @@
     </div>
 <!-- End modal forget password -->
     <!-- // -->
-    <!-- Begin modal create custom tour success -->
-<div id="modalCreateTourSuccess" class="modal fade modal-s">
+    <!-- Begin modal forget password -->
+<div id="modalComment" class="modal fade modal-c">
         <div class="modal-dialog">
-            <div class="modal-content py-3 px-4">
-                <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close" style="font-size:36px">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body text-center pb-5">
-                    <img src="images/ic-success.svg" alt="">
-                    <p class="book__title mt-3 mb-1">Thành công</p>
-                    <p class="book__text-18 mb-0">Cảm ơn bạn đã gửi yêu cầu đặt tour cho FVG Travel,</p>
-                    <p class="book__text-18 ">chúng tôi sẽ gửi lại cho bạn chương trình tour trong vòng 24h, xin cảm ơn!</p>
-                    <div>
-                        <button class="m-btn m-btn-orange col-md-4">Về trang chủ</button>
-                    </div>
+            <div class="modal-content">
+                <div class="modal-header p-4">
+                    <h5 class="modal-title">Ý kiến của bạn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <form action="">
+                    <div class="modal-body p-4">
+                        <textarea rows="10" class="col-12 p-0 hl-item__text1" placeholder="Nhập ý kiến của bạn..."></textarea>
+                    </div>
+                    <div class="modal-footer p-4">
+                        <div class="text-center">
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="m-btn m-btn-close">Đóng</button>
+                            <button type="submit" class="m-btn m-btn-orange">Đăng ý kiến</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-<!-- End modal create custom tour success -->
-    </div>
-    <script src="js/vendor.min.js"></script>
+<!-- End modal forget password -->
+</div>
+<script src="js/vendor.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 
