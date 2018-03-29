@@ -251,58 +251,56 @@
         <section class="bg-white search-result__head">
             <div class="container d-xl-flex justify-content-between align-items-center search-result__head-wrap">
                 <div class="d-xl-flex align-items-center search-filter">
-                    <div id="searchTour" class="ui search form-group">
-                        <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm địa điểm...">
-                        <div class="results w-100 mt-0"></div>
-                    </div>
                     <div class="form-group">
                         <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w235">
-                            <input type="hidden" name="price">
-                            <div class="default text">Chọn khoảng giá</div>
+                            <input type="hidden" name="city">
+                            <div class="default text">Tỉnh/Thành phố:</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
                                 <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
                             </svg>
                             <div class="menu">
                                 <div class="item" data-value="0">
-                                    <span>Từ</span> 1.000.000
-                                    <span>&#60;</span> 10.000.000
-                                    <span>đ</span>
+                                    <span>Đà Nẵng</span>
                                 </div>
                                 <div class="item" data-value="1">
-                                    <span>Từ</span> 10.000.000
-                                    <span>&#60;</span> 100.000.000
-                                    <span>đ</span>
+                                    <span>Hồ Chí Minh</span>
                                 </div>
                                 <div class="item" data-value="2">
-                                    <span>Từ</span> 100.000.000
-                                    <span>&#60;</span> 900.000.000
-                                    <span>đ</span>
+                                    <span>Hà Nội</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w180">
-                            <input type="hidden" name="price">
-                            <div class="default text">Chọn khoảng thời gian</div>
+                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w235">
+                            <input type="hidden" name="">
+                            <div class="default text">Quận/huyện:</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
                                 <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
                             </svg>
                             <div class="menu">
                                 <div class="item" data-value="0">
-                                    <span>Từ</span> 1
-                                    <span>đến dưới</span> 7
-                                    <span>ngày</span>
+                                    <span>Thanh Khê</span>
                                 </div>
                                 <div class="item" data-value="1">
-                                    <span>Từ</span> 7
-                                    <span>đến dưới</span> 14
-                                    <span>ngày</span>
+                                    <span>Hải Châu</span>
                                 </div>
-                                <div class="item" data-value="2">
-                                    <span>Từ</span> 14
-                                    <span>đến dưới</span> 31
-                                    <span>ngày</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w235">
+                            <input type="hidden" name="">
+                            <div class="default text">Phường/xã:</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
+                                <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+                            </svg>
+                            <div class="menu">
+                                <div class="item" data-value="0">
+                                    <span>Xuân Hà</span>
+                                </div>
+                                <div class="item" data-value="1">
+                                    <span>Hòa Cường</span>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +315,7 @@
                                 <path d="M0 0h24v24H0z" fill="none" />
                             </svg>
                         </button>
-                        <button class="d-flex justify-content-center align-items-center border-0 search-result__head-btn active">
+                        <button class="d-flex justify-content-center align-items-center border-0 search-result__head-btn">
                             <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z" />
                                 <path d="M0 0h24v24H0z" fill="none" />
@@ -332,347 +330,466 @@
                             </svg>
                         </button>
                     </div>
-                    <a class="d-flex justify-content-center align-items-center m-btn m-btn-grey search-result__head-btn-create" href="create-custom-tour.html">Tự thiết kế tour</a>
                 </div>
             </div>
         </section>
-        <!-- End search result head -->
+    <!-- End search result head -->
 
         <!-- Begin search sesult body -->
         <section class="search-result__body">
-            <div class="container py-4">
-                <div class="hl-item mb-4 mb-sm-3">
-                    <div class="bg-white hl-item__wrap1">
-                        <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-3 pr-sm-0">
-                                <div class="h-100 m-z-outer">
-                                    <img class="d-sm-none w-100 m-z-inner" src="images/p7.png" alt="">
-                                    <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p7.png) center center / cover"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 mb-xl-4">
+                        <div class="search-result__filter-bar">
+                            <div class="filter-bar">
+                                <div class="filter-bar__head">Loại hình</div>
+                                <div class="filter-bar__body">
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Lẩu</span>
+                                            <span class="ml-1 filter-bar__text1">(21)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Nướng</span>
+                                            <span class="ml-1 filter-bar__text1">(324)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Hải Sản</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Món chay</span>
+                                            <span class="ml-1 filter-bar__text1">(350)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Thịt rừng</span>
+                                            <span class="ml-1 filter-bar__text1">(350)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Ăn vặt</span>
+                                            <span class="ml-1 filter-bar__text1">(350)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Coffee</span>
+                                            <span class="ml-1 filter-bar__text1">(350)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Trà Sữa</span>
+                                            <span class="ml-1 filter-bar__text1">(350)</span>
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="col-sm-7 col-md-8 col-lg-9 pl-sm-0">
-                                <div class="hl-item__content1">
-                                    <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                    <p class="mb-1">
-                                        <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                        <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                        <div class="d-md-flex">
-                                            <p class="mb-1 mr-md-4">
-                                                <span class="mr-1 hl-item__label1">Dài:</span>
-                                                <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                            </p>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                            </p>
+                            <div class="filter-bar">
+                                <div class="filter-bar__head">Không gian</div>
+                                <div class="filter-bar__body">
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Hiện đại</span>
+                                            <span class="ml-1 filter-bar__text1">(350)</span>
                                         </div>
-                                        <h6 class="mb-1">
-                                            <span class="mr-1 hl-item__text2">340,000</span>
-                                            <span class="hl-item__text3">đ</span>
-                                            <br>
-                                            <div class="text-right">
-                                                <span class="hl-item__text1">1 người</span>
-                                            </div>
-                                        </h6>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                        </svg>
-                                        <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                    </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Sang trọng</span>
+                                            <span class="ml-1 filter-bar__text1">(324)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Vườn</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Vỉa hè</span>
+                                            <span class="ml-1 filter-bar__text1">(47)</span>
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center filter-bar__item">
+                                        <input class="d-none filter-bar__item-checkbox" type="checkbox">
+                                        <div class="filter-bar__item-status"></div>
+                                        <div class="ml-2">
+                                            <span class="filter-bar__text2">Cổ kính</span>
+                                            <span class="ml-1 filter-bar__text1">(350)</span>
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="hl-item mb-4 mb-sm-3">
-                    <div class="bg-white hl-item__wrap1">
-                        <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-3 pr-sm-0">
-                                <div class="h-100 m-z-outer">
-                                    <img class="d-sm-none w-100 m-z-inner" src="images/p8.png" alt="">
-                                    <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p8.png) center center / cover"></div>
+                    <div class="col-xl-9 mb-4">
+                        <div class="search-result__content">
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p38.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p38.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <h6 class="py-2 px-3 badge badge-danger hl-item__badge">Giảm 20% hôm nay</h6>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000 đ</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-7 col-md-8 col-lg-9 pl-sm-0">
-                                <div class="hl-item__content1">
-                                    <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                    <p class="mb-1">
-                                        <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                        <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                        <div class="d-md-flex">
-                                            <p class="mb-1 mr-md-4">
-                                                <span class="mr-1 hl-item__label1">Dài:</span>
-                                                <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                            </p>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                            </p>
-                                        </div>
-                                        <h6 class="mb-1">
-                                            <span class="mr-1 hl-item__text2">340,000</span>
-                                            <span class="hl-item__text3">đ</span>
-                                            <br>
-                                            <div class="text-right">
-                                                <span class="hl-item__text1">1 người</span>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p39.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p39.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </h6>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <h6 class="py-2 px-3 badge badge-danger hl-item__badge">Giảm 20% hôm nay</h6>
+                                                <div>
+                                                    <span class="mr-1 hl-item__text4">400,000 đ</span>
+                                                    <br>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                        </svg>
-                                        <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row d-flex align-items-end">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p40.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p40.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row d-flex align-items-end">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p38.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p38.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row d-flex align-items-end">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p39.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p39.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row d-flex align-items-end">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p40.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p40.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row d-flex align-items-end">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p38.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p38.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mb-sm-3 hl-item">
+                                <div class="bg-white hl-item__wrap1">
+                                    <div class="row d-flex align-items-end">
+                                        <div class="col-md-8 col-lg-9">
+                                            <div class="row h-100">
+                                                <div class="col-md-5 col-lg-4 col-xl-5 pr-md-0">
+                                                    <div class="h-100 m-z-outer position-relative">
+                                                        <img class="d-md-none w-100 m-z-inner" src="images/p39.png" alt="">
+                                                        <div class="d-none d-md-block h-100 m-z-inner" style="background:url(images/p39.png) center center / cover"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-lg-8 col-xl-7 pl-md-0">
+                                                    <div class="hl-item__content1">
+                                                        <a class="d-inline-block mb-2 hl-item__title1" href="">Lẩu Hội Quán - Hoàng Cầu</a>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Địa chỉ:</span>
+                                                            <span class="mr-1 hl-item__text1">A30, Trần Hưng Đạo, Quận Sơn Trà, Phước Mỹ, Đà Nẵng, Việt Nam -</span>
+                                                            <a class="hl-item__link1" href="">Xem bản đồ</a>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <span class="mr-1 hl-item__label1">Loại quán:</span>
+                                                            <span class="mr-1 hl-item__text1">Lẩu, Nướng</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-3">
+                                            <div class="text-right hl-item__content1 hl-item__content1-pt-0">
+                                                <div>
+                                                    <span class="mr-1 hl-item__text2">340,000</span>
+                                                    <span class="hl-item__text3">đ</span>
+                                                    <br>
+                                                    <span class="hl-item__text1">1 người</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="hl-item mb-4 mb-sm-3">
-                    <div class="bg-white hl-item__wrap1">
-                        <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-3 pr-sm-0">
-                                <div class="h-100 m-z-outer">
-                                    <img class="d-sm-none w-100 m-z-inner" src="images/p9.png" alt="">
-                                    <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p9.png) center center / cover"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7 col-md-8 col-lg-9 pl-sm-0">
-                                <div class="hl-item__content1">
-                                    <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                    <p class="mb-1">
-                                        <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                        <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                        <div class="d-md-flex">
-                                            <p class="mb-1 mr-md-4">
-                                                <span class="mr-1 hl-item__label1">Dài:</span>
-                                                <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                            </p>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                            </p>
-                                        </div>
-                                        <h6 class="mb-1">
-                                            <span class="mr-1 hl-item__text2">340,000</span>
-                                            <span class="hl-item__text3">đ</span>
-                                            <br>
-                                            <div class="text-right">
-                                                <span class="hl-item__text1">1 người</span>
-                                            </div>
-                                        </h6>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                        </svg>
-                                        <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hl-item mb-4 mb-sm-3">
-                    <div class="bg-white hl-item__wrap1">
-                        <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-3 pr-sm-0">
-                                <div class="h-100 m-z-outer">
-                                    <img class="d-sm-none w-100 m-z-inner" src="images/p10.png" alt="">
-                                    <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p10.png) center center / cover"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7 col-md-8 col-lg-9 pl-sm-0">
-                                <div class="hl-item__content1">
-                                    <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                    <p class="mb-1">
-                                        <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                        <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                        <div class="d-md-flex">
-                                            <p class="mb-1 mr-md-4">
-                                                <span class="mr-1 hl-item__label1">Dài:</span>
-                                                <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                            </p>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                            </p>
-                                        </div>
-                                        <h6 class="mb-1">
-                                            <span class="mr-1 hl-item__text2">340,000</span>
-                                            <span class="hl-item__text3">đ</span>
-                                            <br>
-                                            <div class="text-right">
-                                                <span class="hl-item__text1">1 người</span>
-                                            </div>
-                                        </h6>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                        </svg>
-                                        <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hl-item mb-4 mb-sm-3">
-                    <div class="bg-white hl-item__wrap1">
-                        <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-3 pr-sm-0">
-                                <div class="h-100 m-z-outer">
-                                    <img class="d-sm-none w-100 m-z-inner" src="images/p7.png" alt="">
-                                    <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p7.png) center center / cover"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7 col-md-8 col-lg-9 pl-sm-0">
-                                <div class="hl-item__content1">
-                                    <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                    <p class="mb-1">
-                                        <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                        <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                        <div class="d-md-flex">
-                                            <p class="mb-1 mr-md-4">
-                                                <span class="mr-1 hl-item__label1">Dài:</span>
-                                                <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                            </p>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                            </p>
-                                        </div>
-                                        <h6 class="mb-1">
-                                            <span class="mr-1 hl-item__text2">340,000</span>
-                                            <span class="hl-item__text3">đ</span>
-                                            <br>
-                                            <div class="text-right">
-                                                <span class="hl-item__text1">1 người</span>
-                                            </div>
-                                        </h6>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                        </svg>
-                                        <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hl-item mb-4 mb-sm-3">
-                    <div class="bg-white hl-item__wrap1">
-                        <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-3 pr-sm-0">
-                                <div class="h-100 m-z-outer">
-                                    <img class="d-sm-none w-100 m-z-inner" src="images/p8.png" alt="">
-                                    <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p8.png) center center / cover"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7 col-md-8 col-lg-9 pl-sm-0">
-                                <div class="hl-item__content1">
-                                    <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                    <p class="mb-1">
-                                        <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                        <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                        <div class="d-md-flex">
-                                            <p class="mb-1 mr-md-4">
-                                                <span class="mr-1 hl-item__label1">Dài:</span>
-                                                <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                            </p>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                            </p>
-                                        </div>
-                                        <h6 class="mb-1">
-                                            <span class="mr-1 hl-item__text2">340,000</span>
-                                            <span class="hl-item__text3">đ</span>
-                                            <br>
-                                            <div class="text-right">
-                                                <span class="hl-item__text1">1 người</span>
-                                            </div>
-                                        </h6>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                        </svg>
-                                        <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hl-item mb-4 mb-sm-3">
-                    <div class="bg-white hl-item__wrap1">
-                        <div class="row">
-                            <div class="col-sm-5 col-md-4 col-lg-3 pr-sm-0">
-                                <div class="h-100 m-z-outer">
-                                    <img class="d-sm-none w-100 m-z-inner" src="images/p9.png" alt="">
-                                    <div class="d-none d-sm-block h-100 m-z-inner" style="background:url(images/p9.png) center center / cover"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-7 col-md-8 col-lg-9 pl-sm-0">
-                                <div class="hl-item__content1">
-                                    <a class="d-inline-block mb-2 hl-item__title1" href="">Du lịch danh lam thắng cảnh Đà Nẵng</a>
-                                    <p class="mb-1">
-                                        <span class="mr-1 hl-item__label1">Khởi hành:</span>
-                                        <span class="mr-1 hl-item__text1">Đà Nẵng, Việt Nam</span>
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-end align-items-sm-start mb-1">
-                                        <div class="d-md-flex">
-                                            <p class="mb-1 mr-md-4">
-                                                <span class="mr-1 hl-item__label1">Dài:</span>
-                                                <span class="mr-1 hl-item__text1"> 2 ngày, 1 đêm</span>
-                                            </p>
-                                            <p class="mb-1">
-                                                <span class="mr-1 hl-item__label1">Phương tiện:</span>
-                                                <span class="mr-1 hl-item__text1">Xe, tàu</span>
-                                            </p>
-                                        </div>
-                                        <h6 class="mb-1">
-                                            <span class="mr-1 hl-item__text2">340,000</span>
-                                            <span class="hl-item__text3">đ</span>
-                                            <br>
-                                            <div class="text-right">
-                                                <span class="hl-item__text1">1 người</span>
-                                            </div>
-                                        </h6>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
-                                            <path fill="#EBA32E " d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zM256 40c118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216zm86.6 224.5l-115.1 115c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L303 256l-99.5-99.5c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l115.1 115c4.6 4.8 4.6 12.4-.1 17.1z"></path>
-                                        </svg>
-                                        <a class="ml-1 hl-item__link2" href="">Xem chi tiết</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container pb-3">
-                <div class="mb-4"><!-- Begin navigate -->
+                        <div class="py-3">
+                            <div class="mb-4"><!-- Begin navigate -->
 <nav class="d-flex flex-wrap justify-content-center align-items-center rounded-circle m-navigate">
     <a href="" class="d-flex flex-wrap justify-content-center align-items-center rounded-circle m-navigate__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16">
@@ -699,6 +816,9 @@
     </a>
 </nav>
 <!-- End navigate --></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End search sesult body -->

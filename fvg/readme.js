@@ -20,9 +20,9 @@ let temp =
 </head>
 <body>
     <h1>LIST PAGE</h1>
-    <ul style="font-weight: 700; font-size: 18px; line-height: 1.8">
+    <ol style="font-weight: 700; font-size: 18px; line-height: 1.8">
         ${data}
-    </ul>
+    </ol>
 </body>
 </html>`;
 fs.writeFile('readme.html', temp, function (err) {
