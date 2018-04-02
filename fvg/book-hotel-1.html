@@ -205,89 +205,6 @@
 </section>
 <!-- End header mobile -->
     <main class="pb-2 m-height-screen m-bg-grey">
-        <!-- Begin search result head -->
-        <section class="bg-white search-result__head">
-            <div class="container d-xl-flex justify-content-between align-items-center search-result__head-wrap">
-                <div class="d-xl-flex align-items-center search-filter">
-                    <div id="searchTour" class="ui search form-group">
-                        <input class="prompt rounded form-control m-selection__w235 search-filter__bg-search" type="text" placeholder="Tìm khách sạn...">
-                        <div class="results w-100 mt-0"></div>
-                    </div>
-                    <div class="form-group">
-                        <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày nhận phòng">
-                    </div>
-                    <div class="form-group">
-                        <input class="jsDatepicker form-control m-selection__w150 search-filter__bg-date" type="text" placeholder="Ngày trả phòng">
-                    </div>
-                    <div class="form-group">
-                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w120">
-                            <input type="hidden" name="adult">
-                            <div class="default text">Người lớn: 0</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
-                                <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
-                            </svg>
-                            <div class="menu">
-                                <div class="item" data-value="0">
-                                    <span>Người lớn:</span> 0
-                                </div>
-                                <div class="item" data-value="1">
-                                    <span>Người lớn:</span> 1
-                                </div>
-                                <div class="item" data-value="2">
-                                    <span>Người lớn:</span> 22
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="ui dropdown d-flex justify-content-between align-items-center pr-2 form-control m-selection m-selection__w120">
-                            <input type="hidden" name="child">
-                            <div class="default text">Trẻ em: 0</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20" height="20">
-                                <path fill="#ced4da" d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
-                            </svg>
-                            <div class="menu">
-                                <div class="item" data-value="0">
-                                    <span>Trẻ em:</span> 0
-                                </div>
-                                <div class="item" data-value="1">
-                                    <span>Trẻ em:</span> 1
-                                </div>
-                                <div class="item" data-value="2">
-                                    <span>Trẻ em:</span> 2
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-sm-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="d-none d-xl-block mr-3 search-result__head-space"></div>
-                        <button class="d-flex justify-content-center align-items-center mr-2 border-0 search-result__head-btn active">
-                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </button>
-                        <button class="d-flex justify-content-center align-items-center border-0 search-result__head-btn">
-                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z" />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </button>
-                        <div class="mr-3 ml-3 search-result__head-space"></div>
-                        <button class="d-flex justify-content-center align-items-center mr-sm-3 border-0 search-result__head-btn">
-                            <svg fill="#888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18 8c0-3.31-2.69-6-6-6S6 4.69 6 8c0 4.5 6 11 6 11s6-6.5 6-11zm-8 0c0-1.1.9-2 2-2s2 .9 2 2-.89 2-2 2c-1.1 0-2-.9-2-2zM5 20v2h14v-2H5z"
-                                />
-                                <path d="M0 0h24v24H0z" fill="none" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End search result head -->
 
         <div class="container">
             <!-- Begin breadcrumb -->
@@ -495,7 +412,7 @@
                                   <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="otherService" aria-selected="false">Dịch vụ khác</a>
                                 </li>
                             </ul>
-                            <div class="tab-content px-4 pt-4 py-2" id="myTabContent">
+                            <div class="book__service-table tab-content px-4 pt-4 py-2" id="myTabContent">
                                 <div class="tab-pane fade show active" id="room" role="tabpanel" aria-labelledby="room-tab">
                                     <table class="table table-bordered">
                                         <thead>
